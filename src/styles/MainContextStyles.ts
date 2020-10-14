@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 // This settings needs to move from here later on
 const drawerWidth: number = 240;
-export const themeMode: string = 'light';
+export const themeMode: string = 'dark';
 
 export const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,5 +58,18 @@ export const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
     marginLeft: 0,
+  },
+  menuItems: {
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
+  },
+  grow: {
+    flexGrow: 1,
+  },
+
+  menuButtonFlag: {
+    marginRight: -12,
   },
 }));
