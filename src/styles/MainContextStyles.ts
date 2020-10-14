@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 // This settings needs to move from here later on
 import { drawerWidth } from '../config';
-export const themeMode: string = 'dark';
 
 export const useStyles = makeStyles((theme) => ({
   root: {
@@ -71,5 +70,16 @@ export const useStyles = makeStyles((theme) => ({
 
   menuButtonFlag: {
     marginRight: -12,
+  },
+
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2),
+  },
+  languageSpan: {
+    marginLeft: theme.spacing(1),
   },
 }));

@@ -22,11 +22,19 @@ import MailIcon from '@material-ui/icons/Mail';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Button from '@material-ui/core/Button';
 
+// Select imports
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+// End of select imports
+
 import { useStyles } from '../styles/MainContextStyles';
-import { Switch } from '@material-ui/core';
+import { FormControlLabel, Switch } from '@material-ui/core';
 
 import Content from './Content';
 import { ThemeContext } from '../context/ThemeContext';
+
+import { translateHeader } from '../translate/header';
 
 export default function PersistentDrawerLeft() {
   const context = useContext(ThemeContext);
@@ -60,6 +68,15 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
 
+  // Select stuff
+
+  let { language, changeLanguage } = context;
+
+  const { logoHome } = translateHeader[language];
+  const { darkTheme, lightTheme } = translateHeader[language];
+  // Theme switcher label
+  const themeColor: string = isDarkMode ? darkTheme : lightTheme;
+
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.root}>
@@ -81,7 +98,7 @@ export default function PersistentDrawerLeft() {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              <Link to="/">Home</Link>
+              <Link to="/">{logoHome}</Link>
             </Typography>
             <div className={classes.menuItems}>
               <Link to="/frontend">
@@ -92,12 +109,46 @@ export default function PersistentDrawerLeft() {
               </Link>
             </div>
             <div className={classes.grow}></div>
-            <Switch id="#flag-icon" onClick={toggleTheme} />
-            <IconButton className={classes.menuButtonFlag} color="inherit">
-              <span role="img" aria-labelledby="#flag-icon">
-                🇺🇸
-              </span>
-            </IconButton>
+            <FormControlLabel
+              label={themeColor}
+              control={
+                <Switch
+                  id="#flag-icon"
+                  onClick={toggleTheme}
+                  size="small"
+                  color="default"
+                  aria-label={themeColor}
+                />
+              }
+            />
+
+            <FormControl className={classes.formControl}>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={language}
+                onChange={changeLanguage}
+              >
+                <MenuItem value="english">
+                  <span role="img" aria-labelledby="#flag-icon">
+                    🇺🇸
+                  </span>
+                  <span className={classes.languageSpan}>English</span>
+                </MenuItem>
+                <MenuItem value="russian">
+                  <span role="img" aria-labelledby="#flag-icon">
+                    🇷🇺
+                  </span>
+                  <span className={classes.languageSpan}>Russian</span>
+                </MenuItem>
+                <MenuItem value="czech">
+                  <span role="img" aria-labelledby="#flag-icon">
+                    🇨🇿
+                  </span>
+                  <span className={classes.languageSpan}>Czech</span>
+                </MenuItem>
+              </Select>
+            </FormControl>
           </Toolbar>
         </AppBar>
         <Drawer
