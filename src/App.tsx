@@ -5,13 +5,17 @@ import './App.css';
 
 import PersistentDrawerLeft from './components/MainContent';
 
+import DarkThemeProvider from './context/ThemeContext';
+
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <PersistentDrawerLeft />
-      </div>
-    </BrowserRouter>
+    <DarkThemeProvider>
+      <BrowserRouter>
+        <div className="App">
+          <PersistentDrawerLeft />
+        </div>
+      </BrowserRouter>
+    </DarkThemeProvider>
   );
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
@@ -22,13 +22,19 @@ import MailIcon from '@material-ui/icons/Mail';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Button from '@material-ui/core/Button';
 
-import { useStyles, themeMode } from '../styles/MainContextStyles';
+import { useStyles } from '../styles/MainContextStyles';
 import { Switch } from '@material-ui/core';
 
 import Content from './Content';
+import { ThemeContext } from '../context/ThemeContext';
 
 export default function PersistentDrawerLeft() {
-  //   const theme = useTheme();
+  const context = useContext(ThemeContext);
+
+  const { isDarkMode, toggleTheme } = context;
+
+  //   const handleToggle = () => console.log(isDarkMode, toggleTheme);
+  const themeMode: string = isDarkMode ? 'dark' : 'light';
 
   const prefersDarkMode = useMediaQuery(`(prefers-color-scheme: ${themeMode}`);
 
@@ -84,11 +90,9 @@ export default function PersistentDrawerLeft() {
               <Link to="/somecontent">
                 <Button>SomeContent</Button>
               </Link>
-
-              <Switch id="#flag-icon" />
             </div>
             <div className={classes.grow}></div>
-
+            <Switch id="#flag-icon" onClick={toggleTheme} />
             <IconButton className={classes.menuButtonFlag} color="inherit">
               <span role="img" aria-labelledby="#flag-icon">
                 🇺🇸
