@@ -1,6 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+// This settings needs to move from here later on
 const drawerWidth: number = 240;
+export const themeMode: string = 'light';
 
 export const useStyles = makeStyles((theme) => ({
   root: {
