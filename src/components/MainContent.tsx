@@ -36,7 +36,7 @@ import Select from '@material-ui/core/Select';
 // End of select imports
 
 import { useStyles } from '../styles/MainContextStyles';
-import { FormControlLabel, Menu, Switch } from '@material-ui/core';
+import { FormControlLabel, Switch } from '@material-ui/core';
 
 import Content from './Content';
 import { ThemeContext } from '../context/ThemeContext';
