@@ -17,10 +17,14 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+
+import EmojiPeopleOutlined from '@material-ui/icons/EmojiPeopleOutlined';
+
+import FavoriteBorderOutlined from '@material-ui/icons/FavoriteBorderOutlined';
+import DevicesOtherOutlined from '@material-ui/icons/DevicesOtherOutlined';
+import DnsOutlined from '@material-ui/icons/DnsOutlined';
+
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Button from '@material-ui/core/Button';
 
 // Select imports
 import MenuItem from '@material-ui/core/MenuItem';
@@ -35,13 +39,13 @@ import Content from './Content';
 import { ThemeContext } from '../context/ThemeContext';
 
 import { translateHeader } from '../translate/header';
+import { isDarkColor } from '../config';
 
 export default function PersistentDrawerLeft() {
   const context = useContext(ThemeContext);
 
   const { isDarkMode, toggleTheme } = context;
 
-  //   const handleToggle = () => console.log(isDarkMode, toggleTheme);
   const themeMode: string = isDarkMode ? 'dark' : 'light';
 
   const prefersDarkMode = useMediaQuery(`(prefers-color-scheme: ${themeMode}`);
@@ -58,7 +62,7 @@ export default function PersistentDrawerLeft() {
 
   const classes = useStyles();
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -73,7 +77,9 @@ export default function PersistentDrawerLeft() {
   let { language, changeLanguage } = context;
 
   const { logoHome } = translateHeader[language];
-  const { darkTheme, lightTheme } = translateHeader[language];
+  const { darkTheme, lightTheme, frontEnd, backEnd } = translateHeader[
+    language
+  ];
   // Theme switcher label
   const themeColor: string = isDarkMode ? darkTheme : lightTheme;
 
@@ -82,6 +88,7 @@ export default function PersistentDrawerLeft() {
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
+          color="inherit"
           position="fixed"
           className={clsx(classes.appBar, {
             [classes.appBarShift]: open,
@@ -89,7 +96,6 @@ export default function PersistentDrawerLeft() {
         >
           <Toolbar>
             <IconButton
-              color="inherit"
               aria-label="open drawer"
               onClick={handleDrawerOpen}
               edge="start"
@@ -97,17 +103,39 @@ export default function PersistentDrawerLeft() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap>
-              <Link to="/">{logoHome}</Link>
-            </Typography>
+            <MenuItem>
+              <Typography variant="h6" noWrap>
+                <Link
+                  style={isDarkColor(isDarkMode)}
+                  className={classes.menuItemLink}
+                  to="/"
+                >
+                  {logoHome}
+                </Link>
+              </Typography>
+            </MenuItem>
+
             <div className={classes.menuItems}>
-              <Link to="/frontend">
-                <Button>FrontEnd</Button>
-              </Link>
-              <Link to="/somecontent">
-                <Button>SomeContent</Button>
-              </Link>
+              <MenuItem>
+                <Link
+                  style={isDarkColor(isDarkMode)}
+                  className={classes.menuItemLink}
+                  to="/frontend"
+                >
+                  {frontEnd}
+                </Link>
+              </MenuItem>
+              <MenuItem className={classes.menuItemLink}>
+                <Link
+                  style={isDarkColor(isDarkMode)}
+                  className={classes.menuItemLink}
+                  to="/somecontent"
+                >
+                  {backEnd}
+                </Link>
+              </MenuItem>
             </div>
+
             <div className={classes.grow}></div>
             <FormControlLabel
               label={themeColor}
@@ -171,25 +199,57 @@ export default function PersistentDrawerLeft() {
           </div>
           <Divider />
           <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-              <ListItem button key={text}>
+            <Link className={classes.drawerLink} to="/">
+              <ListItem button>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  <EmojiPeopleOutlined />
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText primary="Introduction" />
               </ListItem>
-            ))}
+            </Link>
+            <Link className={classes.drawerLink} to="/backend">
+              <ListItem button>
+                <ListItemIcon>
+                  <DnsOutlined />
+                </ListItemIcon>
+                <ListItemText primary="Backend" />
+              </ListItem>
+            </Link>
+            <Link className={classes.drawerLink} to="/frontend">
+              <ListItem button>
+                <ListItemIcon>
+                  <DevicesOtherOutlined />
+                </ListItemIcon>
+                <ListItemText primary="Frontend" />
+              </ListItem>
+            </Link>
+            <Link className={classes.drawerLink} to="/computers">
+              <ListItem button>
+                <ListItemIcon>
+                  <FavoriteBorderOutlined />
+                </ListItemIcon>
+                <ListItemText primary="System Adm" />
+              </ListItem>
+            </Link>
+            <Link className={classes.drawerLink} to="/marketing">
+              <ListItem button>
+                <ListItemIcon>
+                  <FavoriteBorderOutlined />
+                </ListItemIcon>
+                <ListItemText primary="Marketing" />
+              </ListItem>
+            </Link>
           </List>
           <Divider />
           <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-              <ListItem button key={text}>
+            <Link className={classes.drawerLink} to="/personality">
+              <ListItem button>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  <FavoriteBorderOutlined />
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText primary="Personality" />
               </ListItem>
-            ))}
+            </Link>
           </List>
         </Drawer>
         <main
