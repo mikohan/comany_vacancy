@@ -87,7 +87,7 @@ export const useStyles = makeStyles((theme) => {
     },
     menuItemLink: {
       textDecoration: 'none',
-      color: 'white',
+      color: 'inherit',
     },
     drawerLink: {
       textDecoration: 'none',

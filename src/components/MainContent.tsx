@@ -13,6 +13,9 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ImportantDevicesOutlined from '@material-ui/icons/ImportantDevicesOutlined';
+import InsertChartOutlined from '@material-ui/icons/InsertChartOutlined';
+import SentimentSatisfied from '@material-ui/icons/SentimentSatisfiedOutlined';
 
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -39,7 +42,6 @@ import Content from './Content';
 import { ThemeContext } from '../context/ThemeContext';
 
 import { translateHeader } from '../translate/header';
-import { isDarkColor } from '../config';
 
 export default function PersistentDrawerLeft() {
   const context = useContext(ThemeContext);
@@ -77,9 +79,18 @@ export default function PersistentDrawerLeft() {
   let { language, changeLanguage } = context;
 
   const { logoHome } = translateHeader[language];
-  const { darkTheme, lightTheme, frontEnd, backEnd } = translateHeader[
-    language
-  ];
+  const {
+    darkTheme,
+    lightTheme,
+    frontEnd,
+    backEnd,
+    flag,
+    introduction,
+    sysAdmin,
+    marketing,
+    personality,
+    hobbies,
+  } = translateHeader[language];
   // Theme switcher label
   const themeColor: string = isDarkMode ? darkTheme : lightTheme;
 
@@ -105,11 +116,7 @@ export default function PersistentDrawerLeft() {
             </IconButton>
             <MenuItem>
               <Typography variant="h6" noWrap>
-                <Link
-                  style={isDarkColor(isDarkMode)}
-                  className={classes.menuItemLink}
-                  to="/"
-                >
+                <Link className={classes.menuItemLink} to="/">
                   {logoHome}
                 </Link>
               </Typography>
@@ -117,20 +124,12 @@ export default function PersistentDrawerLeft() {
 
             <div className={classes.menuItems}>
               <MenuItem>
-                <Link
-                  style={isDarkColor(isDarkMode)}
-                  className={classes.menuItemLink}
-                  to="/frontend"
-                >
+                <Link className={classes.menuItemLink} to="/frontend">
                   {frontEnd}
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
-                <Link
-                  style={isDarkColor(isDarkMode)}
-                  className={classes.menuItemLink}
-                  to="/somecontent"
-                >
+                <Link className={classes.menuItemLink} to="/somecontent">
                   {backEnd}
                 </Link>
               </MenuItem>
@@ -159,19 +158,19 @@ export default function PersistentDrawerLeft() {
               >
                 <MenuItem value="english">
                   <span role="img" aria-labelledby="#flag-icon">
-                    🇺🇸
+                    {flag}
                   </span>
                   <span className={classes.languageSpan}>English</span>
                 </MenuItem>
                 <MenuItem value="russian">
                   <span role="img" aria-labelledby="#flag-icon">
-                    🇷🇺
+                    {flag}
                   </span>
                   <span className={classes.languageSpan}>Russian</span>
                 </MenuItem>
                 <MenuItem value="czech">
                   <span role="img" aria-labelledby="#flag-icon">
-                    🇨🇿
+                    {flag}
                   </span>
                   <span className={classes.languageSpan}>Czech</span>
                 </MenuItem>
@@ -204,7 +203,7 @@ export default function PersistentDrawerLeft() {
                 <ListItemIcon>
                   <EmojiPeopleOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Introduction" />
+                <ListItemText primary={introduction} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/backend">
@@ -212,7 +211,7 @@ export default function PersistentDrawerLeft() {
                 <ListItemIcon>
                   <DnsOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Backend" />
+                <ListItemText primary={backEnd} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/frontend">
@@ -220,23 +219,23 @@ export default function PersistentDrawerLeft() {
                 <ListItemIcon>
                   <DevicesOtherOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Frontend" />
+                <ListItemText primary={frontEnd} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/computers">
               <ListItem button>
                 <ListItemIcon>
-                  <FavoriteBorderOutlined />
+                  <ImportantDevicesOutlined />
                 </ListItemIcon>
-                <ListItemText primary="System Adm" />
+                <ListItemText primary={sysAdmin} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/marketing">
               <ListItem button>
                 <ListItemIcon>
-                  <FavoriteBorderOutlined />
+                  <InsertChartOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Marketing" />
+                <ListItemText primary={marketing} />
               </ListItem>
             </Link>
           </List>
@@ -245,9 +244,17 @@ export default function PersistentDrawerLeft() {
             <Link className={classes.drawerLink} to="/personality">
               <ListItem button>
                 <ListItemIcon>
+                  <SentimentSatisfied />
+                </ListItemIcon>
+                <ListItemText primary={personality} />
+              </ListItem>
+            </Link>
+            <Link className={classes.drawerLink} to="/hobbies">
+              <ListItem button>
+                <ListItemIcon>
                   <FavoriteBorderOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Personality" />
+                <ListItemText primary={hobbies} />
               </ListItem>
             </Link>
           </List>
