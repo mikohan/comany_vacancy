@@ -36,7 +36,7 @@ import Select from '@material-ui/core/Select';
 // End of select imports
 
 import { useStyles } from '../styles/MainContextStyles';
-import { FormControlLabel, Switch } from '@material-ui/core';
+import { FormControlLabel, Menu, Switch } from '@material-ui/core';
 
 import Content from './Content';
 import { ThemeContext } from '../context/ThemeContext';
@@ -124,13 +124,28 @@ export default function PersistentDrawerLeft() {
 
             <div className={classes.menuItems}>
               <MenuItem>
+                <Link className={classes.menuItemLink} to="/backend">
+                  {backEnd}
+                </Link>
+              </MenuItem>
+              <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/frontend">
                   {frontEnd}
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/somecontent">
-                  {backEnd}
+                <Link className={classes.menuItemLink} to="/computers">
+                  {sysAdmin}
+                </Link>
+              </MenuItem>
+              <MenuItem className={classes.menuItemLink}>
+                <Link className={classes.menuItemLink} to="/marketing">
+                  {marketing}
+                </Link>
+              </MenuItem>
+              <MenuItem className={classes.menuItemLink}>
+                <Link className={classes.menuItemLink} to="/personality">
+                  {personality}
                 </Link>
               </MenuItem>
             </div>
