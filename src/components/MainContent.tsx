@@ -27,7 +27,7 @@ import FavoriteBorderOutlined from '@material-ui/icons/FavoriteBorderOutlined';
 import DevicesOtherOutlined from '@material-ui/icons/DevicesOtherOutlined';
 import DnsOutlined from '@material-ui/icons/DnsOutlined';
 
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+// import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 // Select imports
 import MenuItem from '@material-ui/core/MenuItem';
@@ -42,29 +42,30 @@ import Content from './Content';
 import { ThemeContext } from '../context/ThemeContext';
 
 import { translateHeader } from '../translate/header';
+import { isDrawerOpen } from '../config';
 
 export default function PersistentDrawerLeft() {
   const context = useContext(ThemeContext);
 
   const { isDarkMode, toggleTheme } = context;
 
-  const themeMode: string = isDarkMode ? 'dark' : 'light';
+  // const themeMode: string = isDarkMode ? 'dark' : 'light';
 
-  const prefersDarkMode = useMediaQuery(`(prefers-color-scheme: ${themeMode}`);
+  // const prefersDarkMode = useMediaQuery(`(prefers-color-scheme: ${themeMode}`);
 
   const theme = React.useMemo(
     () =>
       createMuiTheme({
         palette: {
-          type: prefersDarkMode ? 'dark' : 'light',
+          type: isDarkMode ? 'dark' : 'light',
         },
       }),
-    [prefersDarkMode]
+    [isDarkMode]
   );
 
   const classes = useStyles();
 
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(isDrawerOpen);
 
   const handleDrawerOpen = () => {
     setOpen(true);

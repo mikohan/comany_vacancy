@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import SomeContent from './SomeContent';
 import HomePage from './HomePage';
 import FrontEndPage from './FrontEndPage';
 import BackEndPage from './BackEndPage';
@@ -10,6 +9,7 @@ import MarketingPage from './MarketingPage';
 import PersonalityPage from './PersonalityPage';
 import HobbiesPage from './HobbiesPage';
 import Page_404 from './Page_404';
+import AboutPageTest from './AboutPageTest';
 
 function Content() {
   return (
@@ -18,7 +18,7 @@ function Content() {
         <Route exact path="/frontend" component={FrontEndPage} />
         <Route exact path="/backend" component={BackEndPage} />
         <Route exact path="/computers" component={SysAdminPage} />
-        <Route exact path="/somecontent" component={SomeContent} />
+        <Route exact path="/test" component={AboutPageTest} />
         <Route exact path="/marketing" component={MarketingPage} />
         <Route exact path="/personality" component={PersonalityPage} />
         <Route exact path="/hobbies" component={HobbiesPage} />
