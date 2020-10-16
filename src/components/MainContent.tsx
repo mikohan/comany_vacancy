@@ -117,7 +117,7 @@ export default function PersistentDrawerLeft() {
             </IconButton>
             <MenuItem>
               <Typography variant="h6" noWrap>
-                <Link className={classes.menuItemLink} to="/">
+                <Link className={classes.menuItemLink} to="/test">
                   {logoHome}
                 </Link>
               </Typography>

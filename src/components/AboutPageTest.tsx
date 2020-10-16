@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 
 import { useStyles } from '../styles/AboutPageTestStylesl';
 import { Paper, Box, Typography, Button } from '@material-ui/core';
+import { translateText } from '../translate/texts';
+import { ThemeContext } from '../context/ThemeContext';
 
 function AboutPageTest() {
   const classes = useStyles();
+  const context = useContext(ThemeContext);
+  const { language } = context;
+
+  const { myName, name, mainHeading, learnMore } = translateText[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -16,14 +22,14 @@ function AboutPageTest() {
     >
       <Paper className={classes.meImage}>
         <Box className={classes.mainHeader}>
+          <Typography variant="h6">{myName}</Typography>
           <Typography style={{ marginBottom: '30px' }} variant="h3">
-            My name is Vladimir
+            {name}
           </Typography>
-          <Typography variant="h4">
-            I'm Full Stack deweloper with huge knolige of Online Marketing, and
-            Experience of automatization whole ecommerce business.
-          </Typography>
-          <Button variant="outlined">Learn more...</Button>
+          <Typography variant="h4">{mainHeading}</Typography>
+          <Button style={{ marginTop: '30px' }} variant="outlined">
+            {learnMore}...
+          </Button>
         </Box>
       </Paper>
     </motion.div>

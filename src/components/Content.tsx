@@ -22,7 +22,8 @@ function Content() {
         <Route exact path="/marketing" component={MarketingPage} />
         <Route exact path="/personality" component={PersonalityPage} />
         <Route exact path="/hobbies" component={HobbiesPage} />
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/test" component={AboutPageTest} />
+        {/* <Route exact path="/" component={HomePage} /> */}
         <Route component={Page_404} />
       </Switch>
     </div>
