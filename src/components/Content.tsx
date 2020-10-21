@@ -9,6 +9,7 @@ import PersonalityPage from './PersonalityPage';
 import HobbiesPage from './HobbiesPage';
 import Page_404 from './Page_404';
 import AboutPageTest from './AboutPageTest';
+import Posts from './blog/Posts';
 
 function Content() {
 	return (
@@ -21,6 +22,7 @@ function Content() {
 				<Route exact path="/marketing" component={MarketingPage} />
 				<Route exact path="/personality" component={PersonalityPage} />
 				<Route exact path="/hobbies" component={HobbiesPage} />
+				<Route exact path="/blog" component={Posts} />
 				<Route exact path="/" component={AboutPageTest} />
 				{/* <Route exact path="/" component={HomePage} /> */}
 				<Route component={Page_404} />

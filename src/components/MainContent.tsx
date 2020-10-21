@@ -44,247 +44,289 @@ import { ThemeContext } from '../context/ThemeContext';
 import { translateHeader } from '../translate/header';
 import { isDrawerOpen } from '../config';
 
-export default function PersistentDrawerLeft() {
-  const context = useContext(ThemeContext);
+export default function PersistentDrawerLeft(): JSX.Element {
+	const context = useContext(ThemeContext);
 
-  const { isDarkMode, toggleTheme } = context;
+	const { isDarkMode, toggleTheme } = context;
 
-  // const themeMode: string = isDarkMode ? 'dark' : 'light';
+	// const themeMode: string = isDarkMode ? 'dark' : 'light';
 
-  // const prefersDarkMode = useMediaQuery(`(prefers-color-scheme: ${themeMode}`);
+	// const prefersDarkMode = useMediaQuery(`(prefers-color-scheme: ${themeMode}`);
 
-  const theme = React.useMemo(
-    () =>
-      createMuiTheme({
-        palette: {
-          type: isDarkMode ? 'dark' : 'light',
-        },
-      }),
-    [isDarkMode]
-  );
+	const theme = React.useMemo(
+		() =>
+			createMuiTheme({
+				palette: {
+					type: isDarkMode ? 'dark' : 'light',
+				},
+			}),
+		[isDarkMode]
+	);
 
-  const classes = useStyles();
+	const classes = useStyles();
 
-  const [open, setOpen] = React.useState(isDrawerOpen);
+	const [open, setOpen] = React.useState(isDrawerOpen);
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+	const handleDrawerOpen = () => {
+		setOpen(true);
+	};
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+	const handleDrawerClose = () => {
+		setOpen(false);
+	};
 
-  // Select stuff
+	// Select stuff
 
-  let { language, changeLanguage } = context;
+	let { language, changeLanguage } = context;
 
-  const { logoHome } = translateHeader[language];
-  const {
-    darkTheme,
-    lightTheme,
-    frontEnd,
-    backEnd,
-    flag,
-    introduction,
-    sysAdmin,
-    marketing,
-    personality,
-    hobbies,
-  } = translateHeader[language];
-  // Theme switcher label
-  const themeColor: string = isDarkMode ? darkTheme : lightTheme;
+	const { logoHome } = translateHeader[language];
+	const {
+		darkTheme,
+		lightTheme,
+		frontEnd,
+		backEnd,
+		flag,
+		introduction,
+		sysAdmin,
+		marketing,
+		personality,
+		hobbies,
+		blog,
+	} = translateHeader[language];
+	// Theme switcher label
+	const themeColor: string = isDarkMode ? darkTheme : lightTheme;
 
-  return (
-    <ThemeProvider theme={theme}>
-      <div className={classes.root}>
-        <CssBaseline />
-        <AppBar
-          color="inherit"
-          position="fixed"
-          className={clsx(classes.appBar, {
-            [classes.appBarShift]: open,
-          })}
-        >
-          <Toolbar>
-            <IconButton
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              className={clsx(classes.menuButton, open && classes.hide)}
-            >
-              <MenuIcon />
-            </IconButton>
-            <MenuItem>
-              <Typography variant="h6" noWrap>
-                <Link className={classes.menuItemLink} to="/">
-                  {logoHome}
-                </Link>
-              </Typography>
-            </MenuItem>
+	return (
+		<ThemeProvider theme={theme}>
+			<div className={classes.root}>
+				<CssBaseline />
+				<AppBar
+					color="inherit"
+					position="fixed"
+					className={clsx(classes.appBar, {
+						[classes.appBarShift]: open,
+					})}
+				>
+					<Toolbar>
+						<IconButton
+							aria-label="open drawer"
+							onClick={handleDrawerOpen}
+							edge="start"
+							className={clsx(
+								classes.menuButton,
+								open && classes.hide
+							)}
+						>
+							<MenuIcon />
+						</IconButton>
+						<MenuItem>
+							<Typography variant="h6" noWrap>
+								<Link className={classes.menuItemLink} to="/">
+									{logoHome}
+								</Link>
+							</Typography>
+						</MenuItem>
 
-            <div className={classes.menuItems}>
-              <MenuItem>
-                <Link className={classes.menuItemLink} to="/backend">
-                  {backEnd}
-                </Link>
-              </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/frontend">
-                  {frontEnd}
-                </Link>
-              </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/computers">
-                  {sysAdmin}
-                </Link>
-              </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/marketing">
-                  {marketing}
-                </Link>
-              </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/personality">
-                  {personality}
-                </Link>
-              </MenuItem>
-            </div>
+						<div className={classes.menuItems}>
+							<MenuItem>
+								<Link
+									className={classes.menuItemLink}
+									to="/backend"
+								>
+									{backEnd}
+								</Link>
+							</MenuItem>
+							<MenuItem className={classes.menuItemLink}>
+								<Link
+									className={classes.menuItemLink}
+									to="/frontend"
+								>
+									{frontEnd}
+								</Link>
+							</MenuItem>
+							<MenuItem className={classes.menuItemLink}>
+								<Link
+									className={classes.menuItemLink}
+									to="/computers"
+								>
+									{sysAdmin}
+								</Link>
+							</MenuItem>
+							<MenuItem className={classes.menuItemLink}>
+								<Link
+									className={classes.menuItemLink}
+									to="/marketing"
+								>
+									{marketing}
+								</Link>
+							</MenuItem>
+							<MenuItem className={classes.menuItemLink}>
+								<Link
+									className={classes.menuItemLink}
+									to="/personality"
+								>
+									{personality}
+								</Link>
+							</MenuItem>
+							<MenuItem className={classes.menuItemLink}>
+								<Link
+									className={classes.menuItemLink}
+									to="/blog"
+								>
+									{blog}
+								</Link>
+							</MenuItem>
+						</div>
 
-            <div className={classes.grow}></div>
-            <FormControlLabel
-              label={themeColor}
-              control={
-                <Switch
-                  id="#flag-icon"
-                  onClick={toggleTheme}
-                  size="small"
-                  color="default"
-                  aria-label={themeColor}
-                />
-              }
-            />
+						<div className={classes.grow}></div>
+						<FormControlLabel
+							label={themeColor}
+							control={
+								<Switch
+									id="#flag-icon"
+									onClick={toggleTheme}
+									size="small"
+									color="default"
+									aria-label={themeColor}
+								/>
+							}
+						/>
 
-            <FormControl className={classes.formControl}>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={language}
-                onChange={changeLanguage}
-              >
-                <MenuItem value="english">
-                  <span role="img" aria-labelledby="#flag-icon">
-                    {flag}
-                  </span>
-                  <span className={classes.languageSpan}>English</span>
-                </MenuItem>
-                <MenuItem value="russian">
-                  <span role="img" aria-labelledby="#flag-icon">
-                    {flag}
-                  </span>
-                  <span className={classes.languageSpan}>Russian</span>
-                </MenuItem>
-                <MenuItem value="czech">
-                  <span role="img" aria-labelledby="#flag-icon">
-                    {flag}
-                  </span>
-                  <span className={classes.languageSpan}>Czech</span>
-                </MenuItem>
-              </Select>
-            </FormControl>
-          </Toolbar>
-        </AppBar>
-        <Drawer
-          className={classes.drawer}
-          variant="persistent"
-          anchor="left"
-          open={open}
-          classes={{
-            paper: classes.drawerPaper,
-          }}
-        >
-          <div className={classes.drawerHeader}>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === 'ltr' ? (
-                <ChevronLeftIcon />
-              ) : (
-                <ChevronRightIcon />
-              )}
-            </IconButton>
-          </div>
-          <Divider />
-          <List>
-            <Link className={classes.drawerLink} to="/">
-              <ListItem button>
-                <ListItemIcon>
-                  <EmojiPeopleOutlined />
-                </ListItemIcon>
-                <ListItemText primary={introduction} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/backend">
-              <ListItem button>
-                <ListItemIcon>
-                  <DnsOutlined />
-                </ListItemIcon>
-                <ListItemText primary={backEnd} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/frontend">
-              <ListItem button>
-                <ListItemIcon>
-                  <DevicesOtherOutlined />
-                </ListItemIcon>
-                <ListItemText primary={frontEnd} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/computers">
-              <ListItem button>
-                <ListItemIcon>
-                  <ImportantDevicesOutlined />
-                </ListItemIcon>
-                <ListItemText primary={sysAdmin} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/marketing">
-              <ListItem button>
-                <ListItemIcon>
-                  <InsertChartOutlined />
-                </ListItemIcon>
-                <ListItemText primary={marketing} />
-              </ListItem>
-            </Link>
-          </List>
-          <Divider />
-          <List>
-            <Link className={classes.drawerLink} to="/personality">
-              <ListItem button>
-                <ListItemIcon>
-                  <SentimentSatisfied />
-                </ListItemIcon>
-                <ListItemText primary={personality} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/hobbies">
-              <ListItem button>
-                <ListItemIcon>
-                  <FavoriteBorderOutlined />
-                </ListItemIcon>
-                <ListItemText primary={hobbies} />
-              </ListItem>
-            </Link>
-          </List>
-        </Drawer>
-        <main
-          className={clsx(classes.content, {
-            [classes.contentShift]: open,
-          })}
-        >
-          <div className={classes.drawerHeader} />
+						<FormControl className={classes.formControl}>
+							<Select
+								labelId="demo-simple-select-label"
+								id="demo-simple-select"
+								value={language}
+								onChange={changeLanguage}
+							>
+								<MenuItem value="english">
+									<span
+										role="img"
+										aria-labelledby="#flag-icon"
+									>
+										{flag}
+									</span>
+									<span className={classes.languageSpan}>
+										English
+									</span>
+								</MenuItem>
+								<MenuItem value="russian">
+									<span
+										role="img"
+										aria-labelledby="#flag-icon"
+									>
+										{flag}
+									</span>
+									<span className={classes.languageSpan}>
+										Russian
+									</span>
+								</MenuItem>
+								<MenuItem value="czech">
+									<span
+										role="img"
+										aria-labelledby="#flag-icon"
+									>
+										{flag}
+									</span>
+									<span className={classes.languageSpan}>
+										Czech
+									</span>
+								</MenuItem>
+							</Select>
+						</FormControl>
+					</Toolbar>
+				</AppBar>
+				<Drawer
+					className={classes.drawer}
+					variant="persistent"
+					anchor="left"
+					open={open}
+					classes={{
+						paper: classes.drawerPaper,
+					}}
+				>
+					<div className={classes.drawerHeader}>
+						<IconButton onClick={handleDrawerClose}>
+							{theme.direction === 'ltr' ? (
+								<ChevronLeftIcon />
+							) : (
+								<ChevronRightIcon />
+							)}
+						</IconButton>
+					</div>
+					<Divider />
+					<List>
+						<Link className={classes.drawerLink} to="/">
+							<ListItem button>
+								<ListItemIcon>
+									<EmojiPeopleOutlined />
+								</ListItemIcon>
+								<ListItemText primary={introduction} />
+							</ListItem>
+						</Link>
+						<Link className={classes.drawerLink} to="/backend">
+							<ListItem button>
+								<ListItemIcon>
+									<DnsOutlined />
+								</ListItemIcon>
+								<ListItemText primary={backEnd} />
+							</ListItem>
+						</Link>
+						<Link className={classes.drawerLink} to="/frontend">
+							<ListItem button>
+								<ListItemIcon>
+									<DevicesOtherOutlined />
+								</ListItemIcon>
+								<ListItemText primary={frontEnd} />
+							</ListItem>
+						</Link>
+						<Link className={classes.drawerLink} to="/computers">
+							<ListItem button>
+								<ListItemIcon>
+									<ImportantDevicesOutlined />
+								</ListItemIcon>
+								<ListItemText primary={sysAdmin} />
+							</ListItem>
+						</Link>
+						<Link className={classes.drawerLink} to="/marketing">
+							<ListItem button>
+								<ListItemIcon>
+									<InsertChartOutlined />
+								</ListItemIcon>
+								<ListItemText primary={marketing} />
+							</ListItem>
+						</Link>
+					</List>
+					<Divider />
+					<List>
+						<Link className={classes.drawerLink} to="/personality">
+							<ListItem button>
+								<ListItemIcon>
+									<SentimentSatisfied />
+								</ListItemIcon>
+								<ListItemText primary={personality} />
+							</ListItem>
+						</Link>
+						<Link className={classes.drawerLink} to="/hobbies">
+							<ListItem button>
+								<ListItemIcon>
+									<FavoriteBorderOutlined />
+								</ListItemIcon>
+								<ListItemText primary={hobbies} />
+							</ListItem>
+						</Link>
+					</List>
+				</Drawer>
+				<main
+					className={clsx(classes.content, {
+						[classes.contentShift]: open,
+					})}
+				>
+					<div className={classes.drawerHeader} />
 
-          <Content />
-        </main>
-      </div>
-    </ThemeProvider>
-  );
+					<Content />
+				</main>
+			</div>
+		</ThemeProvider>
+	);
 }
