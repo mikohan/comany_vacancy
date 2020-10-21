@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { ITodo, fetchTodos } from '../../store/actions/actions';
+import {
+	ITodo,
+	IPost,
+	fetchPosts,
+	fetchTodos,
+} from '../../store/actions/actions';
 import { IStoreState } from '../../store/reducers/index';
 
 import List from '@material-ui/core/List';
@@ -15,26 +20,28 @@ import { Container, Grid, Paper } from '@material-ui/core';
 
 interface Props {
 	todos: ITodo[];
+	posts: IPost[];
 	fetchTodos(): any;
+	fetchPosts(): any;
 }
 
 function Posts(props: Props) {
 	const classes = useStyles();
 	useEffect(() => {
-		props.fetchTodos();
+		props.fetchPosts();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
-	const { todos } = props;
+	const { todos, posts } = props;
 	return (
 		<Container>
 			<Grid container>
 				<Grid xs={12}>
 					<Paper>
 						<List className={classes.root}>
-							{todos.map((todo) => (
+							{posts.map((post) => (
 								<React.Fragment>
 									<ListItem
-										key={todo.id}
+										key={post.id}
 										alignItems="flex-start"
 									>
 										<ListItemAvatar>
@@ -44,7 +51,7 @@ function Posts(props: Props) {
 											/>
 										</ListItemAvatar>
 										<ListItemText
-											primary={todo.title.toUpperCase()}
+											primary={post.title.toUpperCase()}
 											secondary={
 												<React.Fragment>
 													<Typography
@@ -79,8 +86,11 @@ function Posts(props: Props) {
 	);
 }
 
-const mapStateToProps = ({ todos }: IStoreState): { todos: ITodo[] } => {
-	return { todos: todos };
+const mapStateToProps = ({
+	todos,
+	posts,
+}: IStoreState): { todos: ITodo[]; posts: IPost[] } => {
+	return { todos: todos, posts: posts };
 };
 
-export default connect(mapStateToProps, { fetchTodos })(Posts);
+export default connect(mapStateToProps, { fetchTodos, fetchPosts })(Posts);
