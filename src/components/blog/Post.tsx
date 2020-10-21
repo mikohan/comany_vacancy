@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { ITodo, IPost, fetchPosts } from '../../store/actions';
+import { IPost } from '../../store/actions';
+import { fetchPost } from '../../store/actions';
 import { motion } from 'framer-motion';
 import { durationPage } from '../../config';
 import { IStoreState } from '../../store/reducers/index';
@@ -10,17 +11,14 @@ import { useStyles } from '../../styles/BlogStyles';
 import { Container, Grid, Paper } from '@material-ui/core';
 import { useParams } from 'react-router-dom';
 
-import _ from 'lodash';
-
 /*
 Heeds implement pagination or load more stuff on this page 
 */
 interface Props {
-	todos: ITodo[];
 	posts: IPost[];
-	post: IPost;
-	fetchTodos(): any;
-	fetchPosts(): any;
+	singlePost: IPost;
+	id: string;
+	fetchPost(id: string): any;
 }
 
 interface ParamTypes {
@@ -29,8 +27,14 @@ interface ParamTypes {
 
 function Post(props: Props) {
 	const classes = useStyles();
-	const { post } = props;
+	const { singlePost } = props;
 
+	const { id } = useParams<ParamTypes>();
+
+	useEffect(() => {
+		props.fetchPost(id);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 	return (
 		<motion.div
 			exit={{ opacity: 0 }}
@@ -42,7 +46,23 @@ function Post(props: Props) {
 				<Grid container>
 					<Grid item xs={12}>
 						<Paper>
-							<Typography variant="h1"></Typography>
+							<Typography variant="h1">
+								{singlePost.title}
+							</Typography>
+							<Paper variant="outlined">
+								<img
+									className={classes.blogImage}
+									src={singlePost.image}
+									alt={singlePost.title}
+								/>
+							</Paper>
+							<Paper>
+								<div
+									dangerouslySetInnerHTML={{
+										__html: singlePost.text,
+									}}
+								/>
+							</Paper>
 						</Paper>
 					</Grid>
 				</Grid>
@@ -51,12 +71,10 @@ function Post(props: Props) {
 	);
 }
 
-const mapStateToProps = (
-	{ posts }: IStoreState,
-	ownProps: any
-): { post: any } => {
-	console.log(ownProps);
-	return { post: _.find(posts, 'id', ownProps.match.params.id) };
+const mapStateToProps = ({
+	singlePost,
+}: IStoreState): { singlePost: IPost } => {
+	return { singlePost: singlePost };
 };
 
-export default connect(mapStateToProps)(Post);
+export default connect(mapStateToProps, { fetchPost })(Post);

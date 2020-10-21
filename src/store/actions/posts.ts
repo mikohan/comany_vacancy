@@ -9,7 +9,7 @@ interface ICategories {
 	name: string;
 }
 
-interface IServerResponse {
+export interface IServerResponse {
 	count: 6;
 	next: string | null;
 	previous: string | null;
@@ -34,7 +34,7 @@ export interface IFetchPostAction {
 
 export const fetchPosts = () => {
 	return async (dispatch: Dispatch) => {
-		const response = await axios.get<IServerResponse>(blogUrl);
+		const response = await axios.get<IServerResponse>(`${blogUrl}/`);
 		const res = await response.data.results;
 
 		dispatch<IFetchPostAction>({

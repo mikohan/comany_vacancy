@@ -47,12 +47,9 @@ function Posts(props: Props) {
 						<Paper>
 							<List className={classes.root}>
 								{posts.map((post) => (
-									<React.Fragment>
+									<React.Fragment key={post.id}>
 										<Link to={`/blog/${post.id}`}>
-											<ListItem
-												key={post.id}
-												alignItems="flex-start"
-											>
+											<ListItem alignItems="flex-start">
 												<ListItemAvatar>
 													<Avatar
 														alt="Remy Sharp"

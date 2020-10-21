@@ -13,5 +13,8 @@ export const useStyles = makeStyles((theme: Theme) =>
 		inline: {
 			display: 'inline',
 		},
+		blogImage: {
+			width: '100%',
+		},
 	})
 );
