@@ -10,7 +10,7 @@ export interface ITodo {
 	completed: boolean;
 }
 
-export interface FetchTodosAction {
+export interface IFetchTodosAction {
 	type: ActionTypes.FETCH_TODOS;
 	payload: ITodo[];
 }
@@ -19,7 +19,7 @@ export const fetchTodos = () => {
 	return async (dispatch: Dispatch) => {
 		const response = await axios.get<ITodo[]>(url);
 
-		dispatch<FetchTodosAction>({
+		dispatch<IFetchTodosAction>({
 			type: ActionTypes.FETCH_TODOS,
 			payload: response.data,
 		});

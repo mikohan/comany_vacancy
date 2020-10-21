@@ -1,5 +1,7 @@
-import React from 'react';
-import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { ITodo, fetchTodos } from '../../store/actions/actions';
+import { IStoreState } from '../../store/reducers/index';
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -8,106 +10,77 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
+import { useStyles } from '../../styles/BlogStyles';
+import { Container, Grid, Paper } from '@material-ui/core';
 
-interface Props {}
-
-const useStyles = makeStyles((theme: Theme) =>
-	createStyles({
-		root: {
-			width: '100%',
-			maxWidth: '36ch',
-			backgroundColor: theme.palette.background.paper,
-		},
-		inline: {
-			display: 'inline',
-		},
-	})
-);
+interface Props {
+	todos: ITodo[];
+	fetchTodos(): any;
+}
 
 function Posts(props: Props) {
 	const classes = useStyles();
+	useEffect(() => {
+		props.fetchTodos();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
+	const { todos } = props;
 	return (
-		<List className={classes.root}>
-			<ListItem alignItems="flex-start">
-				<ListItemAvatar>
-					<Avatar
-						alt="Remy Sharp"
-						src="/static/images/avatar/1.jpg"
-					/>
-				</ListItemAvatar>
-				<ListItemText
-					primary="Brunch this weekend?"
-					secondary={
-						<React.Fragment>
-							<Typography
-								component="span"
-								variant="body2"
-								className={classes.inline}
-								color="textPrimary"
-							>
-								Ali Connors
-							</Typography>
-							{
-								" — I'll be in your neighborhood doing errands this…"
-							}
-						</React.Fragment>
-					}
-				/>
-			</ListItem>
-			<Divider variant="inset" component="li" />
-			<ListItem alignItems="flex-start">
-				<ListItemAvatar>
-					<Avatar
-						alt="Travis Howard"
-						src="/static/images/avatar/2.jpg"
-					/>
-				</ListItemAvatar>
-				<ListItemText
-					primary="Summer BBQ"
-					secondary={
-						<React.Fragment>
-							<Typography
-								component="span"
-								variant="body2"
-								className={classes.inline}
-								color="textPrimary"
-							>
-								to Scott, Alex, Jennifer
-							</Typography>
-							{" — Wish I could come, but I'm out of town this…"}
-						</React.Fragment>
-					}
-				/>
-			</ListItem>
-			<Divider variant="inset" component="li" />
-			<ListItem alignItems="flex-start">
-				<ListItemAvatar>
-					<Avatar
-						alt="Cindy Baker"
-						src="/static/images/avatar/3.jpg"
-					/>
-				</ListItemAvatar>
-				<ListItemText
-					primary="Oui Oui"
-					secondary={
-						<React.Fragment>
-							<Typography
-								component="span"
-								variant="body2"
-								className={classes.inline}
-								color="textPrimary"
-							>
-								Sandra Adams
-							</Typography>
-							{
-								' — Do you have Paris recommendations? Have you ever…'
-							}
-						</React.Fragment>
-					}
-				/>
-			</ListItem>
-		</List>
+		<Container>
+			<Grid container>
+				<Grid xs={12}>
+					<Paper>
+						<List className={classes.root}>
+							{todos.map((todo) => (
+								<React.Fragment>
+									<ListItem
+										key={todo.id}
+										alignItems="flex-start"
+									>
+										<ListItemAvatar>
+											<Avatar
+												alt="Remy Sharp"
+												src="/static/images/avatar/1.jpg"
+											/>
+										</ListItemAvatar>
+										<ListItemText
+											primary={todo.title.toUpperCase()}
+											secondary={
+												<React.Fragment>
+													<Typography
+														component="span"
+														variant="body2"
+														className={
+															classes.inline
+														}
+														color="textPrimary"
+													>
+														Ali Connors
+													</Typography>
+													{
+														" — I'll be in your neighborhood doing errands this…"
+													}
+												</React.Fragment>
+											}
+										/>
+									</ListItem>
+									<Divider
+										className={classes.listDivider}
+										variant="inset"
+										component="li"
+									/>
+								</React.Fragment>
+							))}
+						</List>
+					</Paper>
+				</Grid>
+			</Grid>
+		</Container>
 	);
 }
 
-export default Posts;
+const mapStateToProps = ({ todos }: IStoreState): { todos: ITodo[] } => {
+	return { todos: todos };
+};
+
+export default connect(mapStateToProps, { fetchTodos })(Posts);
