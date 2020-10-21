@@ -34,7 +34,7 @@ function Post(props: Props) {
 	useEffect(() => {
 		props.fetchPost(id);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [singlePost]);
 	return (
 		<motion.div
 			exit={{ opacity: 0 }}
