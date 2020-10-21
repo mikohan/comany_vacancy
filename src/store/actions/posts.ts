@@ -2,13 +2,7 @@ import axios from 'axios';
 import { Dispatch } from 'redux';
 import { ActionTypes } from './actionTypes';
 
-import { url, blogUrl } from '../../config';
-
-export interface ITodo {
-	id: number;
-	title: string;
-	completed: boolean;
-}
+import { blogUrl } from '../../config';
 
 interface ICategories {
 	id: number;
@@ -37,22 +31,6 @@ export interface IFetchPostAction {
 	type: ActionTypes.FETCH_POSTS;
 	payload: IPost[];
 }
-
-export interface IFetchTodosAction {
-	type: ActionTypes.FETCH_TODOS;
-	payload: ITodo[];
-}
-
-export const fetchTodos = () => {
-	return async (dispatch: Dispatch) => {
-		const response = await axios.get<ITodo[]>(url);
-
-		dispatch<IFetchTodosAction>({
-			type: ActionTypes.FETCH_TODOS,
-			payload: response.data,
-		});
-	};
-};
 
 export const fetchPosts = () => {
 	return async (dispatch: Dispatch) => {

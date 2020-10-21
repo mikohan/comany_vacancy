@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { todosReducer } from '../reducers/todos';
 import { postReducer } from '../reducers/postReducer';
-import { ITodo, IPost } from '../actions/actions';
+import { ITodo, IPost } from '../actions';
 
 export interface IStoreState {
 	todos: ITodo[];

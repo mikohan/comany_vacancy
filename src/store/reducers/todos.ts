@@ -1,4 +1,4 @@
-import { ITodo, IFetchTodosAction } from '../actions/actions';
+import { ITodo, IFetchTodosAction } from '../actions';
 import { ActionTypes } from '../actions/actionTypes';
 
 export const todosReducer = (

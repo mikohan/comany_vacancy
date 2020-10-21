@@ -1,4 +1,4 @@
-import { IPost, IFetchPostAction } from '../actions/actions';
+import { IPost, IFetchPostAction } from '../actions';
 import { ActionTypes } from '../actions/actionTypes';
 
 export const postReducer = (state: IPost[] = [], action: IFetchPostAction) => {
