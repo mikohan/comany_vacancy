@@ -17,7 +17,6 @@ export const fetchPost = (id: string) => {
 		if (!getState || getState().posts.length === 0) {
 			const response = await axios.get<IPost>(`${blogUrl}/${id}/`);
 			post = response.data;
-			console.log('Post from API');
 		} else {
 			post = getState().posts.find((post: IPost) => +post.id === +id);
 		}
