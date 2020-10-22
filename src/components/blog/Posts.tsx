@@ -5,6 +5,7 @@ import {
 	IPost,
 	fetchPosts,
 	filterPosts,
+	fetchTodos,
 	ICategories,
 } from '../../store/actions';
 import { motion } from 'framer-motion';
@@ -30,18 +31,17 @@ Heeds implement pagination or load more stuff on this page
 interface Props {
 	todos: ITodo[];
 	posts: IPost[];
-
+	fetchTodos(): any;
 	fetchPosts(): any;
+	filterPosts(search: string): any;
 	categories: ICategories[];
 	search: string;
-	filterPosts: any;
 }
 
 function Posts(props: Props) {
 	const context = useContext(ThemeContext);
 	const { isDarkMode } = context;
 
-	// const classes = useStyles();
 	const classes = useStyles(isDarkMode)();
 
 	useEffect(() => {
@@ -51,7 +51,10 @@ function Posts(props: Props) {
 	}, []);
 	const { posts, categories } = props;
 
-	const handleSearch = (e: any) => {};
+	const handleSearch = (e: any) => {
+		console.log(e.target.value);
+		props.filterPosts(e.target.value);
+	};
 
 	return (
 		<motion.div
@@ -149,10 +152,17 @@ const mapStateToProps = ({
 	posts: IPost[];
 	search: string;
 } => {
-	const filtredPosts: IPost[] = posts.filter((post: IPost) =>
-		post.title.includes(search)
-	);
+	const filtredPosts: IPost[] = posts.filter((post: IPost) => {
+		console.log('In mapPropsToState', search);
+		// return post.title.includes(search);
+		return post.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+	});
+	console.log(filtredPosts);
 	return { categories: categories, posts: filtredPosts, search: search };
 };
 
-export default connect(mapStateToProps, { filterPosts, fetchPosts })(Posts);
+export default connect(mapStateToProps, {
+	fetchPosts,
+	fetchTodos,
+	filterPosts,
+})(Posts);

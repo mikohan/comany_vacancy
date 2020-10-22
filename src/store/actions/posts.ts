@@ -58,6 +58,7 @@ export const fetchPosts = () => {
 			type: ActionTypes.FETCH_POSTS,
 			payload: res,
 		});
+
 		dispatch<IFetchCategoryAction>({
 			type: ActionTypes.FETCH_CATEGORY,
 			payload: result,
@@ -70,9 +71,20 @@ export interface ISearchPostAction {
 	payload: string;
 }
 
-export const filterPosts = (search: string): ISearchPostAction => {
-	return {
-		type: ActionTypes.SEARCH_POST,
-		payload: search,
+export const filterPosts = (search: string) => {
+	return async (dispatch: Dispatch) => {
+		dispatch<ISearchPostAction>({
+			type: ActionTypes.SEARCH_POST,
+			payload: search,
+		});
 	};
 };
+
+// export const filterPosts = (search: string) => {
+// 	return async (dispatch: Dispatch) => {
+// 		dispatch<ISearchPostAction>({
+// 			type: ActionTypes.SEARCH_POST,
+// 			payload: search,
+// 		});
+// 	};
+// };
