@@ -102,7 +102,10 @@ function Posts(props: Props) {
 								<List className={classes.root}>
 									{posts.map((post) => (
 										<React.Fragment key={post.id}>
-											<Link to={`/blog/${post.id}`}>
+											<Link
+												className={classes.postsLink}
+												to={`/blog/${post.id}`}
+											>
 												<ListItem alignItems="flex-start">
 													<ListItemAvatar>
 														<Avatar

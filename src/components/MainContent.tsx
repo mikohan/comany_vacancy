@@ -16,6 +16,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ImportantDevicesOutlined from '@material-ui/icons/ImportantDevicesOutlined';
 import InsertChartOutlined from '@material-ui/icons/InsertChartOutlined';
 import SentimentSatisfied from '@material-ui/icons/SentimentSatisfiedOutlined';
+import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
 
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -313,6 +314,14 @@ export default function PersistentDrawerLeft(): JSX.Element {
 									<FavoriteBorderOutlined />
 								</ListItemIcon>
 								<ListItemText primary={hobbies} />
+							</ListItem>
+						</Link>
+						<Link className={classes.drawerLink} to="/blog">
+							<ListItem button>
+								<ListItemIcon>
+									<DescriptionOutlinedIcon />
+								</ListItemIcon>
+								<ListItemText primary={blog} />
 							</ListItem>
 						</Link>
 					</List>

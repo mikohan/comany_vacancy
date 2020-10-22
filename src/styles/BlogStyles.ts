@@ -21,6 +21,9 @@ export const useStyles = (isDarkMode: boolean) => {
 				color: isDarkMode ? 'white' : 'black',
 				textDecoration: 'none',
 			},
+			postsLink: {
+				textDecoration: 'none',
+			},
 			blogHeaderRow: {
 				padding: theme.spacing(3, 0),
 			},
