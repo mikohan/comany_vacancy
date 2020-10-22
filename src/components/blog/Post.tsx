@@ -34,7 +34,7 @@ function Post(props: Props) {
 	useEffect(() => {
 		props.fetchPost(id);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [singlePost]);
+	}, []);
 	return (
 		<motion.div
 			exit={{ opacity: 0 }}
@@ -73,6 +73,7 @@ function Post(props: Props) {
 
 const mapStateToProps = ({
 	singlePost,
+	posts,
 }: IStoreState): { singlePost: IPost } => {
 	return { singlePost: singlePost };
 };

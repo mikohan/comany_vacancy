@@ -12,12 +12,19 @@ export interface IFetchSinglePostAction {
 }
 
 export const fetchPost = (id: string) => {
-	return async (dispatch: Dispatch) => {
-		const response = await axios.get<IPost>(`${blogUrl}/${id}/`);
+	return async (dispatch: Dispatch, getState: any) => {
+		let post: IPost;
+		if (!getState || getState().posts.length === 0) {
+			const response = await axios.get<IPost>(`${blogUrl}/${id}/`);
+			post = response.data;
+			console.log('Post from API');
+		} else {
+			post = getState().posts.find((post: IPost) => +post.id === +id);
+		}
 
 		dispatch<IFetchSinglePostAction>({
 			type: ActionTypes.FETCH_POST,
-			payload: response.data,
+			payload: post,
 		});
 	};
 };
