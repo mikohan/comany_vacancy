@@ -204,7 +204,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
 										role="img"
 										aria-labelledby="#flag-icon"
 									>
-										{flag}
+										🇺🇸
 									</span>
 									<span className={classes.languageSpan}>
 										English
@@ -215,7 +215,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
 										role="img"
 										aria-labelledby="#flag-icon"
 									>
-										{flag}
+										🇷🇺
 									</span>
 									<span className={classes.languageSpan}>
 										Russian
@@ -226,7 +226,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
 										role="img"
 										aria-labelledby="#flag-icon"
 									>
-										{flag}
+										🇨🇿
 									</span>
 									<span className={classes.languageSpan}>
 										Czech
