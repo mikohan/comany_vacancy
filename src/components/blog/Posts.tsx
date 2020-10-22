@@ -150,7 +150,18 @@ const mapStateToProps = ({
 	search: string;
 } => {
 	const filtredPosts: IPost[] = posts.filter((post: IPost) => {
-		return post.title.toLowerCase().includes(search.toLowerCase());
+		const res: boolean = post.title
+			.toLowerCase()
+			.includes(search.toLowerCase());
+		const txt: boolean = post.text
+			.toLowerCase()
+			.includes(search.toLowerCase());
+		if (res) {
+			return res;
+		} else if (txt) {
+			return txt;
+		}
+
 		// return post.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
 	});
 
