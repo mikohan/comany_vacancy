@@ -4,4 +4,5 @@ export enum ActionTypes {
 	FETCH_TODOS,
 	FETCH_POSTS,
 	FETCH_POST,
+	FETCH_CATEGORY,
 }
