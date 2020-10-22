@@ -24,6 +24,7 @@ import { Container, Grid, Hidden, Input, Paper } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 import { ThemeContext } from '../../context/ThemeContext';
+import { translateText } from '../../translate/texts';
 
 /*
 Heeds implement pagination or load more stuff on this page 
@@ -41,6 +42,9 @@ interface Props {
 function Posts(props: Props) {
 	const context = useContext(ThemeContext);
 	const { isDarkMode } = context;
+	let { language } = context;
+
+	const { blog_latestNews } = translateText[language];
 
 	const classes = useStyles(isDarkMode)();
 
@@ -74,7 +78,7 @@ function Posts(props: Props) {
 				<Grid className={classes.blogHeaderRow} container spacing={4}>
 					<Grid item xs={10}>
 						<Typography className={classes.blogHeader} variant="h1">
-							Latest News
+							{blog_latestNews}
 						</Typography>
 					</Grid>
 					<Grid item xs={2}>
