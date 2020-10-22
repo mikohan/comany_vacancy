@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { connect } from 'react-redux';
 import {
 	ITodo,
@@ -6,6 +6,7 @@ import {
 	fetchPosts,
 	filterPosts,
 	ICategories,
+	filterPostsCategories,
 } from '../../store/actions';
 import { motion } from 'framer-motion';
 import { durationPage } from '../../config';
@@ -32,13 +33,12 @@ interface Props {
 	posts: IPost[];
 	fetchPosts(): any;
 	filterPosts(search: string): any;
+	filterPostsCategories(id: number): any;
 	categories: ICategories[];
 	search: string;
 }
 
 function Posts(props: Props) {
-	const [srch, setSrch] = useState('');
-
 	const context = useContext(ThemeContext);
 	const { isDarkMode } = context;
 
@@ -53,6 +53,14 @@ function Posts(props: Props) {
 
 	const handleSearch = (e: any) => {
 		props.filterPosts(e.target.value);
+	};
+
+	const handleCategory = (id: number) => {
+		props.filterPostsCategories(id);
+	};
+
+	const handleSearchFocus = () => {
+		props.filterPostsCategories(0);
 	};
 
 	return (
@@ -73,6 +81,7 @@ function Posts(props: Props) {
 						<Input
 							name="search"
 							placeholder="Search..."
+							onFocus={handleSearchFocus}
 							onChange={handleSearch}
 						/>
 					</Grid>
@@ -141,6 +150,10 @@ function Posts(props: Props) {
 									{categories.map((category: ICategories) => (
 										<ListItem key={category.id}>
 											<ListItemText
+												className={classes.categoryList}
+												onClick={() =>
+													handleCategory(category.id)
+												}
 												primary={category.name}
 											/>
 										</ListItem>
@@ -159,31 +172,52 @@ const mapStateToProps = ({
 	categories,
 	posts,
 	search,
+	catFilter,
 }: IStoreState): {
 	categories: ICategories[];
 	posts: IPost[];
 	search: string;
+	catFilter: number;
 } => {
-	const filtredPosts: IPost[] = posts.filter((post: IPost) => {
-		const res: boolean = post.title
-			.toLowerCase()
-			.includes(search.toLowerCase());
-		const txt: boolean = post.text
-			.toLowerCase()
-			.includes(search.toLowerCase());
-		if (res) {
-			return res;
-		} else if (txt) {
-			return txt;
-		}
+	let filtredPosts: IPost[];
 
-		return post.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
-	});
+	if (catFilter !== 0) {
+		filtredPosts = posts.filter((post: IPost) => {
+			const res = post.categories.filter(
+				(cat: any) => cat.id === catFilter
+			);
+			return res.length > 0;
+		});
+	} else {
+		filtredPosts = posts.filter((post: IPost) => {
+			const res: boolean = post.title
+				.toLowerCase()
+				.includes(search.toLowerCase());
+			const txt: boolean = post.text
+				.toLowerCase()
+				.includes(search.toLowerCase());
+			if (res) {
+				return res;
+			} else if (txt) {
+				return txt;
+			}
 
-	return { categories: categories, posts: filtredPosts, search: search };
+			return (
+				post.title.toLowerCase().indexOf(search.toLowerCase()) !== -1
+			);
+		});
+	}
+
+	return {
+		categories: categories,
+		posts: filtredPosts,
+		search: search,
+		catFilter: catFilter,
+	};
 };
 
 export default connect(mapStateToProps, {
 	fetchPosts,
 	filterPosts,
+	filterPostsCategories,
 })(Posts);

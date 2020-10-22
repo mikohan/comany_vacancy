@@ -27,6 +27,9 @@ export const useStyles = (isDarkMode: boolean) => {
 			blogHeader: {
 				fontSize: '3rem',
 			},
+			categoryList: {
+				cursor: 'pointer',
+			},
 		};
 	});
 };

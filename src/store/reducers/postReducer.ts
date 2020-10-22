@@ -4,6 +4,7 @@ import {
 	ICategories,
 	IFetchCategoryAction,
 	ISearchPostAction,
+	IFilterCategoryAction,
 } from '../actions/posts';
 
 export const postReducer = (state: IPost[] = [], action: IFetchPostAction) => {
@@ -34,6 +35,18 @@ export const searchPostReducer = (
 ) => {
 	switch (action.type) {
 		case ActionTypes.SEARCH_POST:
+			return action.payload;
+		default:
+			return state;
+	}
+};
+
+export const filterCategoryReducer = (
+	state: number = 0,
+	action: IFilterCategoryAction
+) => {
+	switch (action.type) {
+		case ActionTypes.FILTER_CATEGORY:
 			return action.payload;
 		default:
 			return state;

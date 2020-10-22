@@ -71,6 +71,11 @@ export interface ISearchPostAction {
 	payload: string;
 }
 
+export interface IFilterCategoryAction {
+	type: ActionTypes.FILTER_CATEGORY;
+	payload: number;
+}
+
 export const filterPosts = (search: string) => {
 	return async (dispatch: Dispatch) => {
 		dispatch<ISearchPostAction>({
@@ -80,11 +85,11 @@ export const filterPosts = (search: string) => {
 	};
 };
 
-// export const filterPosts = (search: string) => {
-// 	return async (dispatch: Dispatch) => {
-// 		dispatch<ISearchPostAction>({
-// 			type: ActionTypes.SEARCH_POST,
-// 			payload: search,
-// 		});
-// 	};
-// };
+export const filterPostsCategories = (id: number) => {
+	return async (dispatch: Dispatch) => {
+		dispatch<IFilterCategoryAction>({
+			type: ActionTypes.FILTER_CATEGORY,
+			payload: id,
+		});
+	};
+};

@@ -4,6 +4,7 @@ import {
 	postReducer,
 	categoryReducer,
 	searchPostReducer,
+	filterCategoryReducer,
 } from '../reducers/postReducer';
 import { postSingleReducer } from '../reducers/PostSingleReducer';
 import { ITodo, IPost, ICategories } from '../actions';
@@ -14,6 +15,7 @@ export interface IStoreState {
 	singlePost: IPost;
 	categories: ICategories[];
 	search: string;
+	catFilter: number;
 }
 
 const rootReducer = combineReducers<IStoreState>({
@@ -22,6 +24,7 @@ const rootReducer = combineReducers<IStoreState>({
 	singlePost: postSingleReducer,
 	categories: categoryReducer,
 	search: searchPostReducer,
+	catFilter: filterCategoryReducer,
 });
 
 export default rootReducer;
