@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import { connect } from 'react-redux';
 import {
 	ITodo,
@@ -37,6 +37,8 @@ interface Props {
 }
 
 function Posts(props: Props) {
+	const [srch, setSrch] = useState('');
+
 	const context = useContext(ThemeContext);
 	const { isDarkMode } = context;
 
@@ -61,66 +63,79 @@ function Posts(props: Props) {
 			transition={{ duration: durationPage }}
 		>
 			<Container>
-				<Grid container spacing={2}>
-					<Grid item xs={12}>
+				<Grid className={classes.blogHeaderRow} container spacing={4}>
+					<Grid item xs={10}>
+						<Typography className={classes.blogHeader} variant="h1">
+							Latest News
+						</Typography>
+					</Grid>
+					<Grid item xs={2}>
 						<Input
 							name="search"
 							placeholder="Search..."
 							onChange={handleSearch}
 						/>
 					</Grid>
+				</Grid>
+				<Grid container spacing={4}>
 					<Grid item xs={12} sm={10}>
-						<Paper>
-							<List className={classes.root}>
-								{posts.map((post) => (
-									<React.Fragment key={post.id}>
-										<Link to={`/blog/${post.id}`}>
-											<ListItem alignItems="flex-start">
-												<ListItemAvatar>
-													<Avatar
-														alt="Remy Sharp"
-														src="/static/images/avatar/1.jpg"
-													/>
-												</ListItemAvatar>
-												<ListItemText
-													className={
-														classes.postsTitles
-													}
-													color="inherit"
-													primary={post.title.toUpperCase()}
-													secondary={
-														<React.Fragment>
-															<Typography
-																component="span"
-																variant="body2"
-																className={
-																	classes.inline
+						{posts.length > 0 ? (
+							<Paper>
+								<List className={classes.root}>
+									{posts.map((post) => (
+										<React.Fragment key={post.id}>
+											<Link to={`/blog/${post.id}`}>
+												<ListItem alignItems="flex-start">
+													<ListItemAvatar>
+														<Avatar
+															alt="Remy Sharp"
+															src="/static/images/avatar/1.jpg"
+														/>
+													</ListItemAvatar>
+													<ListItemText
+														className={
+															classes.postsTitles
+														}
+														color="inherit"
+														primary={post.title.toUpperCase()}
+														secondary={
+															<React.Fragment>
+																<Typography
+																	component="span"
+																	variant="body2"
+																	className={
+																		classes.inline
+																	}
+																	color="textPrimary"
+																>
+																	Ali Connors
+																</Typography>
+																{
+																	" — I'll be in your neighborhood doing errands this…"
 																}
-																color="textPrimary"
-															>
-																Ali Connors
-															</Typography>
-															{
-																" — I'll be in your neighborhood doing errands this…"
-															}
-														</React.Fragment>
-													}
-												/>
-											</ListItem>
-										</Link>
-										<Divider
-											className={classes.listDivider}
-											variant="inset"
-											component="li"
-										/>
-									</React.Fragment>
-								))}
-							</List>
-						</Paper>
+															</React.Fragment>
+														}
+													/>
+												</ListItem>
+											</Link>
+											<Divider
+												className={classes.listDivider}
+												variant="inset"
+												component="li"
+											/>
+										</React.Fragment>
+									))}
+								</List>
+							</Paper>
+						) : (
+							<Typography variant="h2">
+								No search results
+							</Typography>
+						)}
 					</Grid>
 					<Hidden xsDown>
 						<Grid item sm={2}>
-							<Typography variant="h6">Text only</Typography>
+							<Typography variant="h6">Categories</Typography>
 							<div>
 								<List dense>
 									{categories.map((category: ICategories) => (
@@ -162,7 +177,7 @@ const mapStateToProps = ({
 			return txt;
 		}
 
-		// return post.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+		return post.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
 	});
 
 	return { categories: categories, posts: filtredPosts, search: search };

@@ -21,6 +21,12 @@ export const useStyles = (isDarkMode: boolean) => {
 				color: isDarkMode ? 'white' : 'black',
 				textDecoration: 'none',
 			},
+			blogHeaderRow: {
+				padding: theme.spacing(3, 0),
+			},
+			blogHeader: {
+				fontSize: '3rem',
+			},
 		};
 	});
 };
