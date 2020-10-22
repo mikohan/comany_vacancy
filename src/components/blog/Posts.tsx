@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { ITodo, IPost, fetchPosts, fetchTodos } from '../../store/actions';
+import {
+	ITodo,
+	IPost,
+	fetchPosts,
+	fetchTodos,
+	ICategories,
+} from '../../store/actions';
 import { motion } from 'framer-motion';
 import { durationPage } from '../../config';
 import { IStoreState } from '../../store/reducers/index';
@@ -24,16 +30,18 @@ interface Props {
 	posts: IPost[];
 	fetchTodos(): any;
 	fetchPosts(): any;
+	categories: ICategories[];
 }
 
 function Posts(props: Props) {
 	const classes = useStyles();
 	useEffect(() => {
 		props.fetchPosts();
-		// props.fetchTodos();
+
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
-	const { posts } = props;
+	const { posts, categories } = props;
+
 	return (
 		<motion.div
 			exit={{ opacity: 0 }}
@@ -43,7 +51,7 @@ function Posts(props: Props) {
 		>
 			<Container>
 				<Grid container>
-					<Grid item xs={12}>
+					<Grid item xs={10}>
 						<Paper>
 							<List className={classes.root}>
 								{posts.map((post) => (
@@ -88,6 +96,19 @@ function Posts(props: Props) {
 							</List>
 						</Paper>
 					</Grid>
+
+					<Grid item xs={2} md={6}>
+						<Typography variant="h6">Text only</Typography>
+						<div>
+							<List dense>
+								{categories.map((category: ICategories) => (
+									<ListItem key={category.id}>
+										<ListItemText primary={category.name} />
+									</ListItem>
+								))}
+							</List>
+						</div>
+					</Grid>
 				</Grid>
 			</Container>
 		</motion.div>
@@ -95,10 +116,10 @@ function Posts(props: Props) {
 }
 
 const mapStateToProps = ({
-	todos,
+	categories,
 	posts,
-}: IStoreState): { todos: ITodo[]; posts: IPost[] } => {
-	return { todos: todos, posts: posts };
+}: IStoreState): { categories: ICategories[]; posts: IPost[] } => {
+	return { categories: categories, posts: posts };
 };
 
 export default connect(mapStateToProps, { fetchTodos, fetchPosts })(Posts);

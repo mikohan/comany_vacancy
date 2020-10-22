@@ -3,6 +3,7 @@ import { Dispatch } from 'redux';
 import { ActionTypes } from './actionTypes';
 
 import { blogUrl } from '../../config';
+import { onlyUnique } from '../helpers';
 
 export interface ICategories {
 	id: number;
@@ -44,6 +45,15 @@ export const fetchPosts = () => {
 		const categories: any = res.map((cat: IPost): any => {
 			return cat.categories;
 		});
+		console.log(categories.flat(), 'In action');
+		const result: any = Array.from(
+			new Set(categories.flat().map((s: any) => s.id))
+		).map((id: any) => {
+			return {
+				id: id,
+				name: categories.flat().find((s: any) => s.id === id).name,
+			};
+		});
 
 		dispatch<IFetchPostAction>({
 			type: ActionTypes.FETCH_POSTS,
@@ -51,7 +61,7 @@ export const fetchPosts = () => {
 		});
 		dispatch<IFetchCategoryAction>({
 			type: ActionTypes.FETCH_CATEGORY,
-			payload: categories.flat(),
+			payload: result,
 		});
 	};
 };
