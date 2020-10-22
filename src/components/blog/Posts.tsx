@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { connect } from 'react-redux';
 import {
 	ITodo,
@@ -22,6 +22,8 @@ import { useStyles } from '../../styles/BlogStyles';
 import { Container, Grid, Hidden, Input, Paper } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
+import { ThemeContext } from '../../context/ThemeContext';
+
 /*
 Heeds implement pagination or load more stuff on this page 
 */
@@ -36,7 +38,12 @@ interface Props {
 }
 
 function Posts(props: Props) {
-	const classes = useStyles();
+	const context = useContext(ThemeContext);
+	const { isDarkMode } = context;
+
+	// const classes = useStyles();
+	const classes = useStyles(isDarkMode)();
+
 	useEffect(() => {
 		props.fetchPosts();
 
@@ -44,9 +51,7 @@ function Posts(props: Props) {
 	}, []);
 	const { posts, categories } = props;
 
-	const handleSearch = (e: any) => {
-		console.log(e.target.value);
-	};
+	const handleSearch = (e: any) => {};
 
 	return (
 		<motion.div
@@ -78,6 +83,10 @@ function Posts(props: Props) {
 													/>
 												</ListItemAvatar>
 												<ListItemText
+													className={
+														classes.postsTitles
+													}
+													color="inherit"
 													primary={post.title.toUpperCase()}
 													secondary={
 														<React.Fragment>

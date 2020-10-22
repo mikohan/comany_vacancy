@@ -7,7 +7,7 @@ import { durationPage } from '../../config';
 import { IStoreState } from '../../store/reducers/index';
 
 import Typography from '@material-ui/core/Typography';
-import { useStyles } from '../../styles/BlogStyles';
+import { useStyles } from '../../styles/PostStyles';
 import { Container, Grid, Paper } from '@material-ui/core';
 import { useParams } from 'react-router-dom';
 
