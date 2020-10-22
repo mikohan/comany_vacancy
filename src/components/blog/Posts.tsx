@@ -5,7 +5,6 @@ import {
 	IPost,
 	fetchPosts,
 	filterPosts,
-	fetchTodos,
 	ICategories,
 } from '../../store/actions';
 import { motion } from 'framer-motion';
@@ -31,7 +30,6 @@ Heeds implement pagination or load more stuff on this page
 interface Props {
 	todos: ITodo[];
 	posts: IPost[];
-	fetchTodos(): any;
 	fetchPosts(): any;
 	filterPosts(search: string): any;
 	categories: ICategories[];
@@ -52,7 +50,6 @@ function Posts(props: Props) {
 	const { posts, categories } = props;
 
 	const handleSearch = (e: any) => {
-		console.log(e.target.value);
 		props.filterPosts(e.target.value);
 	};
 
@@ -153,16 +150,14 @@ const mapStateToProps = ({
 	search: string;
 } => {
 	const filtredPosts: IPost[] = posts.filter((post: IPost) => {
-		console.log('In mapPropsToState', search);
-		// return post.title.includes(search);
-		return post.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+		return post.title.toLowerCase().includes(search.toLowerCase());
+		// return post.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
 	});
-	console.log(filtredPosts);
+
 	return { categories: categories, posts: filtredPosts, search: search };
 };
 
 export default connect(mapStateToProps, {
 	fetchPosts,
-	fetchTodos,
 	filterPosts,
 })(Posts);
