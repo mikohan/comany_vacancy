@@ -44,7 +44,7 @@ function Posts(props: Props) {
 	const { isDarkMode } = context;
 	let { language } = context;
 
-	const { blog_latestNews } = translateText[language];
+	const { blog_latestNews, blog_search } = translateText[language];
 
 	const classes = useStyles(isDarkMode)();
 
@@ -84,7 +84,7 @@ function Posts(props: Props) {
 					<Grid item xs={2}>
 						<Input
 							name="search"
-							placeholder="Search..."
+							placeholder={`${blog_search}...`}
 							onFocus={handleSearchFocus}
 							onChange={handleSearch}
 						/>
