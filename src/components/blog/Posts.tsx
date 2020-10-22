@@ -4,7 +4,7 @@ import {
 	ITodo,
 	IPost,
 	fetchPosts,
-	fetchTodos,
+	filterPosts,
 	ICategories,
 } from '../../store/actions';
 import { motion } from 'framer-motion';
@@ -19,7 +19,7 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import { useStyles } from '../../styles/BlogStyles';
-import { Container, Grid, Paper } from '@material-ui/core';
+import { Container, Grid, Hidden, Input, Paper } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 /*
@@ -28,9 +28,11 @@ Heeds implement pagination or load more stuff on this page
 interface Props {
 	todos: ITodo[];
 	posts: IPost[];
-	fetchTodos(): any;
+
 	fetchPosts(): any;
 	categories: ICategories[];
+	search: string;
+	filterPosts: any;
 }
 
 function Posts(props: Props) {
@@ -42,6 +44,10 @@ function Posts(props: Props) {
 	}, []);
 	const { posts, categories } = props;
 
+	const handleSearch = (e: any) => {
+		console.log(e.target.value);
+	};
+
 	return (
 		<motion.div
 			exit={{ opacity: 0 }}
@@ -50,8 +56,15 @@ function Posts(props: Props) {
 			transition={{ duration: durationPage }}
 		>
 			<Container>
-				<Grid container>
-					<Grid item xs={10}>
+				<Grid container spacing={2}>
+					<Grid item xs={12}>
+						<Input
+							name="search"
+							placeholder="Search..."
+							onChange={handleSearch}
+						/>
+					</Grid>
+					<Grid item xs={12} sm={10}>
 						<Paper>
 							<List className={classes.root}>
 								{posts.map((post) => (
@@ -96,19 +109,22 @@ function Posts(props: Props) {
 							</List>
 						</Paper>
 					</Grid>
-
-					<Grid item xs={2} md={6}>
-						<Typography variant="h6">Text only</Typography>
-						<div>
-							<List dense>
-								{categories.map((category: ICategories) => (
-									<ListItem key={category.id}>
-										<ListItemText primary={category.name} />
-									</ListItem>
-								))}
-							</List>
-						</div>
-					</Grid>
+					<Hidden xsDown>
+						<Grid item sm={2}>
+							<Typography variant="h6">Text only</Typography>
+							<div>
+								<List dense>
+									{categories.map((category: ICategories) => (
+										<ListItem key={category.id}>
+											<ListItemText
+												primary={category.name}
+											/>
+										</ListItem>
+									))}
+								</List>
+							</div>
+						</Grid>
+					</Hidden>
 				</Grid>
 			</Container>
 		</motion.div>
@@ -118,8 +134,16 @@ function Posts(props: Props) {
 const mapStateToProps = ({
 	categories,
 	posts,
-}: IStoreState): { categories: ICategories[]; posts: IPost[] } => {
-	return { categories: categories, posts: posts };
+	search,
+}: IStoreState): {
+	categories: ICategories[];
+	posts: IPost[];
+	search: string;
+} => {
+	const filtredPosts: IPost[] = posts.filter((post: IPost) =>
+		post.title.includes(search)
+	);
+	return { categories: categories, posts: filtredPosts, search: search };
 };
 
-export default connect(mapStateToProps, { fetchTodos, fetchPosts })(Posts);
+export default connect(mapStateToProps, { filterPosts, fetchPosts })(Posts);
