@@ -11,6 +11,8 @@ export const translateText: TransText = {
 		learnMore: 'Learn more',
 		blog_latestNews: 'Latest News',
 		blog_search: 'Search',
+		blog_noSearchResults: 'No Search Results',
+		blog_categories: 'Categories',
 	},
 	russian: {
 		myName: 'Меня зовут',
@@ -20,6 +22,8 @@ export const translateText: TransText = {
 		learnMore: 'Узнать больше',
 		blog_latestNews: 'Последние посты',
 		blog_search: 'Поиск',
+		blog_noSearchResults: 'Поиск не дал результатов',
+		blog_categories: 'Категории',
 	},
 	czech: {
 		myName: 'Jmenuji se ',
@@ -29,5 +33,7 @@ export const translateText: TransText = {
 		learnMore: 'Dozvědět se více',
 		blog_latestNews: 'Poslední zprávy',
 		blog_search: 'Vyhledávání',
+		blog_noSearchResults: 'Žádné výsledky vyhledávání',
+		blog_categories: 'Kategorie',
 	},
 };

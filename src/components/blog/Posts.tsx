@@ -44,7 +44,12 @@ function Posts(props: Props) {
 	const { isDarkMode } = context;
 	let { language } = context;
 
-	const { blog_latestNews, blog_search } = translateText[language];
+	const {
+		blog_latestNews,
+		blog_search,
+		blog_categories,
+		blog_noSearchResults,
+	} = translateText[language];
 
 	const classes = useStyles(isDarkMode)();
 
@@ -142,13 +147,15 @@ function Posts(props: Props) {
 							</Paper>
 						) : (
 							<Typography variant="h2">
-								No search results
+								{blog_noSearchResults}
 							</Typography>
 						)}
 					</Grid>
 					<Hidden xsDown>
 						<Grid item sm={2}>
-							<Typography variant="h6">Categories</Typography>
+							<Typography variant="h6">
+								{blog_categories}
+							</Typography>
 							<div>
 								<List dense>
 									{categories.map((category: ICategories) => (
