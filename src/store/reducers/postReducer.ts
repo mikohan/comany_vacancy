@@ -18,14 +18,6 @@ export const postReducer = (state: IPost[] = [], action: IFetchPostAction) => {
 	}
 };
 
-interface IBlogAction {
-	action:
-		| IFetchCategoryAction
-		| ISearchPostAction
-		| IFilterCategoryAction
-		| IFetchSinglePostAction;
-}
-
 export const postSingleReducer = (
 	state: IPost = {
 		id: 1,
