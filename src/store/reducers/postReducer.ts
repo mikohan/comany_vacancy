@@ -5,6 +5,7 @@ import {
 	IFetchCategoryAction,
 	ISearchPostAction,
 	IFilterCategoryAction,
+	IFetchSinglePostAction,
 } from '../actions/posts';
 
 export const postReducer = (state: IPost[] = [], action: IFetchPostAction) => {
@@ -12,6 +13,35 @@ export const postReducer = (state: IPost[] = [], action: IFetchPostAction) => {
 		case ActionTypes.FETCH_POSTS:
 			return action.payload;
 
+		default:
+			return state;
+	}
+};
+
+interface IBlogAction {
+	action:
+		| IFetchCategoryAction
+		| ISearchPostAction
+		| IFilterCategoryAction
+		| IFetchSinglePostAction;
+}
+
+export const postSingleReducer = (
+	state: IPost = {
+		id: 1,
+		title: '',
+		text: '',
+		image: '',
+		date: '',
+		slug: '',
+		author: '',
+		categories: [],
+	},
+	action: IFetchSinglePostAction
+) => {
+	switch (action.type) {
+		case ActionTypes.FETCH_POST:
+			return action.payload;
 		default:
 			return state;
 	}

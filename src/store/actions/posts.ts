@@ -36,6 +36,28 @@ export interface IFetchCategoryAction {
 	payload: ICategories[];
 }
 
+export interface IFetchSinglePostAction {
+	type: ActionTypes.FETCH_POST;
+	payload: IPost;
+}
+
+export const fetchPost = (id: string) => {
+	return async (dispatch: Dispatch, getState: any) => {
+		let post: IPost;
+		if (!getState || getState().posts.length === 0) {
+			const response = await axios.get<IPost>(`${blogUrl}/${id}/`);
+			post = response.data;
+		} else {
+			post = getState().posts.find((post: IPost) => +post.id === +id);
+		}
+
+		dispatch<IFetchSinglePostAction>({
+			type: ActionTypes.FETCH_POST,
+			payload: post,
+		});
+	};
+};
+
 export const fetchPosts = () => {
 	return async (dispatch: Dispatch) => {
 		const response = await axios.get<IServerResponse>(`${blogUrl}/`);
