@@ -18,11 +18,12 @@ export const useStyles = (isDarkMode: boolean) => {
 				width: '100%',
 			},
 			postsTitles: {
-				color: isDarkMode ? 'white' : 'black',
+				// color: isDarkMode ? 'white' : 'black',
 				textDecoration: 'none',
 			},
 			postsLink: {
 				textDecoration: 'none',
+				color: 'inherit',
 			},
 			blogHeaderRow: {
 				padding: theme.spacing(3, 0),

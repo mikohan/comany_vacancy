@@ -86,7 +86,6 @@ export default function PersistentDrawerLeft(): JSX.Element {
 		lightTheme,
 		frontEnd,
 		backEnd,
-		flag,
 		introduction,
 		sysAdmin,
 		marketing,
