@@ -39,7 +39,7 @@ import Select from '@material-ui/core/Select';
 import { useStyles } from '../styles/MainContextStyles';
 import { FormControlLabel, Switch } from '@material-ui/core';
 
-import Content from './Content';
+import Routes from './Routs';
 import { ThemeContext } from '../context/ThemeContext';
 
 import { translateHeader } from '../translate/header';
@@ -234,6 +234,14 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={introduction} />
               </ListItem>
             </Link>
+            <Link className={classes.drawerLink} to="/portfolio">
+              <ListItem button>
+                <ListItemIcon>
+                  <EmojiPeopleOutlined />
+                </ListItemIcon>
+                <ListItemText primary={portfolio} />
+              </ListItem>
+            </Link>
             <Link className={classes.drawerLink} to="/backend">
               <ListItem button>
                 <ListItemIcon>
@@ -302,7 +310,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
         >
           <div className={classes.drawerHeader} />
 
-          <Content />
+          <Routes />
         </main>
       </div>
     </ThemeProvider>

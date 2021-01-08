@@ -12,8 +12,9 @@ import AboutPageTest from './AboutPageTest';
 import Posts from './blog/Posts';
 import Post from './blog/Post';
 import HomePage from './HomePage';
+import PortfolioPage from './PortfolioPage';
 
-function Content() {
+function Routes() {
   return (
     <div>
       <Switch>
@@ -27,6 +28,7 @@ function Content() {
         <Route exact path="/blog" component={Posts} />
         <Route exact path="/blog/:id" component={Post} />
         <Route exact path="/testpage" component={HomePage} />
+        <Route exact path="/portfolio" component={PortfolioPage} />
         <Route exact path="/" component={AboutPageTest} />
         <Route component={Page_404} />
       </Switch>
@@ -34,4 +36,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default Routes;
