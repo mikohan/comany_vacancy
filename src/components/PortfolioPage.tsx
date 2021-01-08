@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import ReactPlayer from 'react-player';
-import { Grid, Paper } from '@material-ui/core';
-import { useStyles } from '../styles/HomePageStyles';
+import { Grid, Paper, Box, Typography } from '@material-ui/core';
+import { useStyles } from '../styles/PorfolioPageStyles';
 
 function BackEndPage() {
   const classes = useStyles();
@@ -15,16 +15,27 @@ function BackEndPage() {
       transition={{ duration: durationPage }}
     >
       <h1>Portfolio Page</h1>
-      <Grid container spacing={2}>
+      <Grid container spacing={5}>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.videoItem}>
-            <ReactPlayer
-              url="https://youtu.be/IHpfcNRXUcU"
-              controls
-              width="100%"
-              height="100%"
-            />
-          </Paper>
+          <Box className={classes.boxWide}>
+            <Paper className={classes.videoItem} elevation={3}>
+              <ReactPlayer
+                url="https://youtu.be/IHpfcNRXUcU"
+                controls
+                width="100%"
+                height="100%"
+              />
+            </Paper>
+          </Box>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Box className={classes.boxWide}>
+            <Paper>
+              <Typography variant="h4">
+                Venezo Project E-commerce project (Python, Django)
+              </Typography>
+            </Paper>
+          </Box>
         </Grid>
       </Grid>
     </motion.div>
