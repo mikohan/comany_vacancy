@@ -30,7 +30,7 @@ function BackEndPage() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <Box className={classes.boxWide}>
-            <Paper>
+            <Paper className={classes.paperPadding} elevation={3}>
               <Typography variant="h4">
                 Venezo Project E-commerce project (Python, Django)
               </Typography>
