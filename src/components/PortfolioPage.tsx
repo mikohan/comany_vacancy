@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
+import ReactPlayer from 'react-player';
 
 function BackEndPage() {
   return (
@@ -11,6 +12,13 @@ function BackEndPage() {
       transition={{ duration: durationPage }}
     >
       <h1>Portfolio Page</h1>
+
+      <ReactPlayer
+        url="https://youtu.be/IHpfcNRXUcU"
+        controls
+        width="100%"
+        height="100%"
+      />
     </motion.div>
   );
 }
