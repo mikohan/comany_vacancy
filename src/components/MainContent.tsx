@@ -92,6 +92,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
     personality,
     hobbies,
     blog,
+    portfolio,
   } = translateHeader[language];
   // Theme switcher label
   const themeColor: string = isDarkMode ? darkTheme : lightTheme;
