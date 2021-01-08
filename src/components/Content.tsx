@@ -11,26 +11,27 @@ import Page_404 from './Page_404';
 import AboutPageTest from './AboutPageTest';
 import Posts from './blog/Posts';
 import Post from './blog/Post';
+import HomePage from './HomePage';
 
 function Content() {
-	return (
-		<div>
-			<Switch>
-				<Route exact path="/frontend" component={FrontEndPage} />
-				<Route exact path="/backend" component={BackEndPage} />
-				<Route exact path="/computers" component={SysAdminPage} />
-				<Route exact path="/test" component={AboutPageTest} />
-				<Route exact path="/marketing" component={MarketingPage} />
-				<Route exact path="/personality" component={PersonalityPage} />
-				<Route exact path="/hobbies" component={HobbiesPage} />
-				<Route exact path="/blog" component={Posts} />
-				<Route exact path="/blog/:id" component={Post} />
-				<Route exact path="/" component={AboutPageTest} />
-				{/* <Route exact path="/" component={HomePage} /> */}
-				<Route component={Page_404} />
-			</Switch>
-		</div>
-	);
+  return (
+    <div>
+      <Switch>
+        <Route exact path="/frontend" component={FrontEndPage} />
+        <Route exact path="/backend" component={BackEndPage} />
+        <Route exact path="/computers" component={SysAdminPage} />
+        <Route exact path="/test" component={AboutPageTest} />
+        <Route exact path="/marketing" component={MarketingPage} />
+        <Route exact path="/personality" component={PersonalityPage} />
+        <Route exact path="/hobbies" component={HobbiesPage} />
+        <Route exact path="/blog" component={Posts} />
+        <Route exact path="/blog/:id" component={Post} />
+        <Route exact path="/testpage" component={HomePage} />
+        <Route exact path="/" component={AboutPageTest} />
+        <Route component={Page_404} />
+      </Switch>
+    </div>
+  );
 }
 
 export default Content;

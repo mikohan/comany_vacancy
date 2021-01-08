@@ -24,7 +24,7 @@ function FrontEndPage() {
         <Grid item xs={12}>
           <Paper className={classes.videoItem}>
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+              url="https://youtu.be/3eLrINg3O2Q"
               controls
               width="100%"
               height="100%"
