@@ -16,26 +16,24 @@ function BackEndPage() {
     >
       <h1>Portfolio Page</h1>
       <Grid container spacing={5}>
-        <Grid item xs={12} sm={6}>
-          <Box className={classes.boxWide}>
-            <Paper className={classes.videoItem} elevation={3}>
-              <ReactPlayer
-                url="https://youtu.be/IHpfcNRXUcU"
-                controls
-                width="100%"
-                height="100%"
-              />
-            </Paper>
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Box className={classes.boxWide}>
-            <Paper className={classes.paperPadding} elevation={3}>
-              <Typography variant="h4">
-                Venezo Project E-commerce project (Python, Django)
-              </Typography>
-            </Paper>
-          </Box>
+        <Grid item container xs={12}>
+          <Paper className={classes.paperPadding} elevation={3}>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={6}>
+                <ReactPlayer
+                  url="https://youtu.be/IHpfcNRXUcU"
+                  controls
+                  width="100%"
+                  height="100%"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <Typography variant="h4">
+                  Venezo Project E-commerce project (Python, Django)
+                </Typography>
+              </Grid>
+            </Grid>
+          </Paper>
         </Grid>
       </Grid>
     </motion.div>
