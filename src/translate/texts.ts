@@ -48,38 +48,8 @@ export const translateText: TransText = {
                     quidem itaque incidunt quos dolores! Debitis voluptas dolore
                     repudiandae.`,
       },
-    },
-  },
-  russian: {
-    myName: 'Меня зовут',
-    name: 'Владимир Востриков',
-    mainHeading:
-      'Я разработчик Full Stack с огромными знаниями в области интернет-маркетинга и опытом работы в сфере электронной коммерции.',
-    learnMore: 'Узнать больше',
-    blog_latestNews: 'Последние посты',
-    blog_search: 'Поиск',
-    blog_noSearchResults: 'Поиск не дал результатов',
-    blog_categories: 'Категории',
-    portfolio: {
-      venezo: {
-        title: `Интернет Магазин Запчастей (Python, Django)`,
-        mainText: `orem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский. Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном. Поскольку текст Цицерона не содержит буквы K, W, или Z, что чуждо для латинского, эти буквы, а также многие другие часто вставлены в случайном порядке, чтобы скопировать тексты различных Европейских языков, поскольку диграфы не встречаются в оригинальных текстах.`,
-      },
-    },
-  },
-  czech: {
-    myName: 'Jmenuji se ',
-    name: 'Vladimir Vostrikov',
-    mainHeading:
-      'Jsem vývojář Full Stack s obrovskými znalostmi online marketingu a zkušeností v oblasti elektronického obchodování.',
-    learnMore: 'Dozvědět se více',
-    blog_latestNews: 'Poslední zprávy',
-    blog_search: 'Vyhledávání',
-    blog_noSearchResults: 'Žádné výsledky vyhledávání',
-    blog_categories: 'Kategorie',
-    portfolio: {
-      venezo: {
-        title: `Venezo Project E-commerce project (Python, Django)`,
+      colors: {
+        title: `Colors React Application`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
                     vitae nemo, exercitationem tenetur assumenda hic. Pariatur
@@ -105,6 +75,52 @@ export const translateText: TransText = {
                     nihil, error nobis voluptatem ipsa iste saepe, obcaecati
                     quidem itaque incidunt quos dolores! Debitis voluptas dolore
                     repudiandae.`,
+      },
+    },
+  },
+  russian: {
+    myName: 'Меня зовут',
+    name: 'Владимир Востриков',
+    mainHeading:
+      'Я разработчик Full Stack с огромными знаниями в области интернет-маркетинга и опытом работы в сфере электронной коммерции.',
+    learnMore: 'Узнать больше',
+    blog_latestNews: 'Последние посты',
+    blog_search: 'Поиск',
+    blog_noSearchResults: 'Поиск не дал результатов',
+    blog_categories: 'Категории',
+    portfolio: {
+      venezo: {
+        title: `Интернет Магазин Запчастей (Python, Django)`,
+        mainText: `orem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский. Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном. Поскольку текст Цицерона не содержит буквы K, W, или Z, что чуждо для латинского, эти буквы, а также многие другие часто вставлены в случайном порядке, чтобы скопировать тексты различных Европейских языков, поскольку диграфы не встречаются в оригинальных текстах.`,
+      },
+      colors: {
+        title: `Приложение для работы с цветовыми палитрами`,
+        mainText: `orem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский. Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном. Поскольку текст Цицерона не содержит буквы K, W, или Z, что чуждо для латинского, эти буквы, а также многие другие часто вставлены в случайном порядке, чтобы скопировать тексты различных Европейских языков, поскольку диграфы не встречаются в оригинальных текстах.`,
+      },
+    },
+  },
+  czech: {
+    myName: 'Jmenuji se ',
+    name: 'Vladimir Vostrikov',
+    mainHeading:
+      'Jsem vývojář Full Stack s obrovskými znalostmi online marketingu a zkušeností v oblasti elektronického obchodování.',
+    learnMore: 'Dozvědět se více',
+    blog_latestNews: 'Poslední zprávy',
+    blog_search: 'Vyhledávání',
+    blog_noSearchResults: 'Žádné výsledky vyhledávání',
+    blog_categories: 'Kategorie',
+    portfolio: {
+      venezo: {
+        title: `Venezo Project E-commerce project (Python, Django)`,
+        mainText: `Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah.
+
+Pokud by se pro stejný účel použil smysluplný text, bylo by těžké hodnotit pouze vzhled, aniž by se pozorovatel nechal svést ke čtení obsahu. Pokud by byl naopak použit nesmyslný, ale pravidelný text (např. opakování „asdf asdf asdf…“), oko by při posuzování vzhledu bylo vyrušováno pravidelnou strukturou textu, která se od běžného textu liší. Text lorem ipsum na první pohled připomíná běžný text, slova jsou různě dlouhá, frekvence písmen je podobná běžné řeči, interpunkce vypadá přirozeně atd.`,
+      },
+      colors: {
+        title: `Venezo Project E-commerce project (Python, Django)`,
+        mainText: `Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah.
+
+Pokud by se pro stejný účel použil smysluplný text, bylo by těžké hodnotit pouze vzhled, aniž by se pozorovatel nechal svést ke čtení obsahu. Pokud by byl naopak použit nesmyslný, ale pravidelný text (např. opakování „asdf asdf asdf…“), oko by při posuzování vzhledu bylo vyrušováno pravidelnou strukturou textu, která se od běžného textu liší. Text lorem ipsum na první pohled připomíná běžný text, slova jsou různě dlouhá, frekvence písmen je podobná běžné řeči, interpunkce vypadá přirozeně atd.`,
       },
     },
   },
