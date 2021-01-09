@@ -26,65 +26,18 @@ function BackEndPage() {
       <h1>Portfolio Page</h1>
       <Grid container spacing={6}>
         <Grid item container xs={12}>
-          <PortfolioSingle />
+          <PortfolioSingle
+            vidUrl="https://youtu.be/IHpfcNRXUcU"
+            coverImg={require('../assets/venezo-cover.png')}
+            projectName="venezo"
+          />
         </Grid>
         <Grid item container xs={12}>
-          <Paper className={classes.paperPadding} elevation={3}>
-            <Grid container spacing={6}>
-              <Grid item xs={12}>
-                <Typography variant="h4">
-                  Instant Chat based on NuxtJS, Socket.i and Express
-                </Typography>
-              </Grid>
-              <Grid item xs={12} sm={5}>
-                <Box className={classes.textPadding}>
-                  <Typography variant="body1" align="left">
-                    {portfolio.nuxtChat.mainText}
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={12} sm={7}>
-                <Box className="player-wrapper">
-                  <ReactPlayer
-                    className="react-player"
-                    url="https://youtu.be/44Nw_QoZDuc"
-                    controls
-                    light={require('../assets/nuxt-chat.png')}
-                    width="100%"
-                    height="100%"
-                  />
-                </Box>
-              </Grid>
-            </Grid>
-          </Paper>
-        </Grid>
-        <Grid item container xs={12}>
-          <Paper className={classes.paperPadding} elevation={3}>
-            <Grid container spacing={6}>
-              <Grid item xs={12}>
-                <Typography variant="h4">{portfolio.colors.title}</Typography>
-              </Grid>
-              <Grid item xs={12} sm={7}>
-                <Box className="player-wrapper">
-                  <ReactPlayer
-                    className="react-player"
-                    url="https://youtu.be/zRLzJnDXyi4"
-                    controls
-                    light={require('../assets/colors.png')}
-                    width="100%"
-                    height="100%"
-                  />
-                </Box>
-              </Grid>
-              <Grid item xs={12} sm={5}>
-                <Box className={classes.textPadding}>
-                  <Typography variant="body1" align="left">
-                    {portfolio.colors.mainText}
-                  </Typography>
-                </Box>
-              </Grid>
-            </Grid>
-          </Paper>
+          <PortfolioSingle
+            vidUrl="https://youtu.be/IHpfcNRXUcU"
+            coverImg={require('../assets/nuxt-chat.png')}
+            projectName="nuxtChat"
+          />
         </Grid>
       </Grid>
     </motion.div>

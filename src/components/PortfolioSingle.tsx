@@ -8,7 +8,13 @@ import '../tmp.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Button from '@material-ui/core/Button';
 
-function PortfolioSingle() {
+interface IProps {
+  vidUrl: string;
+  coverImg?: string;
+  projectName: string;
+}
+
+function PortfolioSingle({ vidUrl, coverImg, projectName }: IProps) {
   const classes = useStyles();
   const context = useContext(ThemeContext);
   let { language } = context;
@@ -18,15 +24,15 @@ function PortfolioSingle() {
     <Paper className={classes.paperPadding} elevation={3}>
       <Grid container spacing={6}>
         <Grid item xs={12}>
-          <Typography variant="h4">{portfolio.venezo.title}</Typography>
+          <Typography variant="h4">{portfolio[projectName].title}</Typography>
         </Grid>
         <Grid item xs={12} sm={7}>
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
-              url="https://youtu.be/IHpfcNRXUcU"
+              url={vidUrl}
               controls
-              light={require('../assets/venezo-cover.png')}
+              light={coverImg}
               width="100%"
               height="100%"
             />
@@ -35,30 +41,30 @@ function PortfolioSingle() {
         <Grid item xs={12} sm={5}>
           <Box className={classes.textPadding}>
             <Typography variant="body1" align="left">
-              {portfolio.venezo.mainText}
+              {portfolio[projectName].mainText}
             </Typography>
           </Box>
         </Grid>
       </Grid>
       <Grid className={classes.bottomLinks} item xs={12} sm={7}>
         <Box>
-          <a href={portfolio.venezo.project.href}>
+          <a href={portfolio[projectName].project.href} target="_blank">
             <Button
               style={{ marginRight: '16px' }}
               color="primary"
               variant="contained"
               startIcon={<GitHubIcon />}
             >
-              {portfolio.venezo.project.text}
+              {portfolio[projectName].project.text}
             </Button>
           </a>
-          <a href={portfolio.venezo.gitHub.href}>
+          <a href={portfolio[projectName].gitHub.href} target="_blank">
             <Button
               color="primary"
               variant="contained"
               startIcon={<GitHubIcon />}
             >
-              {portfolio.venezo.gitHub.text}
+              {portfolio[projectName].gitHub.text}
             </Button>
           </a>
         </Box>
