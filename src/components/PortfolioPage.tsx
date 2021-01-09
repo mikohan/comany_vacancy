@@ -52,13 +52,14 @@ function BackEndPage() {
             </Grid>
             <Grid className={classes.bottomLinks} item xs={12} sm={7}>
               <Box>
-                <a href={portfolio.venezo.gitHub.href}>
+                <a href={portfolio.venezo.project.href}>
                   <Button
+                    style={{ marginRight: '16px' }}
                     color="primary"
                     variant="contained"
                     startIcon={<GitHubIcon />}
                   >
-                    {portfolio.venezo.gitHub.text}
+                    {portfolio.venezo.project.text}
                   </Button>
                 </a>
                 <a href={portfolio.venezo.gitHub.href}>

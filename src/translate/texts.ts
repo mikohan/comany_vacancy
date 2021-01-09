@@ -51,6 +51,10 @@ export const translateText: TransText = {
           href: 'https://github.com/mikohan/color-project',
           text: 'See code on GitHub',
         },
+        project: {
+          href: 'https://venezo.ru',
+          text: 'Live View',
+        },
       },
       nuxtChat: {
         title: `Instant Chat based on NuxtJS, Socket.i and Express`,
@@ -136,6 +140,10 @@ export const translateText: TransText = {
           href: 'https://github.com/mikohan/color-project',
           text: 'Посмотреть код на GitHub',
         },
+        project: {
+          href: 'https://venezo.ru',
+          text: 'Посмотреть сайт',
+        },
       },
       nuxtChat: {
         title: `Сервис мгновенных сообщений(чат), NuxtJS, Express, Socket.io`,
@@ -164,6 +172,10 @@ export const translateText: TransText = {
         gitHub: {
           href: 'https://github.com/mikohan/color-project',
           text: 'See code on GitHub',
+        },
+        project: {
+          href: 'https://venezo.ru',
+          text: 'Live View',
         },
 
 Pokud by se pro stejný účel použil smysluplný text, bylo by těžké hodnotit pouze vzhled, aniž by se pozorovatel nechal svést ke čtení obsahu. Pokud by byl naopak použit nesmyslný, ale pravidelný text (např. opakování „asdf asdf asdf…“), oko by při posuzování vzhledu bylo vyrušováno pravidelnou strukturou textu, která se od běžného textu liší. Text lorem ipsum na první pohled připomíná běžný text, slova jsou různě dlouhá, frekvence písmen je podobná běžné řeči, interpunkce vypadá přirozeně atd.`,
