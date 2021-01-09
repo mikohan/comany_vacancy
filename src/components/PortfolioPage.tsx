@@ -9,6 +9,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import '../tmp.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Button from '@material-ui/core/Button';
+import PortfolioSingle from './PortfolioSingle';
 
 function BackEndPage() {
   const classes = useStyles();
@@ -25,55 +26,7 @@ function BackEndPage() {
       <h1>Portfolio Page</h1>
       <Grid container spacing={6}>
         <Grid item container xs={12}>
-          <Paper className={classes.paperPadding} elevation={3}>
-            <Grid container spacing={6}>
-              <Grid item xs={12}>
-                <Typography variant="h4">{portfolio.venezo.title}</Typography>
-              </Grid>
-              <Grid item xs={12} sm={7}>
-                <Box className="player-wrapper">
-                  <ReactPlayer
-                    className="react-player"
-                    url="https://youtu.be/IHpfcNRXUcU"
-                    controls
-                    light={require('../assets/venezo-cover.png')}
-                    width="100%"
-                    height="100%"
-                  />
-                </Box>
-              </Grid>
-              <Grid item xs={12} sm={5}>
-                <Box className={classes.textPadding}>
-                  <Typography variant="body1" align="left">
-                    {portfolio.venezo.mainText}
-                  </Typography>
-                </Box>
-              </Grid>
-            </Grid>
-            <Grid className={classes.bottomLinks} item xs={12} sm={7}>
-              <Box>
-                <a href={portfolio.venezo.project.href}>
-                  <Button
-                    style={{ marginRight: '16px' }}
-                    color="primary"
-                    variant="contained"
-                    startIcon={<GitHubIcon />}
-                  >
-                    {portfolio.venezo.project.text}
-                  </Button>
-                </a>
-                <a href={portfolio.venezo.gitHub.href}>
-                  <Button
-                    color="primary"
-                    variant="contained"
-                    startIcon={<GitHubIcon />}
-                  >
-                    {portfolio.venezo.gitHub.text}
-                  </Button>
-                </a>
-              </Box>
-            </Grid>
-          </Paper>
+          <PortfolioSingle />
         </Grid>
         <Grid item container xs={12}>
           <Paper className={classes.paperPadding} elevation={3}>
