@@ -20,7 +20,7 @@ function AboutPageTest() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <Paper className={classes.meImage}>
+      <Box className={classes.wrapper}>
         <Box className={classes.mainHeader}>
           <Typography variant="h6">{myName}</Typography>
           <Typography style={{ marginBottom: '30px' }} variant="h3">
@@ -31,7 +31,7 @@ function AboutPageTest() {
             {learnMore}...
           </Button>
         </Box>
-      </Paper>
+      </Box>
     </motion.div>
   );
 }

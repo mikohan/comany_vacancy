@@ -9,20 +9,14 @@ export const useStyles = makeStyles((theme) => {
   const context = useContext(ThemeContext);
   const { isDarkMode } = context;
   return {
-    meImage: {
-      position: 'relative',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'flex-end',
-      height: 1280,
-      marginTop: -30,
-      marginLeft: -40,
-      marginRight: -40,
-
+    wrapper: {
+      overflowX: 'hidden',
+      height: '100vh',
+      margin: '-24px',
       background: isDarkMode
-        ? `url(${meImageDark}) no-repeat`
-        : `url(${meImageLight}) no-repeat`,
-      backgroundSize: 'contain',
+        ? `url(${meImageDark}) no-repeat center center`
+        : `url(${meImageLight}) no-repeat center center`,
+      backgroundSize: 'cover',
     },
     mainHeader: {
       height: '50%',
