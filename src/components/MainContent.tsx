@@ -95,7 +95,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
       fontSize: '1.5rem',
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: '0.8rem',
+      fontSize: '0.7rem',
     },
   };
 
@@ -121,7 +121,6 @@ export default function PersistentDrawerLeft(): JSX.Element {
     lightTheme,
     frontEnd,
     backEnd,
-    introduction,
     sysAdmin,
     marketing,
     personality,
@@ -262,9 +261,9 @@ export default function PersistentDrawerLeft(): JSX.Element {
             <Link className={classes.drawerLink} to="/">
               <ListItem button>
                 <ListItemIcon>
-                  <EmojiPeopleOutlined />
+                  <HomeIcon />
                 </ListItemIcon>
-                <ListItemText primary={introduction} />
+                <ListItemText primary={logoHome} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/portfolio">
