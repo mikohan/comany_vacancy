@@ -6,14 +6,15 @@ import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import '../tmp.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import VisibilityIcon from '@material-ui/icons/Visibility';
 import Button from '@material-ui/core/Button';
 
 interface IProps {
   vidUrl: string;
   coverImg?: string;
   projectName: string;
-  direction?: boolean;
-  buttons?: boolean;
+  direction?: boolean; // If true bideo will be on the right
+  buttons?: boolean; // if false Buttons Github and live view will be disabled
 }
 
 function PortfolioSingle({
@@ -62,17 +63,25 @@ function PortfolioSingle({
       <Grid className={classes.bottomLinks} item xs={12} sm={7}>
         {buttons ? (
           <Box>
-            <a href={portfolio[projectName].project.href} target="_blank">
+            <a
+              href={portfolio[projectName].project.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 style={{ marginRight: '16px' }}
                 color="primary"
                 variant="contained"
-                startIcon={<GitHubIcon />}
+                startIcon={<VisibilityIcon />}
               >
                 {portfolio[projectName].project.text}
               </Button>
             </a>
-            <a href={portfolio[projectName].gitHub.href} target="_blank">
+            <a
+              href={portfolio[projectName].gitHub.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 color="primary"
                 variant="contained"
