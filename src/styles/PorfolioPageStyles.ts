@@ -22,20 +22,12 @@ export const useStyles = makeStyles((theme) => {
         height: '700px',
       },
     },
+    textPadding: {
+      paddingLeft: theme.spacing(10),
+    },
     paperPadding: {
-      padding: theme.spacing(5),
+      padding: theme.spacing(6),
       width: '100%',
-    },
-    playerWrapper: {
-      width: 'auto',
-      height: 'auto',
-    },
-    reactPlayer: {
-      paddingTop: '56.25',
-      position: 'relative',
-    },
-    'reactPlayer > div': {
-      position: 'absolute',
     },
   };
 });
