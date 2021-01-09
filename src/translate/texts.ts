@@ -1,5 +1,3 @@
-import GitHubIcon from '@material-ui/icons/GitHub';
-
 interface IPortfolio {
   [key: string]: { [key: string]: { [key: string]: string } };
 }
@@ -83,7 +81,7 @@ export const translateText: TransText = {
                     repudiandae.`,
         gitHub: {
           href: 'https://github.com/mikohan/color-project',
-          text: GitHubIcon,
+          text: 'See on Git Hub ',
         },
       },
       colors: {

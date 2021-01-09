@@ -14,8 +14,13 @@ export const useStyles = makeStyles((theme) => {
       paddingLeft: theme.spacing(10),
     },
     paperPadding: {
-      padding: theme.spacing(6),
+      paddingLeft: theme.spacing(6),
+      paddingRight: theme.spacing(6),
+      paddingTop: theme.spacing(6),
       width: '100%',
+    },
+    bottomLinks: {
+      padding: theme.spacing(3),
     },
   };
 });

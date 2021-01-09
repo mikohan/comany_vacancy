@@ -7,6 +7,8 @@ import { useStyles } from '../styles/PorfolioPageStyles';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import '../tmp.scss';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Button from '@material-ui/core/Button';
 
 function BackEndPage() {
   const classes = useStyles();
@@ -45,11 +47,30 @@ function BackEndPage() {
                   <Typography variant="body1" align="left">
                     {portfolio.venezo.mainText}
                   </Typography>
-                  <Box>
-                    <p>{portfolio.venezo.gitHub.text}</p>
-                  </Box>
                 </Box>
               </Grid>
+            </Grid>
+            <Grid className={classes.bottomLinks} item xs={12} sm={7}>
+              <Box>
+                <a href={portfolio.venezo.gitHub.href}>
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    startIcon={<GitHubIcon />}
+                  >
+                    {portfolio.venezo.gitHub.text}
+                  </Button>
+                </a>
+                <a href={portfolio.venezo.gitHub.href}>
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    startIcon={<GitHubIcon />}
+                  >
+                    {portfolio.venezo.gitHub.text}
+                  </Button>
+                </a>
+              </Box>
             </Grid>
           </Paper>
         </Grid>
