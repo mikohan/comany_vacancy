@@ -20,12 +20,7 @@ function BackEndPage() {
           <Paper className={classes.paperPadding} elevation={3}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
-                <ReactPlayer
-                  url="https://youtu.be/IHpfcNRXUcU"
-                  controls
-                  width="100%"
-                  height="100%"
-                />
+                <ReactPlayer url="https://youtu.be/IHpfcNRXUcU" controls />
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="h4">
