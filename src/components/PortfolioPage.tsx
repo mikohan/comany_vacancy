@@ -45,6 +45,9 @@ function BackEndPage() {
                   <Typography variant="body1" align="left">
                     {portfolio.venezo.mainText}
                   </Typography>
+                  <Box>
+                    <p>{portfolio.venezo.gitHub.text}</p>
+                  </Box>
                 </Box>
               </Grid>
             </Grid>
