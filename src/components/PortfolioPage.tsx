@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import ReactPlayer from 'react-player';
 import { Grid, Paper, Box, Typography } from '@material-ui/core';
 import { useStyles } from '../styles/PorfolioPageStyles';
-import Img from 'react-optimized-image';
+import Image from 'material-ui-image';
 
 function BackEndPage() {
   const classes = useStyles();
@@ -31,10 +31,24 @@ function BackEndPage() {
                 <Typography variant="h4">
                   Venezo Project E-commerce project (Python, Django)
                 </Typography>
-                <Img src={require('../assets/me1.jpg')} />
+                <Image
+                  onClick={() => console.log('onClick')}
+                  src={require('../assets/me1.jpg')}
+                  aspectRatio={3 / 2}
+                />
               </Grid>
             </Grid>
           </Paper>
+        </Grid>
+        <Grid item container spacing={2}>
+          <Grid item xs={6}>
+            <Image
+              onClick={() => console.log('onClick')}
+              src={require('../assets/me1.jpg')}
+              aspectRatio={3 / 2}
+            />
+          </Grid>
+          <Grid item xs={6}></Grid>
         </Grid>
       </Grid>
     </motion.div>
