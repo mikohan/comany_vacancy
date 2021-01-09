@@ -13,6 +13,7 @@ interface IProps {
   coverImg?: string;
   projectName: string;
   direction?: boolean;
+  buttons?: boolean;
 }
 
 function PortfolioSingle({
@@ -20,6 +21,7 @@ function PortfolioSingle({
   coverImg,
   projectName,
   direction = false,
+  buttons = true,
 }: IProps) {
   const classes = useStyles();
   const context = useContext(ThemeContext);
@@ -58,27 +60,31 @@ function PortfolioSingle({
         {direction ? <PlayerBox /> : ''}
       </Grid>
       <Grid className={classes.bottomLinks} item xs={12} sm={7}>
-        <Box>
-          <a href={portfolio[projectName].project.href} target="_blank">
-            <Button
-              style={{ marginRight: '16px' }}
-              color="primary"
-              variant="contained"
-              startIcon={<GitHubIcon />}
-            >
-              {portfolio[projectName].project.text}
-            </Button>
-          </a>
-          <a href={portfolio[projectName].gitHub.href} target="_blank">
-            <Button
-              color="primary"
-              variant="contained"
-              startIcon={<GitHubIcon />}
-            >
-              {portfolio[projectName].gitHub.text}
-            </Button>
-          </a>
-        </Box>
+        {buttons ? (
+          <Box>
+            <a href={portfolio[projectName].project.href} target="_blank">
+              <Button
+                style={{ marginRight: '16px' }}
+                color="primary"
+                variant="contained"
+                startIcon={<GitHubIcon />}
+              >
+                {portfolio[projectName].project.text}
+              </Button>
+            </a>
+            <a href={portfolio[projectName].gitHub.href} target="_blank">
+              <Button
+                color="primary"
+                variant="contained"
+                startIcon={<GitHubIcon />}
+              >
+                {portfolio[projectName].gitHub.text}
+              </Button>
+            </a>
+          </Box>
+        ) : (
+          ''
+        )}
       </Grid>
     </Paper>
   );

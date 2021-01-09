@@ -42,6 +42,15 @@ function BackEndPage() {
             projectName="colors"
           />
         </Grid>
+        <Grid item container xs={12}>
+          <PortfolioSingle
+            vidUrl="https://youtu.be/zRLzJnDXyi4"
+            coverImg={require('../assets/colors.png')}
+            projectName="colors"
+            buttons={false}
+            direction
+          />
+        </Grid>
       </Grid>
     </motion.div>
   );
