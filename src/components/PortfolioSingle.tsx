@@ -60,7 +60,7 @@ function PortfolioSingle({
         </Grid>
         {direction ? <PlayerBox /> : ''}
       </Grid>
-      <Grid className={classes.bottomLinks} item xs={12} sm={7}>
+      <Grid className={classes.bottomLinks} item xs={12}>
         {buttons ? (
           <Box>
             <a
