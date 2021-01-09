@@ -90,9 +90,9 @@ function BackEndPage() {
                 <Box className="player-wrapper">
                   <ReactPlayer
                     className="react-player"
-                    url="https://youtu.be/44Nw_QoZDuc"
+                    url="https://youtu.be/zRLzJnDXyi4"
                     controls
-                    light={require('../assets/nuxt-chat.png')}
+                    light={require('../assets/colors.png')}
                     width="100%"
                     height="100%"
                   />
