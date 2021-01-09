@@ -20,17 +20,19 @@ function BackEndPage() {
         <Grid item container xs={12}>
           <Paper className={classes.paperPadding} elevation={3}>
             <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Typography variant="h4">
+                  Venezo Project E-commerce project (Python, Django)
+                </Typography>
+              </Grid>
               <Grid item xs={12} sm={6}>
                 <ReactPlayer
                   url="https://youtu.be/IHpfcNRXUcU"
                   controls
-                  poster="/assets/me1.jpg"
+                  light={require('../assets/me1.jpg')}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
-                <Typography variant="h4">
-                  Venezo Project E-commerce project (Python, Django)
-                </Typography>
                 <Image
                   onClick={() => console.log('onClick')}
                   src={require('../assets/me1.jpg')}
