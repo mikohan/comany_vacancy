@@ -48,6 +48,34 @@ export const translateText: TransText = {
                     quidem itaque incidunt quos dolores! Debitis voluptas dolore
                     repudiandae.`,
       },
+      nuxtChat: {
+        title: `Instant Chat based on NuxtJS, Socket.i and Express`,
+        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
+                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
+                    harum doloribus quas, modi porro voluptate dignissimos eaque
+                    exercitationem? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Nobis consequatur deleniti sunt beatae
+                    placeat dolorem fugit, aut voluptatum architecto mollitia
+                    cumque maxime veritatis alias quo a voluptates eaque
+                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
+                    illum cum quisquam ex, perferendis, dolore ratione nulla
+                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
+                    labore, in minus quia, dolores earum voluptas magnam
+                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
+                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
+                    cumque cupiditate incidunt excepturi ducimus soluta
+                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
+                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
+                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
+                    recusandae enim neque aliquid deserunt commodi nam doloribus
+                    odio itaque. Pariatur esse, accusantium quia explicabo sed
+                    perferendis! Vero molestiae exercitationem, odit voluptate
+                    molestias expedita facere modi eos blanditiis quia provident
+                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
+                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
+                    repudiandae.`,
+      },
       colors: {
         title: `Colors React Application`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -93,6 +121,10 @@ export const translateText: TransText = {
         title: `Интернет Магазин Запчастей (Python, Django)`,
         mainText: `orem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский. Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном. Поскольку текст Цицерона не содержит буквы K, W, или Z, что чуждо для латинского, эти буквы, а также многие другие часто вставлены в случайном порядке, чтобы скопировать тексты различных Европейских языков, поскольку диграфы не встречаются в оригинальных текстах.`,
       },
+      nuxtChat: {
+        title: `Сервис мгновенных сообщений(чат), NuxtJS, Express, Socket.io`,
+        mainText: `orem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский. Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном. Поскольку текст Цицерона не содержит буквы K, W, или Z, что чуждо для латинского, эти буквы, а также многие другие часто вставлены в случайном порядке, чтобы скопировать тексты различных Европейских языков, поскольку диграфы не встречаются в оригинальных текстах.`,
+      },
       colors: {
         title: `Приложение для работы с цветовыми палитрами`,
         mainText: `orem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский. Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном. Поскольку текст Цицерона не содержит буквы K, W, или Z, что чуждо для латинского, эти буквы, а также многие другие часто вставлены в случайном порядке, чтобы скопировать тексты различных Европейских языков, поскольку диграфы не встречаются в оригинальных текстах.`,
@@ -116,8 +148,14 @@ export const translateText: TransText = {
 
 Pokud by se pro stejný účel použil smysluplný text, bylo by těžké hodnotit pouze vzhled, aniž by se pozorovatel nechal svést ke čtení obsahu. Pokud by byl naopak použit nesmyslný, ale pravidelný text (např. opakování „asdf asdf asdf…“), oko by při posuzování vzhledu bylo vyrušováno pravidelnou strukturou textu, která se od běžného textu liší. Text lorem ipsum na první pohled připomíná běžný text, slova jsou různě dlouhá, frekvence písmen je podobná běžné řeči, interpunkce vypadá přirozeně atd.`,
       },
+      nuxtChat: {
+        title: `Instant Chat based on NuxtJS, Socket.i and Express`,
+        mainText: `Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah.
+
+Pokud by se pro stejný účel použil smysluplný text, bylo by těžké hodnotit pouze vzhled, aniž by se pozorovatel nechal svést ke čtení obsahu. Pokud by byl naopak použit nesmyslný, ale pravidelný text (např. opakování „asdf asdf asdf…“), oko by při posuzování vzhledu bylo vyrušováno pravidelnou strukturou textu, která se od běžného textu liší. Text lorem ipsum na první pohled připomíná běžný text, slova jsou různě dlouhá, frekvence písmen je podobná běžné řeči, interpunkce vypadá přirozeně atd.`,
+      },
       colors: {
-        title: `Venezo Project E-commerce project (Python, Django)`,
+        title: `Colors React Application`,
         mainText: `Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah.
 
 Pokud by se pro stejný účel použil smysluplný text, bylo by těžké hodnotit pouze vzhled, aniž by se pozorovatel nechal svést ke čtení obsahu. Pokud by byl naopak použit nesmyslný, ale pravidelný text (např. opakování „asdf asdf asdf…“), oko by při posuzování vzhledu bylo vyrušováno pravidelnou strukturou textu, která se od běžného textu liší. Text lorem ipsum na první pohled připomíná běžný text, slova jsou různě dlouhá, frekvence písmen je podobná běžné řeči, interpunkce vypadá přirozeně atd.`,
