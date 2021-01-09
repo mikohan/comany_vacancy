@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import { Grid } from '@material-ui/core';
 import '../tmp.scss';
 import PortfolioSingle from './PortfolioSingle';
+import { translateText } from '../translate/texts';
+import { ThemeContext } from '../context/ThemeContext';
 
 function BackEndPage() {
+  const context = useContext(ThemeContext);
+  let { language } = context;
+  const { portfolio } = translateText[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -13,7 +18,7 @@ function BackEndPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <h1>Portfolio Page</h1>
+      <h1>{portfolio.pageTitle}</h1>
       <Grid container spacing={6}>
         <Grid item container xs={12}>
           <PortfolioSingle
