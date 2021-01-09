@@ -76,7 +76,7 @@ function BackEndPage() {
             <Grid container spacing={6}>
               <Grid item xs={12}>
                 <Typography variant="h4">
-                  Venezo Project E-commerce project (Python, Django)
+                  Instant Chat based on NuxtJS, Socket.i and Express
                 </Typography>
               </Grid>
               <Grid item xs={12} sm={5}>
