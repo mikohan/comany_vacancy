@@ -4,6 +4,7 @@ import { durationPage } from '../config';
 import ReactPlayer from 'react-player';
 import { Grid, Paper, Box, Typography } from '@material-ui/core';
 import { useStyles } from '../styles/PorfolioPageStyles';
+import Img from 'react-optimized-image';
 
 function BackEndPage() {
   const classes = useStyles();
@@ -20,12 +21,17 @@ function BackEndPage() {
           <Paper className={classes.paperPadding} elevation={3}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
-                <ReactPlayer url="https://youtu.be/IHpfcNRXUcU" controls />
+                <ReactPlayer
+                  url="https://youtu.be/IHpfcNRXUcU"
+                  controls
+                  poster="/assets/me1.jpg"
+                />
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="h4">
                   Venezo Project E-commerce project (Python, Django)
                 </Typography>
+                <Img src={require('../assets/me1.jpg')} />
               </Grid>
             </Grid>
           </Paper>
