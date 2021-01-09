@@ -8,7 +8,7 @@ import MarketingPage from './MarketingPage';
 import PersonalityPage from './PersonalityPage';
 import HobbiesPage from './HobbiesPage';
 import Page_404 from './Page_404';
-import AboutPageTest from './AboutPageTest';
+import HomePageSecond from './HomePageSecond';
 import Posts from './blog/Posts';
 import Post from './blog/Post';
 import HomePage from './HomePage';
@@ -21,7 +21,6 @@ function Routes() {
         <Route exact path="/frontend" component={FrontEndPage} />
         <Route exact path="/backend" component={BackEndPage} />
         <Route exact path="/computers" component={SysAdminPage} />
-        <Route exact path="/test" component={AboutPageTest} />
         <Route exact path="/marketing" component={MarketingPage} />
         <Route exact path="/personality" component={PersonalityPage} />
         <Route exact path="/hobbies" component={HobbiesPage} />
@@ -29,7 +28,7 @@ function Routes() {
         <Route exact path="/blog/:id" component={Post} />
         <Route exact path="/testpage" component={HomePage} />
         <Route exact path="/portfolio" component={PortfolioPage} />
-        <Route exact path="/" component={AboutPageTest} />
+        <Route exact path="/" component={HomePageSecond} />
         <Route component={Page_404} />
       </Switch>
     </div>

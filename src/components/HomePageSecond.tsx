@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 
 import { useStyles } from '../styles/AboutPageTestStylesl';
-import { Paper, Box, Typography, Button } from '@material-ui/core';
+import { Box, Typography, Button } from '@material-ui/core';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 

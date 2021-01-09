@@ -64,6 +64,24 @@ export default function PersistentDrawerLeft(): JSX.Element {
     [isDarkMode]
   );
 
+  theme.typography.h3 = {
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '3.4rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '2.2rem',
+    },
+  };
+
+  theme.typography.h4 = {
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '1.6rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1rem',
+    },
+  };
+
   const classes = useStyles();
 
   const [open, setOpen] = React.useState(isDrawerOpen);
