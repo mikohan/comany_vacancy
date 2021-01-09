@@ -10,18 +10,6 @@ export const useStyles = makeStyles((theme) => {
     boxWide: {
       padding: theme.spacing(5),
     },
-
-    videoItem: {
-      [theme.breakpoints.up('xs')]: {
-        height: '250px',
-      },
-      [theme.breakpoints.up('sm')]: {
-        height: '500px',
-      },
-      [theme.breakpoints.up('lg')]: {
-        height: '700px',
-      },
-    },
     textPadding: {
       paddingLeft: theme.spacing(10),
     },
