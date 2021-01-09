@@ -91,8 +91,12 @@ export default function PersistentDrawerLeft(): JSX.Element {
     },
   };
   theme.typography.body1 = {
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '1.25rem',
+    },
+
     [theme.breakpoints.up('sm')]: {
-      fontSize: '1.5rem',
+      fontSize: '1rem',
     },
     [theme.breakpoints.down('sm')]: {
       fontSize: '0.7rem',
