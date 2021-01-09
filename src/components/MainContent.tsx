@@ -37,7 +37,7 @@ import Select from '@material-ui/core/Select';
 // End of select imports
 
 import { useStyles } from '../styles/MainContextStyles';
-import { FormControlLabel, Switch } from '@material-ui/core';
+import { FormControlLabel, Switch, Box } from '@material-ui/core';
 
 import Routes from './Routs';
 import { ThemeContext } from '../context/ThemeContext';
@@ -79,6 +79,22 @@ export default function PersistentDrawerLeft(): JSX.Element {
     },
     [theme.breakpoints.down('sm')]: {
       fontSize: '1rem',
+    },
+  };
+  theme.typography.h6 = {
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '1.25rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '0.8rem',
+    },
+  };
+  theme.typography.body1 = {
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '1.5rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '0.8rem',
     },
   };
 
@@ -135,13 +151,15 @@ export default function PersistentDrawerLeft(): JSX.Element {
             >
               <MenuIcon />
             </IconButton>
-            <MenuItem>
-              <Typography variant="h6" noWrap>
-                <Link className={classes.menuItemLink} to="/">
-                  {logoHome}
-                </Link>
-              </Typography>
-            </MenuItem>
+            <Box display={{ xs: 'none', sm: 'block' }}>
+              <MenuItem>
+                <Typography variant="h6" noWrap>
+                  <Link className={classes.menuItemLink} to="/">
+                    {logoHome}
+                  </Link>
+                </Typography>
+              </MenuItem>
+            </Box>
 
             <div className={classes.menuItems}>
               <MenuItem>

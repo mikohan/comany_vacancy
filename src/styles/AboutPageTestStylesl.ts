@@ -9,6 +9,14 @@ export const useStyles = makeStyles((theme) => {
   const context = useContext(ThemeContext);
   const { isDarkMode } = context;
   return {
+    porfolioText: {
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '3.4rem',
+      },
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '2.2rem',
+      },
+    },
     wrapper: {
       overflowX: 'hidden',
       height: '100vh',

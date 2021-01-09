@@ -52,7 +52,10 @@ function PortfolioSingle({
         </Grid>
         {!direction ? <PlayerBox /> : ''}
         <Grid item xs={12} sm={5}>
-          <Box className={classes.textPadding}>
+          <Box
+            className={classes.textPadding}
+            display={{ xs: 'none', md: 'block' }}
+          >
             <Typography variant="body1" align="left">
               {portfolio[projectName].mainText}
             </Typography>
@@ -61,39 +64,41 @@ function PortfolioSingle({
         {direction ? <PlayerBox /> : ''}
       </Grid>
       <Grid className={classes.bottomLinks} item xs={12}>
-        {buttons ? (
-          <Box>
-            <a
-              href={portfolio[projectName].project.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                style={{ marginRight: '16px' }}
-                color="primary"
-                variant="contained"
-                startIcon={<VisibilityIcon />}
+        <Box display={{ xs: 'none', sm: 'block' }}>
+          {buttons ? (
+            <Box>
+              <a
+                href={portfolio[projectName].project.href}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {portfolio[projectName].project.text}
-              </Button>
-            </a>
-            <a
-              href={portfolio[projectName].gitHub.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                color="primary"
-                variant="contained"
-                startIcon={<GitHubIcon />}
+                <Button
+                  style={{ marginRight: '16px' }}
+                  color="primary"
+                  variant="contained"
+                  startIcon={<VisibilityIcon />}
+                >
+                  {portfolio[projectName].project.text}
+                </Button>
+              </a>
+              <a
+                href={portfolio[projectName].gitHub.href}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {portfolio[projectName].gitHub.text}
-              </Button>
-            </a>
-          </Box>
-        ) : (
-          ''
-        )}
+                <Button
+                  color="primary"
+                  variant="contained"
+                  startIcon={<GitHubIcon />}
+                >
+                  {portfolio[projectName].gitHub.text}
+                </Button>
+              </a>
+            </Box>
+          ) : (
+            ''
+          )}
+        </Box>
       </Grid>
     </Paper>
   );
