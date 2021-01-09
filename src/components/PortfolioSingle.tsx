@@ -12,13 +12,34 @@ interface IProps {
   vidUrl: string;
   coverImg?: string;
   projectName: string;
+  direction?: boolean;
 }
 
-function PortfolioSingle({ vidUrl, coverImg, projectName }: IProps) {
+function PortfolioSingle({
+  vidUrl,
+  coverImg,
+  projectName,
+  direction = false,
+}: IProps) {
   const classes = useStyles();
   const context = useContext(ThemeContext);
   let { language } = context;
   const { portfolio } = translateText[language];
+
+  const PlayerBox = () => (
+    <Grid item xs={12} sm={7}>
+      <Box className="player-wrapper">
+        <ReactPlayer
+          className="react-player"
+          url={vidUrl}
+          controls
+          light={coverImg}
+          width="100%"
+          height="100%"
+        />
+      </Box>
+    </Grid>
+  );
 
   return (
     <Paper className={classes.paperPadding} elevation={3}>
@@ -26,18 +47,7 @@ function PortfolioSingle({ vidUrl, coverImg, projectName }: IProps) {
         <Grid item xs={12}>
           <Typography variant="h4">{portfolio[projectName].title}</Typography>
         </Grid>
-        <Grid item xs={12} sm={7}>
-          <Box className="player-wrapper">
-            <ReactPlayer
-              className="react-player"
-              url={vidUrl}
-              controls
-              light={coverImg}
-              width="100%"
-              height="100%"
-            />
-          </Box>
-        </Grid>
+        {!direction ? <PlayerBox /> : ''}
         <Grid item xs={12} sm={5}>
           <Box className={classes.textPadding}>
             <Typography variant="body1" align="left">
@@ -45,6 +55,7 @@ function PortfolioSingle({ vidUrl, coverImg, projectName }: IProps) {
             </Typography>
           </Box>
         </Grid>
+        {direction ? <PlayerBox /> : ''}
       </Grid>
       <Grid className={classes.bottomLinks} item xs={12} sm={7}>
         <Box>

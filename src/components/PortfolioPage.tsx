@@ -24,9 +24,17 @@ function BackEndPage() {
         </Grid>
         <Grid item container xs={12}>
           <PortfolioSingle
-            vidUrl="https://youtu.be/IHpfcNRXUcU"
+            vidUrl="https://youtu.be/44Nw_QoZDuc"
             coverImg={require('../assets/nuxt-chat.png')}
             projectName="nuxtChat"
+            direction
+          />
+        </Grid>
+        <Grid item container xs={12}>
+          <PortfolioSingle
+            vidUrl="https://youtu.be/zRLzJnDXyi4"
+            coverImg={require('../assets/colors.png')}
+            projectName="colors"
           />
         </Grid>
       </Grid>
