@@ -26,5 +26,16 @@ export const useStyles = makeStyles((theme) => {
       padding: theme.spacing(5),
       width: '100%',
     },
+    playerWrapper: {
+      width: 'auto',
+      height: 'auto',
+    },
+    reactPlayer: {
+      paddingTop: '56.25',
+      position: 'relative',
+    },
+    'reactPlayer > div': {
+      position: 'absolute',
+    },
   };
 });
