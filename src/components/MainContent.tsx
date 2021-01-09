@@ -44,6 +44,7 @@ import { ThemeContext } from '../context/ThemeContext';
 
 import { translateHeader } from '../translate/header';
 import { isDrawerOpen } from '../config';
+import HomeIcon from '@material-ui/icons/Home';
 
 export default function PersistentDrawerLeft(): JSX.Element {
   const context = useContext(ThemeContext);
@@ -151,15 +152,11 @@ export default function PersistentDrawerLeft(): JSX.Element {
             >
               <MenuIcon />
             </IconButton>
-            <Box display={{ xs: 'none', sm: 'block' }}>
-              <MenuItem>
-                <Typography variant="h6" noWrap>
-                  <Link className={classes.menuItemLink} to="/">
-                    {logoHome}
-                  </Link>
-                </Typography>
-              </MenuItem>
-            </Box>
+            <MenuItem>
+              <Link className={classes.menuItemLink} to="/">
+                <HomeIcon />
+              </Link>
+            </MenuItem>
 
             <div className={classes.menuItems}>
               <MenuItem>
