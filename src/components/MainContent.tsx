@@ -214,7 +214,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
               }
             />
 
-            <FormControl className={classes.formControl}>
+            <FormControl variant="outlined" className={classes.formControl}>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -225,19 +225,19 @@ export default function PersistentDrawerLeft(): JSX.Element {
                   <span role="img" aria-labelledby="#flag-icon">
                     🇺🇸
                   </span>
-                  <span className={classes.languageSpan}>English</span>
+                  <span className={classes.languageSpan}>En</span>
                 </MenuItem>
                 <MenuItem value="russian">
                   <span role="img" aria-labelledby="#flag-icon">
                     🇷🇺
                   </span>
-                  <span className={classes.languageSpan}>Russian</span>
+                  <span className={classes.languageSpan}>Ru</span>
                 </MenuItem>
                 <MenuItem value="czech">
                   <span role="img" aria-labelledby="#flag-icon">
                     🇨🇿
                   </span>
-                  <span className={classes.languageSpan}>Czech</span>
+                  <span className={classes.languageSpan}>Cz</span>
                 </MenuItem>
               </Select>
             </FormControl>

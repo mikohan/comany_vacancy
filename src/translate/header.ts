@@ -4,9 +4,9 @@ interface TransHeader {
 
 export const translateHeader: TransHeader = {
   english: {
-    logoHome: 'HOME',
-    darkTheme: 'DARK THEME',
-    lightTheme: 'LIGHT THEME',
+    logoHome: 'Home',
+    darkTheme: 'Dark',
+    lightTheme: 'Light',
     introduction: 'Introduction',
     frontEnd: 'Frontend',
     sysAdmin: 'Sys Admin',
@@ -19,9 +19,9 @@ export const translateHeader: TransHeader = {
     portfolio: 'Portfolio',
   },
   russian: {
-    logoHome: 'ГЛАВНАЯ',
-    darkTheme: 'ТЕМНАЯ ТЕМА',
-    lightTheme: 'СВЕТЛАЯ ТЕМА',
+    logoHome: 'Главная',
+    darkTheme: 'Темная',
+    lightTheme: 'Светлая',
     introduction: 'Обо Мне',
     frontEnd: 'Фронтенд',
     backEnd: 'Бэкенд',
@@ -34,12 +34,12 @@ export const translateHeader: TransHeader = {
     portfolio: 'Портфолио',
   },
   czech: {
-    logoHome: 'HOME',
-    darkTheme: 'tmavé téma',
-    lightTheme: 'světelné téma',
+    logoHome: 'Home',
+    darkTheme: 'Tmavé',
+    lightTheme: 'Světelné',
     introduction: 'o mně',
-    frontEnd: 'FRONTEND',
-    backEnd: 'BACKEND',
+    frontEnd: 'Frontend',
+    backEnd: 'Backend',
     sysAdmin: 'Systema Admin',
     marketing: 'Maketing',
     flag: '🇨🇿',

@@ -84,6 +84,7 @@ export const useStyles = makeStyles((theme: Theme) => {
     },
     languageSpan: {
       marginLeft: theme.spacing(1),
+      fontSize: '1rem',
     },
     menuItemLink: {
       textDecoration: 'none',
