@@ -46,7 +46,7 @@ function BackEndPage() {
           <PortfolioSingle
             vidUrl="https://youtu.be/zRLzJnDXyi4"
             coverImg={require('../assets/colors.png')}
-            projectName="colors"
+            projectName="ducato"
             buttons={false}
             direction
           />
