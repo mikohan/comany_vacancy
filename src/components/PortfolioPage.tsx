@@ -163,7 +163,7 @@ function BackEndPage() {
               vidUrl="https://youtu.be/6L9CCT7akuU"
               coverImg={require('../assets/ducato_cover.png')}
               projectName="ducato"
-              buttons={false}
+              buttons={true}
               direction
             />
           </div>
