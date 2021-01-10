@@ -32,16 +32,18 @@ function BackEndPage() {
       transition={{ duration: durationPage }}
     >
       <Grid container spacing={6}>
-        <Grid item container xs={12}>
+        <Grid item container spacing={6} xs={12}>
           <Grid item xs={4}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="body1">Full Stack Projects</Typography>
+              <Typography variant="body1">
+                Full Stack Projects Fast Links
+              </Typography>
               <List className={classes.listAll}>
                 <ListItem>
                   <ListItemText
                     primary={
                       <HashLink className={classes.hashLink} to="#ducato">
-                        Car Parts E-Commerce
+                        {portfolio.ducato.title}
                       </HashLink>
                     }
                     secondary="(Django, Python)"
@@ -51,27 +53,44 @@ function BackEndPage() {
                   <ListItemText
                     primary={
                       <HashLink className={classes.hashLink} to="#ducato">
-                        Car Parts E-Commerce
+                        {portfolio.venezo.title}
                       </HashLink>
                     }
-                    secondary="(Django, Python)"
+                    secondary="(Django, Python, Elasticsearch)"
                   />
                 </ListItem>
               </List>
             </Paper>
           </Grid>
-          <List className={classes.fastLinks}>
-            <ListItem></ListItem>
-            <ListItem>
-              <HashLink to="#ducato">Ducato</HashLink>
-            </ListItem>
-            <ListItem>
-              <HashLink to="#ducato">Ducato</HashLink>
-            </ListItem>
-            <ListItem>
-              <HashLink to="#ducato">Ducato</HashLink>
-            </ListItem>
-          </List>
+          <Grid item xs={4}>
+            <Paper className={classes.fastLinkPapaer} elevation={3}>
+              <Typography variant="body1">
+                Front End Projects Fast Links
+              </Typography>
+              <List className={classes.listAll}>
+                <ListItem>
+                  <ListItemText
+                    primary={
+                      <HashLink className={classes.hashLink} to="#ducato">
+                        {portfolio.ducato.title}
+                      </HashLink>
+                    }
+                    secondary="(Django, Python)"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary={
+                      <HashLink className={classes.hashLink} to="#ducato">
+                        {portfolio.venezo.title}
+                      </HashLink>
+                    }
+                    secondary="(Django, Python, Elasticsearch)"
+                  />
+                </ListItem>
+              </List>
+            </Paper>
+          </Grid>
         </Grid>
       </Grid>
       <Grid container spacing={6}>
