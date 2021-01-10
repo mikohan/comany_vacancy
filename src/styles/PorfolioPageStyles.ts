@@ -32,13 +32,13 @@ export const useStyles = makeStyles((theme) => {
     },
     fastLinkPapaer: {
       paddingTop: theme.spacing(1),
-      widht: '100%',
+      width: '100%',
     },
     listAll: {
       widt: '100%',
     },
     hashLink: {
-      color: 'inherit',
+      color: '#2196f3',
     },
   };
 });

@@ -33,8 +33,8 @@ function BackEndPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <Grid container spacing={6}>
-        <Grid item container spacing={6} xs={12}>
+      <Grid container spacing={3}>
+        <Grid item container xs={12} justify="space-between" spacing={1}>
           <Grid item xs={4}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
               <Typography variant="body1">{fullStackLinks}</Typography>
@@ -65,6 +65,33 @@ function BackEndPage() {
           <Grid item xs={4}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
               <Typography variant="body1">{frontEndLinks}</Typography>
+              <List className={classes.listAll}>
+                <ListItem>
+                  <ListItemText
+                    primary={
+                      <HashLink className={classes.hashLink} to="#ducato">
+                        {portfolio.ducato.title}
+                      </HashLink>
+                    }
+                    secondary="(Django, Python)"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary={
+                      <HashLink className={classes.hashLink} to="#ducato">
+                        {portfolio.venezo.title}
+                      </HashLink>
+                    }
+                    secondary="(Django, Python, Elasticsearch)"
+                  />
+                </ListItem>
+              </List>
+            </Paper>
+          </Grid>
+          <Grid item xs={4}>
+            <Paper className={classes.fastLinkPapaer} elevation={3}>
+              <Typography variant="body1">{miscLinks}</Typography>
               <List className={classes.listAll}>
                 <ListItem>
                   <ListItemText
