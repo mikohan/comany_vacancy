@@ -42,21 +42,21 @@ function BackEndPage() {
                 <ListItem>
                   <ListItemText
                     primary={
-                      <HashLink className={classes.hashLink} to="#ducato">
-                        {portfolio.ducato.title}
+                      <HashLink className={classes.hashLink} to="#venezo">
+                        {portfolio.venezo.title}
                       </HashLink>
                     }
-                    secondary="(Django, Python)"
+                    secondary="(Django, Python, Elasticsearch)"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemText
                     primary={
                       <HashLink className={classes.hashLink} to="#ducato">
-                        {portfolio.venezo.title}
+                        {portfolio.ducato.title}
                       </HashLink>
                     }
-                    secondary="(Django, Python, Elasticsearch)"
+                    secondary="(Django, Python, MySQL)"
                   />
                 </ListItem>
               </List>
@@ -69,21 +69,31 @@ function BackEndPage() {
                 <ListItem>
                   <ListItemText
                     primary={
-                      <HashLink className={classes.hashLink} to="#ducato">
-                        {portfolio.ducato.title}
+                      <HashLink className={classes.hashLink} to="#nuxtChat">
+                        {portfolio.nuxtChat.title}
                       </HashLink>
                     }
-                    secondary="(Django, Python)"
+                    secondary="(NuxtJS, Socket.io, Express, NodeJS)"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemText
                     primary={
-                      <HashLink className={classes.hashLink} to="#ducato">
-                        {portfolio.venezo.title}
+                      <HashLink className={classes.hashLink} to="#colors">
+                        {portfolio.colors.title}
                       </HashLink>
                     }
-                    secondary="(Django, Python, Elasticsearch)"
+                    secondary="(React, Javascript)"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary={
+                      <HashLink className={classes.hashLink} to="#colors">
+                        {portfolio.colors.title}
+                      </HashLink>
+                    }
+                    secondary="(React, Javascript)"
                   />
                 </ListItem>
               </List>
@@ -120,26 +130,32 @@ function BackEndPage() {
       </Grid>
       <Grid container spacing={6}>
         <Grid item container xs={12}>
-          <PortfolioSingle
-            vidUrl="https://youtu.be/IHpfcNRXUcU"
-            coverImg={require('../assets/venezo-cover.png')}
-            projectName="venezo"
-          />
+          <div id="venezo">
+            <PortfolioSingle
+              vidUrl="https://youtu.be/IHpfcNRXUcU"
+              coverImg={require('../assets/venezo-cover.png')}
+              projectName="venezo"
+            />
+          </div>
         </Grid>
         <Grid item container xs={12}>
-          <PortfolioSingle
-            vidUrl="https://youtu.be/44Nw_QoZDuc"
-            coverImg={require('../assets/nuxt-chat.png')}
-            projectName="nuxtChat"
-            direction
-          />
+          <div id="nuxtChat">
+            <PortfolioSingle
+              vidUrl="https://youtu.be/44Nw_QoZDuc"
+              coverImg={require('../assets/nuxt-chat.png')}
+              projectName="nuxtChat"
+              direction
+            />
+          </div>
         </Grid>
         <Grid item container xs={12}>
-          <PortfolioSingle
-            vidUrl="https://youtu.be/zRLzJnDXyi4"
-            coverImg={require('../assets/colors.png')}
-            projectName="colors"
-          />
+          <div id="colors">
+            <PortfolioSingle
+              vidUrl="https://youtu.be/zRLzJnDXyi4"
+              coverImg={require('../assets/colors.png')}
+              projectName="colors"
+            />
+          </div>
         </Grid>
         <Grid item container xs={12}>
           <div id="ducato">
@@ -158,7 +174,7 @@ function BackEndPage() {
               bottom: 100,
               right: 100,
             }}
-            showUnder={360}
+            showUnder={260}
           >
             <IconButton color="primary" aria-label="add to shopping cart">
               <PresentToAllIcon className={classes.scrollUp} />

@@ -33,6 +33,7 @@ export const useStyles = makeStyles((theme) => {
     fastLinkPapaer: {
       paddingTop: theme.spacing(1),
       width: '100%',
+      height: '100%',
     },
     listAll: {
       widt: '100%',
