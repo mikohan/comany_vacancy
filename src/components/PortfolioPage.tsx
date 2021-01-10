@@ -1,15 +1,18 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { Grid } from '@material-ui/core';
+import { Grid, IconButton } from '@material-ui/core';
 import '../tmp.scss';
 import PortfolioSingle from './PortfolioSingle';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import { HashLink } from 'react-router-hash-link';
 import ScrollToTop from 'react-scroll-up';
+import PresentToAllIcon from '@material-ui/icons/PresentToAll';
+import { useStyles } from '../styles/PorfolioPageStyles';
 
 function BackEndPage() {
+  const classes = useStyles();
   const context = useContext(ThemeContext);
   let { language } = context;
   const { portfolio } = translateText[language];
@@ -63,8 +66,16 @@ function BackEndPage() {
           </div>
         </Grid>
         <Grid item xs={12}>
-          <ScrollToTop showUnder={160}>
-            <span>UP</span>
+          <ScrollToTop
+            style={{
+              bottom: 100,
+              right: 100,
+            }}
+            showUnder={360}
+          >
+            <IconButton color="primary" aria-label="add to shopping cart">
+              <PresentToAllIcon className={classes.scrollUp} />
+            </IconButton>
           </ScrollToTop>
         </Grid>
       </Grid>

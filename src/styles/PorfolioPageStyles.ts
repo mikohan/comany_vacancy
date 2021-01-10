@@ -22,5 +22,10 @@ export const useStyles = makeStyles((theme) => {
     bottomLinks: {
       padding: theme.spacing(3),
     },
+    scrollUp: {
+      position: 'fixed',
+      bottom: 100,
+      right: 100,
+    },
   };
 });
