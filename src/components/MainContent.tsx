@@ -37,14 +37,14 @@ import Select from '@material-ui/core/Select';
 // End of select imports
 
 import { useStyles } from '../styles/MainContextStyles';
-import { FormControlLabel, Switch, Button } from '@material-ui/core';
+import { FormControlLabel, Switch, Box } from '@material-ui/core';
 
 import Routes from './Routs';
 import { ThemeContext } from '../context/ThemeContext';
 
 import { translateHeader } from '../translate/header';
 import { isDrawerOpen } from '../config';
-import HomeIcon from '@material-ui/icons/Home';
+import HomeOutlined from '@material-ui/icons/HomeOutlined';
 
 export default function PersistentDrawerLeft(): JSX.Element {
   const context = useContext(ThemeContext);
@@ -157,10 +157,10 @@ export default function PersistentDrawerLeft(): JSX.Element {
             </IconButton>
             <MenuItem className={classes.menuItemLink}>
               <Link className={classes.menuItemLink} to="/">
-                {logoHome}
+                <HomeOutlined />
               </Link>
             </MenuItem>
-            <div className={classes.menuItems}>
+            <Box className={classes.menuItems}>
               <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/portfolio">
                   {portfolio}
@@ -196,7 +196,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
                   {blog}
                 </Link>
               </MenuItem>
-            </div>
+            </Box>
 
             <div className={classes.grow}></div>
             <FormControlLabel
@@ -264,7 +264,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
             <Link className={classes.drawerLink} to="/">
               <ListItem button>
                 <ListItemIcon>
-                  <HomeIcon />
+                  <HomeOutlined />
                 </ListItemIcon>
                 <ListItemText primary={logoHome} />
               </ListItem>
