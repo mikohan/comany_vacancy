@@ -35,22 +35,26 @@ function BackEndPage() {
         <Grid item container xs={12}>
           <Grid item xs={4}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="h6">Full Stack Projects</Typography>
+              <Typography variant="body1">Full Stack Projects</Typography>
               <List className={classes.listAll}>
                 <ListItem>
                   <ListItemText
                     primary={
                       <HashLink className={classes.hashLink} to="#ducato">
-                        E-Commerce(Django, Python)
+                        Car Parts E-Commerce
                       </HashLink>
                     }
-                    secondary="Secondary text"
+                    secondary="(Django, Python)"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemText
-                    primary="Single-line item"
-                    secondary="Secondary text"
+                    primary={
+                      <HashLink className={classes.hashLink} to="#ducato">
+                        Car Parts E-Commerce
+                      </HashLink>
+                    }
+                    secondary="(Django, Python)"
                   />
                 </ListItem>
               </List>
