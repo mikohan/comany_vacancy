@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { Grid, IconButton } from '@material-ui/core';
+import { Grid, IconButton, Paper, List, ListItem } from '@material-ui/core';
 import '../tmp.scss';
 import PortfolioSingle from './PortfolioSingle';
 import { translateText } from '../translate/texts';
@@ -26,9 +26,13 @@ function BackEndPage() {
       <h1>{portfolio.pageTitle}</h1>
       <Grid container spacing={6}>
         <Grid item xs={12}>
-          <p>
-            <HashLink to="#ducato">Ducato</HashLink>
-          </p>
+          <Paper className={classes.fastLinkPapaer} elevation={3}>
+            <List className={classes.fastLinks}>
+              <ListItem>
+                <HashLink to="#ducato">Ducato</HashLink>
+              </ListItem>
+            </List>
+          </Paper>
         </Grid>
       </Grid>
       <Grid container spacing={6}>

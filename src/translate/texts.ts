@@ -1,7 +1,3 @@
-interface IPortfolio {
-  [key: string]: { [key: string]: { [key: string]: string } };
-}
-
 interface TransText {
   [key: string]: {
     [key: string]: string | any;

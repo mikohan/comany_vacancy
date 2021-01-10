@@ -25,5 +25,13 @@ export const useStyles = makeStyles((theme) => {
     scrollUp: {
       fontSize: '5rem',
     },
+    fastLinks: {
+      display: 'flex',
+      flexDirection: 'row',
+      padding: 0,
+    },
+    fastLinkPapaer: {
+      widht: '100%',
+    },
   };
 });
