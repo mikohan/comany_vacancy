@@ -155,7 +155,10 @@ export default function PersistentDrawerLeft(): JSX.Element {
             >
               <MenuIcon />
             </IconButton>
-            <MenuItem className={classes.menuItemLink}>
+            <MenuItem
+              className={classes.menuItemLink}
+              style={{ paddingTop: '15px' }}
+            >
               <Link className={classes.menuItemLink} to="/">
                 <HomeOutlined />
               </Link>
