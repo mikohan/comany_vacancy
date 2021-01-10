@@ -23,7 +23,9 @@ function BackEndPage() {
   const classes = useStyles();
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { portfolio } = translateText[language];
+  const { portfolio, fullStackLinks, frontEndLinks, miscLinks } = translateText[
+    language
+  ];
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -35,9 +37,7 @@ function BackEndPage() {
         <Grid item container spacing={6} xs={12}>
           <Grid item xs={4}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="body1">
-                Full Stack Projects Fast Links
-              </Typography>
+              <Typography variant="body1">{fullStackLinks}</Typography>
               <List className={classes.listAll}>
                 <ListItem>
                   <ListItemText
@@ -64,9 +64,7 @@ function BackEndPage() {
           </Grid>
           <Grid item xs={4}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="body1">
-                Front End Projects Fast Links
-              </Typography>
+              <Typography variant="body1">{frontEndLinks}</Typography>
               <List className={classes.listAll}>
                 <ListItem>
                   <ListItemText

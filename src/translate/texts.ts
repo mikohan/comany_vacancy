@@ -15,8 +15,11 @@ export const translateText: TransText = {
     blog_search: 'Search',
     blog_noSearchResults: 'No Search Results',
     blog_categories: 'Categories',
+    pageTitle: 'Portfolio Page',
+    frontEndLinks: 'Front End Projects Fast Links',
+    fullStackLinks: 'Full Stack Projects Fast Links',
+    miscLinks: 'Miscellanious Projects Fast Links',
     portfolio: {
-      pageTitle: 'Portfolio Page',
       venezo: {
         title: `Venezo Project E-commerce project (Python, Django, ElasticSerach)`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -173,6 +176,9 @@ export const translateText: TransText = {
     blog_search: 'Поиск',
     blog_noSearchResults: 'Поиск не дал результатов',
     blog_categories: 'Категории',
+    frontEndLinks: 'Фрон Енд Проекты',
+    fullStackLinks: 'Фулл Стак Проекты',
+    miscLinks: 'Разные Поекты',
     portfolio: {
       pageTitle: 'Портфолио',
       venezo: {
@@ -259,6 +265,9 @@ export const translateText: TransText = {
     blog_search: 'Vyhledávání',
     blog_noSearchResults: 'Žádné výsledky vyhledávání',
     blog_categories: 'Kategorie',
+    frontEndLinks: 'Front End Projects Fast Links',
+    fullStackLinks: 'Full Stack Projects Fast Links',
+    miscLinks: 'Miscellanious Projects Fast Links',
     portfolio: {
       pageTitle: 'Portfolio Page',
       venezo: {
