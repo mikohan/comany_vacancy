@@ -22,7 +22,7 @@ export const translateText: TransText = {
     portfolio: {
       pageTitle: 'Portfolio Page',
       venezo: {
-        title: `Venezo Project E-commerce project (Python, Django)`,
+        title: `Venezo Project E-commerce project (Python, Django, ElasticSerach)`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
                     vitae nemo, exercitationem tenetur assumenda hic. Pariatur
@@ -58,7 +58,7 @@ export const translateText: TransText = {
         },
       },
       ducato: {
-        title: `Venezo Project E-commerce project (Python, Django)`,
+        title: `Auto Parts E-commerce project (Python, Django)`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
                     vitae nemo, exercitationem tenetur assumenda hic. Pariatur
