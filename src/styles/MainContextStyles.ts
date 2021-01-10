@@ -88,7 +88,7 @@ export const useStyles = makeStyles((theme: Theme) => {
     menuItemLink: {
       textDecoration: 'none',
       color: 'inherit',
-      fontSize: '1.25rem',
+      fontSize: '1.1rem', // Font size for top menu
       [theme.breakpoints.down('sm')]: {
         fontSize: '1rem',
       },
