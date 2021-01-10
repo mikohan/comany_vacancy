@@ -44,8 +44,8 @@ function BackEndPage() {
         </Grid>
         <Grid item container xs={12}>
           <PortfolioSingle
-            vidUrl="https://youtu.be/zRLzJnDXyi4"
-            coverImg={require('../assets/colors.png')}
+            vidUrl="https://youtu.be/6L9CCT7akuU"
+            coverImg={require('../assets/ducato_cover.png')}
             projectName="ducato"
             buttons={false}
             direction
