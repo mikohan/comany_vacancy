@@ -33,5 +33,8 @@ export const useStyles = makeStyles((theme) => {
     fastLinkPapaer: {
       widht: '100%',
     },
+    listAll: {
+      widt: '100%',
+    },
   };
 });

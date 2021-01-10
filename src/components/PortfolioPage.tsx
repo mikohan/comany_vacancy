@@ -1,7 +1,15 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { Grid, IconButton, Paper, List, ListItem } from '@material-ui/core';
+import {
+  Grid,
+  IconButton,
+  Paper,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from '@material-ui/core';
 import '../tmp.scss';
 import PortfolioSingle from './PortfolioSingle';
 import { translateText } from '../translate/texts';
@@ -23,11 +31,38 @@ function BackEndPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <h1>{portfolio.pageTitle}</h1>
       <Grid container spacing={6}>
-        <Grid item xs={12}>
+        <Grid item container xs={12}>
           <Paper className={classes.fastLinkPapaer} elevation={3}>
+            <Grid item xs={4}>
+              <div className="some">
+                <Typography variant="h6">Front end stuff</Typography>
+                <List className={classes.listAll}>
+                  <ListItem>
+                    <ListItemText
+                      primary="Single-line item"
+                      secondary="Secondary text"
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText
+                      primary="Single-line item"
+                      secondary="Secondary text"
+                    />
+                  </ListItem>
+                </List>
+              </div>
+            </Grid>
             <List className={classes.fastLinks}>
+              <ListItem>
+                <HashLink to="#ducato">Ducato</HashLink>
+              </ListItem>
+              <ListItem>
+                <HashLink to="#ducato">Ducato</HashLink>
+              </ListItem>
+              <ListItem>
+                <HashLink to="#ducato">Ducato</HashLink>
+              </ListItem>
               <ListItem>
                 <HashLink to="#ducato">Ducato</HashLink>
               </ListItem>
