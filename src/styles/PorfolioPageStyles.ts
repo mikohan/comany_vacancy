@@ -23,9 +23,7 @@ export const useStyles = makeStyles((theme) => {
       padding: theme.spacing(3),
     },
     scrollUp: {
-      position: 'fixed',
-      bottom: 100,
-      right: 100,
+      fontSize: '5rem',
     },
   };
 });
