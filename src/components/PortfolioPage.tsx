@@ -6,6 +6,8 @@ import '../tmp.scss';
 import PortfolioSingle from './PortfolioSingle';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
+import { HashLink } from 'react-router-hash-link';
+import ScrollToTop from 'react-scroll-up';
 
 function BackEndPage() {
   const context = useContext(ThemeContext);
@@ -19,6 +21,13 @@ function BackEndPage() {
       transition={{ duration: durationPage }}
     >
       <h1>{portfolio.pageTitle}</h1>
+      <Grid container spacing={6}>
+        <Grid item xs={12}>
+          <p>
+            <HashLink to="#ducato">Ducato</HashLink>
+          </p>
+        </Grid>
+      </Grid>
       <Grid container spacing={6}>
         <Grid item container xs={12}>
           <PortfolioSingle
@@ -43,13 +52,20 @@ function BackEndPage() {
           />
         </Grid>
         <Grid item container xs={12}>
-          <PortfolioSingle
-            vidUrl="https://youtu.be/6L9CCT7akuU"
-            coverImg={require('../assets/ducato_cover.png')}
-            projectName="ducato"
-            buttons={false}
-            direction
-          />
+          <div id="ducato">
+            <PortfolioSingle
+              vidUrl="https://youtu.be/6L9CCT7akuU"
+              coverImg={require('../assets/ducato_cover.png')}
+              projectName="ducato"
+              buttons={false}
+              direction
+            />
+          </div>
+        </Grid>
+        <Grid item xs={12}>
+          <ScrollToTop showUnder={160}>
+            <span>UP</span>
+          </ScrollToTop>
         </Grid>
       </Grid>
     </motion.div>
