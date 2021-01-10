@@ -63,7 +63,7 @@ export const useStyles = makeStyles((theme: Theme) => {
       display: 'flex',
       flexGrow: 1,
       justifyContent: 'center',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('xs')]: {
         display: 'none',
       },
     },
@@ -88,6 +88,10 @@ export const useStyles = makeStyles((theme: Theme) => {
     menuItemLink: {
       textDecoration: 'none',
       color: 'inherit',
+      fontSize: '1.25rem',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '1rem',
+      },
     },
     drawerLink: {
       textDecoration: 'none',
