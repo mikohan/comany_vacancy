@@ -33,41 +33,41 @@ function BackEndPage() {
     >
       <Grid container spacing={6}>
         <Grid item container xs={12}>
-          <Paper className={classes.fastLinkPapaer} elevation={3}>
-            <Grid item xs={4}>
-              <div className="some">
-                <Typography variant="h6">Front end stuff</Typography>
-                <List className={classes.listAll}>
-                  <ListItem>
-                    <ListItemText
-                      primary="Single-line item"
-                      secondary="Secondary text"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary="Single-line item"
-                      secondary="Secondary text"
-                    />
-                  </ListItem>
-                </List>
-              </div>
-            </Grid>
-            <List className={classes.fastLinks}>
-              <ListItem>
-                <HashLink to="#ducato">Ducato</HashLink>
-              </ListItem>
-              <ListItem>
-                <HashLink to="#ducato">Ducato</HashLink>
-              </ListItem>
-              <ListItem>
-                <HashLink to="#ducato">Ducato</HashLink>
-              </ListItem>
-              <ListItem>
-                <HashLink to="#ducato">Ducato</HashLink>
-              </ListItem>
-            </List>
-          </Paper>
+          <Grid item xs={4}>
+            <Paper className={classes.fastLinkPapaer} elevation={3}>
+              <Typography variant="h6">Full Stack Projects</Typography>
+              <List className={classes.listAll}>
+                <ListItem>
+                  <ListItemText
+                    primary={
+                      <HashLink className={classes.hashLink} to="#ducato">
+                        E-Commerce(Django, Python)
+                      </HashLink>
+                    }
+                    secondary="Secondary text"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Single-line item"
+                    secondary="Secondary text"
+                  />
+                </ListItem>
+              </List>
+            </Paper>
+          </Grid>
+          <List className={classes.fastLinks}>
+            <ListItem></ListItem>
+            <ListItem>
+              <HashLink to="#ducato">Ducato</HashLink>
+            </ListItem>
+            <ListItem>
+              <HashLink to="#ducato">Ducato</HashLink>
+            </ListItem>
+            <ListItem>
+              <HashLink to="#ducato">Ducato</HashLink>
+            </ListItem>
+          </List>
         </Grid>
       </Grid>
       <Grid container spacing={6}>

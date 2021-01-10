@@ -36,5 +36,8 @@ export const useStyles = makeStyles((theme) => {
     listAll: {
       widt: '100%',
     },
+    hashLink: {
+      color: 'inherit',
+    },
   };
 });
