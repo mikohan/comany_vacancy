@@ -89,11 +89,11 @@ function BackEndPage() {
                 <ListItem>
                   <ListItemText
                     primary={
-                      <HashLink className={classes.hashLink} to="#colors">
-                        {portfolio.colors.title}
+                      <HashLink className={classes.hashLink} to="#sheets">
+                        {portfolio.sheets.title}
                       </HashLink>
                     }
-                    secondary="(React, Javascript)"
+                    secondary="(Vanilla Javascript)"
                   />
                 </ListItem>
               </List>
