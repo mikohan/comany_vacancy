@@ -1,3 +1,6 @@
+// Four portfolios added
+// Need to add more four project
+
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
