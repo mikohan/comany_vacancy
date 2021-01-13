@@ -57,7 +57,7 @@ export const translateText: TransText = {
         },
       },
       suppliers: {
-        title: `Venezo Project E-commerce project (Python, Django, ElasticSerach)`,
+        title: `Suppliers management module(PHP, Javascript, MySQL)`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
                     vitae nemo, exercitationem tenetur assumenda hic. Pariatur
