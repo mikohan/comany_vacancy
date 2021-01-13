@@ -188,6 +188,7 @@ function BackEndPage() {
               coverImg={require('../assets/suppliers.png')}
               projectName="suppliers"
               buttons={false}
+              direction
             />
           </div>
         </Grid>
