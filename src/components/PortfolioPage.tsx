@@ -184,8 +184,8 @@ function BackEndPage() {
         <Grid item container xs={12}>
           <div id="sheets">
             <PortfolioSingle
-              vidUrl="https://youtu.be/6L9CCT7akuU"
-              coverImg={require('../assets/sheets.png')}
+              vidUrl="https://youtu.be/rVCiNUIsKE0"
+              coverImg={require('../assets/suppliers.png')}
               projectName="suppliers"
               buttons={false}
             />
