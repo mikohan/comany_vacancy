@@ -28,7 +28,6 @@ import DevicesOtherOutlined from '@material-ui/icons/DevicesOtherOutlined';
 import DnsOutlined from '@material-ui/icons/DnsOutlined';
 
 // import useMediaQuery from '@material-ui/core/useMediaQuery';
-// Some comment
 
 // Select imports
 import MenuItem from '@material-ui/core/MenuItem';
