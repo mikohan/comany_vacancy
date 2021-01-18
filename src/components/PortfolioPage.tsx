@@ -182,7 +182,18 @@ function BackEndPage() {
           </div>
         </Grid>
         <Grid item container xs={12}>
-          <div id="sheets">
+          <div id="supplieres">
+            <PortfolioSingle
+              vidUrl="https://youtu.be/rVCiNUIsKE0"
+              coverImg={require('../assets/suppliers.png')}
+              projectName="suppliers"
+              buttons={false}
+              direction
+            />
+          </div>
+        </Grid>
+        <Grid item container xs={12}>
+          <div id="a77">
             <PortfolioSingle
               vidUrl="https://youtu.be/rVCiNUIsKE0"
               coverImg={require('../assets/suppliers.png')}
