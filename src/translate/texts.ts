@@ -92,6 +92,42 @@ export const translateText: TransText = {
           text: 'Live View',
         },
       },
+      a77: {
+        title: `Enterprise Management System(PHP, Javascript, Python, MySQL)`,
+        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
+                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
+                    harum doloribus quas, modi porro voluptate dignissimos eaque
+                    exercitationem? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Nobis consequatur deleniti sunt beatae
+                    placeat dolorem fugit, aut voluptatum architecto mollitia
+                    cumque maxime veritatis alias quo a voluptates eaque
+                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
+                    illum cum quisquam ex, perferendis, dolore ratione nulla
+                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
+                    labore, in minus quia, dolores earum voluptas magnam
+                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
+                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
+                    cumque cupiditate incidunt excepturi ducimus soluta
+                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
+                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
+                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
+                    recusandae enim neque aliquid deserunt commodi nam doloribus
+                    odio itaque. Pariatur esse, accusantium quia explicabo sed
+                    perferendis! Vero molestiae exercitationem, odit voluptate
+                    molestias expedita facere modi eos blanditiis quia provident
+                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
+                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
+                    repudiandae.`,
+        gitHub: {
+          href: 'https://github.com/mikohan/venezoproject',
+          text: 'See code on GitHub',
+        },
+        project: {
+          href: 'https://venezo.ru',
+          text: 'Live View',
+        },
+      },
       sheets: {
         title: `Google Sheets Replica(vanila Javascript)`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -301,6 +337,42 @@ export const translateText: TransText = {
           text: 'Live View',
         },
       },
+      a77: {
+        title: `Система управления Предприятием (PHP, Javascript, Python, MySQL)`,
+        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
+                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
+                    harum doloribus quas, modi porro voluptate dignissimos eaque
+                    exercitationem? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Nobis consequatur deleniti sunt beatae
+                    placeat dolorem fugit, aut voluptatum architecto mollitia
+                    cumque maxime veritatis alias quo a voluptates eaque
+                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
+                    illum cum quisquam ex, perferendis, dolore ratione nulla
+                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
+                    labore, in minus quia, dolores earum voluptas magnam
+                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
+                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
+                    cumque cupiditate incidunt excepturi ducimus soluta
+                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
+                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
+                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
+                    recusandae enim neque aliquid deserunt commodi nam doloribus
+                    odio itaque. Pariatur esse, accusantium quia explicabo sed
+                    perferendis! Vero molestiae exercitationem, odit voluptate
+                    molestias expedita facere modi eos blanditiis quia provident
+                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
+                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
+                    repudiandae.`,
+        gitHub: {
+          href: 'https://github.com/mikohan/venezoproject',
+          text: 'See code on GitHub',
+        },
+        project: {
+          href: 'https://venezo.ru',
+          text: 'Live View',
+        },
+      },
       sheets: {
         title: `Гугл таблицы выполненные на чистом Javascript`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -429,6 +501,42 @@ Pokud by se pro stejný účel použil smysluplný text, bylo by těžké hodnot
       },
       suppliers: {
         title: `Suppliers management module(PHP, Javascript, MySQL)`,
+        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
+                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
+                    harum doloribus quas, modi porro voluptate dignissimos eaque
+                    exercitationem? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Nobis consequatur deleniti sunt beatae
+                    placeat dolorem fugit, aut voluptatum architecto mollitia
+                    cumque maxime veritatis alias quo a voluptates eaque
+                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
+                    illum cum quisquam ex, perferendis, dolore ratione nulla
+                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
+                    labore, in minus quia, dolores earum voluptas magnam
+                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
+                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
+                    cumque cupiditate incidunt excepturi ducimus soluta
+                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
+                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
+                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
+                    recusandae enim neque aliquid deserunt commodi nam doloribus
+                    odio itaque. Pariatur esse, accusantium quia explicabo sed
+                    perferendis! Vero molestiae exercitationem, odit voluptate
+                    molestias expedita facere modi eos blanditiis quia provident
+                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
+                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
+                    repudiandae.`,
+        gitHub: {
+          href: 'https://github.com/mikohan/venezoproject',
+          text: 'See code on GitHub',
+        },
+        project: {
+          href: 'https://venezo.ru',
+          text: 'Live View',
+        },
+      },
+      a77: {
+        title: `Enterprise Management System(PHP, Javascript, Python, MySQL)`,
         mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
                     vitae nemo, exercitationem tenetur assumenda hic. Pariatur
