@@ -195,11 +195,11 @@ function BackEndPage() {
         <Grid item container xs={12}>
           <div id="a77">
             <PortfolioSingle
-              vidUrl="https://youtu.be/rVCiNUIsKE0"
-              coverImg={require('../assets/suppliers.png')}
+              vidUrl="https://youtu.be/yy6BsklDG_s"
+              coverImg={require('../assets/a77_2.png')}
               projectName="suppliers"
               buttons={false}
-              direction
+              direction={false}
             />
           </div>
         </Grid>
