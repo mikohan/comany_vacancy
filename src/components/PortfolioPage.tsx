@@ -197,7 +197,7 @@ function BackEndPage() {
             <PortfolioSingle
               vidUrl="https://youtu.be/yy6BsklDG_s"
               coverImg={require('../assets/a77_2.png')}
-              projectName="suppliers"
+              projectName="a77"
               buttons={false}
               direction={false}
             />
