@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import ImageGallery from 'react-image-gallery';
 import { Grid } from '@material-ui/core';
+import PersonalRow from './PersonalRowComponent';
 
 const images = [
   {
@@ -32,7 +33,7 @@ function PersonalityPage() {
           <h1>Personality Page goes Here</h1>
         </Grid>
         <Grid item xs={6}>
-          <ImageGallery items={images} />
+          <PersonalRow items={images} />
         </Grid>
         <Grid item xs={6}>
           Content
