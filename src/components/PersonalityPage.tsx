@@ -34,10 +34,14 @@ function PersonalityPage() {
     >
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <h1>Personality Page goes Here</h1>
+          <h1>{pageTitle}</h1>
         </Grid>
         <Grid item xs={12}>
-          <PersonalRow items={images} vidUrl="https://youtu.be/XOh5p02-trY" />
+          <PersonalRow
+            items={images}
+            vidUrl="https://youtu.be/XOh5p02-trY"
+            text={text}
+          />
         </Grid>
       </Grid>
     </motion.div>
