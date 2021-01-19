@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import { Grid } from '@material-ui/core';
 import PersonalRow from './PersonalRowComponent';
+import { translateText } from '../translate/personal';
+import { ThemeContext } from '../context/ThemeContext';
 
 const images = [
   {
@@ -20,6 +22,9 @@ const images = [
 ];
 
 function PersonalityPage() {
+  const context = useContext(ThemeContext);
+  let { language } = context;
+  const { text, pageTitle } = translateText[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}

@@ -1,4 +1,9 @@
-export const translateText = {
+interface ITranslateText {
+  [key: string]: {
+    [key: string]: string;
+  };
+}
+export const translateText: ITranslateText = {
   english: {
     pageTitle: 'My Sports Achivments and Learning',
     text: 'Lorem ipsum dolor sit ament',
