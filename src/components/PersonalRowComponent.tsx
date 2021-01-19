@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme: Theme) =>
     paperRow: {
       padding: theme.spacing(3),
     },
+    textWrapper: {
+      padding: theme.spacing(5),
+    },
   })
 );
 
@@ -33,6 +36,9 @@ function PersonalRow({ items, vidUrl, text }: IProps) {
   return (
     <Paper className={classes.paperRow} elevation={3}>
       <Grid container spacing={3}>
+        <Grid className={classes.textWrapper} item xs={12}>
+          <Typography variant="h4">{text}</Typography>
+        </Grid>
         <Grid item xs={6}>
           <ImageGallery items={items} />
         </Grid>
@@ -46,9 +52,6 @@ function PersonalRow({ items, vidUrl, text }: IProps) {
               height="100%"
             />
           </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Typography variant="body1">{text}</Typography>
         </Grid>
       </Grid>
     </Paper>
