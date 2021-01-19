@@ -1,7 +1,8 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import { Paper, Grid } from '@material-ui/core';
+import { Paper, Grid, Box } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import ReactPlayer from 'react-player';
 
 interface IItem {
   original: string;
@@ -34,7 +35,15 @@ function PersonalRow({ items }: IProps) {
           <ImageGallery items={items} />
         </Grid>
         <Grid item xs={6}>
-          Content
+          <Box className="player-wrapper">
+            <ReactPlayer
+              className="react-player"
+              url="https://youtu.be/rVCiNUIsKE0"
+              controls
+              width="100%"
+              height="100%"
+            />
+          </Box>
         </Grid>
       </Grid>
     </Paper>
