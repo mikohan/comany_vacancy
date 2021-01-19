@@ -31,8 +31,11 @@ function PersonalityPage() {
         <Grid item xs={12}>
           <h1>Personality Page goes Here</h1>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <ImageGallery items={images} />
+        </Grid>
+        <Grid item xs={6}>
+          Content
         </Grid>
       </Grid>
     </motion.div>
