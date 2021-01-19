@@ -28,7 +28,12 @@ function PersonalityPage() {
       transition={{ duration: durationPage }}
     >
       <Grid container spacing={3}>
-        <h1>Personality Page goes Here</h1>
+        <Grid item xs={12}>
+          <h1>Personality Page goes Here</h1>
+        </Grid>
+        <Grid item xs={12}>
+          <ImageGallery items={images} />
+        </Grid>
       </Grid>
     </motion.div>
   );
