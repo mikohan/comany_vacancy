@@ -32,7 +32,7 @@ function PersonalityPage() {
           <h1>Personality Page goes Here</h1>
         </Grid>
         <Grid item xs={12}>
-          <PersonalRow items={images} />
+          <PersonalRow items={images} vidUrl="https://youtu.be/XOh5p02-trY" />
         </Grid>
       </Grid>
     </motion.div>
