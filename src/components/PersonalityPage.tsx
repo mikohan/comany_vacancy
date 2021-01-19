@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import ImageGallery from 'react-image-gallery';
+import { Grid } from '@material-ui/core';
 
 const images = [
   {
@@ -26,7 +27,9 @@ function PersonalityPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <h1>Personality Page goes Here</h1>
+      <Grid container spacing={3}>
+        <h1>Personality Page goes Here</h1>
+      </Grid>
     </motion.div>
   );
 }
