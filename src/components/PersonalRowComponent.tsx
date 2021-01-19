@@ -12,6 +12,7 @@ interface IItem {
 interface IProps {
   items: IItem[];
   vidUrl?: string;
+  text?: string;
 }
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function PersonalRow({ items, vidUrl }: IProps) {
+function PersonalRow({ items, vidUrl, text }: IProps) {
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>
@@ -47,12 +48,7 @@ function PersonalRow({ items, vidUrl }: IProps) {
           </Box>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="body1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
-          </Typography>
+          <Typography variant="body1">{text}</Typography>
         </Grid>
       </Grid>
     </Paper>
