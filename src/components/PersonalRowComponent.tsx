@@ -51,7 +51,7 @@ function PersonalRow({ items, vidUrl, imageVideo = true }: IProps) {
             <Box className="player-wrapper">
               <ReactPlayer
                 className="react-player"
-                url={vidUrl}
+                url={vidUrl?.length ? vidUrl[1] : ''}
                 controls
                 width="100%"
                 height="100%"
@@ -63,7 +63,7 @@ function PersonalRow({ items, vidUrl, imageVideo = true }: IProps) {
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
-              url={vidUrl}
+              url={vidUrl?.length ? vidUrl[0] : ''}
               controls
               width="100%"
               height="100%"

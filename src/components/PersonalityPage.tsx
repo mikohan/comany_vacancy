@@ -52,10 +52,20 @@ function PersonalityPage() {
           <h1>{pageTitle}</h1>
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
-          <PersonalRow items={images} vidUrl="https://youtu.be/XOh5p02-trY" />
+          <PersonalRow
+            items={images}
+            vidUrl={['https://youtu.be/XOh5p02-trY']}
+          />
         </Grid>
         <Grid item xs={12}>
-          <PersonalRow items={images} vidUrl="https://youtu.be/g2gzxLlMg7Y" />
+          <PersonalRow
+            items={images}
+            imageVideo={false}
+            vidUrl={[
+              'https://youtu.be/g2gzxLlMg7Y',
+              'https://youtu.be/NfWgx9b3VjY',
+            ]}
+          />
         </Grid>
       </Grid>
     </motion.div>
