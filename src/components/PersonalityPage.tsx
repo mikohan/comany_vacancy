@@ -5,6 +5,20 @@ import { Grid } from '@material-ui/core';
 import PersonalRow from './PersonalRowComponent';
 import { translateText } from '../translate/personal';
 import { ThemeContext } from '../context/ThemeContext';
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+      },
+    },
+    verticalGap: {
+      marginBottom: theme.spacing(5),
+    },
+  })
+);
 
 const images = [
   {
@@ -25,6 +39,7 @@ function PersonalityPage() {
   const context = useContext(ThemeContext);
   let { language } = context;
   const { text, pageTitle } = translateText[language];
+  const classes = useStyles();
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -36,7 +51,7 @@ function PersonalityPage() {
         <Grid item xs={12}>
           <h1>{pageTitle}</h1>
         </Grid>
-        <Grid item xs={12}>
+        <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
             items={images}
             vidUrl="https://youtu.be/XOh5p02-trY"
