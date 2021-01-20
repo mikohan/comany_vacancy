@@ -59,6 +59,18 @@ function PersonalityPage() {
             imageVideo={false}
             vidUrl={[
               'https://youtu.be/c1siyJH_ofk',
+              'https://youtu.be/5f7aa0vYoGE',
+            ]}
+          />
+        </Grid>
+        <Grid className={classes.verticalGap} item xs={12}>
+          <PersonalRow
+            title={freeDiving.title}
+            text={freeDiving.text}
+            items={images}
+            imageVideo={false}
+            vidUrl={[
+              'https://youtu.be/c1siyJH_ofk',
               'https://youtu.be/NF2dpZyx0JY',
             ]}
           />
