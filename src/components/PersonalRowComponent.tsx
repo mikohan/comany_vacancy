@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ImageGallery from 'react-image-gallery';
 import { Paper, Grid, Box, Typography } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import ReactPlayer from 'react-player';
+import { translateText } from '../translate/personal';
+import { ThemeContext } from '../context/ThemeContext';
 
 interface IItem {
   original: string;
@@ -31,7 +33,10 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function PersonalRow({ items, vidUrl, text }: IProps) {
+function PersonalRow({ items, vidUrl }: IProps) {
+  const context = useContext(ThemeContext);
+  let { language } = context;
+  const { text } = translateText[language];
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>

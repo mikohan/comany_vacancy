@@ -38,7 +38,7 @@ const images = [
 function PersonalityPage() {
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { text, pageTitle } = translateText[language];
+  const { pageTitle } = translateText[language];
   const classes = useStyles();
   return (
     <motion.div
@@ -52,18 +52,10 @@ function PersonalityPage() {
           <h1>{pageTitle}</h1>
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
-          <PersonalRow
-            items={images}
-            vidUrl="https://youtu.be/XOh5p02-trY"
-            text={text}
-          />
+          <PersonalRow items={images} vidUrl="https://youtu.be/XOh5p02-trY" />
         </Grid>
         <Grid item xs={12}>
-          <PersonalRow
-            items={images}
-            vidUrl="https://youtu.be/XOh5p02-trY"
-            text={text}
-          />
+          <PersonalRow items={images} vidUrl="https://youtu.be/g2gzxLlMg7Y" />
         </Grid>
       </Grid>
     </motion.div>
