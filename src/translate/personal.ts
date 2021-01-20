@@ -6,6 +6,14 @@ interface ITranslateText {
 export const translateText: ITranslateText = {
   english: {
     pageTitle: 'My Sports Achivments and Learning',
+    ski: {
+      title: 'Free Diving',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     freeDiving: {
       title: 'Free Diving',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
@@ -26,6 +34,14 @@ export const translateText: ITranslateText = {
 
   russian: {
     pageTitle: 'Мои спортивные достижения',
+    ski: {
+      title: 'Alpine Ski',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     freeDiving: {
       title: 'Фри Дайвинг',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
@@ -35,7 +51,7 @@ export const translateText: ITranslateText = {
             `,
     },
     cheer: {
-      title: 'Чир Лидинг',
+      title: 'Горные лыжи',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
@@ -45,6 +61,14 @@ export const translateText: ITranslateText = {
   },
   czech: {
     pageTitle: 'My Sports Achivments and Learning',
+    ski: {
+      title: 'Alpine Ski',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     freeDiving: {
       title: 'Free Diving',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
