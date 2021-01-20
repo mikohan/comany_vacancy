@@ -45,7 +45,7 @@ function PersonalRow({
     <Paper className={classes.paperRow} elevation={3}>
       <Grid container spacing={3}>
         <Grid className={classes.textWrapper} item xs={12}>
-          <Typography variant="h3">{title}</Typography>
+          <Typography variant="h4">{title}</Typography>
           <Typography variant="body1">{text}</Typography>
         </Grid>
         <Grid item xs={6}>
