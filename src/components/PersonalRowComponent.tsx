@@ -13,7 +13,7 @@ interface IItem {
 
 interface IProps {
   items: IItem[];
-  vidUrl?: string;
+  vidUrl?: string[];
   imageVideo?: boolean;
 }
 
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function PersonalRow({ items, vidUrl }: IProps) {
+function PersonalRow({ items, vidUrl, imageVideo = true }: IProps) {
   const context = useContext(ThemeContext);
   let { language } = context;
   const { text } = translateText[language];
@@ -45,7 +45,19 @@ function PersonalRow({ items, vidUrl }: IProps) {
           <Typography variant="h4">{text}</Typography>
         </Grid>
         <Grid item xs={6}>
-          <ImageGallery items={items} />
+          {imageVideo ? (
+            <ImageGallery items={items} />
+          ) : (
+            <Box className="player-wrapper">
+              <ReactPlayer
+                className="react-player"
+                url={vidUrl}
+                controls
+                width="100%"
+                height="100%"
+              />
+            </Box>
+          )}
         </Grid>
         <Grid item xs={6}>
           <Box className="player-wrapper">
