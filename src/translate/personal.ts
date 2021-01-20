@@ -7,7 +7,7 @@ export const translateText: ITranslateText = {
   english: {
     pageTitle: 'My Sports Achivments and Learning',
     freeDiving: {
-      title: 'Cheer Leading',
+      title: 'Free Diving',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
@@ -46,7 +46,7 @@ export const translateText: ITranslateText = {
   czech: {
     pageTitle: 'My Sports Achivments and Learning',
     freeDiving: {
-      title: 'Cheer Leading',
+      title: 'Free Diving',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
