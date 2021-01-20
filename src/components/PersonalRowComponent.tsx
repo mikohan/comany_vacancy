@@ -14,6 +14,7 @@ interface IItem {
 interface IProps {
   items: IItem[];
   vidUrl?: string;
+  imageVideo?: boolean;
 }
 
 const useStyles = makeStyles((theme: Theme) =>
