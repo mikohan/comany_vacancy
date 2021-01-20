@@ -43,6 +43,13 @@ function PersonalityPage() {
             text={text}
           />
         </Grid>
+        <Grid item xs={12}>
+          <PersonalRow
+            items={images}
+            vidUrl="https://youtu.be/XOh5p02-trY"
+            text={text}
+          />
+        </Grid>
       </Grid>
     </motion.div>
   );
