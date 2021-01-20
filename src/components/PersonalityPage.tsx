@@ -56,7 +56,10 @@ function PersonalityPage() {
             title={freeDiving.title}
             text={freeDiving.text}
             items={images}
-            vidUrl={['https://youtu.be/XOh5p02-trY']}
+            vidUrl={[
+              'https://youtu.be/c1siyJH_ofk',
+              'https://youtu.be/NF2dpZyx0JY',
+            ]}
           />
         </Grid>
         <Grid item xs={12}>
