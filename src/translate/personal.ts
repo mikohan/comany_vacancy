@@ -19,7 +19,7 @@ export const translateText: ITranslateText = {
   russian: {
     pageTitle: 'Мои спортивные достижения',
     cheer: {
-      title: 'Cheer Leading',
+      title: 'Чир Лидинг',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet

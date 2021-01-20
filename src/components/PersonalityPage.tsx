@@ -59,6 +59,8 @@ function PersonalityPage() {
         </Grid>
         <Grid item xs={12}>
           <PersonalRow
+            title={title}
+            text={text}
             items={images}
             imageVideo={false}
             vidUrl={[

@@ -15,6 +15,8 @@ interface IProps {
   items: IItem[];
   vidUrl?: string[];
   imageVideo?: boolean;
+  title?: string;
+  text?: string;
 }
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -33,10 +35,15 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function PersonalRow({ items, vidUrl, imageVideo = true }: IProps) {
+function PersonalRow({
+  items,
+  vidUrl,
+  imageVideo = true,
+  title,
+  text,
+}: IProps) {
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { text } = translateText[language];
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>
