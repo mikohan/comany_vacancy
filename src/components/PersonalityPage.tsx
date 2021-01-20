@@ -38,7 +38,7 @@ const images = [
 function PersonalityPage() {
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { pageTitle, cheer } = translateText[language];
+  const { pageTitle, cheer, freeDiving } = translateText[language];
   const classes = useStyles();
   return (
     <motion.div
@@ -53,6 +53,8 @@ function PersonalityPage() {
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
+            title={freeDiving.title}
+            text={freeDiving.text}
             items={images}
             vidUrl={['https://youtu.be/XOh5p02-trY']}
           />
