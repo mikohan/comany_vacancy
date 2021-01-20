@@ -56,6 +56,7 @@ function PersonalityPage() {
             title={freeDiving.title}
             text={freeDiving.text}
             items={images}
+            imageVideo={false}
             vidUrl={[
               'https://youtu.be/c1siyJH_ofk',
               'https://youtu.be/NF2dpZyx0JY',
