@@ -71,7 +71,7 @@ function PersonalityPage() {
             imageVideo={false}
             vidUrl={[
               'https://youtu.be/bWny3cBI6qk',
-              'https://youtu.be/r4MRwrWiKDQ',
+              'https://youtu.be/dR49g_MAStU',
             ]}
           />
         </Grid>
