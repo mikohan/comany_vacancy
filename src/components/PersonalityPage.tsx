@@ -24,6 +24,7 @@ const images = [
   {
     original: require('../assets/podium.jpg'),
     thumbnail: require('../assets/podium_thumb.jpg'),
+    originalTitle: 'Four 1st places at Abzakovo Cup',
   },
   {
     original: require('../assets/four_medal2.jpg'),
