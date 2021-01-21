@@ -43,9 +43,14 @@ const images = [
 function PersonalityPage() {
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { pageTitle, cheer, freeDiving, ski, snowboard } = translateText[
-    language
-  ];
+  const {
+    pageTitle,
+    cheer,
+    freeDiving,
+    ski,
+    snowboard,
+    skateBoard,
+  } = translateText[language];
   const classes = useStyles();
   return (
     <motion.div
@@ -60,8 +65,8 @@ function PersonalityPage() {
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
-            title={snowboard.title}
-            text={snowboard.text}
+            title={skateBoard.title}
+            text={skateBoard.text}
             items={images}
             imageVideo={true}
             vidUrl={[
