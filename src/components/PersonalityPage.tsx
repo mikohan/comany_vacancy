@@ -34,8 +34,13 @@ const images = [
     original: require('../assets/izevsk_podium1.jpg'),
     thumbnail: require('../assets/izevsk_podium1_tmb.jpg'),
   },
+  {
+    original: require('../assets/izevsk_podium1.jpg'),
+    thumbnail: require('../assets/izevsk_podium1_tmb.jpg'),
+    embedUrl: 'https://www.youtube.com/embed/4pSzhZ76GdM?autoplay=1&showinfo=0',
+  },
 ];
-
+//https://youtu.be/um1PiGKCBi4
 function PersonalityPage() {
   const context = useContext(ThemeContext);
   let { language } = context;

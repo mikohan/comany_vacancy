@@ -7,6 +7,7 @@ import ReactPlayer from 'react-player';
 interface IItem {
   original: string;
   thumbnail: string;
+  embedUrl?: string;
 }
 
 interface IProps {
