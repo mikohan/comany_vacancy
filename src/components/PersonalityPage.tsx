@@ -23,11 +23,11 @@ const useStyles = makeStyles((theme: Theme) =>
 const images = [
   {
     original: require('../assets/podium.jpg'),
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    thumbnail: require('../assets/podium_thumb.jpg'),
   },
   {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+    original: require('../assets/four_medal2.jpg'),
+    thumbnail: require('../assets/four_medal_tmb.jpg'),
   },
   {
     original: 'https://picsum.photos/id/1019/1000/600/',
