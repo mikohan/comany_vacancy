@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const images = [
   {
-    original: 'https://picsum.photos/id/1018/1000/600/',
+    original: require('../assets/podium.jpg'),
     thumbnail: 'https://picsum.photos/id/1018/250/150/',
   },
   {
@@ -58,9 +58,9 @@ function PersonalityPage() {
             title={snowboard.title}
             text={snowboard.text}
             items={images}
-            imageVideo={false}
+            imageVideo={true}
             vidUrl={[
-              'https://youtu.be/Mm-FVcaaNpc',
+              'https://youtu.be/aEYRJWz9pFE',
               'https://youtu.be/um1PiGKCBi4',
             ]}
           />
