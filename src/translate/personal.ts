@@ -15,7 +15,7 @@ export const translateText: ITranslateText = {
             `,
     },
     ski: {
-      title: 'Free Diving',
+      title: 'Alpine Ski',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
