@@ -15,7 +15,7 @@ export const translateText: ITranslateText = {
             `,
     },
     skateBoard: {
-      title: 'Roller Blades',
+      title: 'Skateboard',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
@@ -59,7 +59,7 @@ export const translateText: ITranslateText = {
             `,
     },
     skateBoard: {
-      title: 'Роликовые Коньки',
+      title: 'Скейтборд',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
@@ -102,7 +102,7 @@ export const translateText: ITranslateText = {
             `,
     },
     skateBoard: {
-      title: 'Roller Blades',
+      title: 'Skateboard',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
