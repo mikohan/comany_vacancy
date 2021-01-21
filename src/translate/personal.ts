@@ -14,6 +14,14 @@ export const translateText: ITranslateText = {
             repudiandae, officia neque illum sunt?
             `,
     },
+    skateBoard: {
+      title: 'Roller Blades',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     ski: {
       title: 'Alpine Ski',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
@@ -50,6 +58,14 @@ export const translateText: ITranslateText = {
             repudiandae, officia neque illum sunt?
             `,
     },
+    skateBoard: {
+      title: 'Роликовые Коньки',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     ski: {
       title: 'Горные лыжи',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
@@ -79,6 +95,14 @@ export const translateText: ITranslateText = {
     pageTitle: 'My Sports Achivments and Learning',
     snowboard: {
       title: 'SnowBoard',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
+    skateBoard: {
+      title: 'Roller Blades',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet

@@ -72,6 +72,18 @@ function PersonalityPage() {
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
+            title={snowboard.title}
+            text={snowboard.text}
+            items={images}
+            imageVideo={true}
+            vidUrl={[
+              'https://youtu.be/aEYRJWz9pFE',
+              'https://youtu.be/um1PiGKCBi4',
+            ]}
+          />
+        </Grid>
+        <Grid className={classes.verticalGap} item xs={12}>
+          <PersonalRow
             title={ski.title}
             text={ski.text}
             items={images}
