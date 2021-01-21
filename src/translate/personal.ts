@@ -42,6 +42,14 @@ export const translateText: ITranslateText = {
 
   russian: {
     pageTitle: 'Мои спортивные достижения',
+    snowboard: {
+      title: 'Сноуборд',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     ski: {
       title: 'Alpine Ski',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
@@ -69,6 +77,14 @@ export const translateText: ITranslateText = {
   },
   czech: {
     pageTitle: 'My Sports Achivments and Learning',
+    snowboard: {
+      title: 'SnowBoard',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     ski: {
       title: 'Alpine Ski',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
