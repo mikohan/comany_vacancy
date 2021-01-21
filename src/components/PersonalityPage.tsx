@@ -30,8 +30,8 @@ const images = [
     thumbnail: require('../assets/four_medal_tmb.jpg'),
   },
   {
-    original: require('../assets/four_medal2.jpg'),
-    thumbnail: require('../assets/four_medal_tmb.jpg'),
+    original: require('../assets/izevsk_podium1.jpg'),
+    thumbnail: require('../assets/izevsk_podium1_tmb.jpg'),
   },
 ];
 
