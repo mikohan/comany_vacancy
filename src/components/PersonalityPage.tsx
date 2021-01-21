@@ -30,8 +30,8 @@ const images = [
     thumbnail: require('../assets/four_medal_tmb.jpg'),
   },
   {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    original: require('../assets/four_medal2.jpg'),
+    thumbnail: require('../assets/four_medal_tmb.jpg'),
   },
 ];
 
