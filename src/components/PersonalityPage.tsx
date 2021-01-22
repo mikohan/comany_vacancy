@@ -6,6 +6,7 @@ import PersonalRow from './PersonalRowComponent';
 import { translateText } from '../translate/personal';
 import { ThemeContext } from '../context/ThemeContext';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+// some comment
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
