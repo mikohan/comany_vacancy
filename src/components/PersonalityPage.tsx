@@ -52,6 +52,7 @@ function PersonalityPage() {
     snowboard,
     skateBoard,
     acrobe,
+    aviation,
   } = translateText[language];
   const classes = useStyles();
   return (
@@ -64,6 +65,18 @@ function PersonalityPage() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <h1>{pageTitle}</h1>
+        </Grid>
+        <Grid className={classes.verticalGap} item xs={12}>
+          <PersonalRow
+            title={aviation.title}
+            text={aviation.text}
+            items={images}
+            imageVideo={false}
+            vidUrl={[
+              'https://youtu.be/bWny3cBI6qk',
+              'https://youtu.be/dR49g_MAStU',
+            ]}
+          />
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
