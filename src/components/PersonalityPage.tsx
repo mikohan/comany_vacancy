@@ -40,6 +40,25 @@ const images = [
     thumbnail: require('../assets/izevsk_podium1_tmb.jpg'),
   },
 ];
+const imagesAviation = [
+  {
+    original: require('../assets/avia1.jpg'),
+    thumbnail: require('../assets/avia1.jpg'),
+    originalTitle: 'Four 1st places at Abzakovo Cup',
+  },
+  {
+    original: require('../assets/avia2.jpg'),
+    thumbnail: require('../assets/avia2.jpg'),
+  },
+  {
+    original: require('../assets/avia3.jpg'),
+    thumbnail: require('../assets/avia3.jpg'),
+  },
+  {
+    original: require('../assets/izevsk_podium1.jpg'),
+    thumbnail: require('../assets/izevsk_podium1_tmb.jpg'),
+  },
+];
 //https://youtu.be/um1PiGKCBi4
 function PersonalityPage() {
   const context = useContext(ThemeContext);
@@ -72,10 +91,10 @@ function PersonalityPage() {
             title={aviation.title}
             text={aviation.text}
             items={images}
-            imageVideo={false}
+            imageVideo={true}
             vidUrl={[
-              'https://youtu.be/tL0cQXJ6Pss',
-              'https://youtu.be/rcr4WD5uhg8',
+              'https://youtu.be/4crO3dc2Fb0',
+              'https://youtu.be/4crO3dc2Fb0',
             ]}
           />
         </Grid>
