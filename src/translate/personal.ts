@@ -22,6 +22,14 @@ export const translateText: ITranslateText = {
             repudiandae, officia neque illum sunt?
             `,
     },
+    rollerBlade: {
+      title: 'Roller Blades',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     acrobe: {
       title: 'Acrobatics and Trimpoline',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
@@ -68,6 +76,14 @@ export const translateText: ITranslateText = {
     pageTitle: 'Мои спортивные достижения',
     snowboard: {
       title: 'Сноуборд',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
+    rollerBlade: {
+      title: 'Роликовые Коньки',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
@@ -143,6 +159,14 @@ export const translateText: ITranslateText = {
     },
     acrobe: {
       title: 'Acrobatic and Trimpoline',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
+    rollerBlade: {
+      title: 'Roller Blades',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
