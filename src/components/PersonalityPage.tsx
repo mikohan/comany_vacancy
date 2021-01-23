@@ -42,8 +42,8 @@ const images = [
 ];
 const imagesAviation = [
   {
-    original: require('../assets/avia1.jpg'),
-    thumbnail: require('../assets/avia1.jpg'),
+    original: require('../assets/aviation_lic.jpg'),
+    thumbnail: require('../assets/aviation_lic.jpg'),
     originalTitle: 'Four 1st places at Abzakovo Cup',
   },
   {
@@ -55,8 +55,9 @@ const imagesAviation = [
     thumbnail: require('../assets/avia3.jpg'),
   },
   {
-    original: require('../assets/izevsk_podium1.jpg'),
-    thumbnail: require('../assets/izevsk_podium1_tmb.jpg'),
+    original: require('../assets/avia1.jpg'),
+    thumbnail: require('../assets/avia1.jpg'),
+    originalTitle: 'Four 1st places at Abzakovo Cup',
   },
 ];
 //https://youtu.be/um1PiGKCBi4
@@ -90,23 +91,11 @@ function PersonalityPage() {
           <PersonalRow
             title={aviation.title}
             text={aviation.text}
-            items={images}
+            items={imagesAviation}
             imageVideo={true}
             vidUrl={[
               'https://youtu.be/4crO3dc2Fb0',
               'https://youtu.be/4crO3dc2Fb0',
-            ]}
-          />
-        </Grid>
-        <Grid className={classes.verticalGap} item xs={12}>
-          <PersonalRow
-            title={rollerBlade.title}
-            text={rollerBlade.text}
-            items={images}
-            imageVideo={false}
-            vidUrl={[
-              'https://youtu.be/tL0cQXJ6Pss',
-              'https://youtu.be/rcr4WD5uhg8',
             ]}
           />
         </Grid>
@@ -179,6 +168,18 @@ function PersonalityPage() {
             vidUrl={[
               'https://youtu.be/g2gzxLlMg7Y',
               'https://youtu.be/NfWgx9b3VjY',
+            ]}
+          />
+        </Grid>
+        <Grid className={classes.verticalGap} item xs={12}>
+          <PersonalRow
+            title={rollerBlade.title}
+            text={rollerBlade.text}
+            items={images}
+            imageVideo={false}
+            vidUrl={[
+              'https://youtu.be/tL0cQXJ6Pss',
+              'https://youtu.be/rcr4WD5uhg8',
             ]}
           />
         </Grid>
