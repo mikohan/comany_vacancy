@@ -89,6 +89,18 @@ function PersonalityPage() {
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
+            title={snowboard.title}
+            text={snowboard.text}
+            items={images}
+            imageVideo={true}
+            vidUrl={[
+              'https://youtu.be/aEYRJWz9pFE',
+              'https://youtu.be/um1PiGKCBi4',
+            ]}
+          />
+        </Grid>
+        <Grid className={classes.verticalGap} item xs={12}>
+          <PersonalRow
             title={aviation.title}
             text={aviation.text}
             items={imagesAviation}
@@ -120,18 +132,6 @@ function PersonalityPage() {
             vidUrl={[
               'https://youtu.be/Ufuslz3-n-Q',
               'https://youtu.be/r4MRwrWiKDQ',
-            ]}
-          />
-        </Grid>
-        <Grid className={classes.verticalGap} item xs={12}>
-          <PersonalRow
-            title={snowboard.title}
-            text={snowboard.text}
-            items={images}
-            imageVideo={true}
-            vidUrl={[
-              'https://youtu.be/aEYRJWz9pFE',
-              'https://youtu.be/um1PiGKCBi4',
             ]}
           />
         </Grid>
