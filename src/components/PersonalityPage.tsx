@@ -51,6 +51,7 @@ function PersonalityPage() {
     ski,
     snowboard,
     skateBoard,
+    acrobe,
   } = translateText[language];
   const classes = useStyles();
   return (
@@ -66,8 +67,8 @@ function PersonalityPage() {
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
-            title={skateBoard.title}
-            text={skateBoard.text}
+            title={acrobe.title}
+            text={acrobe.text}
             items={images}
             imageVideo={false}
             vidUrl={[

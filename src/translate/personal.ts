@@ -14,8 +14,16 @@ export const translateText: ITranslateText = {
             repudiandae, officia neque illum sunt?
             `,
     },
+    aviation: {
+      title: 'SnowBoard',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
     acrobe: {
-      title: 'Acrobatic and Trimpoline',
+      title: 'Acrobatics and Trimpoline',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
@@ -60,6 +68,14 @@ export const translateText: ITranslateText = {
     pageTitle: 'Мои спортивные достижения',
     snowboard: {
       title: 'Сноуборд',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
+    aviation: {
+      title: 'Авиация',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
@@ -111,6 +127,14 @@ export const translateText: ITranslateText = {
     pageTitle: 'My Sports Achivments and Learning',
     snowboard: {
       title: 'SnowBoard',
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
+            magnam quos, explicabo perferendis consequuntur ullam quia inventore
+            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+            repudiandae, officia neque illum sunt?
+            `,
+    },
+    aviation: {
+      title: 'Aviation',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
             magnam quos, explicabo perferendis consequuntur ullam quia inventore
             dignissimos veritatis itaque. Suscipit qui consectetur eveniet
