@@ -73,7 +73,7 @@ function PersonalityPage() {
             items={images}
             imageVideo={false}
             vidUrl={[
-              'https://youtu.be/bWny3cBI6qk',
+              'https://youtu.be/tL0cQXJ6Pss',
               'https://youtu.be/rcr4WD5uhg8',
             ]}
           />
