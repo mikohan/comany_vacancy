@@ -11,7 +11,7 @@ function BackEndPage() {
       transition={{ duration: durationPage }}
     >
       <h1>Full stack Page former BackEnd component</h1>
-      <PageSinglePage />
+      <PageSinglePage text="some text" header="some header" />
     </motion.div>
   );
 }

@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function PageSinglePage() {
+function PageSinglePage({ header, text }: any) {
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>
@@ -60,7 +60,7 @@ function PageSinglePage() {
           </Box>
         </Grid>
         <Grid item xs={6}>
-          <Box></Box>
+          <Box>{text}</Box>
         </Grid>
       </Grid>
     </Paper>
