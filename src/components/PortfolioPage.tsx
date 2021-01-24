@@ -105,7 +105,7 @@ function BackEndPage() {
                 <ListItem>
                   <ListItemText
                     primary={
-                      <HashLink className={classes.hashLink} to="#enterprise">
+                      <HashLink className={classes.hashLink} to="#a77">
                         {portfolio.enterprise.title}
                       </HashLink>
                     }
@@ -210,7 +210,7 @@ function BackEndPage() {
           </div>
         </Grid>
         <Grid item container xs={12}>
-          <div id="supplieres">
+          <div id="suppliers">
             <PortfolioSingle
               vidUrl="https://youtu.be/rVCiNUIsKE0"
               coverImg={require('../assets/suppliers.png')}
