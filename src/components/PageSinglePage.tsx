@@ -2,7 +2,6 @@ import React from 'react';
 import { Paper, Grid, Box, Typography } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import ReactPlayer from 'react-player';
-import Divider from '@material-ui/core/Divider';
 
 interface IProps {
   header: string;
@@ -51,7 +50,9 @@ function PageSinglePage({ header, text }: IProps) {
           </Box>
         </Grid>
         <Grid item xs={6}>
-          <Box>{text}</Box>
+          <Box>
+            <div dangerouslySetInnerHTML={{ __html: text }}></div>
+          </Box>
         </Grid>
       </Grid>
     </Paper>
