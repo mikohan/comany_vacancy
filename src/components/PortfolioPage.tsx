@@ -62,6 +62,26 @@ function BackEndPage() {
                     secondary="(Django, Python, MySQL)"
                   />
                 </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary={
+                      <HashLink className={classes.hashLink} to="#suppliers">
+                        {portfolio.suppliers.title}
+                      </HashLink>
+                    }
+                    secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary={
+                      <HashLink className={classes.hashLink} to="#enterprise">
+                        {portfolio.enterprise.title}
+                      </HashLink>
+                    }
+                    secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
+                  />
+                </ListItem>
               </List>
             </Paper>
           </Grid>
