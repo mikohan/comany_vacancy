@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import FrontEndPage from './FrontEndPage';
-import BackEndPage from './BackEndPage';
+import FullStackPage from './FullStackPage';
 import SysAdminPage from './SysAdminPage';
 import MarketingPage from './MarketingPage';
 import PersonalityPage from './PersonalityPage';
@@ -19,7 +19,7 @@ function Routes() {
     <div>
       <Switch>
         <Route exact path="/frontend" component={FrontEndPage} />
-        <Route exact path="/fullstack" component={BackEndPage} />
+        <Route exact path="/fullstack" component={FullStackPage} />
         <Route exact path="/linux" component={SysAdminPage} />
         <Route exact path="/marketing" component={MarketingPage} />
         <Route exact path="/personality" component={PersonalityPage} />

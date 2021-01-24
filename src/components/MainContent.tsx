@@ -12,7 +12,6 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ImportantDevicesOutlined from '@material-ui/icons/ImportantDevicesOutlined';
 import InsertChartOutlined from '@material-ui/icons/InsertChartOutlined';
 import SentimentSatisfied from '@material-ui/icons/SentimentSatisfiedOutlined';
 import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
@@ -123,7 +122,6 @@ export default function PersistentDrawerLeft(): JSX.Element {
     darkTheme,
     lightTheme,
     fullstack,
-    backEnd,
     linux,
     marketing,
     personality,
@@ -175,11 +173,6 @@ export default function PersistentDrawerLeft(): JSX.Element {
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/linux">
-                  {linux}
-                </Link>
-              </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/computers">
                   {linux}
                 </Link>
               </MenuItem>
@@ -293,14 +286,6 @@ export default function PersistentDrawerLeft(): JSX.Element {
                   <DevicesOtherOutlined />
                 </ListItemIcon>
                 <ListItemText primary={fullstack} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/computers">
-              <ListItem button>
-                <ListItemIcon>
-                  <ImportantDevicesOutlined />
-                </ListItemIcon>
-                <ListItemText primary={linux} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/marketing">
