@@ -21,6 +21,7 @@ import { HashLink } from 'react-router-hash-link';
 import ScrollToTop from 'react-scroll-up';
 import PresentToAllIcon from '@material-ui/icons/PresentToAll';
 import { useStyles } from '../styles/PorfolioPageStyles';
+import { Box } from '@material-ui/core';
 
 function BackEndPage() {
   const classes = useStyles();
@@ -29,6 +30,35 @@ function BackEndPage() {
   const { portfolio, fullStackLinks, frontEndLinks, miscLinks } = translateText[
     language
   ];
+  const MiscProject = () => {
+    return (
+      <Box>
+        <Typography variant="body1">{miscLinks}</Typography>
+        <List className={classes.listAll}>
+          <ListItem>
+            <ListItemText
+              primary={
+                <HashLink className={classes.hashLink} to="#ducato">
+                  {portfolio.ducato.title}
+                </HashLink>
+              }
+              secondary="(Django, Python)"
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary={
+                <HashLink className={classes.hashLink} to="#ducato">
+                  {portfolio.venezo.title}
+                </HashLink>
+              }
+              secondary="(Django, Python, Elasticsearch)"
+            />
+          </ListItem>
+        </List>
+      </Box>
+    );
+  };
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -124,29 +154,7 @@ function BackEndPage() {
           </Grid>
           <Grid item xs={4}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="body1">{miscLinks}</Typography>
-              <List className={classes.listAll}>
-                <ListItem>
-                  <ListItemText
-                    primary={
-                      <HashLink className={classes.hashLink} to="#ducato">
-                        {portfolio.ducato.title}
-                      </HashLink>
-                    }
-                    secondary="(Django, Python)"
-                  />
-                </ListItem>
-                <ListItem>
-                  <ListItemText
-                    primary={
-                      <HashLink className={classes.hashLink} to="#ducato">
-                        {portfolio.venezo.title}
-                      </HashLink>
-                    }
-                    secondary="(Django, Python, Elasticsearch)"
-                  />
-                </ListItem>
-              </List>
+              <MiscProject />
             </Paper>
           </Grid>
         </Grid>
