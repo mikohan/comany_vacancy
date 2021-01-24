@@ -3,11 +3,12 @@ import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import PageSinglePage from './PageSinglePage';
 import { fullstack } from '../translate/fullstack';
+import { ThemeContext } from '../context/ThemeContext';
 
 function FullStack() {
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { header, text } = translateText[language];
+  const { header, text } = fullstack[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -16,7 +17,7 @@ function FullStack() {
       transition={{ duration: durationPage }}
     >
       <h1>Full stack Page former BackEnd component</h1>
-      <PageSinglePage text="some text" header="some header" />
+      <PageSinglePage text={text} header={header} />
     </motion.div>
   );
 }

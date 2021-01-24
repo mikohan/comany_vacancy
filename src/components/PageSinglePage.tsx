@@ -4,17 +4,8 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import ReactPlayer from 'react-player';
 import Divider from '@material-ui/core/Divider';
 
-interface IItem {
-  original: string;
-  thumbnail: string;
-  embedUrl?: string;
-}
-
 interface IProps {
-  items: IItem[];
-  vidUrl?: string[];
-  imageVideo?: boolean;
-  title?: string;
+  header: string;
   text?: string;
 }
 
@@ -39,7 +30,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function PageSinglePage({ header, text }: any) {
+function PageSinglePage({ header, text }: IProps) {
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>
