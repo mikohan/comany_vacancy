@@ -47,7 +47,7 @@ function PageSinglePage() {
             <Box className="player-wrapper">
               <ReactPlayer
                 className="react-player"
-                url='shs'
+                url='https://youtu.be/tL0cQXJ6Pss'
                 controls
                 width="100%"
                 height="100%"
@@ -59,6 +59,7 @@ function PageSinglePage() {
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
+              url='https://youtu.be/tL0cQXJ6Pss'
               controls
               width="100%"
               height="100%"
