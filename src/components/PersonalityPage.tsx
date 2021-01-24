@@ -43,7 +43,7 @@ const images = [
 const imagesAviation = [
   {
     original: require('../assets/aviation_lic.jpg'),
-    thumbnail: require('../assets/aviation_lic.jpg'),
+    thumbnail: require('../assets/aviation_lic_tmb.jpg'),
     originalTitle: 'Four 1st places at Abzakovo Cup',
   },
   {
@@ -96,18 +96,6 @@ function PersonalityPage() {
             vidUrl={[
               'https://youtu.be/aEYRJWz9pFE',
               'https://youtu.be/um1PiGKCBi4',
-            ]}
-          />
-        </Grid>
-        <Grid className={classes.verticalGap} item xs={12}>
-          <PersonalRow
-            title={aviation.title}
-            text={aviation.text}
-            items={imagesAviation}
-            imageVideo={true}
-            vidUrl={[
-              'https://youtu.be/4crO3dc2Fb0',
-              'https://youtu.be/4crO3dc2Fb0',
             ]}
           />
         </Grid>
@@ -180,6 +168,18 @@ function PersonalityPage() {
             vidUrl={[
               'https://youtu.be/tL0cQXJ6Pss',
               'https://youtu.be/rcr4WD5uhg8',
+            ]}
+          />
+        </Grid>
+        <Grid className={classes.verticalGap} item xs={12}>
+          <PersonalRow
+            title={aviation.title}
+            text={aviation.text}
+            items={imagesAviation}
+            imageVideo={true}
+            vidUrl={[
+              'https://youtu.be/4crO3dc2Fb0',
+              'https://youtu.be/4crO3dc2Fb0',
             ]}
           />
         </Grid>
