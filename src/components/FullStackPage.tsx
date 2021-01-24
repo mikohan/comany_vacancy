@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-
+import PageSinglePage from './PageSinglePage';
 function BackEndPage() {
   return (
     <motion.div
@@ -11,6 +11,7 @@ function BackEndPage() {
       transition={{ duration: durationPage }}
     >
       <h1>Full stack Page former BackEnd component</h1>
+      <PageSinglePage />
     </motion.div>
   );
 }

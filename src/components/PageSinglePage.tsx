@@ -34,29 +34,20 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function PageSinglePage({
-  items,
-  vidUrl,
-  imageVideo = true,
-  title,
-  text,
-}: IProps) {
+function PageSinglePage() {
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>
       <Grid container spacing={3}>
         <Grid className={classes.textWrapper} item xs={12}>
-          <Typography variant="h4">{title}</Typography>
-          <Typography variant="body1">{text}</Typography>
+          <Typography variant="h4">Header</Typography>
+          <Typography variant="body1">Subheader</Typography>
         </Grid>
         <Grid item xs={6}>
-          {imageVideo ? (
-            <ImageGallery items={items} />
-          ) : (
             <Box className="player-wrapper">
               <ReactPlayer
                 className="react-player"
-                url={vidUrl?.length ? vidUrl[1] : ''}
+                url='shs'
                 controls
                 width="100%"
                 height="100%"
@@ -68,7 +59,6 @@ function PageSinglePage({
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
-              url={vidUrl?.length ? vidUrl[0] : ''}
               controls
               width="100%"
               height="100%"
