@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import PageSinglePage from './PageSinglePage';
-function BackEndPage() {
+import { fullstack } from '../translate/fullstack';
+
+function FullStack() {
+  const context = useContext(ThemeContext);
+  let { language } = context;
+  const { header, text } = translateText[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -16,4 +21,4 @@ function BackEndPage() {
   );
 }
 
-export default BackEndPage;
+export default FullStack;
