@@ -10,7 +10,7 @@ function FrontEndPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <h1> Front end Page goes Here</h1>
+      <h1>Full Stack Page</h1>
     </motion.div>
   );
 }
