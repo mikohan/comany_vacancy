@@ -16,7 +16,9 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     paperRow: {
-      padding: theme.spacing(3),
+      paddingLeft: theme.spacing(20),
+      paddingRight: theme.spacing(20),
+      paddingBottom: theme.spacing(20),
     },
     textWrapper: {
       padding: theme.spacing(5),
