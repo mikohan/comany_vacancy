@@ -1,8 +1,10 @@
-interface IFullstack {
-  header: string;
-  text: string;
+interface IItem {
+  [key: string]: {
+    header: string;
+    text: string;
+  };
 }
-export const fullstack: IFullstack = {
+export const fullstack: IItem = {
   english: {
     header: 'Full Stack Experience',
     text: `<p>
