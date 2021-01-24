@@ -19,8 +19,8 @@ function Routes() {
     <div>
       <Switch>
         <Route exact path="/frontend" component={FrontEndPage} />
-        <Route exact path="/backend" component={BackEndPage} />
-        <Route exact path="/computers" component={SysAdminPage} />
+        <Route exact path="/fullstack" component={BackEndPage} />
+        <Route exact path="/linux" component={SysAdminPage} />
         <Route exact path="/marketing" component={MarketingPage} />
         <Route exact path="/personality" component={PersonalityPage} />
         <Route exact path="/hobbies" component={HobbiesPage} />

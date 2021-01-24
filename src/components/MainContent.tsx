@@ -122,9 +122,9 @@ export default function PersistentDrawerLeft(): JSX.Element {
   const {
     darkTheme,
     lightTheme,
-    frontEnd,
+    fullstack,
     backEnd,
-    sysAdmin,
+    linux,
     marketing,
     personality,
     hobbies,
@@ -169,18 +169,18 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link className={classes.menuItemLink} to="/backend">
-                  {backEnd}
+                <Link className={classes.menuItemLink} to="/fullstack">
+                  {fullstack}
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/frontend">
-                  {frontEnd}
+                <Link className={classes.menuItemLink} to="/linux">
+                  {linux}
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/computers">
-                  {sysAdmin}
+                  {linux}
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
@@ -279,20 +279,20 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={portfolio} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/backend">
+            <Link className={classes.drawerLink} to="/fullstack">
               <ListItem button>
                 <ListItemIcon>
                   <DnsOutlined />
                 </ListItemIcon>
-                <ListItemText primary={backEnd} />
+                <ListItemText primary={fullstack} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/frontend">
+            <Link className={classes.drawerLink} to="/linux">
               <ListItem button>
                 <ListItemIcon>
                   <DevicesOtherOutlined />
                 </ListItemIcon>
-                <ListItemText primary={frontEnd} />
+                <ListItemText primary={fullstack} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/computers">
@@ -300,7 +300,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemIcon>
                   <ImportantDevicesOutlined />
                 </ListItemIcon>
-                <ListItemText primary={sysAdmin} />
+                <ListItemText primary={linux} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/marketing">
