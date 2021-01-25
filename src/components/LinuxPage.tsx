@@ -16,7 +16,6 @@ function LinuxPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <h1>Full stack Page former BackEnd component</h1>
       <LinuxPageComponent
         header={header}
         text={text}

@@ -4,9 +4,9 @@ interface IItem {
     text: string;
   };
 }
-export const fullstack: IItem = {
+export const linux: IItem = {
   english: {
-    header: 'Full Stack Experience',
+    header: 'Lunux Admininstration Experience',
     text: `<p>
               Hi, I am Vladimir and in this video I will tell you about my
               Linux/Unix experience. I have been working in the Linux
