@@ -70,7 +70,10 @@ function FullStack() {
           <Grid item xs={12}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
               <Typography variant="body1">{fullStackLinks}</Typography>
-              <List className={classes.listAll}>
+              <List
+                style={{ display: 'flex', flexDirection: 'row' }}
+                className={classes.listAll}
+              >
                 <ListItem>
                   <ListItemText
                     primary={
