@@ -151,11 +151,6 @@ function FullStack() {
               </List>
             </Paper>
           </Grid>
-          <Grid item xs={4}>
-            <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <MiscProject />
-            </Paper>
-          </Grid>
         </Grid>
       </Grid>
       <Grid container spacing={6}>
@@ -169,25 +164,6 @@ function FullStack() {
           </div>
         </Grid>
         <Grid item container xs={12}>
-          <div id="nuxtChat">
-            <PortfolioSingle
-              vidUrl="https://youtu.be/44Nw_QoZDuc"
-              coverImg={require('../assets/nuxt-chat.png')}
-              projectName="nuxtChat"
-              direction
-            />
-          </div>
-        </Grid>
-        <Grid item container xs={12}>
-          <div id="colors">
-            <PortfolioSingle
-              vidUrl="https://youtu.be/zRLzJnDXyi4"
-              coverImg={require('../assets/colors.png')}
-              projectName="colors"
-            />
-          </div>
-        </Grid>
-        <Grid item container xs={12}>
           <div id="ducato">
             <PortfolioSingle
               vidUrl="https://youtu.be/6L9CCT7akuU"
@@ -195,16 +171,6 @@ function FullStack() {
               projectName="ducato"
               buttons={true}
               direction
-            />
-          </div>
-        </Grid>
-        <Grid item container xs={12}>
-          <div id="sheets">
-            <PortfolioSingle
-              vidUrl="https://youtu.be/6L9CCT7akuU"
-              coverImg={require('../assets/sheets.png')}
-              projectName="sheets"
-              buttons={true}
             />
           </div>
         </Grid>
