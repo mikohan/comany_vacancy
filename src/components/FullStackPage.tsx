@@ -67,7 +67,7 @@ function FullStack() {
     >
       <Grid container spacing={3}>
         <Grid item container xs={12} justify="space-between" spacing={1}>
-          <Grid item xs={4}>
+          <Grid item xs={12}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
               <Typography variant="body1">{fullStackLinks}</Typography>
               <List className={classes.listAll}>
@@ -109,43 +109,6 @@ function FullStack() {
                       </HashLink>
                     }
                     secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
-                  />
-                </ListItem>
-              </List>
-            </Paper>
-          </Grid>
-          <Grid item xs={4}>
-            <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="body1">{frontEndLinks}</Typography>
-              <List className={classes.listAll}>
-                <ListItem>
-                  <ListItemText
-                    primary={
-                      <HashLink className={classes.hashLink} to="#nuxtChat">
-                        {portfolio.nuxtChat.title}
-                      </HashLink>
-                    }
-                    secondary="(NuxtJS, Socket.io, Express, NodeJS)"
-                  />
-                </ListItem>
-                <ListItem>
-                  <ListItemText
-                    primary={
-                      <HashLink className={classes.hashLink} to="#colors">
-                        {portfolio.colors.title}
-                      </HashLink>
-                    }
-                    secondary="(React, Javascript)"
-                  />
-                </ListItem>
-                <ListItem>
-                  <ListItemText
-                    primary={
-                      <HashLink className={classes.hashLink} to="#sheets">
-                        {portfolio.sheets.title}
-                      </HashLink>
-                    }
-                    secondary="(Vanilla Javascript)"
                   />
                 </ListItem>
               </List>
