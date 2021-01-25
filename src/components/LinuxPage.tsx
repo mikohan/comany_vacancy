@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { fullstack } from '../translate/fullstack';
+import { linux } from '../translate/linux';
 import { ThemeContext } from '../context/ThemeContext';
 import LinuxPageComponent from './LinuxPageComponent';
 
 function LinuxPage() {
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { header, text } = fullstack[language];
+  const { header, text } = linux[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
