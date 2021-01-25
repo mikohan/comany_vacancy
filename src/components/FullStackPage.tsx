@@ -20,6 +20,7 @@ import ScrollToTop from 'react-scroll-up';
 import PresentToAllIcon from '@material-ui/icons/PresentToAll';
 import { useStyles } from '../styles/PorfolioPageStyles';
 import { Box } from '@material-ui/core';
+import LinuxPageComponent from './LinuxPageComponent';
 
 function FullStack() {
   const classes = useStyles();
@@ -67,6 +68,9 @@ function FullStack() {
     >
       <Grid container spacing={3}>
         <Grid item container xs={12} justify="space-between" spacing={1}>
+          <Grid item xs={12}>
+            <LinuxPageComponent text="text" header="header" vidUrl="shoo" />
+          </Grid>
           <Grid item xs={12}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
               <Typography variant="body1">{fullStackLinks}</Typography>
