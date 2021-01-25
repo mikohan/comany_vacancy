@@ -38,7 +38,7 @@ export const fullstack: IItem = {
             </p>`,
   },
   russian: {
-    header: 'Full Stack Опыт',
+    header: 'Опыт Full Stack разработки',
     text: `jfjfjfjfjjfj`,
   },
   czech: {

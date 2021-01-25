@@ -47,7 +47,7 @@ function PageSinglePage({ header, text }: IProps) {
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
-              url="https://youtu.be/tL0cQXJ6Pss"
+              url="https://youtu.be/yUafPqTg3kw"
               controls
               width="100%"
               height="100%"
