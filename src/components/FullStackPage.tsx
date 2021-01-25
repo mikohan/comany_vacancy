@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import PageSinglePage from './PageSinglePage';
 import { fullstack } from '../translate/fullstack';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -17,7 +16,6 @@ function FullStack() {
       transition={{ duration: durationPage }}
     >
       <h1>Full stack Page former BackEnd component</h1>
-      <PageSinglePage text={text} header={header} />
     </motion.div>
   );
 }
