@@ -30,35 +30,6 @@ function FullStack() {
     language
   ];
   const { header, text } = fullstack[language];
-  const MiscProject = () => {
-    return (
-      <Box>
-        <Typography variant="body1">{miscLinks}</Typography>
-        <List className={classes.listAll}>
-          <ListItem>
-            <ListItemText
-              primary={
-                <HashLink className={classes.hashLink} to="#ducato">
-                  {portfolio.ducato.title}
-                </HashLink>
-              }
-              secondary="(Django, Python)"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary={
-                <HashLink className={classes.hashLink} to="#ducato">
-                  {portfolio.venezo.title}
-                </HashLink>
-              }
-              secondary="(Django, Python, Elasticsearch)"
-            />
-          </ListItem>
-        </List>
-      </Box>
-    );
-  };
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -69,10 +40,15 @@ function FullStack() {
       <Grid container spacing={3}>
         <Grid item container xs={12} justify="space-between" spacing={1}>
           <Grid item xs={12}>
-            <LinuxPageComponent text="text" header="header" vidUrl="shoo" />
+            <LinuxPageComponent
+              text={text}
+              header={header}
+              vidUrl="https://youtu.be/Y1e38mkTfRA"
+            />
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
+              <Typography variant="h3">Full Stack Portfolio</Typography>
               <Typography variant="body1">{fullStackLinks}</Typography>
               <List
                 style={{ display: 'flex', flexDirection: 'row' }}
