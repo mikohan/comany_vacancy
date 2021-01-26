@@ -6,7 +6,7 @@ interface IItem {
 }
 export const frontend: IItem = {
   english: {
-    header: 'Front end Development',
+    header: 'Some of Front End Pfojects',
     text: `<p>
               Hi, I am Vladimir and in this video I will tell you about my
               Front End experience.
@@ -38,7 +38,7 @@ export const frontend: IItem = {
             </p>`,
   },
   russian: {
-    header: 'Опыт Front End разработки',
+    header: 'Несколько Front End проектов',
     text: `jfjfjfjfjjfj`,
   },
   czech: {
