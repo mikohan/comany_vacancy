@@ -20,6 +20,7 @@ import ScrollToTop from 'react-scroll-up';
 import PresentToAllIcon from '@material-ui/icons/PresentToAll';
 import { useStyles } from '../styles/PorfolioPageStyles';
 import VideoPageComponent from './VideoPageComponent';
+import CertificateComponent from './CertificateComponent';
 
 function FullStack() {
   const classes = useStyles();
@@ -115,6 +116,9 @@ function FullStack() {
               buttons={true}
             />
           </div>
+        </Grid>
+        <Grid item container xs={12}>
+          <CertificateComponent image={'some'} />
         </Grid>
         <Grid item xs={12}>
           <ScrollToTop
