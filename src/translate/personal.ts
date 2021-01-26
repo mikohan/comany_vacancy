@@ -5,6 +5,8 @@ interface ITranslateText {
 }
 export const translateText: ITranslateText = {
   english: {
+    vidHeader: 'About Me',
+    text: `Some future text`,
     pageTitle: 'My Sports Achivments and Learning',
     snowboard: {
       title: 'SnowBoard',
@@ -74,6 +76,8 @@ export const translateText: ITranslateText = {
 
   russian: {
     pageTitle: 'Мои спортивные достижения',
+    vidHeader: 'Обо Мне',
+    text: `Some future text`,
     snowboard: {
       title: 'Сноуборд',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
@@ -141,6 +145,8 @@ export const translateText: ITranslateText = {
   },
   czech: {
     pageTitle: 'My Sports Achivments and Learning',
+    vidHeader: 'Обо Мне',
+    text: `Some future text`,
     snowboard: {
       title: 'SnowBoard',
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus

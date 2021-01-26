@@ -6,6 +6,7 @@ import PersonalRow from './PersonalRowComponent';
 import { translateText } from '../translate/personal';
 import { ThemeContext } from '../context/ThemeContext';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import VideoPageComponent from './VideoPageComponent';
 // some comment
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -86,6 +87,11 @@ function PersonalityPage() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <h1>{pageTitle}</h1>
+          <VideoPageComponent
+            header={header}
+            text={text}
+            vidUrl="https://youtu.be/yUafPqTg3kw"
+          />
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
