@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     paperRow: {
+      width: '100%',
       paddingLeft: theme.spacing(20),
       paddingRight: theme.spacing(20),
       paddingBottom: theme.spacing(20),
@@ -27,6 +28,9 @@ const useStyles = makeStyles((theme: Theme) =>
       textIndent: theme.spacing(4),
       textAlign: 'left',
     },
+    fullWidth: {
+      width: '100%',
+    },
   })
 );
 
@@ -36,8 +40,8 @@ function PageSinglePage({ image }: IProps) {
     <Paper className={classes.paperRow} elevation={3}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper variant="outlined">
-            <img src={require(image)} />
+          <Paper className={classes.fullWidth} variant="outlined">
+            <img src={image} />
           </Paper>
         </Grid>
       </Grid>
