@@ -118,7 +118,9 @@ function FullStack() {
           </div>
         </Grid>
         <Grid item container xs={12}>
-          <CertificateComponent image={'some'} />
+          <CertificateComponent
+            image={require('../assets/certs/SSR_React.jpg')}
+          />
         </Grid>
         <Grid item xs={12}>
           <ScrollToTop

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Paper, Grid } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
 
 interface IProps {
   image: string;
@@ -8,16 +10,9 @@ interface IProps {
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      '& > *': {
-        margin: theme.spacing(1),
-      },
-    },
     paperRow: {
       width: '100%',
-      paddingLeft: theme.spacing(20),
-      paddingRight: theme.spacing(20),
-      paddingBottom: theme.spacing(20),
+      padding: theme.spacing(5),
     },
     textWrapper: {
       padding: theme.spacing(5),
@@ -40,9 +35,9 @@ function PageSinglePage({ image }: IProps) {
     <Paper className={classes.paperRow} elevation={3}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper className={classes.fullWidth} variant="outlined">
-            <img src={image} />
-          </Paper>
+          <Container maxWidth="lg">
+            <img height="100%" width="100%" src={image} />
+          </Container>
         </Grid>
       </Grid>
     </Paper>
