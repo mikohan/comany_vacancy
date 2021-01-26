@@ -75,6 +75,8 @@ function PersonalityPage() {
     acrobe,
     aviation,
     rollerBlade,
+    vidHeader,
+    text,
   } = translateText[language];
   const classes = useStyles();
   return (
@@ -86,12 +88,14 @@ function PersonalityPage() {
     >
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <h1>{pageTitle}</h1>
           <VideoPageComponent
-            header={header}
+            header={vidHeader}
             text={text}
             vidUrl="https://youtu.be/yUafPqTg3kw"
           />
+        </Grid>
+        <Grid item xs={12}>
+          <h1>{pageTitle}</h1>
         </Grid>
         <Grid className={classes.verticalGap} item xs={12}>
           <PersonalRow
