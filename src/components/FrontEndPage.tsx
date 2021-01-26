@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { fullstack } from '../translate/fullstack';
+import { frontend } from '../translate/frontend';
 import {
   Grid,
   IconButton,
@@ -19,7 +19,6 @@ import { HashLink } from 'react-router-hash-link';
 import ScrollToTop from 'react-scroll-up';
 import PresentToAllIcon from '@material-ui/icons/PresentToAll';
 import { useStyles } from '../styles/PorfolioPageStyles';
-import { Box } from '@material-ui/core';
 import LinuxPageComponent from './LinuxPageComponent';
 
 function FullStack() {
@@ -29,7 +28,7 @@ function FullStack() {
   const { portfolio, fullStackLinks, frontEndLinks, miscLinks } = translateText[
     language
   ];
-  const { header, text } = fullstack[language];
+  const { header, text } = frontend[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
