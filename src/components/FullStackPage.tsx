@@ -26,7 +26,7 @@ function FullStack() {
   const context = useContext(ThemeContext);
   let { language } = context;
   const { portfolio, fullStackLinks } = translateText[language];
-  const { header, text } = fullstack[language];
+  const { pageHeader, header, text } = fullstack[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}

@@ -1,4 +1,4 @@
-interface IItem {
+export interface IItem {
   [key: string]: {
     header: string;
     text: string;

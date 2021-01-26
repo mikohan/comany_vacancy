@@ -1,12 +1,8 @@
-interface IItem {
-  [key: string]: {
-    header: string;
-    text: string;
-  };
-}
+import { IItem } from './frontend';
 export const fullstack: IItem = {
   english: {
-    header: 'Lunux Admininstration Experience',
+    pageHeader: 'Full Stack Experience',
+    header: 'Some of Full Stack Projects',
     text: `<p>
               Hi, I am Vladimir and in this video I will tell you about my
               Linux/Unix experience. I have been working in the Linux
@@ -38,11 +34,13 @@ export const fullstack: IItem = {
             </p>`,
   },
   russian: {
-    header: 'Опыт Full Stack разработки',
+    pageHeader: 'Опыт Full Stack разработки',
+    header: 'Несколько Фулл Стак проектов',
     text: `jfjfjfjfjjfj`,
   },
   czech: {
-    header: 'Full Stack Experience',
+    pageHeader: 'Full Stack Experience',
+    header: 'Some of Full Stack Projects',
     text: `jfjfjfjfjjfj`,
   },
 };
