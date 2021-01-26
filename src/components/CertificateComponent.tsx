@@ -35,7 +35,7 @@ function PageSinglePage({ image }: IProps) {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Container maxWidth="lg">
-            <img height="100%" width="100%" src={image} />
+            <img height="100%" width="100%" src={image} alt="Cetificates" />
           </Container>
         </Grid>
       </Grid>

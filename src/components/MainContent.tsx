@@ -43,6 +43,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import { translateHeader } from '../translate/header';
 import { isDrawerOpen } from '../config';
 import HomeOutlined from '@material-ui/icons/HomeOutlined';
+import { showBlog } from '../config';
 
 export default function PersistentDrawerLeft(): JSX.Element {
   const context = useContext(ThemeContext);
@@ -197,11 +198,13 @@ export default function PersistentDrawerLeft(): JSX.Element {
                   {certificates}
                 </Link>
               </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/blog">
-                  {blog}
-                </Link>
-              </MenuItem>
+              {showBlog && (
+                <MenuItem className={classes.menuItemLink}>
+                  <Link className={classes.menuItemLink} to="/blog">
+                    {blog}
+                  </Link>
+                </MenuItem>
+              )}
             </Box>
 
             <div className={classes.grow}></div>
@@ -334,14 +337,16 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={certificates} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/blog">
-              <ListItem button>
-                <ListItemIcon>
-                  <DescriptionOutlinedIcon />
-                </ListItemIcon>
-                <ListItemText primary={blog} />
-              </ListItem>
-            </Link>
+            {showBlog && (
+              <Link className={classes.drawerLink} to="/blog">
+                <ListItem button>
+                  <ListItemIcon>
+                    <DescriptionOutlinedIcon />
+                  </ListItemIcon>
+                  <ListItemText primary={blog} />
+                </ListItem>
+              </Link>
+            )}
           </List>
         </Drawer>
         <main
