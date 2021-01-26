@@ -279,20 +279,12 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={fullstack} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/portfolio">
-              <ListItem button>
-                <ListItemIcon>
-                  <EmojiPeopleOutlined />
-                </ListItemIcon>
-                <ListItemText primary={portfolio} />
-              </ListItem>
-            </Link>
             <Link className={classes.drawerLink} to="/linux">
               <ListItem button>
                 <ListItemIcon>
                   <DevicesOtherOutlined />
                 </ListItemIcon>
-                <ListItemText primary={fullstack} />
+                <ListItemText primary={linux} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/marketing">
@@ -301,6 +293,14 @@ export default function PersistentDrawerLeft(): JSX.Element {
                   <InsertChartOutlined />
                 </ListItemIcon>
                 <ListItemText primary={marketing} />
+              </ListItem>
+            </Link>
+            <Link className={classes.drawerLink} to="/portfolio">
+              <ListItem button>
+                <ListItemIcon>
+                  <EmojiPeopleOutlined />
+                </ListItemIcon>
+                <ListItemText primary={portfolio} />
               </ListItem>
             </Link>
           </List>
