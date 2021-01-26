@@ -19,16 +19,13 @@ import { HashLink } from 'react-router-hash-link';
 import ScrollToTop from 'react-scroll-up';
 import PresentToAllIcon from '@material-ui/icons/PresentToAll';
 import { useStyles } from '../styles/PorfolioPageStyles';
-import { Box } from '@material-ui/core';
 import LinuxPageComponent from './LinuxPageComponent';
 
 function FullStack() {
   const classes = useStyles();
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { portfolio, fullStackLinks, frontEndLinks, miscLinks } = translateText[
-    language
-  ];
+  const { portfolio, fullStackLinks } = translateText[language];
   const { header, text } = fullstack[language];
   return (
     <motion.div
