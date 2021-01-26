@@ -25,9 +25,7 @@ function FullStack() {
   const classes = useStyles();
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { portfolio, fullStackLinks, frontEndLinks, miscLinks } = translateText[
-    language
-  ];
+  const { portfolio, frontEndLinks } = translateText[language];
   const { header, text } = frontend[language];
   return (
     <motion.div
@@ -47,8 +45,8 @@ function FullStack() {
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="h3">Full Stack Portfolio</Typography>
-              <Typography variant="body1">{fullStackLinks}</Typography>
+              <Typography variant="h3">Front End Portfolio</Typography>
+              <Typography variant="body1">{frontEndLinks}</Typography>
               <List
                 style={{ display: 'flex', flexDirection: 'row' }}
                 className={classes.listAll}
@@ -56,41 +54,31 @@ function FullStack() {
                 <ListItem>
                   <ListItemText
                     primary={
-                      <HashLink className={classes.hashLink} to="#venezo">
-                        {portfolio.venezo.title}
+                      <HashLink className={classes.hashLink} to="#nuxtChat">
+                        {portfolio.nuxtChat.title}
                       </HashLink>
                     }
-                    secondary="(Django, Python, Elasticsearch)"
+                    secondary="(NuxtJS, Socket.io, Express, NodeJS)"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemText
                     primary={
-                      <HashLink className={classes.hashLink} to="#ducato">
-                        {portfolio.ducato.title}
+                      <HashLink className={classes.hashLink} to="#colors">
+                        {portfolio.colors.title}
                       </HashLink>
                     }
-                    secondary="(Django, Python, MySQL)"
+                    secondary="(React, Javascript)"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemText
                     primary={
-                      <HashLink className={classes.hashLink} to="#suppliers">
-                        {portfolio.suppliers.title}
+                      <HashLink className={classes.hashLink} to="#sheets">
+                        {portfolio.sheets.title}
                       </HashLink>
                     }
-                    secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
-                  />
-                </ListItem>
-                <ListItem>
-                  <ListItemText
-                    primary={
-                      <HashLink className={classes.hashLink} to="#a77">
-                        {portfolio.enterprise.title}
-                      </HashLink>
-                    }
-                    secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
+                    secondary="(Vanilla Javascript)"
                   />
                 </ListItem>
               </List>
@@ -100,44 +88,31 @@ function FullStack() {
       </Grid>
       <Grid container spacing={6}>
         <Grid item container xs={12}>
-          <div id="venezo">
+          <div id="nuxtChat">
             <PortfolioSingle
-              vidUrl="https://youtu.be/IHpfcNRXUcU"
-              coverImg={require('../assets/venezo-cover.png')}
-              projectName="venezo"
+              vidUrl="https://youtu.be/44Nw_QoZDuc"
+              coverImg={require('../assets/nuxt-chat.png')}
+              projectName="nuxtChat"
+              direction
             />
           </div>
         </Grid>
         <Grid item container xs={12}>
-          <div id="ducato">
+          <div id="colors">
+            <PortfolioSingle
+              vidUrl="https://youtu.be/zRLzJnDXyi4"
+              coverImg={require('../assets/colors.png')}
+              projectName="colors"
+            />
+          </div>
+        </Grid>
+        <Grid item container xs={12}>
+          <div id="sheets">
             <PortfolioSingle
               vidUrl="https://youtu.be/6L9CCT7akuU"
-              coverImg={require('../assets/ducato_cover.png')}
-              projectName="ducato"
+              coverImg={require('../assets/sheets.png')}
+              projectName="sheets"
               buttons={true}
-              direction
-            />
-          </div>
-        </Grid>
-        <Grid item container xs={12}>
-          <div id="suppliers">
-            <PortfolioSingle
-              vidUrl="https://youtu.be/rVCiNUIsKE0"
-              coverImg={require('../assets/suppliers.png')}
-              projectName="suppliers"
-              buttons={false}
-              direction
-            />
-          </div>
-        </Grid>
-        <Grid item container xs={12}>
-          <div id="a77">
-            <PortfolioSingle
-              vidUrl="https://youtu.be/yy6BsklDG_s"
-              coverImg={require('../assets/a77_2.png')}
-              projectName="a77"
-              buttons={false}
-              direction={false}
             />
           </div>
         </Grid>

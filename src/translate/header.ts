@@ -14,7 +14,7 @@ export const translateHeader: TransHeader = {
     backEnd: 'Backend',
     marketing: 'Marketing',
     flag: '🇺🇸',
-    personality: 'Personality',
+    personality: 'Personality & Hobbies',
     hobbies: 'Hobbies',
     blog: 'Blog',
     portfolio: 'Portfolio',
