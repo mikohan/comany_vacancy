@@ -39,13 +39,13 @@ function FullStack() {
           <Grid item xs={12}>
             <LinuxPageComponent
               text={text}
-              header={header}
+              header={pageHeader}
               vidUrl="https://youtu.be/Y1e38mkTfRA"
             />
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="h3">{pageHeader}</Typography>
+              <Typography variant="h2">{header}</Typography>
               <Typography variant="body1">{frontEndLinks}</Typography>
               <List
                 style={{ display: 'flex', flexDirection: 'row' }}
