@@ -40,7 +40,7 @@ function PageSinglePage({ header, text, vidUrl }: IProps) {
       <Grid container spacing={3}>
         <Grid className={classes.textWrapper} item xs={12}>
           <Typography
-            variant="h4"
+            variant="h2"
             dangerouslySetInnerHTML={{ __html: header as string }}
           ></Typography>
         </Grid>
