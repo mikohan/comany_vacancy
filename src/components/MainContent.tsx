@@ -174,11 +174,6 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/portfolio">
-                  {portfolio}
-                </Link>
-              </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/linux">
                   {linux}
                 </Link>
@@ -186,6 +181,11 @@ export default function PersistentDrawerLeft(): JSX.Element {
               <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/marketing">
                   {marketing}
+                </Link>
+              </MenuItem>
+              <MenuItem className={classes.menuItemLink}>
+                <Link className={classes.menuItemLink} to="/portfolio">
+                  {portfolio}
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
@@ -271,20 +271,20 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={logoHome} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/portfolio">
-              <ListItem button>
-                <ListItemIcon>
-                  <EmojiPeopleOutlined />
-                </ListItemIcon>
-                <ListItemText primary={portfolio} />
-              </ListItem>
-            </Link>
             <Link className={classes.drawerLink} to="/fullstack">
               <ListItem button>
                 <ListItemIcon>
                   <DnsOutlined />
                 </ListItemIcon>
                 <ListItemText primary={fullstack} />
+              </ListItem>
+            </Link>
+            <Link className={classes.drawerLink} to="/portfolio">
+              <ListItem button>
+                <ListItemIcon>
+                  <EmojiPeopleOutlined />
+                </ListItemIcon>
+                <ListItemText primary={portfolio} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/linux">
