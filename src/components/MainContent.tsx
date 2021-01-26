@@ -279,6 +279,14 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={fullstack} />
               </ListItem>
             </Link>
+            <Link className={classes.drawerLink} to="/frontend">
+              <ListItem button>
+                <ListItemIcon>
+                  <DevicesOtherOutlined />
+                </ListItemIcon>
+                <ListItemText primary={frontend} />
+              </ListItem>
+            </Link>
             <Link className={classes.drawerLink} to="/linux">
               <ListItem button>
                 <ListItemIcon>
