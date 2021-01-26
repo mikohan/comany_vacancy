@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 import { linux } from '../translate/linux';
 import { ThemeContext } from '../context/ThemeContext';
-import LinuxPageComponent from './LinuxPageComponent';
+import VideoPageComponent from './VideoPageComponent';
 
 function LinuxPage() {
   const context = useContext(ThemeContext);
@@ -16,7 +16,7 @@ function LinuxPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <LinuxPageComponent
+      <VideoPageComponent
         header={header}
         text={text}
         vidUrl="https://youtu.be/yUafPqTg3kw"

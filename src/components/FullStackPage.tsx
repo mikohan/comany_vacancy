@@ -19,7 +19,7 @@ import { HashLink } from 'react-router-hash-link';
 import ScrollToTop from 'react-scroll-up';
 import PresentToAllIcon from '@material-ui/icons/PresentToAll';
 import { useStyles } from '../styles/PorfolioPageStyles';
-import LinuxPageComponent from './LinuxPageComponent';
+import VideoPageComponent from './VideoPageComponent';
 
 function FullStack() {
   const classes = useStyles();
@@ -37,7 +37,7 @@ function FullStack() {
       <Grid container spacing={3}>
         <Grid item container xs={12} justify="space-between" spacing={1}>
           <Grid item xs={12}>
-            <LinuxPageComponent
+            <VideoPageComponent
               text={text}
               header={pageHeader}
               vidUrl="https://youtu.be/Y1e38mkTfRA"
