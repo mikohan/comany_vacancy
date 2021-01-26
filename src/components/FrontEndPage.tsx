@@ -26,7 +26,7 @@ function FullStack() {
   const context = useContext(ThemeContext);
   let { language } = context;
   const { portfolio, frontEndLinks } = translateText[language];
-  const { header, text } = frontend[language];
+  const { pageHeader, header, text } = frontend[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -45,7 +45,7 @@ function FullStack() {
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.fastLinkPapaer} elevation={3}>
-              <Typography variant="h3">{header}</Typography>
+              <Typography variant="h3">{pageHeader}</Typography>
               <Typography variant="body1">{frontEndLinks}</Typography>
               <List
                 style={{ display: 'flex', flexDirection: 'row' }}
