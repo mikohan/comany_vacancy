@@ -18,6 +18,7 @@ export const translateHeader: TransHeader = {
     hobbies: 'Hobbies',
     blog: 'Blog',
     portfolio: 'Portfolio',
+    certificates: 'Certificates',
   },
   russian: {
     logoHome: 'Главная',
@@ -34,6 +35,7 @@ export const translateHeader: TransHeader = {
     hobbies: 'Хобби',
     blog: 'Блог',
     portfolio: 'Портфолио',
+    certificates: 'Сертификаты',
   },
   czech: {
     logoHome: 'Home',
@@ -50,5 +52,6 @@ export const translateHeader: TransHeader = {
     hobbies: 'Záliba',
     blog: 'Blog',
     portfolio: 'Portfolio',
+    certificates: 'Certificates',
   },
 };

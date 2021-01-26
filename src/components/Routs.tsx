@@ -13,12 +13,14 @@ import Posts from './blog/Posts';
 import Post from './blog/Post';
 import HomePage from './HomePage';
 import PortfolioPage from './PortfolioPage';
+import CertPage from './CertificatePage';
 
 function Routes() {
   return (
     <div>
       <Switch>
         <Route exact path="/frontend" component={FrontEndPage} />
+        <Route exact path="/certificates" component={CertPage} />
         <Route exact path="/fullstack" component={FullStackPage} />
         <Route exact path="/linux" component={LinuxPage} />
         <Route exact path="/marketing" component={MarketingPage} />

@@ -125,7 +125,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
     linux,
     marketing,
     personality,
-    hobbies,
+    certificates,
     blog,
     portfolio,
     frontend,
@@ -190,6 +190,11 @@ export default function PersistentDrawerLeft(): JSX.Element {
               <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/personality">
                   {personality}
+                </Link>
+              </MenuItem>
+              <MenuItem className={classes.menuItemLink}>
+                <Link className={classes.menuItemLink} to="/certificates">
+                  {certificates}
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
@@ -321,12 +326,12 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={personality} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/hobbies">
+            <Link className={classes.drawerLink} to="/certificates">
               <ListItem button>
                 <ListItemIcon>
                   <FavoriteBorderOutlined />
                 </ListItemIcon>
-                <ListItemText primary={hobbies} />
+                <ListItemText primary={certificates} />
               </ListItem>
             </Link>
             <Link className={classes.drawerLink} to="/blog">
