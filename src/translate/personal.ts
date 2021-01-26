@@ -145,7 +145,7 @@ export const translateText: ITranslateText = {
   },
   czech: {
     pageTitle: 'My Sports Achivments and Learning',
-    vidHeader: 'Обо Мне',
+    vidHeader: 'About Me',
     text: `Some future text`,
     snowboard: {
       title: 'SnowBoard',
