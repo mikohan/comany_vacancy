@@ -43,6 +43,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import { translateHeader } from '../translate/header';
 import { isDrawerOpen } from '../config';
 import HomeOutlined from '@material-ui/icons/HomeOutlined';
+import { frontend } from '../translate/frontend';
 
 export default function PersistentDrawerLeft(): JSX.Element {
   const context = useContext(ThemeContext);
@@ -128,6 +129,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
     hobbies,
     blog,
     portfolio,
+    frontend,
   } = translateHeader[language];
   // Theme switcher label
   const themeColor: string = isDarkMode ? darkTheme : lightTheme;
@@ -161,14 +163,19 @@ export default function PersistentDrawerLeft(): JSX.Element {
               </Link>
             </MenuItem>
             <Box className={classes.menuItems}>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/portfolio">
-                  {portfolio}
-                </Link>
-              </MenuItem>
               <MenuItem>
                 <Link className={classes.menuItemLink} to="/fullstack">
                   {fullstack}
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link className={classes.menuItemLink} to="/frontend">
+                  {frontend}
+                </Link>
+              </MenuItem>
+              <MenuItem className={classes.menuItemLink}>
+                <Link className={classes.menuItemLink} to="/portfolio">
+                  {portfolio}
                 </Link>
               </MenuItem>
               <MenuItem className={classes.menuItemLink}>
