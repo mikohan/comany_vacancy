@@ -122,6 +122,16 @@ function FullStack() {
             image={require('../assets/certs/SSR_React.jpg')}
           />
         </Grid>
+        <Grid item container xs={12}>
+          <CertificateComponent
+            image={require('../assets/certs/ReactFull.jpg')}
+          />
+        </Grid>
+        <Grid item container xs={12}>
+          <CertificateComponent
+            image={require('../assets/certs/DRFVueJS.jpg')}
+          />
+        </Grid>
         <Grid item xs={12}>
           <ScrollToTop
             style={{
