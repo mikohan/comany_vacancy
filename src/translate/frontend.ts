@@ -2,11 +2,13 @@ interface IItem {
   [key: string]: {
     header: string;
     text: string;
+    pageHeader: string;
   };
 }
 export const frontend: IItem = {
   english: {
     header: 'Some of Front End Pfojects',
+    pageHeader: 'Front End Experience',
     text: `<p>
               Hi, I am Vladimir and in this video I will tell you about my
               Front End experience.
@@ -38,11 +40,13 @@ export const frontend: IItem = {
             </p>`,
   },
   russian: {
+    pageHeader: 'Опыт Фронт Енд разработки',
     header: 'Несколько Front End проектов',
     text: `jfjfjfjfjjfj`,
   },
   czech: {
-    header: 'Front End Experience',
+    pageHeader: 'Front End Experience',
+    header: 'Some of Front End Pfojects',
     text: `jfjfjfjfjjfj`,
   },
 };
