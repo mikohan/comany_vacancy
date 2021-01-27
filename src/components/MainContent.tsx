@@ -43,7 +43,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import { translateHeader } from '../translate/header';
 import { isDrawerOpen } from '../config';
 import HomeOutlined from '@material-ui/icons/HomeOutlined';
-import { showBlog } from '../config';
+import { showBlog, showMarketing } from '../config';
 
 export default function PersistentDrawerLeft(): JSX.Element {
   const context = useContext(ThemeContext);
