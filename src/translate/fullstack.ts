@@ -4,34 +4,38 @@ export const fullstack: IItem = {
     pageHeader: 'Full Stack Experience',
     header: 'Some of Full Stack Projects',
     text: `<p>
-              Hi, I am Vladimir and in this video I will tell you about my
-              Linux/Unix experience. I have been working in the Linux
-              environment for 12 years. I like Linux for its reliability and a
-              great opportunity to learn new things every day. I worked in
-              different distributions such as Debian, Ubuntu, Fedora, Centos and
-              so on. One day I even built a Gentoo distro just for learning
-              purposes.
+            Hi, I am Vladimir and I will tell you about my fullstack experience. 
+            I am in full stack development for more than 12 years of experience.
             </p>
             <p> 
-              I can set up and configure pretty much any kind of software in
-              Linux. For scripting sometimes I’m using Shell/Bash sometimes
-              Python. I also have experience with Web servers, like Apache and
-              Nginx and also Python WSGI. Databases servers such as MySQL,
-              MariaDB, PostgreSQL and Elastic search. FTP servers, here are VS
-              FTP, ProFTPD. Network related staff (NFC, SAMBA, Bing9, SSH,
-              etc.). And security related staff: IP tables, Fail to ban, SSl and
-              even more. I also have designed by myself a complex Backup system,
-              using Crone, Python and BASH scripting.
+              I have experience in:
+            </p>
+            <ul>
+              <li>Building complex web projects well optimized for online marketing</li>
+              <li>Building software for business administration</li>
+              <li>Building frameworks with different languages</li>
+              <li>Machine learning</li>
+              <li>Big data collecting and analytics</li>
+              <li>Designing and optimize complex databases</li>
+              <li>Configure development environment</li>
+              <li>Servers performance optimization</li>
+              <li>Programming microcontrollers</li>
+              <li>Agile methodology</li>
+              <p>And some.</p>
+             </ul>
+             <p>
+              Now I am working on a big  project.
+              It is an almost automatic system for managing e-commerce business.
+              In a nutshell the idea is to automate most of the business processes of marketing, inventory managing and sales.
               </p>
-              <p>During my developer’s
-              career, I have been facing a lot of different difficult tasks. For
-              example, two years ago our company was needed to solve a problem
-              with the VOIP business phone system. And I set up the Asterisk on
-              the Slackware distro from scratch, with no prior knowledge. I tell
-              you it is not for the faint-hearted at all. I like to get to the
-              heart of the matter of things so Linux gives me that opportunity
-              almost every day. Thank you. Bye.
-            </p>`,
+              <p>
+                I have full confidence that in the near future sales will be automated.
+                We also did the experiments with that.
+                For now it is not good enough for production but it is working!
+                You can see some of my old projects on this page down below.
+                Take care! Bye.
+              </p>
+            `,
   },
   russian: {
     pageHeader: 'Опыт Full Stack разработки',
