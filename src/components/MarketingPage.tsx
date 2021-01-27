@@ -28,7 +28,7 @@ function MarketingPage() {
         </Grid>
         <Grid item container xs={12}>
           <CertificateComponent
-            image={require('../assets/certs/LinuxCert.jpg')}
+            image={require('../assets/certs/advords.jpg')}
           />
         </Grid>
       </Grid>
