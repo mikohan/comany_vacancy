@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { marketing } from '../translate/markenting';
+import { marketing } from '../translate/marketing';
 import { ThemeContext } from '../context/ThemeContext';
 import VideoPageComponent from './VideoPageComponent';
 import Grid from '@material-ui/core/Grid';
