@@ -52,6 +52,11 @@ function CertPage() {
               image={require('../assets/certs/LinuxCert.jpg')}
             />
           </Grid>
+          <Grid item container xs={12}>
+            <CertificateComponent
+              image={require('../assets/certs/advords.jpg')}
+            />
+          </Grid>
           <Grid item xs={12}>
             <ScrollToTop
               style={{

@@ -27,6 +27,9 @@ function MarketingPage() {
           />
         </Grid>
         <Grid item container xs={12}>
+          <CertificateComponent image={require('../assets/ga_venezo.png')} />
+        </Grid>
+        <Grid item container xs={12}>
           <CertificateComponent
             image={require('../assets/certs/advords.jpg')}
           />
