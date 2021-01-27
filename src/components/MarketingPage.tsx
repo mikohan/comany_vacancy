@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { linux } from '../translate/linux';
+import { marketing } from '../translate/markenting';
 import { ThemeContext } from '../context/ThemeContext';
 import VideoPageComponent from './VideoPageComponent';
 import Grid from '@material-ui/core/Grid';
@@ -10,7 +10,7 @@ import CertificateComponent from './CertificateComponent';
 function MarketingPage() {
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { header, text } = linux[language];
+  const { header, text } = marketing[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
