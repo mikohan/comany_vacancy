@@ -8,34 +8,35 @@ export const marketing: IItem = {
   english: {
     header: 'Online Marketing Experience',
     text: `<p>
-              Hi, I am Vladimir and in this video I will tell you about my
-              Linux/Unix experience. I have been working in the Linux
-              environment for 12 years. I like Linux for its reliability and a
-              great opportunity to learn new things every day. I worked in
-              different distributions such as Debian, Ubuntu, Fedora, Centos and
-              so on. One day I even built a Gentoo distro just for learning
-              purposes.
+              Hi, I’m Vladimir.
+              I've been working less or more in online marketing since 2002.
+              Marketing knowledge is absolutely needed for a good web developer.
             </p>
             <p> 
-              I can set up and configure pretty much any kind of software in
-              Linux. For scripting sometimes I’m using Shell/Bash sometimes
-              Python. I also have experience with Web servers, like Apache and
-              Nginx and also Python WSGI. Databases servers such as MySQL,
-              MariaDB, PostgreSQL and Elastic search. FTP servers, here are VS
-              FTP, ProFTPD. Network related staff (NFC, SAMBA, Bing9, SSH,
-              etc.). And security related staff: IP tables, Fail to ban, SSl and
-              even more. I also have designed by myself a complex Backup system,
-              using Crone, Python and BASH scripting.
+              If you intend to earn money from your web project, even before you start designing it you must first build a marketing strategy.
+
+              Marketing strategy affects everything in the web project.
+              What technology to use, what framework, what the logic should be.
+              How long it takes to deliver the project and how much it will be.
+
+              Finally the business whether it will run well or it will die depends on it.
+              So I learned and practiced about marketing a lot.
               </p>
-              <p>During my developer’s
-              career, I have been facing a lot of different difficult tasks. For
-              example, two years ago our company was needed to solve a problem
-              with the VOIP business phone system. And I set up the Asterisk on
-              the Slackware distro from scratch, with no prior knowledge. I tell
-              you it is not for the faint-hearted at all. I like to get to the
-              heart of the matter of things so Linux gives me that opportunity
-              almost every day. Thank you. Bye.
-            </p>`,
+              <p>
+                I have build automated advertising system
+                Automated sales funnels
+                Systems for building semantic cores
+                Natural language processing applications
+                Analytic system for advertisement efficiency
+                Automatic systems for SMM
+                etc.
+            </p>
+            <p>
+              Cose I am good at online marketing my web projects succeed in most cases. 
+              performance indicators of one of my latest projects you can find down below.
+              Take care bye.
+            </p>
+            `,
   },
   russian: {
     header: 'Опыт в Онлайн Маркетинге',
