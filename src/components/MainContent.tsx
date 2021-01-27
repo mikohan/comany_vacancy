@@ -178,11 +178,13 @@ export default function PersistentDrawerLeft(): JSX.Element {
                   {linux}
                 </Link>
               </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/marketing">
-                  {marketing}
-                </Link>
-              </MenuItem>
+              {showMarketing && (
+                <MenuItem className={classes.menuItemLink}>
+                  <Link className={classes.menuItemLink} to="/marketing">
+                    {marketing}
+                  </Link>
+                </MenuItem>
+              )}
               <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/portfolio">
                   {portfolio}
@@ -302,14 +304,16 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={linux} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/marketing">
-              <ListItem button>
-                <ListItemIcon>
-                  <InsertChartOutlined />
-                </ListItemIcon>
-                <ListItemText primary={marketing} />
-              </ListItem>
-            </Link>
+            {showMarketing && (
+              <Link className={classes.drawerLink} to="/marketing">
+                <ListItem button>
+                  <ListItemIcon>
+                    <InsertChartOutlined />
+                  </ListItemIcon>
+                  <ListItemText primary={marketing} />
+                </ListItem>
+              </Link>
+            )}
             <Link className={classes.drawerLink} to="/portfolio">
               <ListItem button>
                 <ListItemIcon>
