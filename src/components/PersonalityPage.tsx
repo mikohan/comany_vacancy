@@ -91,7 +91,7 @@ function PersonalityPage() {
           <VideoPageComponent
             header={vidHeader}
             text={text}
-            vidUrl="https://youtu.be/yUafPqTg3kw"
+            vidUrl="https://youtu.be/W1nPY85dwv0"
           />
         </Grid>
         <Grid item xs={12}>
