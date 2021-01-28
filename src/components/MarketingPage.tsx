@@ -23,7 +23,7 @@ function MarketingPage() {
           <VideoPageComponent
             header={header}
             text={text}
-            vidUrl="https://youtu.be/yUafPqTg3kw"
+            vidUrl="https://youtu.be/80-lNQcOBbs"
           />
         </Grid>
         <Grid item container xs={12}>
