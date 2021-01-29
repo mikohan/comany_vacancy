@@ -6,6 +6,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import VideoPageComponent from './VideoPageComponent';
 import Grid from '@material-ui/core/Grid';
 import CertificateComponent from './CertificateComponent';
+import Container from '@material-ui/core/Container';
 
 function LinuxPage() {
   const context = useContext(ThemeContext);
@@ -18,20 +19,22 @@ function LinuxPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <VideoPageComponent
-            header={header}
-            text={text}
-            vidUrl="https://youtu.be/yUafPqTg3kw"
-          />
+      <Container maxWidth="lg" className="containerClass">
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <VideoPageComponent
+              header={header}
+              text={text}
+              vidUrl="https://youtu.be/yUafPqTg3kw"
+            />
+          </Grid>
+          <Grid item container xs={12}>
+            <CertificateComponent
+              image={require('../assets/certs/LinuxCert.jpg')}
+            />
+          </Grid>
         </Grid>
-        <Grid item container xs={12}>
-          <CertificateComponent
-            image={require('../assets/certs/LinuxCert.jpg')}
-          />
-        </Grid>
-      </Grid>
+      </Container>
     </motion.div>
   );
 }
