@@ -29,6 +29,13 @@ export const translateText: ITranslateText = {
       Sports help me to be self-disciplined and held pressure.
       I’m certain hard work never killed anyone. And last year I worked 70 hour a week.
       </p>
+      <p>
+      I am motivated, resourceful and enthusiastic.
+      I definitely can add value to any company.
+      </p>
+      <p>
+      You can learn about my hobbies down below on this page.
+      </p>
     `,
     pageTitle: 'My Sports Achivments and Learning',
     snowboard: {
