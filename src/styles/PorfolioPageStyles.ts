@@ -41,5 +41,8 @@ export const useStyles = makeStyles((theme) => {
     hashLink: {
       color: '#2196f3',
     },
+    headerClass: {
+      padding: theme.spacing(5),
+    },
   };
 });

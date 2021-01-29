@@ -1,7 +1,13 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { Grid, IconButton, Typography, Container } from '@material-ui/core';
+import {
+  Grid,
+  Paper,
+  IconButton,
+  Typography,
+  Container,
+} from '@material-ui/core';
 import '../tmp.scss';
 import { ThemeContext } from '../context/ThemeContext';
 import ScrollToTop from 'react-scroll-up';
@@ -26,7 +32,11 @@ function CertPage() {
         <Grid container spacing={3}>
           <Grid item container xs={12} justify="space-between" spacing={1}>
             <Grid item xs={12}>
-              <Typography variant="h2">{pageHeader}</Typography>
+              <Paper>
+                <Typography className={classes.headerClass} variant="h3">
+                  {pageHeader}
+                </Typography>
+              </Paper>
             </Grid>
             <Grid item container xs={12}>
               <CertificateComponent
