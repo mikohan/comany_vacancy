@@ -42,7 +42,7 @@ export const useStyles = makeStyles((theme) => {
       color: '#2196f3',
     },
     headerClass: {
-      padding: theme.spacing(5),
+      padding: theme.spacing(3),
     },
   };
 });
