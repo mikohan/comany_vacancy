@@ -22,7 +22,7 @@ function CertPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <Container maxWidth="lg">
+      <Container className="containerClass" maxWidth="lg">
         <Grid container spacing={3}>
           <Grid item container xs={12} justify="space-between" spacing={1}>
             <Grid item xs={12}>
