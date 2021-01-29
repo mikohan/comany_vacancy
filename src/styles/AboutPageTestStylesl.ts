@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import meImageDark from '../assets/me_black2.jpg';
-import meImageLight from '../assets/me_white2.jpg';
+import meImageLight from '../assets/MeSiteWhiteScaled.jpg';
 import { useContext } from 'react';
 
 import { ThemeContext } from '../context/ThemeContext';
