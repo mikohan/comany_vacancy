@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { Grid, IconButton, Typography } from '@material-ui/core';
+import { Grid, IconButton, Typography, Container } from '@material-ui/core';
 import '../tmp.scss';
 import { ThemeContext } from '../context/ThemeContext';
 import ScrollToTop from 'react-scroll-up';
@@ -22,56 +22,58 @@ function CertPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <Grid container spacing={3}>
-        <Grid item container xs={12} justify="space-between" spacing={1}>
-          <Grid item xs={12}>
-            <Typography variant="h2">{pageHeader}</Typography>
-          </Grid>
-          <Grid item container xs={12}>
-            <CertificateComponent
-              image={require('../assets/certs/SSR_React.jpg')}
-            />
-          </Grid>
-          <Grid item container xs={12}>
-            <CertificateComponent
-              image={require('../assets/certs/ReactFull.jpg')}
-            />
-          </Grid>
-          <Grid item container xs={12}>
-            <CertificateComponent
-              image={require('../assets/certs/DRFVueJS.jpg')}
-            />
-          </Grid>
-          <Grid item container xs={12}>
-            <CertificateComponent
-              image={require('../assets/certs/photo.jpg')}
-            />
-          </Grid>
-          <Grid item container xs={12}>
-            <CertificateComponent
-              image={require('../assets/certs/LinuxCert.jpg')}
-            />
-          </Grid>
-          <Grid item container xs={12}>
-            <CertificateComponent
-              image={require('../assets/certs/advords.jpg')}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <ScrollToTop
-              style={{
-                bottom: 100,
-                right: 100,
-              }}
-              showUnder={260}
-            >
-              <IconButton color="primary" aria-label="add to shopping cart">
-                <PresentToAllIcon className={classes.scrollUp} />
-              </IconButton>
-            </ScrollToTop>
+      <Container maxWidth="lg">
+        <Grid container spacing={3}>
+          <Grid item container xs={12} justify="space-between" spacing={1}>
+            <Grid item xs={12}>
+              <Typography variant="h2">{pageHeader}</Typography>
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
+                image={require('../assets/certs/SSR_React.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
+                image={require('../assets/certs/ReactFull.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
+                image={require('../assets/certs/DRFVueJS.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
+                image={require('../assets/certs/photo.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
+                image={require('../assets/certs/LinuxCert.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
+                image={require('../assets/certs/advords.jpg')}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <ScrollToTop
+                style={{
+                  bottom: 100,
+                  right: 100,
+                }}
+                showUnder={260}
+              >
+                <IconButton color="primary" aria-label="add to shopping cart">
+                  <PresentToAllIcon className={classes.scrollUp} />
+                </IconButton>
+              </ScrollToTop>
+            </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </Container>
     </motion.div>
   );
 }
