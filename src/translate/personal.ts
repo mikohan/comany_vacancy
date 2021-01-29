@@ -6,7 +6,30 @@ interface ITranslateText {
 export const translateText: ITranslateText = {
   english: {
     vidHeader: 'About Me',
-    text: `Some future text`,
+    text: `
+    <p>
+      I have an engineering mindset.
+      Moreover I have a graduate degree in engineering.
+      But Education can't keep up with our fast-moving world.
+      That’s why I educate myself every day.
+      I read about 30 professional books and take more than 20 video courses a year.
+    </p>
+      <p>
+      Beside programming my interests are:
+      Management, Psychology, Photography and Cinematography.
+      I always can see the opportunity to improve management or psychology by bringing programming solutions to it.
+      </p>
+      <p>
+      I have a big family.
+      My family is the compass that guides me. It is  the inspiration to reach great heights.
+      </p>
+      <p>
+
+      I am big fan of extreme sports. My favourites are alpine ski and snowboard.
+      Sports help me to be self-disciplined and held pressure.
+      I’m certain hard work never killed anyone. And last year I worked 70 hour a week.
+      </p>
+    `,
     pageTitle: 'My Sports Achivments and Learning',
     snowboard: {
       title: 'SnowBoard',
