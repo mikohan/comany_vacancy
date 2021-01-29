@@ -87,13 +87,15 @@ function PersonalityPage() {
       transition={{ duration: durationPage }}
     >
       <Grid container spacing={3}>
-        <Grid item xs={12}>
+        <Grid item xs={2}></Grid>
+        <Grid item xs={8}>
           <VideoPageComponent
             header={vidHeader}
             text={text}
             vidUrl="https://youtu.be/W1nPY85dwv0"
           />
         </Grid>
+        <Grid item xs={2}></Grid>
         <Grid item xs={12}>
           <h1>{pageTitle}</h1>
         </Grid>
