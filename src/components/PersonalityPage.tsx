@@ -19,9 +19,6 @@ const useStyles = makeStyles((theme: Theme) =>
     verticalGap: {
       marginBottom: theme.spacing(5),
     },
-    containerClass: {
-      marginTop: theme.spacing(5),
-    },
   })
 );
 
@@ -89,7 +86,7 @@ function PersonalityPage() {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <Container className={classes.containerClass} maxWidth="lg">
+      <Container className="containerClass" maxWidth="lg">
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <VideoPageComponent
