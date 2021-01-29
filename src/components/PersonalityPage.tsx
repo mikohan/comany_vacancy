@@ -40,6 +40,10 @@ const images = [
     original: require('../assets/izevsk_podium1.jpg'),
     thumbnail: require('../assets/izevsk_podium1_tmb.jpg'),
   },
+  {
+    original: require('../assets/snow_ezic.jpg'),
+    thumbnail: require('../assets/snow_ezic.jpg'),
+  },
 ];
 const imagesAviation = [
   {
