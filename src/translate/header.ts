@@ -31,7 +31,7 @@ export const translateHeader: TransHeader = {
     linux: 'Администрирование Линукс',
     marketing: 'Маркетинг',
     flag: '🇷🇺',
-    personality: 'Личност и Хобби',
+    personality: 'Личность и Хобби',
     hobbies: 'Хобби',
     blog: 'Блог',
     portfolio: 'Портфолио',
