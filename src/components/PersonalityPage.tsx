@@ -7,7 +7,6 @@ import { translateText } from '../translate/personal';
 import { ThemeContext } from '../context/ThemeContext';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import VideoPageComponent from './VideoPageComponent';
-// some comment
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
