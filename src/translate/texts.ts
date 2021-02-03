@@ -57,6 +57,7 @@ export const translateText: TransText = {
     portfolio: {
       venezo: {
         title: `Venezo Project E-commerce project (Python, Django, ElasticSerach)`,
+
         mainText: `
         <p>
         This ecommerce project was built using the Python and Jango framework.
@@ -78,6 +79,7 @@ export const translateText: TransText = {
         used for classifying images.
         </p>
         `,
+
         gitHub: {
           href: 'https://github.com/mikohan/venezoproject',
           text: 'See code on GitHub',

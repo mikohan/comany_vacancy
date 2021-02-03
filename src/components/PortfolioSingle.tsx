@@ -56,9 +56,13 @@ function PortfolioSingle({
             className={classes.textPadding}
             display={{ xs: 'none', md: 'block' }}
           >
-            <Typography variant="body1" align="left">
-              {portfolio[projectName].mainText}
-            </Typography>
+            <Typography
+              variant="body1"
+              align="left"
+              dangerouslySetInnerHTML={{
+                __html: portfolio[projectName].mainText as string,
+              }}
+            ></Typography>
           </Box>
         </Grid>
         {direction ? <PlayerBox /> : ''}

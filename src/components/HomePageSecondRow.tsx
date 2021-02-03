@@ -33,11 +33,11 @@ function HomePageSecondRow({ secondRowText }: IProps) {
           </Box>
         </Grid>
         <Grid item md={12} lg={4}>
-          <Typography className={classes.videoSideText} variant="body1">
-            <Box
-              dangerouslySetInnerHTML={{ __html: secondRowText as string }}
-            ></Box>
-          </Typography>
+          <Typography
+            className={classes.videoSideText}
+            variant="body1"
+            dangerouslySetInnerHTML={{ __html: secondRowText as string }}
+          ></Typography>
         </Grid>
       </Grid>
     </motion.div>
