@@ -19,7 +19,7 @@ export const useStyles = makeStyles((theme) => {
       },
     },
     videoSideText: {
-      fontSize: '1.4rem',
+      fontSize: '2.4rem',
     },
   };
 });

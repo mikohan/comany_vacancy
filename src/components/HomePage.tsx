@@ -30,7 +30,7 @@ function FrontEndPage() {
           </Box>
         </Grid>
         <Grid item xs={4}>
-          <Typography variant="body1">
+          <Typography className={classes.videoSideText} variant="body1">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
             libero incidunt id saepe vitae autem consectetur officiis nemo odit,
             excepturi unde odio quasi, ad recusandae? Nihil magni eum veljit
