@@ -35,7 +35,7 @@ export const useStyles = makeStyles((theme) => {
       right: 100,
     },
     betweenRow: {
-      padding: theme.spacing(5),
+      paddingTop: theme.spacing(5),
     },
   };
 });
