@@ -57,31 +57,27 @@ export const translateText: TransText = {
     portfolio: {
       venezo: {
         title: `Venezo Project E-commerce project (Python, Django, ElasticSerach)`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
-                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
-                    harum doloribus quas, modi porro voluptate dignissimos eaque
-                    exercitationem? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis consequatur deleniti sunt beatae
-                    placeat dolorem fugit, aut voluptatum architecto mollitia
-                    cumque maxime veritatis alias quo a voluptates eaque
-                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
-                    illum cum quisquam ex, perferendis, dolore ratione nulla
-                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
-                    labore, in minus quia, dolores earum voluptas magnam
-                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
-                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
-                    cumque cupiditate incidunt excepturi ducimus soluta
-                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
-                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
-                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
-                    recusandae enim neque aliquid deserunt commodi nam doloribus
-                    odio itaque. Pariatur esse, accusantium quia explicabo sed
-                    perferendis! Vero molestiae exercitationem, odit voluptate
-                    molestias expedita facere modi eos blanditiis quia provident
-                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
-                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
-                    repudiandae.`,
+        mainText: `
+        <p>
+        This ecommerce project was built using the Python and Jango framework.
+        And by the way I’ve built this project from scratch to production by myself.
+        </p>
+        <p>        
+        At first glance It has quite ordinary functionality each ecommerce has.
+        But According to the request of the customer it was assumed that it is going to be
+        millions of inventory to manage.
+        </p>
+        <p>
+        As you may know Searching over millions of products is not a trivial thing.
+        So I have decided to realize faceted search by using Elasticsearch engine in that project.
+        The search works very fast.
+        </p>
+        <p>
+        I also used natural language processing and machine learning in the project. NLP was used 
+        for translation from poland to russian. Pre Trained convolutional neural networks were 
+        used for classifying images.
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/venezoproject',
           text: 'See code on GitHub',
@@ -93,31 +89,47 @@ export const translateText: TransText = {
       },
       enterprise: {
         title: `Enterprise Management System project (PHP, MySQL, Python, Django, Javascript)`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
-                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
-                    harum doloribus quas, modi porro voluptate dignissimos eaque
-                    exercitationem? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis consequatur deleniti sunt beatae
-                    placeat dolorem fugit, aut voluptatum architecto mollitia
-                    cumque maxime veritatis alias quo a voluptates eaque
-                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
-                    illum cum quisquam ex, perferendis, dolore ratione nulla
-                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
-                    labore, in minus quia, dolores earum voluptas magnam
-                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
-                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
-                    cumque cupiditate incidunt excepturi ducimus soluta
-                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
-                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
-                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
-                    recusandae enim neque aliquid deserunt commodi nam doloribus
-                    odio itaque. Pariatur esse, accusantium quia explicabo sed
-                    perferendis! Vero molestiae exercitationem, odit voluptate
-                    molestias expedita facere modi eos blanditiis quia provident
-                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
-                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
-                    repudiandae.`,
+        mainText: `
+        <p>It is a real world big project, which consists of multiple modules 
+        written by using different technologies.
+        </p>
+        <p>
+        App was designed for managing inventory, photos, videos, 
+        automatic categorization and so on.
+        </p>
+        <p>
+        In this app I realized automatic pricing. Pricing algorithm based on 
+        analysis of competitors prices, suppliers prices and using machine learning under the hood.
+        </p>
+        <p>
+        Application also collects and sorts semantic cores for that inventory. For that 
+        feature I used natural language processing.
+        </p>
+        <p>
+        Killer feature of the app is the ability to automatically prepare ads for google and 
+        yandex CPC advertising. You only need to upload it by hand.
+        </p>
+        <p>
+        Automatic upload will be realized in the nearest feature.
+        </p>
+        <p>
+        The plan is when single product creation is completed, applications automatically 
+        create and publish it to google account and keep eye on it for specific periods. 
+        Algorithms will collect data to analyze the performance of that ad.
+        Manager makes further decision based on that information to stop ad or keep it running. 
+        </p>
+        <p>
+        In addition we used TensorFlow and Keras libraries for image recognition and 
+        classification. The idea was to train model to recognize car spare parts and 
+        categorize them later.
+        </p>
+        <p>
+        Technology stack used in this app is Agile, Scrum, Python, Django, Django rest framework, mySQL, Vue, React, Vuex, Redux, Bootstrap, TensorFlow, Keras, Pandas, Pillow.
+        </p>
+        <p>
+        Project was created by our team. My role in that project was team lead.
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/venezoproject',
           text: 'See code on GitHub',
@@ -129,31 +141,38 @@ export const translateText: TransText = {
       },
       suppliers: {
         title: `Suppliers management module(PHP, Javascript, MySQL)`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
-                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
-                    harum doloribus quas, modi porro voluptate dignissimos eaque
-                    exercitationem? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis consequatur deleniti sunt beatae
-                    placeat dolorem fugit, aut voluptatum architecto mollitia
-                    cumque maxime veritatis alias quo a voluptates eaque
-                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
-                    illum cum quisquam ex, perferendis, dolore ratione nulla
-                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
-                    labore, in minus quia, dolores earum voluptas magnam
-                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
-                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
-                    cumque cupiditate incidunt excepturi ducimus soluta
-                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
-                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
-                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
-                    recusandae enim neque aliquid deserunt commodi nam doloribus
-                    odio itaque. Pariatur esse, accusantium quia explicabo sed
-                    perferendis! Vero molestiae exercitationem, odit voluptate
-                    molestias expedita facere modi eos blanditiis quia provident
-                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
-                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
-                    repudiandae.`,
+        mainText: `
+        <p>
+        This application is a part of a complex enterprise management system.
+        It is responsible for collecting and processing the information of company suppliers.
+        It also reduces human participation in business processes.
+        </p>
+        <p>
+        The application is collecting price lists from partners in real time.
+        Reality is that only a few suppliers have Restful APIs.
+        Most wholesalers are really old school and send their price lists over the email.
+        So my application checks email and grabs price lists from there.
+        Then it converts it from a lot of different formats and encodings to manageable data. 
+        The process is completely automatic.
+        </p>
+        <p>
+        On the next step a special algorithm calculates scores of each supplier.
+        Scores based on reliability, inventory, delivery terms, prices and other factors.
+        These scores are used in further pricing processes.
+        </p>
+        <p>
+        Sales managers also consume this information on their daily routine.
+        They are checking availability and prices of products on this page. 
+        </p>
+        <p>
+        I wrote this application quite a long time ago and that’s why I used stack PHP, 
+        Javascript, mySQL.
+        </p>
+        <p>
+        Now I would prefer python for that kind of task, because the code could be three 
+        times shorter.
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/venezoproject',
           text: 'See code on GitHub',
@@ -165,31 +184,41 @@ export const translateText: TransText = {
       },
       a77: {
         title: `Enterprise Management System(PHP, Javascript, Python, MySQL)`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
-                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
-                    harum doloribus quas, modi porro voluptate dignissimos eaque
-                    exercitationem? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis consequatur deleniti sunt beatae
-                    placeat dolorem fugit, aut voluptatum architecto mollitia
-                    cumque maxime veritatis alias quo a voluptates eaque
-                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
-                    illum cum quisquam ex, perferendis, dolore ratione nulla
-                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
-                    labore, in minus quia, dolores earum voluptas magnam
-                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
-                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
-                    cumque cupiditate incidunt excepturi ducimus soluta
-                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
-                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
-                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
-                    recusandae enim neque aliquid deserunt commodi nam doloribus
-                    odio itaque. Pariatur esse, accusantium quia explicabo sed
-                    perferendis! Vero molestiae exercitationem, odit voluptate
-                    molestias expedita facere modi eos blanditiis quia provident
-                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
-                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
-                    repudiandae.`,
+        mainText: `
+        <p>This project I wrote about 10 years ago in pure php and javascript.
+        Later I added some python modules generally for complex computations.
+        It is an enterprise management system based on the idea of balanced scorecards.
+        </p>
+        <p>
+        This is a pretty complex system. 99% of computations are performed on the server. 
+        The application consists of several modules. Each module responsible for the one 
+        business unit. For example marketing, human resources, suppliers management etc.
+        </p>
+        <p>
+        Some of the modules are using neural networks for prognostic predictions models. 
+        Others are using prognostic algorithms.
+        </p>
+        <p>
+        The company I am talking about is an inventory-centric organization.
+        The purchase management module is responsible for forecasting, determines stocking 
+        levels, handles and controls purchasing tasks, monitors vendor performance, and 
+        identifies savings opportunities.
+        </p>
+        <p>
+        The Marketing module automatically creates and manages the online advertising.
+        Calculates Return On Ad Spend of each product.
+        It also makes decisions about whether to keep investing in specific products or to 
+        stop wasting money on it.
+        </p>
+        <p>
+        The system also contains a Client Relationship Module, Human Resource Management module, Financial management module.
+        It also has a lot of tools for online marketing, SEO tools, content management tools et cetera.
+        Main dashboard has the key performance indicators of each module.
+        The CEO and the board of directors not only have the actual business indicators in real time but also have the forecast for the future decisions.
+        As a matter of fact, this application allows the company to stay out from the competitors.
+        As well as automation significantly reduce expenditures of business operations.
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/venezoproject',
           text: 'See code on GitHub',
@@ -201,31 +230,24 @@ export const translateText: TransText = {
       },
       sheets: {
         title: `Google Sheets Replica(vanila Javascript)`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
-                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
-                    harum doloribus quas, modi porro voluptate dignissimos eaque
-                    exercitationem? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis consequatur deleniti sunt beatae
-                    placeat dolorem fugit, aut voluptatum architecto mollitia
-                    cumque maxime veritatis alias quo a voluptates eaque
-                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
-                    illum cum quisquam ex, perferendis, dolore ratione nulla
-                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
-                    labore, in minus quia, dolores earum voluptas magnam
-                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
-                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
-                    cumque cupiditate incidunt excepturi ducimus soluta
-                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
-                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
-                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
-                    recusandae enim neque aliquid deserunt commodi nam doloribus
-                    odio itaque. Pariatur esse, accusantium quia explicabo sed
-                    perferendis! Vero molestiae exercitationem, odit voluptate
-                    molestias expedita facere modi eos blanditiis quia provident
-                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
-                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
-                    repudiandae.`,
+        mainText: `
+        <p>That project I have built just for only the purpose to learn javascript deeply.
+        </p>
+        <p> 
+        I always love to know how things are working under the hood. 
+        So I have found the course which helps me dive into javascript.
+        </p>
+        <p>
+        While I developed the project I have built my own redux and routes system.
+        I figured out how DOM libraries react. 
+        How events work.
+        I deeply have gotten into new design patterns and learned best practices in object-oriented programming.
+        </p>
+        <p>
+        At the end of the project I have tried some test driven development patterns.
+        It was a real challenge for me.
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/javascript-excel-project',
           text: 'See code on GitHub',
@@ -237,31 +259,17 @@ export const translateText: TransText = {
       },
       ducato: {
         title: `Auto Parts E-commerce project (Python, Django)`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
-                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
-                    harum doloribus quas, modi porro voluptate dignissimos eaque
-                    exercitationem? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis consequatur deleniti sunt beatae
-                    placeat dolorem fugit, aut voluptatum architecto mollitia
-                    cumque maxime veritatis alias quo a voluptates eaque
-                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
-                    illum cum quisquam ex, perferendis, dolore ratione nulla
-                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
-                    labore, in minus quia, dolores earum voluptas magnam
-                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
-                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
-                    cumque cupiditate incidunt excepturi ducimus soluta
-                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
-                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
-                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
-                    recusandae enim neque aliquid deserunt commodi nam doloribus
-                    odio itaque. Pariatur esse, accusantium quia explicabo sed
-                    perferendis! Vero molestiae exercitationem, odit voluptate
-                    molestias expedita facere modi eos blanditiis quia provident
-                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
-                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
-                    repudiandae.`,
+        mainText: `
+        <p>This is another ecommerce project based on Django Framework, which I built 
+        from scratch by myself. 
+        </p>
+        <p>
+        It has ordinary functionality, filtering, sorting and lazy loading.
+        But the main feature of this project is that before we have been starting coding, we’ve analyzed the marketing niche of the client and have built the semantic core for the website.
+        It has helped us to build good SEO-wise structure of the project.
+        As a result site traffic starts growing rapidly after deployment and keeps growing.
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/dp',
           text: 'See code on GitHub',
@@ -273,31 +281,22 @@ export const translateText: TransText = {
       },
       nuxtChat: {
         title: `Instant Chat based on NuxtJS, Socket.i and Express`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
-                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
-                    harum doloribus quas, modi porro voluptate dignissimos eaque
-                    exercitationem? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis consequatur deleniti sunt beatae
-                    placeat dolorem fugit, aut voluptatum architecto mollitia
-                    cumque maxime veritatis alias quo a voluptates eaque
-                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
-                    illum cum quisquam ex, perferendis, dolore ratione nulla
-                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
-                    labore, in minus quia, dolores earum voluptas magnam
-                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
-                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
-                    cumque cupiditate incidunt excepturi ducimus soluta
-                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
-                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
-                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
-                    recusandae enim neque aliquid deserunt commodi nam doloribus
-                    odio itaque. Pariatur esse, accusantium quia explicabo sed
-                    perferendis! Vero molestiae exercitationem, odit voluptate
-                    molestias expedita facere modi eos blanditiis quia provident
-                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
-                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
-                    repudiandae.`,
+        mainText: `
+        <p>
+        The Purpose of this training project was learning web-sockets.
+        It was realized using VueJS , NuxtJs and Express server.
+        </p>
+        <p>
+        It’s kind of a simple instant chat application without storing data to any databases.
+        </p>
+        <p>
+        In the application I used Vuex store , VueTify and socket.io libraries.
+        The most challenging part was to get websockets working with multiple instances of PM2 on linux server.
+        </p>
+        <p>
+        Now it works and we can try it out!
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/live-nuxt-chat',
           text: 'See on Git Hub ',
@@ -309,31 +308,22 @@ export const translateText: TransText = {
       },
       colors: {
         title: `Colors React Application`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
-                    vitae nemo, exercitationem tenetur assumenda hic. Pariatur
-                    harum doloribus quas, modi porro voluptate dignissimos eaque
-                    exercitationem? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis consequatur deleniti sunt beatae
-                    placeat dolorem fugit, aut voluptatum architecto mollitia
-                    cumque maxime veritatis alias quo a voluptates eaque
-                    officiis recusandae? Dolorem mollitia incidunt voluptas ut
-                    illum cum quisquam ex, perferendis, dolore ratione nulla
-                    quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
-                    labore, in minus quia, dolores earum voluptas magnam
-                    similique. Ipsam expedita laboriosam culpa? Ipsum, porro
-                    tempore illo aut tenetur eaque culpa quasi iusto blanditiis
-                    cumque cupiditate incidunt excepturi ducimus soluta
-                    reprehenderit ipsa molestiae ex ad corporis ratione repellat
-                    vel. Dolore perspiciatis quisquam aspernatur, cupiditate
-                    veritatis, placeat fuga omnis pariatur blanditiis iste quis,
-                    recusandae enim neque aliquid deserunt commodi nam doloribus
-                    odio itaque. Pariatur esse, accusantium quia explicabo sed
-                    perferendis! Vero molestiae exercitationem, odit voluptate
-                    molestias expedita facere modi eos blanditiis quia provident
-                    nihil, error nobis voluptatem ipsa iste saepe, obcaecati
-                    quidem itaque incidunt quos dolores! Debitis voluptas dolore
-                    repudiandae.`,
+        mainText: `
+        <p>Let me introduce to you one of my projects I have built using React. 
+        It’s an application for creating and saving custom sets of colors. 
+        </p>
+        <p>
+        I built this project when I learned React but now I use it to save my 
+        pallets because it has turned out to be useful. 
+        </p>
+        <p>
+        It is not as simple as it might seem. For state management I used Native React Context. 
+        I also used here the Material UI library.
+        </p>
+        <p>
+        You can test it on flatcolors.tk
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/color-project',
           text: 'See code on GitHub',
