@@ -57,7 +57,7 @@ export const translateText: TransText = {
     portfolio: {
       venezo: {
         title: `Venezo Project E-commerce project (Python, Django, ElasticSerach)`,
-        mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        mainText: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolor, assumenda. Animi, laudantium perspiciatis. Impedit
                     vitae nemo, exercitationem tenetur assumenda hic. Pariatur
                     harum doloribus quas, modi porro voluptate dignissimos eaque
@@ -65,6 +65,8 @@ export const translateText: TransText = {
                     adipisicing elit. Nobis consequatur deleniti sunt beatae
                     placeat dolorem fugit, aut voluptatum architecto mollitia
                     cumque maxime veritatis alias quo a voluptates eaque
+                    </p>
+                    <p>
                     officiis recusandae? Dolorem mollitia incidunt voluptas ut
                     illum cum quisquam ex, perferendis, dolore ratione nulla
                     quidem neque expedita! Eligendi obcaecati incidunt, ipsa ut
@@ -73,6 +75,7 @@ export const translateText: TransText = {
                     tempore illo aut tenetur eaque culpa quasi iusto blanditiis
                     cumque cupiditate incidunt excepturi ducimus soluta
                     reprehenderit ipsa molestiae ex ad corporis ratione repellat
+                    </p>
                     vel. Dolore perspiciatis quisquam aspernatur, cupiditate
                     veritatis, placeat fuga omnis pariatur blanditiis iste quis,
                     recusandae enim neque aliquid deserunt commodi nam doloribus
