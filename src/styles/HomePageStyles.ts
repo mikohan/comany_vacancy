@@ -18,5 +18,8 @@ export const useStyles = makeStyles((theme) => {
         height: '700px',
       },
     },
+    videoSideText: {
+      fontSize: '1.4rem',
+    },
   };
 });
