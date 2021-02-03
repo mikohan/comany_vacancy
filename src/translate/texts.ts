@@ -11,6 +11,7 @@ export const translateText: TransText = {
     mainHeading:
       "I'm Full Stack developer with huge knowledge of Online Marketing, and Experience in ecommerce business.",
     learnMore: 'Learn more',
+    betweenRow: 'Here is short video summary',
     blog_latestNews: 'Latest News',
     blog_search: 'Search',
     blog_noSearchResults: 'No Search Results',
@@ -316,6 +317,7 @@ export const translateText: TransText = {
     mainHeading:
       'Я разработчик Full Stack с огромными знаниями в области интернет-маркетинга и опытом работы в сфере электронной коммерции.',
     learnMore: 'Узнать больше',
+    betweenRow: 'Короткое видео обо мне',
     blog_latestNews: 'Последние посты',
     blog_search: 'Поиск',
     blog_noSearchResults: 'Поиск не дал результатов',
@@ -549,6 +551,7 @@ export const translateText: TransText = {
     mainHeading:
       'Jsem vývojář Full Stack s obrovskými znalostmi online marketingu a zkušeností v oblasti elektronického obchodování.',
     learnMore: 'Dozvědět se více',
+    betweenRow: 'Here is short video summary',
     blog_latestNews: 'Poslední zprávy',
     blog_search: 'Vyhledávání',
     blog_noSearchResults: 'Žádné výsledky vyhledávání',

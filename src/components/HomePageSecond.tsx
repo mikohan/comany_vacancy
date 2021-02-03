@@ -13,7 +13,9 @@ function AboutPageTest() {
   const context = useContext(ThemeContext);
   const { language } = context;
 
-  const { myName, name, mainHeading, learnMore } = translateText[language];
+  const { myName, name, mainHeading, learnMore, betweenRow } = translateText[
+    language
+  ];
   return (
     <motion.div
       exit={{ opacity: 0 }}
