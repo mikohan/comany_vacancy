@@ -21,7 +21,6 @@ function HomePageSecondRow({ secondRowText }: IProps) {
       transition={{ duration: durationPage }}
     >
       <Grid container spacing={2} direction="row" justify="center">
-        <Grid item xs={12}></Grid>
         <Grid item xs={8}>
           <Box className="player-wrapper">
             <ReactPlayer

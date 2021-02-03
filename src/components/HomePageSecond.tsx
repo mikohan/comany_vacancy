@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 
 import { useStyles } from '../styles/AboutPageTestStylesl';
-import { Box, Typography, Button, Grid, Paper } from '@material-ui/core';
+import { Box, Typography, Button, Grid } from '@material-ui/core';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
@@ -13,9 +13,14 @@ function AboutPageTest() {
   const context = useContext(ThemeContext);
   const { language } = context;
 
-  const { myName, name, mainHeading, learnMore, betweenRow } = translateText[
-    language
-  ];
+  const {
+    myName,
+    name,
+    mainHeading,
+    learnMore,
+    betweenRow,
+    secondRowText,
+  } = translateText[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -44,7 +49,7 @@ function AboutPageTest() {
           </Box>
         </Grid>
         <Grid item xs={12}>
-          <HomePageSecondRow />
+          <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
       </Grid>
     </motion.div>
