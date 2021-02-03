@@ -4,7 +4,7 @@ import { durationPage } from '../config';
 import ReactPlayer from 'react-player';
 import { useStyles } from '../styles/HomePageStyles';
 import Grid from '@material-ui/core/Grid';
-import { Paper, Typography, Box } from '@material-ui/core';
+import { Paper, Box, Typography } from '@material-ui/core';
 
 function FrontEndPage() {
   const classes = useStyles();
@@ -18,18 +18,24 @@ function FrontEndPage() {
     >
       <Grid container spacing={2} direction="row" justify="center">
         <Grid item xs={12}></Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.videoItem}>
-            <Box className="player-wrapper">
-              <ReactPlayer
-                className="react-player"
-                url={vidUrl}
-                controls
-                width="100%"
-                height="100%"
-              />
-            </Box>
-          </Paper>
+        <Grid item xs={8}>
+          <Box className="player-wrapper">
+            <ReactPlayer
+              className="react-player"
+              url={vidUrl}
+              controls
+              width="100%"
+              height="100%"
+            />
+          </Box>
+        </Grid>
+        <Grid item xs={4}>
+          <Typography variant="body1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+            libero incidunt id saepe vitae autem consectetur officiis nemo odit,
+            excepturi unde odio quasi, ad recusandae? Nihil magni eum veljit
+            esse?
+          </Typography>
         </Grid>
       </Grid>
     </motion.div>
