@@ -12,7 +12,7 @@ interface IItem {
 
 interface IProps {
   items: IItem[];
-  vidUrl?: string[];
+  vidUrl: string[];
   imageVideo?: boolean;
   title?: string;
   text?: string;
@@ -68,7 +68,7 @@ function PersonalRow({
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
-              url={vidUrl?.length ? vidUrl[0] : ''}
+              url={vidUrl[0]}
               controls
               width="100%"
               height="100%"
