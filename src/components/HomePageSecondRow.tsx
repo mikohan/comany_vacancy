@@ -6,9 +6,13 @@ import { useStyles } from '../styles/HomePageStyles';
 import Grid from '@material-ui/core/Grid';
 import { Box, Typography } from '@material-ui/core';
 
-function HomePageSecondRow() {
+interface IProps {
+  secondRowText: string;
+}
+
+function HomePageSecondRow({ secondRowText }: IProps) {
   const classes = useStyles();
-  const vidUrl = 'https://youtu.be/83_P5OBewLw';
+  const vidUrl = 'https://youtu.be/Yb0WsqB32IE';
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -31,10 +35,7 @@ function HomePageSecondRow() {
         </Grid>
         <Grid item xs={4}>
           <Typography className={classes.videoSideText} variant="body1">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-            libero incidunt id saepe vitae autem consectetur officiis nemo odit,
-            excepturi unde odio quasi, ad recusandae? Nihil magni eum veljit
-            esse?
+            {secondRowText}
           </Typography>
         </Grid>
       </Grid>

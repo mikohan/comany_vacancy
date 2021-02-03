@@ -40,7 +40,7 @@ function AboutPageTest() {
         </Grid>
         <Grid item xs={12}>
           <Box className={classes.betweenRow}>
-            <Typography variant="h2">Some text</Typography>
+            <Typography variant="h2">{betweenRow}</Typography>
           </Box>
         </Grid>
         <Grid item xs={12}>
