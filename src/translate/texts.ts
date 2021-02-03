@@ -11,7 +11,40 @@ export const translateText: TransText = {
     mainHeading:
       "I'm Full Stack developer with huge knowledge of Online Marketing, and Experience in ecommerce business.",
     learnMore: 'Learn more',
-    betweenRow: 'Here is short video summary',
+    betweenRow: `
+    <p>
+      So here I am.
+      In a nutshell I am a fullstack developer with 12 years of experience in programming and online marketing.
+      With that accumulation of knowledge I can bring any offline business to online just by myself.
+    </p>
+    <p>
+      First of all I am an Engineer.
+      I have an engineering mindset.
+      I also have a graduate degree in engineering.
+      But Education can't keep up with our fast-moving world.
+      That’s why I educate myself every day.
+      Usually I read about 30 professional books and take more than 20 courses and seminars a year.
+    </p>
+    <p>
+      I have a big family.
+      My family is the compass that guides me. It is  the inspiration to reach great heights.
+    </p>
+    <p>
+      I am big fan of extreme sports. My favourites are alpine ski and snowboard.
+      Sports help me to be self-disciplined and hold pressure.
+    </p>
+    <p>
+      I love changes and always willing to go the extra mile.
+      I believe hard work never killed anyone. And last year  I worked 70 hour a week.
+      I am a problem solver. Moreover each new problem I have not met before makes me feel excited. I love new challenges.
+    </p>
+    <p>
+      I am motivated, resourceful and enthusiastic.
+      I’m loyal and trustworthy.
+      I definitely can add value to any company. 
+      Am absolutely positive about that.
+    </p>
+    `,
     secondRowText: 'Let me introduce myself in this very short video.',
     blog_latestNews: 'Latest News',
     blog_search: 'Search',
@@ -318,7 +351,40 @@ export const translateText: TransText = {
     mainHeading:
       'Я разработчик Full Stack с огромными знаниями в области интернет-маркетинга и опытом работы в сфере электронной коммерции.',
     learnMore: 'Узнать больше',
-    betweenRow: 'Короткое видео обо мне',
+    betweenRow: `
+    <p>
+      So here I am.
+      In a nutshell I am a fullstack developer with 12 years of experience in programming and online marketing.
+      With that accumulation of knowledge I can bring any offline business to online just by myself.
+    </p>
+    <p>
+      First of all I am an Engineer.
+      I have an engineering mindset.
+      I also have a graduate degree in engineering.
+      But Education can't keep up with our fast-moving world.
+      That’s why I educate myself every day.
+      Usually I read about 30 professional books and take more than 20 courses and seminars a year.
+    </p>
+    <p>
+      I have a big family.
+      My family is the compass that guides me. It is  the inspiration to reach great heights.
+    </p>
+    <p>
+      I am big fan of extreme sports. My favourites are alpine ski and snowboard.
+      Sports help me to be self-disciplined and hold pressure.
+    </p>
+    <p>
+      I love changes and always willing to go the extra mile.
+      I believe hard work never killed anyone. And last year  I worked 70 hour a week.
+      I am a problem solver. Moreover each new problem I have not met before makes me feel excited. I love new challenges.
+    </p>
+    <p>
+      I am motivated, resourceful and enthusiastic.
+      I’m loyal and trustworthy.
+      I definitely can add value to any company. 
+      Am absolutely positive about that.
+    </p>
+    `,
     secondRowText: 'Позвольте представится, меня зовут Владимир.',
     blog_latestNews: 'Последние посты',
     blog_search: 'Поиск',
@@ -553,7 +619,40 @@ export const translateText: TransText = {
     mainHeading:
       'Jsem vývojář Full Stack s obrovskými znalostmi online marketingu a zkušeností v oblasti elektronického obchodování.',
     learnMore: 'Dozvědět se více',
-    betweenRow: 'Here is short video summary',
+    betweenRow: `
+    <p>
+      So here I am.
+      In a nutshell I am a fullstack developer with 12 years of experience in programming and online marketing.
+      With that accumulation of knowledge I can bring any offline business to online just by myself.
+    </p>
+    <p>
+      First of all I am an Engineer.
+      I have an engineering mindset.
+      I also have a graduate degree in engineering.
+      But Education can't keep up with our fast-moving world.
+      That’s why I educate myself every day.
+      Usually I read about 30 professional books and take more than 20 courses and seminars a year.
+    </p>
+    <p>
+      I have a big family.
+      My family is the compass that guides me. It is  the inspiration to reach great heights.
+    </p>
+    <p>
+      I am big fan of extreme sports. My favourites are alpine ski and snowboard.
+      Sports help me to be self-disciplined and hold pressure.
+    </p>
+    <p>
+      I love changes and always willing to go the extra mile.
+      I believe hard work never killed anyone. And last year  I worked 70 hour a week.
+      I am a problem solver. Moreover each new problem I have not met before makes me feel excited. I love new challenges.
+    </p>
+    <p>
+      I am motivated, resourceful and enthusiastic.
+      I’m loyal and trustworthy.
+      I definitely can add value to any company. 
+      Am absolutely positive about that.
+    </p>
+    `,
     secondRowText: 'Short video introdusing myself',
     blog_latestNews: 'Poslední zprávy',
     blog_search: 'Vyhledávání',
