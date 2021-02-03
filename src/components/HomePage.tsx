@@ -4,10 +4,11 @@ import { durationPage } from '../config';
 import ReactPlayer from 'react-player';
 import { useStyles } from '../styles/HomePageStyles';
 import Grid from '@material-ui/core/Grid';
-import { Paper, Typography } from '@material-ui/core';
+import { Paper, Typography, Box } from '@material-ui/core';
 
 function FrontEndPage() {
   const classes = useStyles();
+  const vidUrl = 'https://youtu.be/83_P5OBewLw';
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -16,19 +17,18 @@ function FrontEndPage() {
       transition={{ duration: durationPage }}
     >
       <Grid container spacing={2} direction="row" justify="center">
-        <Grid item xs={12}>
-          <Paper style={{ height: '50vh' }}>
-            <Typography variant="h1">Im cool</Typography>
-          </Paper>
-        </Grid>
+        <Grid item xs={12}></Grid>
         <Grid item xs={12}>
           <Paper className={classes.videoItem}>
-            <ReactPlayer
-              url="https://youtu.be/3eLrINg3O2Q"
-              controls
-              width="100%"
-              height="100%"
-            />
+            <Box className="player-wrapper">
+              <ReactPlayer
+                className="react-player"
+                url={vidUrl}
+                controls
+                width="100%"
+                height="100%"
+              />
+            </Box>
           </Paper>
         </Grid>
       </Grid>
