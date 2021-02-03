@@ -7,6 +7,7 @@ import { Box, Typography, Button, Grid } from '@material-ui/core';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
+import { HashLink } from 'react-router-hash-link';
 
 function AboutPageTest() {
   const classes = useStyles();
@@ -37,14 +38,16 @@ function AboutPageTest() {
                 {name}
               </Typography>
               <Typography variant="h4">{mainHeading}</Typography>
-              <Button style={{ marginTop: '30px' }} variant="outlined">
-                {learnMore}...
-              </Button>
+              <HashLink to="#video">
+                <Button style={{ marginTop: '30px' }} variant="outlined">
+                  {learnMore}...
+                </Button>
+              </HashLink>
             </Box>
           </Box>
         </Grid>
         <Grid item xs={12}>
-          <Box className={classes.betweenRow}>
+          <Box id="video" className={classes.betweenRow}>
             <Typography className={classes.betweenRowFont} variant="h4">
               {betweenRow}
             </Typography>
