@@ -38,5 +38,8 @@ export const useStyles = makeStyles((theme) => {
       paddingTop: theme.spacing(5),
       paddingBottom: theme.spacing(5),
     },
+    betweenRowFont: {
+      fontSize: '2.4rem',
+    },
   };
 });

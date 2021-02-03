@@ -32,7 +32,7 @@ function AboutPageTest() {
         <Grid item xs={12}>
           <Box className={classes.wrapper}>
             <Box className={classes.mainHeader}>
-              <Typography variant="h6">{myName}</Typography>
+              <Typography variant="h4">{myName}</Typography>
               <Typography style={{ marginBottom: '30px' }} variant="h3">
                 {name}
               </Typography>
@@ -45,7 +45,9 @@ function AboutPageTest() {
         </Grid>
         <Grid item xs={12}>
           <Box className={classes.betweenRow}>
-            <Typography variant="h2">{betweenRow}</Typography>
+            <Typography className={classes.betweenRowFont} variant="h4">
+              {betweenRow}
+            </Typography>
           </Box>
         </Grid>
         <Grid item xs={12}>
