@@ -21,7 +21,7 @@ function HomePageSecondRow({ secondRowText }: IProps) {
       transition={{ duration: durationPage }}
     >
       <Grid container spacing={2} direction="row" justify="center">
-        <Grid item xs={8}>
+        <Grid item md={12} lg={8}>
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
@@ -32,7 +32,7 @@ function HomePageSecondRow({ secondRowText }: IProps) {
             />
           </Box>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item md={12} lg={4}>
           <Typography className={classes.videoSideText} variant="body1">
             <Box
               dangerouslySetInnerHTML={{ __html: secondRowText as string }}

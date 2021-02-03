@@ -11,7 +11,7 @@ export const translateText: TransText = {
     mainHeading:
       "I'm Full Stack developer with huge knowledge of Online Marketing, and Experience in ecommerce business.",
     learnMore: 'Learn more',
-    betweenRow: `
+    secondRowText: `
     <p>
       So here I am.
       In a nutshell I am a fullstack developer with 12 years of experience in programming and online marketing.
@@ -45,7 +45,7 @@ export const translateText: TransText = {
       Am absolutely positive about that.
     </p>
     `,
-    secondRowText: 'Let me introduce myself in this very short video.',
+    betweenRow: 'Let me introduce myself in this very short video.',
     blog_latestNews: 'Latest News',
     blog_search: 'Search',
     blog_noSearchResults: 'No Search Results',
@@ -351,7 +351,7 @@ export const translateText: TransText = {
     mainHeading:
       'Я разработчик Full Stack с огромными знаниями в области интернет-маркетинга и опытом работы в сфере электронной коммерции.',
     learnMore: 'Узнать больше',
-    betweenRow: `
+    secondRowText: `
     <p>
       So here I am.
       In a nutshell I am a fullstack developer with 12 years of experience in programming and online marketing.
@@ -385,7 +385,7 @@ export const translateText: TransText = {
       Am absolutely positive about that.
     </p>
     `,
-    secondRowText: 'Позвольте представится, меня зовут Владимир.',
+    betweenRow: 'Позвольте представится, меня зовут Владимир.',
     blog_latestNews: 'Последние посты',
     blog_search: 'Поиск',
     blog_noSearchResults: 'Поиск не дал результатов',
@@ -619,7 +619,7 @@ export const translateText: TransText = {
     mainHeading:
       'Jsem vývojář Full Stack s obrovskými znalostmi online marketingu a zkušeností v oblasti elektronického obchodování.',
     learnMore: 'Dozvědět se více',
-    betweenRow: `
+    secondRowText: `
     <p>
       So here I am.
       In a nutshell I am a fullstack developer with 12 years of experience in programming and online marketing.
@@ -653,7 +653,7 @@ export const translateText: TransText = {
       Am absolutely positive about that.
     </p>
     `,
-    secondRowText: 'Short video introdusing myself',
+    betweenRow: 'Short video introdusing myself',
     blog_latestNews: 'Poslední zprávy',
     blog_search: 'Vyhledávání',
     blog_noSearchResults: 'Žádné výsledky vyhledávání',
