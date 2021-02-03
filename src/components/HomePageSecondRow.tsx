@@ -4,7 +4,7 @@ import { durationPage } from '../config';
 import ReactPlayer from 'react-player';
 import { useStyles } from '../styles/HomePageStyles';
 import Grid from '@material-ui/core/Grid';
-import { Paper, Box, Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 
 function HomePageSecondRow() {
   const classes = useStyles();

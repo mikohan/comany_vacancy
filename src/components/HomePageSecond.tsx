@@ -36,10 +36,8 @@ function AboutPageTest() {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12}>
-          <Paper>
-            <Typography variant="h2">Some text</Typography>
-          </Paper>
+        <Grid item xs={12} className={classes.betweenRow}>
+          <Typography variant="h2">Some text</Typography>
         </Grid>
         <Grid item xs={12}>
           <HomePageSecondRow />
