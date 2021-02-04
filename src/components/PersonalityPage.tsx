@@ -82,8 +82,9 @@ function PersonalityPage() {
     text,
   } = translateText[language];
   const classes = useStyles();
-  const vidUrl = 'https://youtu.be/DcTg4oePYs8';
-  // const vidUrl="https://youtu.be/Yb0WsqB32IE"
+  /* const vidUrl = 'https://youtu.be/DcTg4oePYs8'; */
+  const vidUrl = 'https://youtu.be/Yb0WsqB32IE';
+  const meCover = require('../assets/me_white2.jpg');
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -98,6 +99,7 @@ function PersonalityPage() {
               header={vidHeader}
               text={text}
               vidUrl={vidUrl}
+              videoCover={meCover}
             />
           </Grid>
           <Grid item xs={12}>
