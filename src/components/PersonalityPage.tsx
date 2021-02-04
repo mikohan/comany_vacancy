@@ -84,7 +84,7 @@ function PersonalityPage() {
   const classes = useStyles();
   /* const vidUrl = 'https://youtu.be/DcTg4oePYs8'; */
   const vidUrl = 'https://youtu.be/Yb0WsqB32IE';
-  const meCover = require('../assets/me_white2.jpg');
+  const meCover = require('../assets/mePersonalCover.png');
   return (
     <motion.div
       exit={{ opacity: 0 }}
