@@ -233,7 +233,8 @@ export const translateText: TransText = {
       sheets: {
         title: `Google Sheets Replica(vanila Javascript)`,
         mainText: `
-        <p>That project I have built just for only the purpose to learn javascript deeply.
+        <p>
+        That project I have built just for only the purpose to learn javascript deeply.
         </p>
         <p> 
         I always love to know how things are working under the hood. 
@@ -262,7 +263,8 @@ export const translateText: TransText = {
       ducato: {
         title: `Auto Parts E-commerce project (Python, Django)`,
         mainText: `
-        <p>This is another ecommerce project based on Django Framework, which I built 
+        <p>
+        This is another ecommerce project based on Django Framework, which I built 
         from scratch by myself. 
         </p>
         <p>
@@ -311,7 +313,8 @@ export const translateText: TransText = {
       colors: {
         title: `Colors React Application`,
         mainText: `
-        <p>Let me introduce to you one of my projects I have built using React. 
+        <p>
+        Let me introduce to you one of my projects I have built using React. 
         It’s an application for creating and saving custom sets of colors. 
         </p>
         <p>
@@ -345,36 +348,34 @@ export const translateText: TransText = {
     learnMore: 'Узнать больше',
     secondRowText: `
     <p>
-      So here I am.
-      In a nutshell I am a fullstack developer with 12 years of experience in programming and online marketing.
-      With that accumulation of knowledge I can bring any offline business to online just by myself.
+    Привет всем.
+    Я Full Stack разработчик с 12-летним опытом работы в области программирования и интернет-маркетинга.
+    Благодаря накопленным знаниям я могу самостоятельно перевести любой офлайн-бизнес в онлайн.
     </p>
     <p>
-      First of all I am an Engineer.
-      I have an engineering mindset.
-      I also have a graduate degree in engineering.
-      But Education can't keep up with our fast-moving world.
-      That’s why I educate myself every day.
-      Usually I read about 30 professional books and take more than 20 courses and seminars a year.
+    Прежде всего, я инженер. У меня есть диплом инженера.
+    Также у меня системное мышление.
+    Но я считаю, что образование не успевает за нашим быстро меняющимся миром.
+    Вот почему я занимаюсь самообразованием каждый день.
+    Обычно я читаю около 30 профессиональных книг и прохожу более 20 курсов и семинаров в год.
     </p>
     <p>
-      I have a big family.
-      My family is the compass that guides me. It is  the inspiration to reach great heights.
+      У меня большая семья.
+      Моя семья - это компас, который направляет меня. Это вдохновение для достижения больших высот.
     </p>
     <p>
-      I am big fan of extreme sports. My favourites are alpine ski and snowboard.
-      Sports help me to be self-disciplined and hold pressure.
+    Я большой поклонник экстремальных видов спорта. Мои любимые виды спорта - горные лыжи и сноуборд.
+    Спорт помогает мне быть самодисциплинированным и справляться с нагрузками на работе.
     </p>
     <p>
-      I love changes and always willing to go the extra mile.
-      I believe hard work never killed anyone. And last year  I worked 70 hour a week.
-      I am a problem solver. Moreover each new problem I have not met before makes me feel excited. I love new challenges.
+      Я люблю новые задачи, и всегда готов выложиться на все сто и даже больше.
+      Считаю, что тяжелая работа еще никому не навредила. В прошлом году я работал 70 часов в неделю.
+      Решение новых трудностей меня вдохновляет. Я люблю бросать себе вызов.
     </p>
     <p>
-      I am motivated, resourceful and enthusiastic.
-      I’m loyal and trustworthy.
-      I definitely can add value to any company. 
-      Am absolutely positive about that.
+    Я мотивирован, изобретателен и полон энтузиазма. Я верен и заслуживаю доверия. 
+    Я определенно могу принести пользу любой компании. 
+    Я абсолютно уверен в этом.
     </p>
     `,
     betweenRow: 'Позвольте представится, меня зовут Владимир.',
@@ -389,7 +390,26 @@ export const translateText: TransText = {
       pageTitle: 'Портфолио',
       venezo: {
         title: `Интернет Магазин Запчастей (Python, Django)`,
-        mainText: `orem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский. Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном. Поскольку текст Цицерона не содержит буквы K, W, или Z, что чуждо для латинского, эти буквы, а также многие другие часто вставлены в случайном порядке, чтобы скопировать тексты различных Европейских языков, поскольку диграфы не встречаются в оригинальных текстах.`,
+        mainText: `
+        <p>
+        Этот E-commerce проект был построен с использованием Python и Jango.
+        Кстати, я сам построил этот проект с нуля до продакшена.
+        </p>
+        <p>
+        На первый взгляд, проект имеет вполне обычные функции.
+        Но по запросу заказчика предполагалось, что в номенклатуре будет несколько миллионов позиций.
+        </p>
+        <p>
+        Как вы, наверное, знаете, поиск по миллионам товаров - нетривиальная вещь.
+        Поэтому я решил реализовать фасетный поиск, используя в этом проекте механизм Elasticsearch.
+        Поиск работает очень быстро.
+        </p>
+        <p>
+        Я также использовал в проекте обработку естественного языка и машинное обучение. ОЕЯ 
+        использовалась для перевода слов с польского языка на русский. Предварительно обученные 
+        сверточные нейронные сети были используемы для классификации изображений.
+        </p>
+        `,
         gitHub: {
           href: 'https://github.com/mikohan/venezoproject',
           text: 'Посмотреть код на GitHub',

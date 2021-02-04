@@ -42,11 +42,52 @@ export const frontend: IItem = {
   russian: {
     pageHeader: 'Опыт Фронт Енд разработки',
     header: 'Несколько Front End проектов',
-    text: `jfjfjfjfjjfj`,
+    text: `
+    <p>
+    Я всегда был более ориентированным на бэкэнд разработки, но мне очень нравилась 
+    идея Single Page Applications.
+    Поскольку я тоже маркетолог, я скептически относился к SPA, потому что поисковые 
+    системы не распознавали это.
+    Это очень большой недостаток, который мешал мне их использовать.
+    </p>
+    <p>
+    Затем, когда я глубоко изучил интерфейс, я обнаружил технологию рендеринга на стороне сервера.
+    Это изменило мой взгляд на вещи.
+    Я начал изучать Javascript и тайпскрипт, Vue, NuxtJs, React и NextJs.
+    Я прошел около 15 курсов по Udemy и глубоко погрузился в разработку фронтенда.
+    Я открываю для себя множество передовых технологий.
+    Одно из них - микросервисы. На мой взгляд, ближайшее будущее веб-разработки - это 
+    микросервисы. Сейчас изучаю эту технологию.
+    </p>
+    <p>
+    Некоторые из моих фронтенд-проектов вы можете увидеть на этой странице.
+    </p\>`,
   },
   czech: {
     pageHeader: 'Front End Experience',
     header: 'Some of Front End Pfojects',
-    text: `jfjfjfjfjjfj`,
+    text: `
+    <p>
+    Vždy jsem byl vývojář více zaměřený na backend, ale opravdu se mi líbila myšlenka Single 
+    Page Applications.
+    Protože jsem také marketér, byl jsem vůči SPA skeptický, protože to vyhledávače nepoznaly.
+    </p>
+    <p>
+    Ano, SPA jsou pohodlná a rychlá a vypadají skvěle, ale je tu jeden velký problém: vyhledávače je neuznávají.
+    Je to velmi velká nevýhoda, která mi zabránila používat je.
+    </p>
+    <p>
+    Když jsem se hluboce dozvěděl frontend, zjistil jsem technologii Server Side Rendering Technology.
+    Změnilo to způsob, jakým vidím věci.
+    Začal jsem se učit Javascript a strojopis
+    Front-endové rámce, Vue, NuxtJs, React a NextJs.
+    Absolvoval jsem asi 15 kurzů na Udemy a hluboce jsem se ponořil do Frontend Development.
+    Objevuji mnoho špičkových technologií.
+    Jednou z nich jsou mikroslužby. Podle mého názoru je mikroslužba nejbližší budoucností vývoje webových aplikací. Teď se učím tuto technologii.
+    </p>
+    <p>
+    Některé z mých front-endových projektů můžete vidět na této stránce níže.
+    </p>
+    `,
   },
 };
