@@ -7,6 +7,7 @@ interface IProps {
   header?: string;
   text?: string;
   vidUrl: string;
+  videoCover?: string;
 }
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function PageSinglePage({ header, text, vidUrl }: IProps) {
+function PageSinglePage({ header, text, vidUrl, videoCover }: IProps) {
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>
@@ -52,6 +53,7 @@ function PageSinglePage({ header, text, vidUrl }: IProps) {
               controls
               width="100%"
               height="100%"
+              light={videoCover}
             />
           </Box>
         </Grid>
