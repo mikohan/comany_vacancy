@@ -82,7 +82,7 @@ function PersonalityPage() {
     text,
   } = translateText[language];
   const classes = useStyles();
-  const vidUrl = 'https://youtu.be/qVYt8XfI8I0';
+  const vidUrl = 'https://youtu.be/DcTg4oePYs8';
   // const vidUrl="https://youtu.be/Yb0WsqB32IE"
   return (
     <motion.div
