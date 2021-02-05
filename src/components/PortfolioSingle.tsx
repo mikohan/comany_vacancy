@@ -46,63 +46,66 @@ function PortfolioSingle({
 
   return (
     <Paper className={classes.paperPadding} elevation={3}>
-      <Grid container spacing={6}>
-        <Grid item xs={12}>
-          <Typography variant="h4">{portfolio[projectName].title}</Typography>
+      <Grid container>
+        <Grid container spacing={6}>
+          <Grid item xs={12}>
+            <Typography variant="h4">{portfolio[projectName].title}</Typography>
+          </Grid>
+          {!direction ? <PlayerBox /> : ''}
+          <Grid item xs={12} md={5}>
+            <Box
+              className={classes.textPadding}
+              display={{ xs: 'none', md: 'block' }}
+            >
+              <Typography
+                variant="body1"
+                align="left"
+                dangerouslySetInnerHTML={{
+                  __html: portfolio[projectName].mainText as string,
+                }}
+              ></Typography>
+            </Box>
+          </Grid>
+          {direction ? <PlayerBox /> : ''}
         </Grid>
-        {!direction ? <PlayerBox /> : ''}
-        <Grid item xs={12} sm={5}>
-          <Box
-            className={classes.textPadding}
-            display={{ xs: 'none', md: 'block' }}
-          >
-            <Typography
-              variant="body1"
-              align="left"
-              dangerouslySetInnerHTML={{
-                __html: portfolio[projectName].mainText as string,
-              }}
-            ></Typography>
+
+        <Grid className={classes.bottomLinks} item xs={12}>
+          <Box display={{ xs: 'none', sm: 'block' }}>
+            {buttons ? (
+              <Box>
+                <a
+                  href={portfolio[projectName].project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    style={{ marginRight: '16px' }}
+                    color="primary"
+                    variant="contained"
+                    startIcon={<VisibilityIcon />}
+                  >
+                    {portfolio[projectName].project.text}
+                  </Button>
+                </a>
+                <a
+                  href={portfolio[projectName].gitHub.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    startIcon={<GitHubIcon />}
+                  >
+                    {portfolio[projectName].gitHub.text}
+                  </Button>
+                </a>
+              </Box>
+            ) : (
+              ''
+            )}
           </Box>
         </Grid>
-        {direction ? <PlayerBox /> : ''}
-      </Grid>
-      <Grid className={classes.bottomLinks} item xs={12}>
-        <Box display={{ xs: 'none', sm: 'block' }}>
-          {buttons ? (
-            <Box>
-              <a
-                href={portfolio[projectName].project.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  style={{ marginRight: '16px' }}
-                  color="primary"
-                  variant="contained"
-                  startIcon={<VisibilityIcon />}
-                >
-                  {portfolio[projectName].project.text}
-                </Button>
-              </a>
-              <a
-                href={portfolio[projectName].gitHub.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  color="primary"
-                  variant="contained"
-                  startIcon={<GitHubIcon />}
-                >
-                  {portfolio[projectName].gitHub.text}
-                </Button>
-              </a>
-            </Box>
-          ) : (
-            ''
-          )}
-        </Box>
       </Grid>
     </Paper>
   );
