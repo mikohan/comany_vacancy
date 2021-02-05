@@ -44,7 +44,7 @@ function PersonalRow({
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>
-      <Grid container spacing={3}>
+      <Grid container item>
         <Grid className={classes.textWrapper} item xs={12}>
           <Typography variant="h4">{title}</Typography>
           <Typography variant="body1">{text}</Typography>
