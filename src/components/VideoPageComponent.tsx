@@ -34,7 +34,12 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: theme.spacing(5),
     },
     paragraph: {
-      fontSize: '1.4rem',
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '1.4rem',
+      },
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '1rem',
+      },
       marginBottom: theme.spacing(3),
       textIndent: theme.spacing(4),
       textAlign: 'left',
