@@ -47,7 +47,11 @@ function FullStack() {
               />
             </Grid>
             <Grid item xs={12}>
-              <Paper className={classes.fastLinkPapaer} elevation={3}>
+              <Paper
+                className={classes.fastLinkPapaer}
+                elevation={3}
+                style={{ marginTop: '1rem' }}
+              >
                 <Typography variant="h2">{header}</Typography>
                 <Typography variant="body1">{frontEndLinks}</Typography>
                 <List
@@ -89,7 +93,7 @@ function FullStack() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container spacing={6}>
+        <Grid container spacing={6} style={{ marginTop: '1rem' }}>
           <Grid item container xs={12}>
             <div id="nuxtChat">
               <PortfolioSingle
