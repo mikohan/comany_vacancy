@@ -17,6 +17,14 @@ const useStyles = makeStyles((theme: Theme) =>
         margin: theme.spacing(1),
       },
     },
+    fontSizeVideo: {
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '3.4rem',
+      },
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '2.2rem',
+      },
+    },
     paperRow: {
       paddingLeft: theme.spacing(20),
       paddingRight: theme.spacing(20),
@@ -37,34 +45,33 @@ const useStyles = makeStyles((theme: Theme) =>
 function PageSinglePage({ header, text, vidUrl, videoCover }: IProps) {
   const classes = useStyles();
   return (
-    <Paper className={classes.paperRow} elevation={3}>
-      <Grid container spacing={3}>
-        <Grid className={classes.textWrapper} item xs={12}>
-          <Typography
-            variant="h2"
-            dangerouslySetInnerHTML={{ __html: header as string }}
-          ></Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Box className="player-wrapper">
-            <ReactPlayer
-              className="react-player"
-              url={vidUrl}
-              controls
-              width="100%"
-              height="100%"
-              light={videoCover}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Box
-            className={classes.paragraph}
-            dangerouslySetInnerHTML={{ __html: text as string }}
-          ></Box>
-        </Grid>
+    <Grid container spacing={3}>
+      <Grid className={classes.textWrapper} item xs={12}>
+        <Typography
+          className={classes.fontSizeVideo}
+          variant="h2"
+          dangerouslySetInnerHTML={{ __html: header as string }}
+        ></Typography>
       </Grid>
-    </Paper>
+      <Grid item xs={12}>
+        <Box className="player-wrapper">
+          <ReactPlayer
+            className="react-player"
+            url={vidUrl}
+            controls
+            width="100%"
+            height="100%"
+            light={videoCover}
+          />
+        </Box>
+      </Grid>
+      <Grid item xs={12}>
+        <Box
+          className={classes.paragraph}
+          dangerouslySetInnerHTML={{ __html: text as string }}
+        ></Box>
+      </Grid>
+    </Grid>
   );
 }
 export default PageSinglePage;

@@ -13,6 +13,7 @@ import {
   ListItemText,
   Typography,
   Container,
+  Hidden,
 } from '@material-ui/core';
 import '../tmp.scss';
 import PortfolioSingle from './PortfolioSingle';
@@ -68,99 +69,104 @@ function BackEndPage() {
       transition={{ duration: durationPage }}
     >
       <Container maxWidth="lg" className="containerClass">
-        <Grid container spacing={3}>
-          <Grid item container xs={12} justify="space-between" spacing={1}>
-            <Grid item xs={4}>
-              <Paper className={classes.fastLinkPapaer} elevation={3}>
-                <Typography variant="body1">{fullStackLinks}</Typography>
-                <List className={classes.listAll}>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#venezo">
-                          {portfolio.venezo.title}
-                        </HashLink>
-                      }
-                      secondary="(Django, Python, Elasticsearch)"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#ducato">
-                          {portfolio.ducato.title}
-                        </HashLink>
-                      }
-                      secondary="(Django, Python, MySQL)"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#suppliers">
-                          {portfolio.suppliers.title}
-                        </HashLink>
-                      }
-                      secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#a77">
-                          {portfolio.enterprise.title}
-                        </HashLink>
-                      }
-                      secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
-                    />
-                  </ListItem>
-                </List>
-              </Paper>
-            </Grid>
-            <Grid item xs={4}>
-              <Paper className={classes.fastLinkPapaer} elevation={3}>
-                <Typography variant="body1">{frontEndLinks}</Typography>
-                <List className={classes.listAll}>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#nuxtChat">
-                          {portfolio.nuxtChat.title}
-                        </HashLink>
-                      }
-                      secondary="(NuxtJS, Socket.io, Express, NodeJS)"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#colors">
-                          {portfolio.colors.title}
-                        </HashLink>
-                      }
-                      secondary="(React, Javascript)"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#sheets">
-                          {portfolio.sheets.title}
-                        </HashLink>
-                      }
-                      secondary="(Vanilla Javascript)"
-                    />
-                  </ListItem>
-                </List>
-              </Paper>
-            </Grid>
-            <Grid item xs={4}>
-              <Paper className={classes.fastLinkPapaer} elevation={3}>
-                <MiscProject />
-              </Paper>
+        <Hidden mdDown>
+          <Grid container spacing={3}>
+            <Grid item container xs={12} justify="space-between" spacing={1}>
+              <Grid item xs={4}>
+                <Paper className={classes.fastLinkPapaer} elevation={3}>
+                  <Typography variant="body1">{fullStackLinks}</Typography>
+                  <List className={classes.listAll}>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#venezo">
+                            {portfolio.venezo.title}
+                          </HashLink>
+                        }
+                        secondary="(Django, Python, Elasticsearch)"
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#ducato">
+                            {portfolio.ducato.title}
+                          </HashLink>
+                        }
+                        secondary="(Django, Python, MySQL)"
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink
+                            className={classes.hashLink}
+                            to="#suppliers"
+                          >
+                            {portfolio.suppliers.title}
+                          </HashLink>
+                        }
+                        secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#a77">
+                            {portfolio.enterprise.title}
+                          </HashLink>
+                        }
+                        secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
+                      />
+                    </ListItem>
+                  </List>
+                </Paper>
+              </Grid>
+              <Grid item xs={4}>
+                <Paper className={classes.fastLinkPapaer} elevation={3}>
+                  <Typography variant="body1">{frontEndLinks}</Typography>
+                  <List className={classes.listAll}>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#nuxtChat">
+                            {portfolio.nuxtChat.title}
+                          </HashLink>
+                        }
+                        secondary="(NuxtJS, Socket.io, Express, NodeJS)"
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#colors">
+                            {portfolio.colors.title}
+                          </HashLink>
+                        }
+                        secondary="(React, Javascript)"
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#sheets">
+                            {portfolio.sheets.title}
+                          </HashLink>
+                        }
+                        secondary="(Vanilla Javascript)"
+                      />
+                    </ListItem>
+                  </List>
+                </Paper>
+              </Grid>
+              <Grid item xs={4}>
+                <Paper className={classes.fastLinkPapaer} elevation={3}>
+                  <MiscProject />
+                </Paper>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </Hidden>
         <Grid container spacing={6}>
           <Grid item container xs={12}>
             <div id="venezo">
