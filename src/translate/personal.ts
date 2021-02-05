@@ -76,7 +76,7 @@ export const translateText: ITranslateText = {
     },
     freeDiving: {
       title: 'Free Diving',
-      text: `I started free diving while vacationing with my family in Egypt. 
+      text: `I am keen on free diving since our vacation with my family in Egypt in 2010. 
       I like to challenge and overcome myself.
             `,
     },
@@ -91,7 +91,41 @@ export const translateText: ITranslateText = {
   russian: {
     pageTitle: 'Мои спортивные достижения',
     vidHeader: 'Обо Мне',
-    text: `Some future text`,
+    text: `
+    <p>
+       У меня инженерное мышление.
+       Кроме того, у меня есть диплом инженера.
+       Но образование не успевает за нашим быстро меняющимся миром.
+       Вот почему я занимаюсь самообразованием каждый день.
+       Я читаю около 30 профессиональных книг и прохожу более 20 видеокурсов в год. 
+    </p>
+    <p>
+    Помимо программирования, мои интересы:
+    Менеджмент, Психология, Фотография и Кинематография.
+    Я всегда вижу возможность улучшить менеджмент или психологию, предлагая программные решения.
+    </p>
+    <p>
+    У меня есть большая семья.
+    Моя семья - это компас, который направляет меня. Это вдохновение для достижения больших высот.
+    </p>
+    <p>
+    Я большой поклонник экстремальных видов спорта. Мои любимые виды спорта - горные лыжи и сноуборд.
+    Спорт помогает мне быть самодисциплинированным и справляться с нагрузками на работе.
+    </p>
+    <p>
+      Я люблю новые задачи, и всегда готов выложиться на все сто и даже больше.
+      Считаю, что тяжелая работа еще никому не навредила. В прошлом году я работал 70 часов в неделю.
+      Решение новых трудностей меня вдохновляет. Я люблю бросать себе вызов.
+    </p>
+    <p>
+    Я мотивирован, изобретателен и полон энтузиазма. Я верен и заслуживаю доверия. 
+    Я определенно могу принести пользу любой компании. 
+    Я абсолютно уверен в этом.
+    </p>
+    <p>
+       Вы можете узнать о моих увлечениях ниже на этой странице.
+       </p>
+    `,
     snowboard: {
       title: 'Сноуборд',
       text: `Я занимаюсь сноубордингом уже около 8 лет, активно принимаю участие в соревнованих. 
@@ -143,7 +177,37 @@ export const translateText: ITranslateText = {
   czech: {
     pageTitle: 'My Sports Achivments and Learning',
     vidHeader: 'About Me',
-    text: `Some future text`,
+    text: `
+    <p>
+       Mám technické myšlení.
+       Navíc mám postgraduální titul v oboru strojírenství.
+       Ale vzdělání nedokáže držet krok s naším rychle se měnícím světem.
+       Proto se každý den vzdělávám.
+       Přečetl jsem asi 30 odborných knih a absolvuji více než 20 video kurzů ročně.
+    </p>
+    <p>
+    Kromě programování mými zájmy jsou:
+       Management, psychologie, fotografie a kinematografie.
+       Vždy vidím příležitost zlepšit řízení nebo psychologii tím, že 
+       do ní přinesu programovací řešení.
+    </p>
+    <p>
+      Mám velkou rodinu.
+      Moje rodina je kompas, který mě vede. Je inspirací k dosažení velkých výšek.
+    </p>
+    <p>
+       Miluji změny a vždy jsem ochoten jít o kilometr dál.
+       Věřím, že tvrdá práce nikdy nikoho nezabila. A loni jsem pracoval 70 hodin týdně.
+       Jsem řešitel problémů. Navíc každý nový problém, se kterým jsem se dosud nesetkal, ve mně vyvolává pocit vzrušení. Miluji nové výzvy.
+     </p>
+     <p>
+       Jsem motivovaný, vynalézavý a nadšený.
+       Jsem loajální a důvěryhodný.
+       Určitě mohu přidat hodnotu každé společnosti.
+       Jsem naprosto jistý.
+     </p>
+
+    `,
     snowboard: {
       title: 'SnowBoard',
       text: `Snowboardingu se věnuji již asi 8 let a aktivně se účastním soutěží.
