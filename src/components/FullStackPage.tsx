@@ -36,7 +36,7 @@ function FullStack() {
       transition={{ duration: durationPage }}
     >
       <Container maxWidth="lg" className="containerClass">
-        <Grid container spacing={3}>
+        <Grid container spacing={5}>
           <Grid item container xs={12} justify="space-between">
             <Grid item xs={12}>
               <VideoPageComponent
@@ -46,7 +46,11 @@ function FullStack() {
               />
             </Grid>
             <Grid item xs={12}>
-              <Paper className={classes.fastLinkPapaer} elevation={3}>
+              <Paper
+                className={classes.fastLinkPapaer}
+                elevation={3}
+                style={{ marginTop: '1rem' }}
+              >
                 <Typography variant="h2">{header}</Typography>
                 <Typography variant="body1">{fullStackLinks}</Typography>
                 <List
@@ -98,7 +102,7 @@ function FullStack() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container spacing={6}>
+        <Grid container spacing={5} style={{ marginTop: '1rem' }}>
           <Grid item container xs={12}>
             <div id="venezo">
               <PortfolioSingle
