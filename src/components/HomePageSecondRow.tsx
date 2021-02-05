@@ -26,6 +26,7 @@ function HomePageSecondRow({ secondRowText }: IProps) {
             <ReactPlayer
               className="react-player"
               url={vidUrl}
+              light={require('../assets/mePersonalCover2.png')}
               controls
               width="100%"
               height="100%"
