@@ -25,13 +25,15 @@ function LinuxPage() {
       transition={{ duration: durationPage }}
     >
       <Container maxWidth="lg" className="containerClass">
-        <Grid container>
-          <Grid item xs={12}>
-            <VideoPageComponent
-              header={header}
-              text={text}
-              vidUrl="https://youtu.be/yUafPqTg3kw"
-            />
+        <Grid container spacing={5}>
+          <Grid container style={{ marginTop: '1rem' }}>
+            <Grid item xs={12}>
+              <VideoPageComponent
+                header={header}
+                text={text}
+                vidUrl="https://youtu.be/yUafPqTg3kw"
+              />
+            </Grid>
           </Grid>
           <Grid item xs={12}>
             <CertificateComponent
@@ -39,7 +41,7 @@ function LinuxPage() {
             />
           </Grid>
         </Grid>
-        <Grid container spacing={6} style={{ marginTop: '1rem' }}>
+        <Grid container style={{ marginTop: '1rem' }}>
           <Grid item xs={12}>
             <ScrollToTop
               style={{
