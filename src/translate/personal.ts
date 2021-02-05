@@ -40,66 +40,50 @@ export const translateText: ITranslateText = {
     pageTitle: 'My Sports Achivments and Learning',
     snowboard: {
       title: 'SnowBoard',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `I have been snowboarding for about 8 years now, actively taking part in competitions. 
+      During this time I have won many times. You can see here some of my medals and cups.
             `,
     },
     aviation: {
       title: 'Aviation',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `I got my pilot license in 2 months of intensive training in 
+      the USA. It was a great experience.
             `,
     },
     rollerBlade: {
       title: 'Roller Blades',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `I have been rollerblading for a long time, we love to do it 
+      together with the whole family.
             `,
     },
     acrobe: {
       title: 'Acrobatics and Trimpoline',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Acrobatics and trampolines are already an integral part of my life. 
+      I attend classes consistently 3 times a week. I love learning new tricks.
             `,
     },
     skateBoard: {
       title: 'Skateboard',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Skateboarding helps a lot to replace snowboarding in the summertime, 
+      I also participate in competitions.
             `,
     },
     ski: {
       title: 'Alpine Ski',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `I have been doing skiing relatively recently, 
+      about 3 years. I have always liked this sport and am progressing rapidly.
             `,
     },
     freeDiving: {
       title: 'Free Diving',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `I started free diving while vacationing with my family in Egypt. 
+      I like to challenge and overcome myself.
             `,
     },
     cheer: {
       title: 'Cheer Leading',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Cheerleading appeared in my life for a reason, 
+      my children are engaged professionally, and therefore I want to better understand it.
             `,
     },
   },
@@ -110,66 +94,49 @@ export const translateText: ITranslateText = {
     text: `Some future text`,
     snowboard: {
       title: 'Сноуборд',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Я занимаюсь сноубордингом уже около 8 лет, активно принимаю участие в соревнованих. 
+      За это время неоднократно побеждал, имею много медалей и кубков.
             `,
     },
     rollerBlade: {
       title: 'Роликовые Коньки',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Я катаюсь на роликах уже давно, мы любим кататься вместе всей семьей.
             `,
     },
     aviation: {
       title: 'Авиация',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Я получил пилотные права за 2 месяца интенсивного 
+      обучения в США. Это был отличный опыт.
             `,
     },
     acrobe: {
       title: 'Акробатика и батут',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Акробатика и батуты это уже неотъемлемая часть моей жизни. 
+      Я посещаю занятия стабильно 3 раза в неделю. Люблю учиться новым трюкам. 
             `,
     },
     skateBoard: {
       title: 'Скейтборд',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Скейтбординг очень помогает заменять 
+      сноуборд в летнее время, я также участвую в соревнованиях.
             `,
     },
     ski: {
       title: 'Горные лыжи',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Лыжами занимаюсь относительно недавно, около 3 лет. 
+      Мне всегда нравился этот вид спорта и я быстро прогрессирую.
             `,
     },
     freeDiving: {
       title: 'Фри Дайвинг',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Я начал заниматься свободным погружением во время отдыха с семьей в Египте. 
+      Мне нравится испытывать и преодолевать себя. 
             `,
     },
     cheer: {
-      title: 'Чир Лидинг',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      title: 'Черлидинг',
+      text: `Черлидинг появился в моей жизни не случайно, 
+      мои дети занимаются профессионально, и поэтому я хочу лучше разбираться  в нем.
             `,
     },
   },
@@ -179,66 +146,51 @@ export const translateText: ITranslateText = {
     text: `Some future text`,
     snowboard: {
       title: 'SnowBoard',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Snowboardingu se věnuji již asi 8 let a aktivně se účastním soutěží.
+      Během této doby jsem mnohokrát vyhrál. Zde můžete vidět některé z mých medailí a pohárů.
             `,
     },
     aviation: {
       title: 'Aviation',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Pilotní průkaz jsem získal za 2 měsíce intenzivního výcviku v
+      Spojené státy americké. Byla to skvělá zkušenost.
             `,
     },
     acrobe: {
       title: 'Acrobatic and Trimpoline',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Akrobacie a trampolíny jsou již nedílnou součástí mého života.
+      Důsledně navštěvuji kurzy 3x týdně. Rád se učím nové triky.
             `,
     },
     rollerBlade: {
       title: 'Roller Blades',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Už dlouhou dobu jezdím na kolečkových bruslích, rádi to děláme
+      společně s celou rodinou.
             `,
     },
     skateBoard: {
       title: 'Skateboard',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Skateboarding v létě hodně pomáhá nahradit snowboarding,
+      Také se účastním soutěží.
             `,
     },
     ski: {
       title: 'Alpine Ski',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
+      text: `Lyžování se věnuji relativně nedávno,
+      asi 3 roky. Tento sport se mi vždy líbil a rychle postupuji.qui consectetur eveniet
             repudiandae, officia neque illum sunt?
             `,
     },
     freeDiving: {
       title: 'Free Diving',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Začal jsem se potápět zdarma na dovolené s rodinou v Egyptě.
+      Rád vyzývám a překonávám sám sebe.
             `,
     },
     cheer: {
       title: 'Cheer Leading',
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus
-            magnam quos, explicabo perferendis consequuntur ullam quia inventore
-            dignissimos veritatis itaque. Suscipit qui consectetur eveniet
-            repudiandae, officia neque illum sunt?
+      text: `Cheerleading se v mém životě objevil z nějakého důvodu,
+      moje děti se profesionálně věnují, a proto jim chci lépe porozumět.
             `,
     },
   },
