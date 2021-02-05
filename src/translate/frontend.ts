@@ -61,7 +61,7 @@ export const frontend: IItem = {
     </p>
     <p>
     Некоторые из моих фронтенд-проектов вы можете увидеть на этой странице.
-    </p\>`,
+    </p>`,
   },
   czech: {
     pageHeader: 'Front End Experience',
