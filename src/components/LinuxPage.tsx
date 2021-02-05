@@ -7,7 +7,7 @@ import VideoPageComponent from './VideoPageComponent';
 import Grid from '@material-ui/core/Grid';
 import CertificateComponent from './CertificateComponent';
 import Container from '@material-ui/core/Container';
-import { Box, IconButton } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import ScrollToTop from 'react-scroll-up';
 import PresentToAllIcon from '@material-ui/icons/PresentToAll';
 import { useStyles } from '../styles/PorfolioPageStyles';
