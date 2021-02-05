@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme: Theme) =>
 function PageSinglePage({ header, text, vidUrl, videoCover }: IProps) {
   const classes = useStyles();
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={0}>
       <Paper className={classes.paperRow} elevation={3}>
         <Grid className={classes.textWrapper} item xs={12}>
           <Typography

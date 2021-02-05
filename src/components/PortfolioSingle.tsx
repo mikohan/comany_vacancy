@@ -30,7 +30,7 @@ function PortfolioSingle({
   const { portfolio } = translateText[language];
 
   const PlayerBox = () => (
-    <Grid item xs={12} sm={7}>
+    <Grid item xs={12}>
       <Box className="player-wrapper">
         <ReactPlayer
           className="react-player"

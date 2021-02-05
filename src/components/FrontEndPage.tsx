@@ -38,7 +38,7 @@ function FullStack() {
     >
       <Container maxWidth="lg" className="containerClass">
         <Grid container spacing={3}>
-          <Grid item container xs={12} justify="space-between" spacing={1}>
+          <Grid item container xs={12} justify="space-between">
             <Grid item xs={12}>
               <VideoPageComponent
                 text={text}

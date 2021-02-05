@@ -20,7 +20,7 @@ function LinuxPage() {
       transition={{ duration: durationPage }}
     >
       <Container maxWidth="lg" className="containerClass">
-        <Grid container spacing={3}>
+        <Grid container spacing={5}>
           <Grid item xs={12}>
             <VideoPageComponent
               header={header}
@@ -28,7 +28,7 @@ function LinuxPage() {
               vidUrl="https://youtu.be/yUafPqTg3kw"
             />
           </Grid>
-          <Grid item container xs={12}>
+          <Grid item xs={12}>
             <CertificateComponent
               image={require('../assets/certs/LinuxCert.jpg')}
             />
