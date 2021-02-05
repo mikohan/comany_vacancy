@@ -10,7 +10,7 @@ import DarkThemeProvider from './context/ThemeContext';
 function App() {
   return (
     <DarkThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="App">
           <PersistentDrawerLeft />
         </div>
