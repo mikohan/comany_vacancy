@@ -25,7 +25,7 @@ function LinuxPage() {
       transition={{ duration: durationPage }}
     >
       <Container maxWidth="lg" className="containerClass">
-        <Grid container spacing={5}>
+        <Grid container spacing={3}>
           <Grid container style={{ marginTop: '1rem' }}>
             <Grid item xs={12}>
               <VideoPageComponent
