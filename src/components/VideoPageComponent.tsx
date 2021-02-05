@@ -26,9 +26,16 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     paperRow: {
-      paddingLeft: theme.spacing(20),
-      paddingRight: theme.spacing(20),
-      paddingBottom: theme.spacing(20),
+      [theme.breakpoints.up('sm')]: {
+        paddingLeft: theme.spacing(10),
+        paddingRight: theme.spacing(10),
+        paddingBottom: theme.spacing(10),
+      },
+      [theme.breakpoints.down('sm')]: {
+        paddingLeft: theme.spacing(2),
+        paddingRight: theme.spacing(2),
+        paddingBottom: theme.spacing(2),
+      },
     },
     textWrapper: {
       padding: theme.spacing(5),
@@ -51,31 +58,33 @@ function PageSinglePage({ header, text, vidUrl, videoCover }: IProps) {
   const classes = useStyles();
   return (
     <Grid container spacing={3}>
-      <Grid className={classes.textWrapper} item xs={12}>
-        <Typography
-          className={classes.fontSizeVideo}
-          variant="h2"
-          dangerouslySetInnerHTML={{ __html: header as string }}
-        ></Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Box className="player-wrapper">
-          <ReactPlayer
-            className="react-player"
-            url={vidUrl}
-            controls
-            width="100%"
-            height="100%"
-            light={videoCover}
-          />
-        </Box>
-      </Grid>
-      <Grid item xs={12}>
-        <Box
-          className={classes.paragraph}
-          dangerouslySetInnerHTML={{ __html: text as string }}
-        ></Box>
-      </Grid>
+      <Paper className={classes.paperRow} elevation={3}>
+        <Grid className={classes.textWrapper} item xs={12}>
+          <Typography
+            className={classes.fontSizeVideo}
+            variant="h2"
+            dangerouslySetInnerHTML={{ __html: header as string }}
+          ></Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Box className="player-wrapper">
+            <ReactPlayer
+              className="react-player"
+              url={vidUrl}
+              controls
+              width="100%"
+              height="100%"
+              light={videoCover}
+            />
+          </Box>
+        </Grid>
+        <Grid item xs={12}>
+          <Box
+            className={classes.paragraph}
+            dangerouslySetInnerHTML={{ __html: text as string }}
+          ></Box>
+        </Grid>
+      </Paper>
     </Grid>
   );
 }
