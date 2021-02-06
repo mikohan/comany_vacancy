@@ -40,6 +40,11 @@ function CertPage() {
             </Grid>
             <Grid item container xs={12}>
               <CertificateComponent
+                image={require('../assets/certs/typescript.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
                 image={require('../assets/certs/SSR_React.jpg')}
               />
             </Grid>
@@ -50,7 +55,17 @@ function CertPage() {
             </Grid>
             <Grid item container xs={12}>
               <CertificateComponent
+                image={require('../assets/certs/nuxtJS.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
                 image={require('../assets/certs/DRFVueJS.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
+                image={require('../assets/certs/vueMaximilian.jpg')}
               />
             </Grid>
             <Grid item container xs={12}>
@@ -66,6 +81,11 @@ function CertPage() {
             <Grid item container xs={12}>
               <CertificateComponent
                 image={require('../assets/certs/advords.jpg')}
+              />
+            </Grid>
+            <Grid item container xs={12}>
+              <CertificateComponent
+                image={require('../assets/certs/Html.jpg')}
               />
             </Grid>
             <Grid item xs={12}>
