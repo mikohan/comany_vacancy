@@ -10,33 +10,30 @@ export const frontend: IItem = {
     header: 'Some of Front End Pfojects',
     pageHeader: 'Front End Experience',
     text: `<p>
-              Hi, I am Vladimir and in this video I will tell you about my
+              Hi, I am Vladimir and I will tell you about my
               Front End experience.
               </p>
               <p>
                 I always was a more backend oriented developer but I really loved
                 the idea of Single Page Applications.
-                Because I am a marketologist as well , I  was sceptical about SPAs
-                because search engines didn't recognize it.
-            </p>
-            <p> 
-              Yes, SPAs are convenient and fast and look great but there is one big
-              problem: they are not recognized by search engines.
-              It is a very big disadvantage that stopped me from using them.
+                Because I am a marketologist as well, I  was sceptical about SPAs
+                because yes, SPAs are convenient and fast and look great but there is one big
+                problem: they are not recognized by search engines.
+                It was a very big disadvantage that stopped me from using them.
             </p>
             <p>
               Then as I learned frontend deeply I found out Server Side Rendering Technology.
               It changed the way I see things.
-              I started learning Javascript and typescript
+              I started learning Javascript and Typescript,
               Front End frameworks, Vue, NuxtJs, React and NextJs.
               I took about 15 courses on Udemy and dived in Frontend Development deeply.
-              I  discover many cutting edge technologies.
-              One of them is microservices. In my opinion microservices is the nearest
+              I discover many cutting edge technologies.
+              One of them are microservices. In my opinion microservices are the nearest
               future of web development. Now i'm learning this technology.
             </p>
             <p>
               Some of my front end projects you can see on this page down below.
-              Thank you for your time. Bye!
+              Thank you for your time!
             </p>`,
   },
   russian: {
@@ -56,8 +53,7 @@ export const frontend: IItem = {
     Я начал изучать Javascript и тайпскрипт, Vue, NuxtJs, React и NextJs.
     Я прошел около 15 курсов по Udemy и глубоко погрузился в разработку фронтенда.
     Я открываю для себя множество передовых технологий.
-    Одно из них - микросервисы. На мой взгляд, ближайшее будущее веб-разработки - это 
-    микросервисы. Сейчас изучаю эту технологию.
+    Одно из них - микросервисы. На мой взгляд, это ближайшее будущее веб-разработки. Сейчас изучаю эту технологию.
     </p>
     <p>
     Некоторые из моих фронтенд-проектов вы можете увидеть на этой странице.
@@ -73,13 +69,10 @@ export const frontend: IItem = {
     Protože jsem také marketér, byl jsem vůči SPA skeptický, protože to vyhledávače nepoznaly.
     </p>
     <p>
-    Ano, SPA jsou pohodlná a rychlá a vypadají skvěle, ale je tu jeden velký problém: vyhledávače je neuznávají.
-    Je to velmi velká nevýhoda, která mi zabránila používat je.
-    </p>
-    <p>
-    Když jsem se hluboce dozvěděl frontend, zjistil jsem technologii Server Side Rendering Technology.
+    Když jsem se hluboce dozvěděl frontend, zjistil jsem technologii Server Side Rendering 
+    Technology.
     Změnilo to způsob, jakým vidím věci.
-    Začal jsem se učit Javascript a strojopis
+    Začal jsem se učit Javascript a typescript,
     Front-endové rámce, Vue, NuxtJs, React a NextJs.
     Absolvoval jsem asi 15 kurzů na Udemy a hluboce jsem se ponořil do Frontend Development.
     Objevuji mnoho špičkových technologií.
