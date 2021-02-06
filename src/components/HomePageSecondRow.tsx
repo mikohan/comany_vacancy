@@ -20,8 +20,8 @@ function HomePageSecondRow({ secondRowText }: IProps) {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <Grid container spacing={2} direction="row" justify="center">
-        <Grid item md={12} lg={8}>
+      <Grid container item spacing={2} direction="row" justify="center">
+        <Grid item xs={12} lg={8}>
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
@@ -33,7 +33,7 @@ function HomePageSecondRow({ secondRowText }: IProps) {
             />
           </Box>
         </Grid>
-        <Grid item md={12} lg={4}>
+        <Grid item xs={12} lg={4}>
           <Typography
             className={classes.videoSideText}
             variant="body1"
