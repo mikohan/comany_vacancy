@@ -5,7 +5,7 @@ export const fullstack: IItem = {
     header: 'Some of Full Stack Projects',
     text: `<p>
             Hi, I am Vladimir and I will tell you about my fullstack experience. 
-            I am in full stack development for more than 12 years of experience.
+            I am in full stack development for more than 12 years.
             </p>
             <p> 
               I have experience in:
@@ -21,19 +21,20 @@ export const fullstack: IItem = {
               <li>Servers performance optimization</li>
               <li>Programming microcontrollers</li>
               <li>Agile methodology</li>
-              <p>And some.</p>
+              <p>And others.</p>
              </ul>
              <p>
               Now I am working on a big  project.
               It is an almost automatic system for managing e-commerce business.
-              In a nutshell the idea is to automate most of the business processes of marketing, inventory managing and sales.
+              In a nutshell the idea is to automate most of the business processes of marketing, 
+              inventory managing and sales.
               </p>
               <p>
                 I have full confidence that in the near future sales will be automated.
                 We also did the experiments with that.
                 For now it is not good enough for production but it is working!
                 You can see some of my old projects on this page down below.
-                Take care! Bye.
+                Take care!
               </p>
             `,
   },
