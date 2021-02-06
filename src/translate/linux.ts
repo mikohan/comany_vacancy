@@ -17,7 +17,7 @@ export const linux: IItem = {
             </p>
             <p> 
               I can set up and configure pretty much any kind of software in
-              Linux. For scripting sometimes I’m using Shell/Bash sometimes
+              Linux. For scripting sometimes I use Shell/Bash sometimes
               Python. I also have experience with Web servers, like Apache and
               Nginx and also Python WSGI. Databases servers such as MySQL,
               MariaDB, PostgreSQL and Elastic search. FTP servers, here are VS
@@ -28,7 +28,7 @@ export const linux: IItem = {
               </p>
               <p>During my developer’s
               career, I have been facing a lot of different difficult tasks. For
-              example, two years ago our company was needed to solve a problem
+              example, one time our company was needed to solve a problem
               with the VOIP business phone system. And I set up the Asterisk on
               the Slackware distro from scratch, with no prior knowledge. I tell
               you it is not for the faint-hearted at all. I like to get to the
