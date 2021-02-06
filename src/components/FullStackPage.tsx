@@ -11,6 +11,7 @@ import {
   ListItemText,
   Typography,
   Container,
+  Hidden,
 } from '@material-ui/core';
 import '../tmp.scss';
 import PortfolioSingle from './PortfolioSingle';
@@ -45,61 +46,66 @@ function FullStack() {
                 vidUrl="https://youtu.be/9jdIB2HfehU"
               />
             </Grid>
-            <Grid item xs={12}>
-              <Paper
-                className={classes.fastLinkPapaer}
-                elevation={3}
-                style={{ marginTop: '1rem' }}
-              >
-                <Typography variant="h2">{header}</Typography>
-                <Typography variant="body1">{fullStackLinks}</Typography>
-                <List
-                  style={{ display: 'flex', flexDirection: 'row' }}
-                  className={classes.listAll}
+            <Hidden smDown>
+              <Grid item xs={12}>
+                <Paper
+                  className={classes.fastLinkPapaer}
+                  elevation={3}
+                  style={{ marginTop: '1rem' }}
                 >
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#venezo">
-                          {portfolio.venezo.title}
-                        </HashLink>
-                      }
-                      secondary="(Django, Python, Elasticsearch)"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#ducato">
-                          {portfolio.ducato.title}
-                        </HashLink>
-                      }
-                      secondary="(Django, Python, MySQL)"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#suppliers">
-                          {portfolio.suppliers.title}
-                        </HashLink>
-                      }
-                      secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        <HashLink className={classes.hashLink} to="#a77">
-                          {portfolio.enterprise.title}
-                        </HashLink>
-                      }
-                      secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
-                    />
-                  </ListItem>
-                </List>
-              </Paper>
-            </Grid>
+                  <Typography variant="h2">{header}</Typography>
+                  <Typography variant="body1">{fullStackLinks}</Typography>
+                  <List
+                    style={{ display: 'flex', flexDirection: 'row' }}
+                    className={classes.listAll}
+                  >
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#venezo">
+                            {portfolio.venezo.title}
+                          </HashLink>
+                        }
+                        secondary="(Django, Python, Elasticsearch)"
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#ducato">
+                            {portfolio.ducato.title}
+                          </HashLink>
+                        }
+                        secondary="(Django, Python, MySQL)"
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink
+                            className={classes.hashLink}
+                            to="#suppliers"
+                          >
+                            {portfolio.suppliers.title}
+                          </HashLink>
+                        }
+                        secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          <HashLink className={classes.hashLink} to="#a77">
+                            {portfolio.enterprise.title}
+                          </HashLink>
+                        }
+                        secondary="(PHP, MySQL, Python, Tensorflow, Keras, Javascript)"
+                      />
+                    </ListItem>
+                  </List>
+                </Paper>
+              </Grid>
+            </Hidden>
           </Grid>
         </Grid>
         <Grid container spacing={5} style={{ marginTop: '1rem' }}>
