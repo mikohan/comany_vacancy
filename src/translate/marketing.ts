@@ -13,7 +13,8 @@ export const marketing: IItem = {
               Marketing knowledge is absolutely needed for a good web developer.
             </p>
             <p> 
-              If you intend to earn money from your web project, even before you start designing it you must first build a marketing strategy.
+              If you intend to earn money from your web project, even before you start 
+              designing it you must first build a marketing strategy.
 
               Marketing strategy affects everything in the web project.
               What technology to use, what framework, what the logic should be.
@@ -23,18 +24,22 @@ export const marketing: IItem = {
               So I learned and practiced about marketing a lot.
               </p>
               <p>
-                I have build automated advertising system
-                Automated sales funnels
-                Systems for building semantic cores
-                Natural language processing applications
-                Analytic system for advertisement efficiency
-                Automatic systems for SMM
+                I have build:
+              </p>
+              <ul>  
+                <li>Automated advertising system.</li>
+                <li>Automated sales funnels.</li>
+                <li>Systems for building semantic cores.</li>
+                <li>Natural language processing applications.</li>
+                <li>Analytic system for advertisement efficiency.</li>
+                <li>Automatic systems for SMM.</li>
+                <p>
                 etc.
-            </p>
+                </p>
             <p>
               Cose I am good at online marketing my web projects succeed in most cases. 
               performance indicators of one of my latest projects you can find down below.
-              Take care bye.
+              Take care!
             </p>
             `,
   },
@@ -49,16 +54,22 @@ export const marketing: IItem = {
             Наконец, от этого зависит, будет ли бизнес работать хорошо или умрет.
             Так что я много узнал и практиковался в маркетинге.</p>
 
-            <p>Я построил автоматизированную систему рекламы
-            Автоматические воронки продаж
-            Системы построения семантических ядер
-            Приложения для обработки естественного языка
-            Аналитическая система эффективности рекламы
-            Автоматические системы для SMM
-            и т.п.</p>
+            <p>Я построил:
+            </p>
+            <ul>
+                 <li> Автоматизированная рекламная система. </li>
+                 <li> Автоматизированные воронки продаж. </li>
+                 <li> Системы построения семантических ядер. </li>
+                 <li> Приложения для обработки естественного языка. </li>
+                 <li> Аналитическая система эффективности рекламы. </li>
+                 <li> Автоматические системы для SMM. </li>
+                 <p>
+                 и т.п.
+                 </p>
             <p>Так как я хорошо разбираюсь в интернет-маркетинге, мои веб-проекты в большинстве случаев удавались.
             показатели эффективности одного из моих последних проектов вы можете найти ниже.
-Всего хорошего, пока.</p>`,
+Всего хорошего, пока.</p>
+`,
   },
   czech: {
     header: 'Online Marketing Experience',
@@ -74,13 +85,18 @@ export const marketing: IItem = {
             Nakonec záleží na tom, zda bude fungovat dobře, nebo zemře.
             Marketingu jsem se tedy hodně naučil a procvičil.</p>
 
-            <p>Vytvořil jsem automatizovaný reklamní systém
-            Automatizovaný prodej paliv
-            Systémy pro vytváření sémantických jader
-            Aplikace pro zpracování přirozeného jazyka
-            Analytický systém pro efektivní reklamu
-            Automatické systémy pro SMM
-            atd.</p>
+            <p>Vytvořil jsem:
+            </p>
+            <ul>
+            <li> Automatizovaný reklamní systém. </li>
+            <li> Automatizované prodejní cesty. </li>
+            <li> Systémy pro vytváření sémantických jader. </li>
+            <li> Aplikace pro zpracování přirozeného jazyka. </li>
+            <li> Analytický systém pro účinnost reklamy. </li>
+            <li> Automatické systémy pro SMM. </li>
+            <p>
+            atd.
+            </p>
             <p>Protože jsem dobrý v online marketingu, moje webové projekty ve většině případů uspěly.
             ukazatele výkonu jednoho z mých posledních projektů najdete níže.
 Opatruj se Ahoj.</p>`,
