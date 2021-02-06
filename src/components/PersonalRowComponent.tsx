@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     paperRow: {
+      width: '100%',
       padding: theme.spacing(3),
     },
     textWrapper: {
@@ -55,7 +56,11 @@ function PersonalRow({
             <Grid container item xs={12} spacing={0}>
               <Grid item xs={12} md={6} spacing={0}>
                 {imageVideo ? (
-                  <ImageGallery items={items} />
+                  <Hidden smDown>
+                    <Box style={{ width: '100%', overflow: 'auto' }}>
+                      <ImageGallery items={items} />
+                    </Box>
+                  </Hidden>
                 ) : (
                   <Box className="player-wrapper">
                     <ReactPlayer
