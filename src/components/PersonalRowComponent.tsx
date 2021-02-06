@@ -46,48 +46,42 @@ function PersonalRow({
   const classes = useStyles();
   return (
     <Paper className={classes.paperRow} elevation={3}>
-      <Box style={{ overflow: 'auto' }}>
-        <Grid container item xs={12} spacing={0}>
-          <Grid className={classes.textWrapper} item xs={12}>
-            <Typography variant="h4">{title}</Typography>
-            <Typography variant="body1">{text}</Typography>
-          </Grid>
-          <Box style={{ overflow: 'auto' }}>
-            <Grid container item xs={12} spacing={0}>
-              <Grid item xs={12} md={6} spacing={0}>
-                {imageVideo ? (
-                  <Hidden smDown>
-                    <Box style={{ width: '100%', overflow: 'auto' }}>
-                      <ImageGallery items={items} />
-                    </Box>
-                  </Hidden>
-                ) : (
-                  <Box className="player-wrapper">
-                    <ReactPlayer
-                      className="react-player"
-                      url={vidUrl?.length ? vidUrl[1] : ''}
-                      controls
-                      width="100%"
-                      height="100%"
-                    />
-                  </Box>
-                )}
-              </Grid>
-              <Grid item xs={12} md={6} spacing={0}>
-                <Box className="player-wrapper">
-                  <ReactPlayer
-                    className="react-player"
-                    url={vidUrl[0]}
-                    controls
-                    width="100%"
-                    height="100%"
-                  />
-                </Box>
-              </Grid>
-            </Grid>
-          </Box>
+      <Grid container item xs={12} spacing={0}>
+        <Grid className={classes.textWrapper} item xs={12}>
+          <Typography variant="h4">{title}</Typography>
+          <Typography variant="body1">{text}</Typography>
         </Grid>
-      </Box>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item xs={12} md={6}>
+            {imageVideo ? (
+              <Hidden smDown>
+                <ImageGallery items={items} />
+              </Hidden>
+            ) : (
+              <Box className="player-wrapper">
+                <ReactPlayer
+                  className="react-player"
+                  url={vidUrl?.length ? vidUrl[1] : ''}
+                  controls
+                  width="100%"
+                  height="100%"
+                />
+              </Box>
+            )}
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Box className="player-wrapper">
+              <ReactPlayer
+                className="react-player"
+                url={vidUrl[0]}
+                controls
+                width="100%"
+                height="100%"
+              />
+            </Box>
+          </Grid>
+        </Grid>
+      </Grid>
     </Paper>
   );
 }
