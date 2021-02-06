@@ -53,7 +53,7 @@ function AboutPageTest() {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item container xs={12} spacing={0}>
           <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
       </Grid>
