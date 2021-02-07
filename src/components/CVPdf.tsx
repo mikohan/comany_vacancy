@@ -3,9 +3,6 @@ import { Paper } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
 import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
-interface IProps {
-  image: string;
-}
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
