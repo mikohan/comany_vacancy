@@ -71,7 +71,7 @@ export const translateText: ITranslateText = {
     ski: {
       title: 'Alpine Ski',
       text: `I have been doing skiing relatively recently, 
-      about 3 years. I have always liked this sport and am progressing rapidly.
+      about 3 years. I have always liked this sport and I am progressing rapidly.
             `,
     },
     freeDiving: {
