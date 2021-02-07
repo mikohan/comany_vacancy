@@ -40,7 +40,7 @@ const MyDocument = () => (
 
 const CVPdf = () => (
   <Paper>
-    <PDFDownloadLink document={<MyDoc />} fileName="somename.pdf">
+    <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
       {({ blob, url, loading, error }) =>
         loading ? 'Loading document...' : 'Download now!'
       }

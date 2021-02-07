@@ -8,6 +8,7 @@ import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
 import { HashLink } from 'react-router-hash-link';
+import CVPdf from './CVPdf';
 
 function AboutPageTest() {
   const classes = useStyles();
@@ -55,6 +56,9 @@ function AboutPageTest() {
         </Grid>
         <Grid item container xs={12} spacing={0}>
           <HomePageSecondRow secondRowText={secondRowText} />
+        </Grid>
+        <Grid item container xs={12} spacing={0}>
+          <CVPdf />
         </Grid>
       </Grid>
     </motion.div>
