@@ -8,6 +8,7 @@ import {
   Page,
   View,
   Text,
+  StyleSheet,
 } from '@react-pdf/renderer';
 
 // Create styles
