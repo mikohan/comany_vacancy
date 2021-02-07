@@ -2,32 +2,38 @@ import React from 'react';
 import { Paper } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
-import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
+import {
+  PDFDownloadLink,
+  Document,
+  Page,
+  View,
+  Text,
+} from '@react-pdf/renderer';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    paperRow: {
-      width: '100%',
-      padding: theme.spacing(5),
-    },
-    textWrapper: {
-      padding: theme.spacing(5),
-    },
-    paragraph: {
-      fontSize: '1.4rem',
-      marginBottom: theme.spacing(3),
-      textIndent: theme.spacing(4),
-      textAlign: 'left',
-    },
-    fullWidth: {
-      width: '100%',
-    },
-  })
-);
+// Create styles
+const styles = StyleSheet.create({
+  page: {
+    flexDirection: 'row',
+    backgroundColor: '#E4E4E4',
+  },
+  section: {
+    margin: 10,
+    padding: 10,
+    flexGrow: 1,
+  },
+});
 
-const MyDoc = () => (
+// Create Document Component
+const MyDocument = () => (
   <Document>
-    <Page>// My document data</Page>
+    <Page size="A4" style={styles.page}>
+      <View style={styles.section}>
+        <Text>Section #1</Text>
+      </View>
+      <View style={styles.section}>
+        <Text>Section #2</Text>
+      </View>
+    </Page>
   </Document>
 );
 
