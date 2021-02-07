@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
 import {
@@ -39,13 +39,14 @@ const MyDocument = () => (
 );
 
 const CVPdf = () => (
-  <Paper>
+  <Box>
     <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
       {({ blob, url, loading, error }) =>
         loading ? 'Loading document...' : 'Download now!'
       }
+      <MyDocument />
     </PDFDownloadLink>
-  </Paper>
+  </Box>
 );
 
 export default CVPdf;
