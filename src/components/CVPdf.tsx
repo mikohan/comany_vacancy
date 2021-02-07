@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Box } from '@material-ui/core';
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
 import {
   PDFDownloadLink,
@@ -50,6 +48,5 @@ const CVPdf = () => (
     </PDFDownloadLink>
   </Box>
 );
-ReactDOM.render(<CVPdf />, document.getElementById('root'));
 
 export default CVPdf;
