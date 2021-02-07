@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Box } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
@@ -15,7 +16,8 @@ import {
 const styles = StyleSheet.create({
   page: {
     flexDirection: 'row',
-    backgroundColor: '#E4E4E4',
+    backgroundColor: 'tomato',
+    width: '100%',
   },
   section: {
     margin: 10,
@@ -48,5 +50,6 @@ const CVPdf = () => (
     </PDFDownloadLink>
   </Box>
 );
+ReactDOM.render(<CVPdf />, document.getElementById('root'));
 
 export default CVPdf;
