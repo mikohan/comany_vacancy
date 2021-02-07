@@ -17,16 +17,16 @@ export const translateText: ITranslateText = {
       <p>
       Beside programming my interests are:
       Management, Psychology, Photography and Cinematography.
-      I always can see the opportunity to improve management or psychology by bringing programming solutions to it.
+      I always can see the opportunity to improve management or psychology by bringing 
+      programming solutions to it.
       </p>
       <p>
       I have a big family.
       My family is the compass that guides me. It is  the inspiration to reach great heights.
       </p>
       <p>
-
-      I am big fan of extreme sports. My favourites are alpine ski and snowboard.
-      Sports help me to be self-disciplined and held pressure.
+      I am big fan of extreme sports. My favourites are alpine skiing and snowboarding.
+      Sports help me to be self-disciplined and hold pressure.
       I’m certain hard work never killed anyone. And last year I worked 70 hour a week.
       </p>
       <p>
@@ -41,7 +41,7 @@ export const translateText: ITranslateText = {
     snowboard: {
       title: 'SnowBoard',
       text: `I have been snowboarding for about 8 years now, actively taking part in competitions. 
-      During this time I have won many times. You can see here some of my medals and cups.
+      I have won many times. You can see here some of my medals and cups.
             `,
     },
     aviation: {
@@ -58,7 +58,7 @@ export const translateText: ITranslateText = {
     },
     acrobe: {
       title: 'Acrobatics and Trimpoline',
-      text: `Acrobatics and trampolines are already an integral part of my life. 
+      text: `Acrobatics and trampolines are an integral part of my life. 
       I attend classes consistently 3 times a week. I love learning new tricks.
             `,
     },
@@ -71,7 +71,7 @@ export const translateText: ITranslateText = {
     ski: {
       title: 'Alpine Ski',
       text: `I have been doing skiing relatively recently, 
-      about 3 years. I have always liked this sport and am progressing rapidly.
+      about 3 years. I have always liked this sport and I am progressing rapidly.
             `,
     },
     freeDiving: {
