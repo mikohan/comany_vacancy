@@ -6,7 +6,7 @@ import MyDocument from './CVPdf';
 
 const CVPdf = () => (
   <Box>
-    <PDFViewer>
+    <PDFViewer width={1200} height={1300}>
       <MyDocument />
     </PDFViewer>
   </Box>
