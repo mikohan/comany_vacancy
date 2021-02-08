@@ -8,7 +8,7 @@ import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
 import { HashLink } from 'react-router-hash-link';
-import CVPdf from './CV/CVPdf';
+import ShowCV from './CV/ShowCV.tsx';
 import DownloadCV from './CV/DownloadCV';
 
 function AboutPageTest() {
@@ -44,8 +44,8 @@ function AboutPageTest() {
                 <Button style={{ marginTop: '30px' }} variant="outlined">
                   {learnMore}...
                 </Button>
-                <DownloadCV />
               </HashLink>
+              <DownloadCV />
             </Box>
           </Box>
         </Grid>
@@ -60,7 +60,7 @@ function AboutPageTest() {
           <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
         <Grid item container xs={12} spacing={0}>
-          <CVPdf />
+          <ShowCV />
         </Grid>
       </Grid>
     </motion.div>
