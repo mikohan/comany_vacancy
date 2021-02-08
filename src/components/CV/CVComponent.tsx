@@ -1,15 +1,24 @@
 import React from 'react';
-import { Paper, Typography } from '@material-ui/core';
+import { Paper, Typography, Grid } from '@material-ui/core';
 
-export default function CVComponent() {
+interface IProps {
+  language: string;
+}
+
+export default function CVComponent({ language }: IProps) {
   return (
-    <Paper>
-      <Typography variant="body1">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-        sit. Minima, adipisci esse. Quas nulla iure quo temporibus qui sapiente
-        laudantium dicta cumque adipisci vel reprehenderit velit maiores,
-        nesciunt veritatis.
-      </Typography>
+    <Paper style={{ padding: '5rem' }}>
+      <Grid container spacing={3}>
+        <Grid item xs={4}>
+          <Typography variant="h6">Lorem, ipsum dolor sit amet</Typography>
+        </Grid>
+        <Grid item xs={8}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+          corporis. Omnis, officia molestiae officiis harum magnam eum itaque
+          nisi eaque labore cumque facere reiciendis voluptates, libero
+          aspernatur. Praesentium, nesciunt quisquam!
+        </Grid>
+      </Grid>
     </Paper>
   );
 }

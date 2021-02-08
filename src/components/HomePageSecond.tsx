@@ -87,7 +87,7 @@ function AboutPageTest() {
           </Grid>
           <Grid item container xs={12} spacing={0}>
             <Container maxWidth="lg">
-              <CVComponent />
+              <CVComponent language={language} />
             </Container>
           </Grid>
         </Hidden>
