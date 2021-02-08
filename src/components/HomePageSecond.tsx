@@ -10,6 +10,7 @@ import {
   Grid,
   Container,
   Hidden,
+  Paper,
 } from '@material-ui/core';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
@@ -67,6 +68,9 @@ function AboutPageTest() {
           <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
         <Hidden mdDown>
+          <Grid item container xs={12} spacing={0}>
+            <Paper style={{ width: '100%', height: '20%' }}></Paper>
+          </Grid>
           <Grid item container xs={12} spacing={0}>
             <Container maxWidth="lg">
               <ShowCV />
