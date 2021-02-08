@@ -32,6 +32,7 @@ function AboutPageTest() {
     betweenRow,
     secondRowText,
     CVHeader,
+    CVDownload,
   } = translateText[language];
   return (
     <motion.div
@@ -54,8 +55,7 @@ function AboutPageTest() {
                   {learnMore}...
                 </Button>
               </HashLink>
-              <Button variant="outlined">Some text</Button>
-              <DownloadCV />
+              <DownloadCV text={CVDownload} />
             </Box>
           </Box>
         </Grid>
