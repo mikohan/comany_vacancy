@@ -1,15 +1,6 @@
 import React from 'react';
-import { Box, Button } from '@material-ui/core';
 
-import {
-  PDFDownloadLink,
-  Document,
-  Page,
-  View,
-  Text,
-  StyleSheet,
-  PDFViewer,
-} from '@react-pdf/renderer';
+import { Document, Page, View, Text, StyleSheet } from '@react-pdf/renderer';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -46,23 +37,6 @@ const MyDocument = () => (
       </View>
     </Page>
   </Document>
-);
-
-const CVPdf = () => (
-  <Box>
-    <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
-      {({ blob, url, loading, error }) =>
-        loading ? (
-          'Loading document...'
-        ) : (
-          <Button variant="outlined">Download CV</Button>
-        )
-      }
-    </PDFDownloadLink>
-    <PDFViewer>
-      <MyDocument />
-    </PDFViewer>
-  </Box>
 );
 
 export default MyDocument;
