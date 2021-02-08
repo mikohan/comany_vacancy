@@ -29,10 +29,20 @@ const MyDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
-        <Text>Section #1</Text>
+        <Text>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          unde nobis, reprehenderit tempore eos eum rem sunt! Ipsum culpa
+          voluptatibus magnam magni perferendis, expedita sit veniam officiis
+          dignissimos, sunt quisquam.
+        </Text>
       </View>
       <View style={styles.section}>
-        <Text>Section #2</Text>
+        <Text>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          nulla iusto velit voluptatum sunt totam soluta numquam molestiae,
+          corrupti blanditiis saepe fugiat hic, facere id? Nulla aut voluptas
+          aliquid nemo.
+        </Text>
       </View>
     </Page>
   </Document>
