@@ -3,7 +3,14 @@ import { motion } from 'framer-motion';
 import { durationPage } from '../config';
 
 import { useStyles } from '../styles/AboutPageTestStylesl';
-import { Box, Typography, Button, Grid, Container } from '@material-ui/core';
+import {
+  Box,
+  Typography,
+  Button,
+  Grid,
+  Container,
+  Hidden,
+} from '@material-ui/core';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
@@ -59,11 +66,13 @@ function AboutPageTest() {
         <Grid item container xs={12} spacing={0}>
           <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
-        <Grid item container xs={12} spacing={0}>
-          <Container maxWidth="lg">
-            <ShowCV />
-          </Container>
-        </Grid>
+        <Hidden mdDown>
+          <Grid item container xs={12} spacing={0}>
+            <Container maxWidth="lg">
+              <ShowCV />
+            </Container>
+          </Grid>
+        </Hidden>
       </Grid>
     </motion.div>
   );
