@@ -68,13 +68,9 @@ function AboutPageTest() {
           <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
         <Hidden mdDown>
-          <Grid item container xs={12} spacing={0}>
-            <Box
-              style={{ backgroundColor: 'teal', width: '100%', height: '20vh' }}
-            >
-              djdjdjdj
-            </Box>
-          </Grid>
+          <Box
+            style={{ backgroundColor: 'teal', width: '140%', height: '1vh' }}
+          ></Box>
           <Grid item container xs={12} spacing={0}>
             <Container maxWidth="lg">
               <ShowCV />
