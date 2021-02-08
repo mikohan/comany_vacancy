@@ -1,23 +1,28 @@
 import React from 'react';
-import { Paper, Typography, Grid } from '@material-ui/core';
+import { Paper, Typography, Grid, Divider } from '@material-ui/core';
+import { useStyles } from '../../styles/AboutPageTestStylesl';
 
 interface IProps {
   language: string;
 }
 
 export default function CVComponent({ language }: IProps) {
+  const classes = useStyles();
   return (
     <Paper style={{ padding: '5rem' }}>
       <Grid container spacing={3}>
         <Grid item xs={4}>
-          <Typography variant="h6">Lorem, ipsum dolor sit amet</Typography>
+          <Typography variant="h6">General Skils</Typography>
         </Grid>
         <Grid item xs={8}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-          corporis. Omnis, officia molestiae officiis harum magnam eum itaque
-          nisi eaque labore cumque facere reiciendis voluptates, libero
-          aspernatur. Praesentium, nesciunt quisquam!
+          <Typography variant="body1">
+            Agile, Kanban, Scrum RegExp, Patterns, Git, GitHub, TDD, Data
+            structure, Algorithms
+          </Typography>
         </Grid>
+      </Grid>
+      <Grid item xs={12} className={classes.myDivider}>
+        <Divider />
       </Grid>
     </Paper>
   );

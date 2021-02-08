@@ -45,5 +45,9 @@ export const useStyles = makeStyles((theme) => {
       marginTop: theme.spacing(5),
       marginRight: theme.spacing(1),
     },
+    myDivider: {
+      paddingTop: theme.spacing(3),
+      paddingBottom: theme.spacing(3),
+    },
   };
 });

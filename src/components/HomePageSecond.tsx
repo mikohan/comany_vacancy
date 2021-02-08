@@ -17,7 +17,6 @@ import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
 import { HashLink } from 'react-router-hash-link';
-import ShowCV from './CV/ShowCV';
 import CVComponent from './CV/CVComponent';
 
 function AboutPageTest() {
