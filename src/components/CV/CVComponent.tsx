@@ -31,6 +31,25 @@ export default function CVComponent({ language }: IProps) {
           <Divider />
         </Grid>
         <Grid item xs={4}>
+          <Typography align="left" variant="h2">
+            Vladimir Vostrikov
+          </Typography>
+        </Grid>
+        <Grid item xs={8}>
+          <Typography align="center" variant="h2">
+            Full Stack Developer
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h5">Skills</Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
+        <Grid item xs={4}>
           <Typography variant="h6">General Skils</Typography>
         </Grid>
         <Grid item xs={8}>
