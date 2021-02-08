@@ -8,6 +8,7 @@ import {
   View,
   Text,
   StyleSheet,
+  PDFViewer,
 } from '@react-pdf/renderer';
 
 // Create styles
@@ -15,7 +16,6 @@ const styles = StyleSheet.create({
   page: {
     flexDirection: 'row',
     backgroundColor: 'tomato',
-    width: '100%',
   },
   section: {
     margin: 10,
@@ -56,6 +56,9 @@ const CVPdf = () => (
       }
       <MyDocument />
     </PDFDownloadLink>
+    <PDFViewer>
+      <MyDocument />
+    </PDFViewer>
   </Box>
 );
 
