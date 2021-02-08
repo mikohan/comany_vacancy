@@ -59,7 +59,6 @@ function AboutPageTest() {
           </Box>
         </Grid>
         <Grid item xs={12}>
-          <Divider />
           <Box id="video" className={classes.betweenRow}>
             <Typography className={classes.betweenRowFont} variant="h4">
               {betweenRow}
