@@ -9,6 +9,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
 import { HashLink } from 'react-router-hash-link';
 import CVPdf from './CV/CVPdf';
+import DownloadCV from './CV/DownloadCV';
 
 function AboutPageTest() {
   const classes = useStyles();
@@ -43,6 +44,7 @@ function AboutPageTest() {
                 <Button style={{ marginTop: '30px' }} variant="outlined">
                   {learnMore}...
                 </Button>
+                <DownloadCV />
               </HashLink>
             </Box>
           </Box>
