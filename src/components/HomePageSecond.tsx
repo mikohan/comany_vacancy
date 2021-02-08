@@ -11,6 +11,7 @@ import {
   Container,
   Hidden,
   Paper,
+  Divider,
 } from '@material-ui/core';
 import { translateText } from '../translate/texts';
 import { ThemeContext } from '../context/ThemeContext';
@@ -58,19 +59,27 @@ function AboutPageTest() {
           </Box>
         </Grid>
         <Grid item xs={12}>
+          <Divider />
           <Box id="video" className={classes.betweenRow}>
             <Typography className={classes.betweenRowFont} variant="h4">
               {betweenRow}
             </Typography>
           </Box>
+          <Divider />
         </Grid>
         <Grid item container xs={12} spacing={0}>
           <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
         <Hidden mdDown>
-          <Box
-            style={{ backgroundColor: 'teal', width: '140%', height: '1vh' }}
-          ></Box>
+          <Grid item xs={12}>
+            <Divider />
+            <Box id="video" className={classes.betweenRow}>
+              <Typography className={classes.betweenRowFont} variant="h4">
+                {betweenRow}
+              </Typography>
+            </Box>
+            <Divider />
+          </Grid>
           <Grid item container xs={12} spacing={0}>
             <Container maxWidth="lg">
               <ShowCV />
