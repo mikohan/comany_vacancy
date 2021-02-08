@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
+import { Link } from 'react-router-dom';
 
 import { useStyles } from '../styles/AboutPageTestStylesl';
 import {
@@ -17,7 +18,6 @@ import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
 import { HashLink } from 'react-router-hash-link';
 import ShowCV from './CV/ShowCV';
-import DownloadCV from './CV/DownloadCV';
 
 function AboutPageTest() {
   const classes = useStyles();
@@ -55,7 +55,12 @@ function AboutPageTest() {
                   {learnMore}...
                 </Button>
               </HashLink>
-              <DownloadCV text={CVDownload} />
+
+              <Link to="/Resume.pdf" target="_blank" download>
+                <Button className={classes.mainButtons} variant="outlined">
+                  {CVDownload}
+                </Button>
+              </Link>
             </Box>
           </Box>
         </Grid>
@@ -81,6 +86,9 @@ function AboutPageTest() {
           </Grid>
           <Grid item container xs={12} spacing={0}>
             <Container maxWidth="lg">
+              <Link to="/Resume.pdf" target="_blank" download>
+                <Button variant="outlined">Download</Button>
+              </Link>
               <ShowCV />
             </Container>
           </Grid>
