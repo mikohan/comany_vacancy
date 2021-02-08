@@ -32,6 +32,7 @@ function AboutPageTest() {
     learnMore,
     betweenRow,
     secondRowText,
+    CVHeader,
   } = translateText[language];
   return (
     <motion.div
@@ -64,7 +65,6 @@ function AboutPageTest() {
               {betweenRow}
             </Typography>
           </Box>
-          <Divider />
         </Grid>
         <Grid item container xs={12} spacing={0}>
           <HomePageSecondRow secondRowText={secondRowText} />
@@ -74,7 +74,7 @@ function AboutPageTest() {
             <Divider />
             <Box id="video" className={classes.betweenRow}>
               <Typography className={classes.betweenRowFont} variant="h4">
-                {betweenRow}
+                {CVHeader}
               </Typography>
             </Box>
             <Divider />
