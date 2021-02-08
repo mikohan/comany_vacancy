@@ -49,5 +49,9 @@ export const useStyles = makeStyles((theme) => {
       paddingTop: theme.spacing(3),
       paddingBottom: theme.spacing(3),
     },
+    myChip: {
+      marginRight: theme.spacing(1),
+      marginBottom: theme.spacing(1),
+    },
   };
 });
