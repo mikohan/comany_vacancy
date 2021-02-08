@@ -82,7 +82,6 @@ function AboutPageTest() {
                 {CVHeader}
               </Typography>
             </Box>
-            <Divider />
           </Grid>
           <Grid item container xs={12} spacing={0}>
             <Container maxWidth="lg">
