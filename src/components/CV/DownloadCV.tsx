@@ -4,11 +4,14 @@ import MyDocument from './CVPdf';
 
 import { PDFDownloadLink } from '@react-pdf/renderer';
 
-const CVPdf = () => (
+interface IProps {
+  text: string;
+}
+const CVPdf = ({ text }: IProps) => (
   <Button variant="outlined">
     <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
       {({ blob, url, loading, error }) =>
-        loading ? 'Loading document...' : 'Download CV'
+        loading ? 'Loading document...' : text
       }
     </PDFDownloadLink>
   </Button>
