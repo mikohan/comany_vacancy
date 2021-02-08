@@ -41,5 +41,9 @@ export const useStyles = makeStyles((theme) => {
     betweenRowFont: {
       fontSize: '2.4rem',
     },
+    mainButtons: {
+      marginTop: theme.spacing(5),
+      marginRight: theme.spacing(1),
+    },
   };
 });

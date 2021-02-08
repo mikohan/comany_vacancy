@@ -51,7 +51,7 @@ function AboutPageTest() {
               </Typography>
               <Typography variant="h4">{mainHeading}</Typography>
               <HashLink to="#video">
-                <Button style={{ marginTop: '30px' }} variant="outlined">
+                <Button className={classes.mainButtons} variant="outlined">
                   {learnMore}...
                 </Button>
               </HashLink>
