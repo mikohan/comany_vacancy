@@ -18,6 +18,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
 import { HashLink } from 'react-router-hash-link';
 import ShowCV from './CV/ShowCV';
+import CVComponent from './CV/CVComponent';
 
 function AboutPageTest() {
   const classes = useStyles();
@@ -86,10 +87,7 @@ function AboutPageTest() {
           </Grid>
           <Grid item container xs={12} spacing={0}>
             <Container maxWidth="lg">
-              <Link to="/Resume.pdf" target="_blank" download>
-                <Button variant="outlined">Download</Button>
-              </Link>
-              <ShowCV />
+              <CVComponent />
             </Container>
           </Grid>
         </Hidden>
