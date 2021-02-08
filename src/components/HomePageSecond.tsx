@@ -69,7 +69,11 @@ function AboutPageTest() {
         </Grid>
         <Hidden mdDown>
           <Grid item container xs={12} spacing={0}>
-            <Paper style={{ width: '100%', height: '20%' }}></Paper>
+            <Box
+              style={{ backgroundColor: 'teal', width: '100%', height: '20vh' }}
+            >
+              djdjdjdj
+            </Box>
           </Grid>
           <Grid item container xs={12} spacing={0}>
             <Container maxWidth="lg">
