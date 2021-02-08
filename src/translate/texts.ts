@@ -7,6 +7,7 @@ interface TransText {
 export const translateText: TransText = {
   english: {
     CVHeader: 'My Resume',
+    CVDownload: 'Download CV',
     myName: 'My name is',
     name: 'Vladimir Vostrikov',
     mainHeading:
@@ -345,6 +346,7 @@ export const translateText: TransText = {
     myName: 'Меня зовут',
     name: 'Владимир Востриков',
     CVHeader: 'Моё резюме',
+    CVDownload: 'Скачать резюме',
     mainHeading:
       'Я разработчик Full Stack с огромными знаниями в области интернет-маркетинга и опытом работы в сфере электронной коммерции.',
     learnMore: 'Узнать больше',
@@ -662,6 +664,7 @@ export const translateText: TransText = {
     myName: 'Jmenuji se ',
     name: 'Vladimir Vostrikov',
     CVHeader: 'Můj životopis',
+    CVDownload: 'Download CV',
     mainHeading:
       'Jsem vývojář Full Stack s obrovskými znalostmi online marketingu a zkušeností v oblasti elektronického obchodování.',
     learnMore: 'Dozvědět se více',

@@ -1,21 +1,17 @@
 import React from 'react';
-import { Box, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import MyDocument from './CVPdf';
 
 import { PDFDownloadLink } from '@react-pdf/renderer';
 
 const CVPdf = () => (
-  <Box>
+  <Button variant="outlined">
     <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
       {({ blob, url, loading, error }) =>
-        loading ? (
-          'Loading document...'
-        ) : (
-          <Button variant="outlined">Download CV</Button>
-        )
+        loading ? 'Loading document...' : 'Download CV'
       }
     </PDFDownloadLink>
-  </Box>
+  </Button>
 );
 
 export default CVPdf;

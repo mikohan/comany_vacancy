@@ -54,6 +54,7 @@ function AboutPageTest() {
                   {learnMore}...
                 </Button>
               </HashLink>
+              <Button variant="outlined">Some text</Button>
               <DownloadCV />
             </Box>
           </Box>
