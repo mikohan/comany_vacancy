@@ -10,7 +10,6 @@ import {
   Grid,
   Container,
   Hidden,
-  Paper,
   Divider,
 } from '@material-ui/core';
 import { translateText } from '../translate/texts';
