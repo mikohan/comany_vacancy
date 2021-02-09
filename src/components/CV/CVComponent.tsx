@@ -2,6 +2,7 @@ import React from 'react';
 import { Paper, Typography, Grid, Divider, Chip } from '@material-ui/core';
 import { useStyles } from '../../styles/AboutPageTestStylesl';
 import DoneIcon from '@material-ui/icons/Done';
+import Resume from '../../translate/resume';
 
 interface IProps {
   language: string;
@@ -83,6 +84,28 @@ export default function CVComponent({ language }: IProps) {
         <Grid item xs={8}>
           <Typography variant="body1">
             {skillsGeneral.map((skill: string) => (
+              <Chip
+                className={classes.myChip}
+                label={skill}
+                clickable
+                deleteIcon={<DoneIcon />}
+                variant="outlined"
+              />
+            ))}
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
+        <Grid item xs={4}>
+          <Typography variant="h6">Front End Skils</Typography>
+        </Grid>
+        <Grid item xs={8}>
+          <Typography variant="body1">
+            {skillsFront[0].map((skill: string) => (
               <Chip
                 className={classes.myChip}
                 label={skill}
