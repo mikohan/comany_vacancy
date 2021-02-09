@@ -19,7 +19,7 @@ export const translateHeader: TransHeader = {
     blog: 'Blog',
     portfolio: 'Portfolio',
     certificates: 'Certificates',
-    contacts: 'Contakts',
+    contacts: 'Contacts',
   },
   russian: {
     logoHome: 'Главная',
