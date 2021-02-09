@@ -20,9 +20,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
-import EmojiPeopleOutlined from '@material-ui/icons/EmojiPeopleOutlined';
-
-import FavoriteBorderOutlined from '@material-ui/icons/FavoriteBorderOutlined';
 import DevicesOtherOutlined from '@material-ui/icons/DevicesOtherOutlined';
 import DnsOutlined from '@material-ui/icons/DnsOutlined';
 
@@ -44,6 +41,9 @@ import { translateHeader } from '../translate/header';
 import { isDrawerOpen } from '../config';
 import HomeOutlined from '@material-ui/icons/HomeOutlined';
 import { showBlog, showMarketing } from '../config';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import CardMembershipIcon from '@material-ui/icons/CardMembership';
+import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 
 export default function PersistentDrawerLeft(): JSX.Element {
   const context = useContext(ThemeContext);
@@ -328,7 +328,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
             <Link className={classes.drawerLink} to="/portfolio">
               <ListItem button>
                 <ListItemIcon>
-                  <EmojiPeopleOutlined />
+                  <ImportContactsIcon />
                 </ListItemIcon>
                 <ListItemText primary={portfolio} />
               </ListItem>
@@ -347,9 +347,17 @@ export default function PersistentDrawerLeft(): JSX.Element {
             <Link className={classes.drawerLink} to="/certificates">
               <ListItem button>
                 <ListItemIcon>
-                  <FavoriteBorderOutlined />
+                  <CardMembershipIcon />
                 </ListItemIcon>
                 <ListItemText primary={certificates} />
+              </ListItem>
+            </Link>
+            <Link className={classes.drawerLink} to="/contacts">
+              <ListItem button>
+                <ListItemIcon>
+                  <ContactMailIcon />
+                </ListItemIcon>
+                <ListItemText primary={contacts} />
               </ListItem>
             </Link>
             {showBlog && (
