@@ -53,8 +53,18 @@ export const resume = {
       'Appimage',
     ],
   ],
+  generalSkills: [
+    ['Agile', 'Kanban', 'Scrum'],
+    [
+      'Software Architecture',
+      'Patterns',
+      'TDD',
+      'Data structure',
+      'Algorithms',
+    ],
+    ['Git', 'GitHub'],
+  ],
   marketingSkills: [],
-  generalSkills: [],
   otherSkills: [],
   ide: [],
 };
