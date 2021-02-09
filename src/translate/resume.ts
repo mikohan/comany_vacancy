@@ -29,7 +29,12 @@ export const resume = {
     ['Object Detection', 'Face recognition', 'Image Classification'],
     ['Pillow', 'OpenCV', 'Matplotlib', 'Anaconda'],
   ],
-  dbSkills: [],
+  dbSkills: [
+    ['SQL advanced', 'MySQL', 'PostgreSQL', 'SQLite'],
+    ['Elasticsearch', 'MongoDB', 'FireBase'],
+    ['Big DB performance optimization'],
+    ['SQLAlchemy', 'DjangoORM', 'Peewee'],
+  ],
   osSkills: [],
   marketingSkills: [],
   generalSkills: [],
