@@ -7,7 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
-import { Paper, Typography, Container } from '@material-ui/core';
+import { Box, Paper, Typography, Container } from '@material-ui/core';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -15,34 +15,35 @@ const useStyles = makeStyles((theme: Theme) =>
       maxWidth: 360,
       backgroundColor: theme.palette.background.paper,
     },
+    contactComp: {
+      paddingTop: theme.spacing(5),
+    },
   })
 );
 
 export default function Contacts() {
+  const classes = useStyles();
+
   return (
     <Container maxWidth="lg">
-      <Paper>
-        <Typography variant="h3">Contacts page</Typography>
-        <List component="nav" aria-label="main mailbox folders">
-          <ListItem button>
-            <ListItemIcon>
-              <InboxIcon />
-            </ListItemIcon>
-            <ListItemText primary="Inbox" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon>
-              <DraftsIcon />
-            </ListItemIcon>
-            <ListItemText primary="Drafts" />
-          </ListItem>
-        </List>
-        <Divider />
-        <List component="nav" aria-label="secondary mailbox folders">
-          <ListItem button>
-            <ListItemText primary="Trash" />
-          </ListItem>
-        </List>
+      <Paper className={classes.contactComp}>
+        <Box align="center">
+          <Typography variant="h4">Contact Me</Typography>
+          <List component="nav" aria-label="main mailbox folders">
+            <ListItem button>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary="Inbox" />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <DraftsIcon />
+              </ListItemIcon>
+              <ListItemText primary="Drafts" />
+            </ListItem>
+          </List>
+        </Box>
       </Paper>
     </Container>
   );
