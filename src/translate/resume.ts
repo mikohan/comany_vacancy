@@ -1,7 +1,6 @@
 export const resume = {
   frontSkills: [
     [
-      'Advanced',
       'Typescript',
       'Javascript',
       'JEST',
