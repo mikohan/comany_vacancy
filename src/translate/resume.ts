@@ -72,6 +72,8 @@ export const resume = {
     ],
     ['AdWords advanced level', 'Google Analytics', 'SEO', 'SMM', 'SERP'],
   ],
-  otherSkills: [],
-  ide: [],
+  otherSkills: [
+    ['Gimp', 'Inkscape', 'Davinci Resolve', 'Kdenlive', 'Ffmpeg', 'Imagemagic'],
+  ],
+  ide: [['Vim', 'Nvim', 'Emacs', 'VSCode', 'Eclipce']],
 };

@@ -202,6 +202,69 @@ export default function CVComponent({ language }: IProps) {
         <Grid item xs={12} className={classes.myDivider}>
           <Divider />
         </Grid>
+        <Grid item xs={4}>
+          <Typography variant="h6">Marketing Skills</Typography>
+        </Grid>
+        <Grid item xs={8}>
+          {resume.marketingSkills.map((line: string[]) => (
+            <Typography align="left" variant="body1">
+              {line.map((skill: string) => (
+                <Chip
+                  className={classes.myChip}
+                  label={skill}
+                  clickable
+                  deleteIcon={<DoneIcon />}
+                  variant="outlined"
+                />
+              ))}
+            </Typography>
+          ))}
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
+        <Grid item xs={4}>
+          <Typography variant="h6">Other Skills</Typography>
+        </Grid>
+        <Grid item xs={8}>
+          {resume.otherSkills.map((line: string[]) => (
+            <Typography align="left" variant="body1">
+              {line.map((skill: string) => (
+                <Chip
+                  className={classes.myChip}
+                  label={skill}
+                  clickable
+                  deleteIcon={<DoneIcon />}
+                  variant="outlined"
+                />
+              ))}
+            </Typography>
+          ))}
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
+        <Grid item xs={4}>
+          <Typography variant="h6">IDE</Typography>
+        </Grid>
+        <Grid item xs={8}>
+          {resume.ide.map((line: string[]) => (
+            <Typography align="left" variant="body1">
+              {line.map((skill: string) => (
+                <Chip
+                  className={classes.myChip}
+                  label={skill}
+                  clickable
+                  deleteIcon={<DoneIcon />}
+                  variant="outlined"
+                />
+              ))}
+            </Typography>
+          ))}
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
       </Grid>
     </Paper>
   );
