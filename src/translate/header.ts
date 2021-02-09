@@ -20,6 +20,7 @@ export const translateHeader: TransHeader = {
     portfolio: 'Portfolio',
     certificates: 'Certificates',
     contacts: 'Contacts',
+    contactsText: 'Please Feel Free to Contact Me Any Time',
   },
   russian: {
     logoHome: 'Главная',
@@ -38,6 +39,7 @@ export const translateHeader: TransHeader = {
     portfolio: 'Портфолио',
     certificates: 'Сертификаты',
     contacts: 'Контакты',
+    contactsText: 'Пожалуйста звоните или пишите в любое время',
   },
   czech: {
     logoHome: 'Home',
@@ -56,5 +58,6 @@ export const translateHeader: TransHeader = {
     portfolio: 'Portfolio',
     certificates: 'Certificates',
     contacts: 'Kontakty',
+    contactsText: 'Please Feel Free to Contact Me Any Time',
   },
 };
