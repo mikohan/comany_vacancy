@@ -1,0 +1,25 @@
+export const resume = {
+  frontSkills: [
+    [
+      'Advanced',
+      'Typescript',
+      'Javascript',
+      'JEST',
+      'OOP',
+      'Functional Programming',
+      'Design Patterns',
+    ],
+    ['React', 'Vue', 'NextJS', 'NuxtJS', 'Redux', 'Vuex'],
+    ['React Native', 'Flutter'],
+    ['Node JS', 'Deno', 'MERN', 'Apollo', 'GraphQL', 'SocketIO'],
+    ['Npm', 'Yarn', 'Webpack'],
+    ['HTML', 'CSS', 'SASS', 'Bootstrap', 'Material-UI', 'Vuetify', 'Gulp'],
+  ],
+  backSkills: [],
+  dbSkills: [],
+  osSkills: [],
+  marketingSkills: [],
+  generalSkills: [],
+  otherSkills: [],
+  ide: [],
+};
