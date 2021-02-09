@@ -58,6 +58,6 @@ export const translateHeader: TransHeader = {
     portfolio: 'Portfolio',
     certificates: 'Certificates',
     contacts: 'Kontakty',
-    contactsText: 'Please Feel Free to Contact Me Any Time',
+    contactsText: 'Neváhejte mě kdykoli kontaktovat',
   },
 };
