@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
     contactComp: {
       paddingTop: theme.spacing(5),
       paddingBottom: theme.spacing(5),
+      paddingLeft: theme.spacing(5),
     },
     contactBox: {
       width: '800px',
@@ -40,7 +41,7 @@ export default function Contacts() {
     <Container maxWidth="lg">
       <Paper className={classes.contactComp}>
         <Box className={classes.contactBox}>
-          <Grid container spacing={3}>
+          <Grid container item xs={12}>
             <Grid item xs={12}>
               <Typography variant="h4">Contact Me</Typography>
             </Grid>
