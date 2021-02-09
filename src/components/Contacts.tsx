@@ -42,89 +42,109 @@ export default function Contacts() {
       <Paper className={classes.contactComp}>
         <Box className={classes.contactBox}>
           <Grid container item xs={12}>
-            <Grid item xs={12}>
-              <Typography variant="h4">Contact Me</Typography>
+            <Grid className={classes.contactComp} item xs={12}>
+              <Typography variant="h4">
+                Feel free to contact me any time
+              </Typography>
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <List component="nav" aria-label="main mailbox folders">
-                <a className={classes.aLink} href="tel:79162151508">
-                  <ListItem button>
-                    <ListItemIcon>
-                      <PhoneIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="+7.916.215.1508" />
-                  </ListItem>
-                </a>
-                <a
-                  className={classes.aLink}
-                  href="whatsapp://79162151508"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ListItem button>
-                    <ListItemIcon>
-                      <WhatsAppIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="+7.916.215.1508" />
-                  </ListItem>
-                </a>
-                <a
-                  className={classes.aLink}
-                  href="mailto:angara99@gmail.com"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <ListItem button>
-                    <ListItemIcon>
-                      <AlternateEmailIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="angara99@gmail.com" />
-                  </ListItem>
-                </a>
-              </List>
+            <Grid
+              item
+              container
+              xs={12}
+              sm={6}
+              alignItems="center"
+              justify="center"
+            >
+              <Box>
+                <List component="nav" aria-label="main mailbox folders">
+                  <a className={classes.aLink} href="tel:79162151508">
+                    <ListItem button>
+                      <ListItemIcon>
+                        <PhoneIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="+7.916.215.1508" />
+                    </ListItem>
+                  </a>
+                  <a
+                    className={classes.aLink}
+                    href="whatsapp://79162151508"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ListItem button>
+                      <ListItemIcon>
+                        <WhatsAppIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="+7.916.215.1508" />
+                    </ListItem>
+                  </a>
+                  <a
+                    className={classes.aLink}
+                    href="mailto:angara99@gmail.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <ListItem button>
+                      <ListItemIcon>
+                        <AlternateEmailIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="angara99@gmail.com" />
+                    </ListItem>
+                  </a>
+                </List>
+              </Box>
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <List component="nav" aria-label="main mailbox folders">
-                <a
-                  className={classes.aLink}
-                  href="https://www.linkedin.com/in/vladimir-vostrikov-7944b040/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ListItem button>
-                    <ListItemIcon>
-                      <LinkedInIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="LinkedIn" />
-                  </ListItem>
-                </a>
-                <a
-                  className={classes.aLink}
-                  href="https://www.facebook.com/vladimir.vs.39/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ListItem button>
-                    <ListItemIcon>
-                      <FacebookIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Facebook" />
-                  </ListItem>
-                </a>
-                <a
-                  className={classes.aLink}
-                  href="https://github.com/mikohan"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ListItem button>
-                    <ListItemIcon>
-                      <GitHubIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="GitHub" />
-                  </ListItem>
-                </a>
-              </List>
+            <Grid
+              container
+              item
+              xs={12}
+              sm={6}
+              alignItems="center"
+              justify="center"
+            >
+              <Box>
+                <List component="nav" aria-label="main mailbox folders">
+                  <a
+                    className={classes.aLink}
+                    href="https://www.linkedin.com/in/vladimir-vostrikov-7944b040/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ListItem button>
+                      <ListItemIcon>
+                        <LinkedInIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="LinkedIn" />
+                    </ListItem>
+                  </a>
+                  <a
+                    className={classes.aLink}
+                    href="https://www.facebook.com/vladimir.vs.39/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ListItem button>
+                      <ListItemIcon>
+                        <FacebookIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="Facebook" />
+                    </ListItem>
+                  </a>
+                  <a
+                    className={classes.aLink}
+                    href="https://github.com/mikohan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ListItem button>
+                      <ListItemIcon>
+                        <GitHubIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="GitHub" />
+                    </ListItem>
+                  </a>
+                </List>
+              </Box>
             </Grid>
           </Grid>
         </Box>
