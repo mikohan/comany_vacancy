@@ -18,6 +18,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import HomePageSecondRow from './HomePageSecondRow';
 import { HashLink } from 'react-router-hash-link';
 import CVComponent from './CV/CVComponent';
+import Contacts from './Contacts';
 
 function AboutPageTest() {
   const classes = useStyles();
@@ -102,6 +103,9 @@ function AboutPageTest() {
             </Container>
           </Grid>
         </Hidden>
+        <Grid item xs={12}>
+          <Contacts />
+        </Grid>
       </Grid>
     </motion.div>
   );
