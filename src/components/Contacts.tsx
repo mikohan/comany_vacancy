@@ -51,7 +51,12 @@ export default function Contacts() {
                     <ListItemText primary="+7.916.215.1508" />
                   </ListItem>
                 </a>
-                <a className={classes.aLink} href="whatsapp://79162151508">
+                <a
+                  className={classes.aLink}
+                  href="whatsapp://79162151508"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <ListItem button>
                     <ListItemIcon>
                       <WhatsAppIcon />
@@ -62,6 +67,7 @@ export default function Contacts() {
                 <a
                   className={classes.aLink}
                   href="mailto:angara99@gmail.com"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <ListItem button>
@@ -81,12 +87,19 @@ export default function Contacts() {
                   </ListItemIcon>
                   <ListItemText primary="+7.916.215.1508" />
                 </ListItem>
-                <ListItem button>
-                  <ListItemIcon>
-                    <WhatsAppIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="+7.916.215.1508" />
-                </ListItem>
+                <a
+                  className={classes.aLink}
+                  href="https://www.facebook.com/vladimir.vs.39/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem button>
+                    <ListItemIcon>
+                      <WhatsAppIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="+7.916.215.1508" />
+                  </ListItem>
+                </a>
                 <ListItem button>
                   <ListItemIcon>
                     <AlternateEmailIcon />
