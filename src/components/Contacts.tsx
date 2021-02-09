@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: theme.spacing(5),
     },
     contactBox: {
-      width: '800px'
+      width: '800px',
       margin: '0 auto',
     },
   })
