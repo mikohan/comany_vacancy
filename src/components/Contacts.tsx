@@ -34,27 +34,29 @@ export default function Contacts() {
     <Container maxWidth="lg">
       <Paper className={classes.contactComp}>
         <Box className={classes.contactBox}>
-          <Typography variant="h4">Contact Me</Typography>
-          <List component="nav" aria-label="main mailbox folders">
-            <ListItem button>
-              <ListItemIcon>
-                <PhoneIcon />
-              </ListItemIcon>
-              <ListItemText primary="+7.916.215.1508" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <WhatsAppIcon />
-              </ListItemIcon>
-              <ListItemText primary="+7.916.215.1508" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <AlternateEmailIcon />
-              </ListItemIcon>
-              <ListItemText primary="angara99@gmail.com" />
-            </ListItem>
-          </List>
+          <Grid container spacing={3}>
+            <Typography variant="h4">Contact Me</Typography>
+            <List component="nav" aria-label="main mailbox folders">
+              <ListItem button>
+                <ListItemIcon>
+                  <PhoneIcon />
+                </ListItemIcon>
+                <ListItemText primary="+7.916.215.1508" />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon>
+                  <WhatsAppIcon />
+                </ListItemIcon>
+                <ListItemText primary="+7.916.215.1508" />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon>
+                  <AlternateEmailIcon />
+                </ListItemIcon>
+                <ListItemText primary="angara99@gmail.com" />
+              </ListItem>
+            </List>
+          </Grid>
         </Box>
       </Paper>
     </Container>
