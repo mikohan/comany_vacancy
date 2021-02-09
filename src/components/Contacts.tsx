@@ -43,18 +43,22 @@ export default function Contacts() {
             </Grid>
             <Grid item xs={12} sm={6}>
               <List component="nav" aria-label="main mailbox folders">
-                <ListItem button>
-                  <ListItemIcon>
-                    <PhoneIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="+7.916.215.1508" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemIcon>
-                    <WhatsAppIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="+7.916.215.1508" />
-                </ListItem>
+                <a className={classes.aLink} href="tel:79162151508">
+                  <ListItem button>
+                    <ListItemIcon>
+                      <PhoneIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="+7.916.215.1508" />
+                  </ListItem>
+                </a>
+                <a className={classes.aLink} href="whatsapp://79162151508">
+                  <ListItem button>
+                    <ListItemIcon>
+                      <WhatsAppIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="+7.916.215.1508" />
+                  </ListItem>
+                </a>
                 <a
                   className={classes.aLink}
                   href="mailto:angara99@gmail.com"
