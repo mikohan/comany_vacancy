@@ -1,13 +1,15 @@
 import React from 'react';
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
-import ListItem, { ListItemProps } from '@material-ui/core/ListItem';
+import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import { Box, Paper, Typography, Container } from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -17,6 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     contactComp: {
       paddingTop: theme.spacing(5),
+      paddingBottom: theme.spacing(5),
     },
     contactBox: {
       width: '800px',
