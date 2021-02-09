@@ -182,10 +182,10 @@ export default function CVComponent({ language }: IProps) {
           <Divider />
         </Grid>
         <Grid item xs={4}>
-          <Typography variant="h6">OS Skills</Typography>
+          <Typography variant="h6">General Skills</Typography>
         </Grid>
         <Grid item xs={8}>
-          {resume.osSkills.map((line: string[]) => (
+          {resume.generalSkills.map((line: string[]) => (
             <Typography align="left" variant="body1">
               {line.map((skill: string) => (
                 <Chip
