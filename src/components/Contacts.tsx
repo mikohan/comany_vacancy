@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme: Theme) =>
       width: '800px',
       margin: '0 auto',
     },
+    aLink: {
+      color: 'inherit',
+    },
   })
 );
 
@@ -35,27 +38,59 @@ export default function Contacts() {
       <Paper className={classes.contactComp}>
         <Box className={classes.contactBox}>
           <Grid container spacing={3}>
-            <Typography variant="h4">Contact Me</Typography>
-            <List component="nav" aria-label="main mailbox folders">
-              <ListItem button>
-                <ListItemIcon>
-                  <PhoneIcon />
-                </ListItemIcon>
-                <ListItemText primary="+7.916.215.1508" />
-              </ListItem>
-              <ListItem button>
-                <ListItemIcon>
-                  <WhatsAppIcon />
-                </ListItemIcon>
-                <ListItemText primary="+7.916.215.1508" />
-              </ListItem>
-              <ListItem button>
-                <ListItemIcon>
-                  <AlternateEmailIcon />
-                </ListItemIcon>
-                <ListItemText primary="angara99@gmail.com" />
-              </ListItem>
-            </List>
+            <Grid item xs={12}>
+              <Typography variant="h4">Contact Me</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <List component="nav" aria-label="main mailbox folders">
+                <ListItem button>
+                  <ListItemIcon>
+                    <PhoneIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="+7.916.215.1508" />
+                </ListItem>
+                <ListItem button>
+                  <ListItemIcon>
+                    <WhatsAppIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="+7.916.215.1508" />
+                </ListItem>
+                <a
+                  className={classes.aLink}
+                  href="mailto:angara99@gmail.com"
+                  target="_blank"
+                >
+                  <ListItem button>
+                    <ListItemIcon>
+                      <AlternateEmailIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="angara99@gmail.com" />
+                  </ListItem>
+                </a>
+              </List>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <List component="nav" aria-label="main mailbox folders">
+                <ListItem button>
+                  <ListItemIcon>
+                    <PhoneIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="+7.916.215.1508" />
+                </ListItem>
+                <ListItem button>
+                  <ListItemIcon>
+                    <WhatsAppIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="+7.916.215.1508" />
+                </ListItem>
+                <ListItem button>
+                  <ListItemIcon>
+                    <AlternateEmailIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="angara99@gmail.com" />
+                </ListItem>
+              </List>
+            </Grid>
           </Grid>
         </Box>
       </Paper>
