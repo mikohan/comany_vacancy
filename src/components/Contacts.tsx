@@ -4,9 +4,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
-import InboxIcon from '@material-ui/icons/Inbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
+import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import { Box, Paper, Typography, Container } from '@material-ui/core';
 import PhoneIcon from '@material-ui/icons/Phone';
 
@@ -39,15 +38,21 @@ export default function Contacts() {
           <List component="nav" aria-label="main mailbox folders">
             <ListItem button>
               <ListItemIcon>
-                <InboxIcon />
+                <PhoneIcon />
               </ListItemIcon>
-              <ListItemText primary="Inbox" />
+              <ListItemText primary="+7.916.215.1508" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
-                <DraftsIcon />
+                <WhatsAppIcon />
               </ListItemIcon>
-              <ListItemText primary="Drafts" />
+              <ListItemText primary="+7.916.215.1508" />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <AlternateEmailIcon />
+              </ListItemIcon>
+              <ListItemText primary="angara99@gmail.com" />
             </ListItem>
           </List>
         </Box>
