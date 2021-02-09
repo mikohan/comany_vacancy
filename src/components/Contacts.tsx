@@ -9,6 +9,8 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import { Box, Paper, Typography, Container, Grid } from '@material-ui/core';
 import PhoneIcon from '@material-ui/icons/Phone';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -90,7 +92,20 @@ export default function Contacts() {
                 >
                   <ListItem button>
                     <ListItemIcon>
-                      <WhatsAppIcon />
+                      <LinkedInIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="LinkedIn" />
+                  </ListItem>
+                </a>
+                <a
+                  className={classes.aLink}
+                  href="https://www.facebook.com/vladimir.vs.39/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem button>
+                    <ListItemIcon>
+                      <FacebookIcon />
                     </ListItemIcon>
                     <ListItemText primary="Facebook" />
                   </ListItem>
@@ -103,22 +118,9 @@ export default function Contacts() {
                 >
                   <ListItem button>
                     <ListItemIcon>
-                      <WhatsAppIcon />
+                      <GitHubIcon />
                     </ListItemIcon>
-                    <ListItemText primary="+7.916.215.1508" />
-                  </ListItem>
-                </a>
-                <a
-                  className={classes.aLink}
-                  href="https://www.facebook.com/vladimir.vs.39/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ListItem button>
-                    <ListItemIcon>
-                      <WhatsAppIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="+7.916.215.1508" />
+                    <ListItemText primary="GitHub" />
                   </ListItem>
                 </a>
               </List>
