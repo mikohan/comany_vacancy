@@ -56,7 +56,11 @@ function AboutPageTest() {
                 </Button>
               </HashLink>
 
-              <Link to="/Resume.pdf" target="_blank" download>
+              <Link
+                to="/Vostrikov_Vladimir_Resume.pdf"
+                target="_blank"
+                download
+              >
                 <Button className={classes.mainButtons} variant="outlined">
                   {CVDownload}
                 </Button>

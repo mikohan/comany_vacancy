@@ -53,5 +53,12 @@ export const useStyles = makeStyles((theme) => {
       marginRight: theme.spacing(1),
       marginBottom: theme.spacing(1),
     },
+    fullStackDeveloper: {
+      fontSize: '3rem',
+      fontWeight: 300,
+    },
+    fontWght: {
+      fontWeight: 300,
+    },
   };
 });
