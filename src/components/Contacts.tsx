@@ -8,6 +8,7 @@ import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import { Box, Paper, Typography, Container, Grid } from '@material-ui/core';
 import PhoneIcon from '@material-ui/icons/Phone';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -81,12 +82,19 @@ export default function Contacts() {
             </Grid>
             <Grid item xs={12} sm={6}>
               <List component="nav" aria-label="main mailbox folders">
-                <ListItem button>
-                  <ListItemIcon>
-                    <PhoneIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="+7.916.215.1508" />
-                </ListItem>
+                <a
+                  className={classes.aLink}
+                  href="https://www.facebook.com/vladimir.vs.39/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem button>
+                    <ListItemIcon>
+                      <WhatsAppIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Facebook" />
+                  </ListItem>
+                </a>
                 <a
                   className={classes.aLink}
                   href="https://www.facebook.com/vladimir.vs.39/"
@@ -100,12 +108,19 @@ export default function Contacts() {
                     <ListItemText primary="+7.916.215.1508" />
                   </ListItem>
                 </a>
-                <ListItem button>
-                  <ListItemIcon>
-                    <AlternateEmailIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="angara99@gmail.com" />
-                </ListItem>
+                <a
+                  className={classes.aLink}
+                  href="https://www.facebook.com/vladimir.vs.39/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem button>
+                    <ListItemIcon>
+                      <WhatsAppIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="+7.916.215.1508" />
+                  </ListItem>
+                </a>
               </List>
             </Grid>
           </Grid>
