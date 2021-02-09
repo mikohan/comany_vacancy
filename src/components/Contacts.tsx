@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Typography } from '@material-ui/core';
+import { Paper, Typography } from '@material-ui/core';
 
 export default function Contacts() {
   return (
