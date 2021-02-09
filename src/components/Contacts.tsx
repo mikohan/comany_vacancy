@@ -6,7 +6,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import { Box, Paper, Typography, Container } from '@material-ui/core';
+import { Box, Paper, Typography, Container, Grid } from '@material-ui/core';
 import PhoneIcon from '@material-ui/icons/Phone';
 
 const useStyles = makeStyles((theme: Theme) =>
