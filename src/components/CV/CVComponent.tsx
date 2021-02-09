@@ -265,6 +265,26 @@ export default function CVComponent({ language }: IProps) {
         <Grid item xs={12} className={classes.myDivider}>
           <Divider />
         </Grid>
+        <Grid item xs={12}>
+          <Typography align="left" variant="h4">
+            Education
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={8}>
+          <Typography align="left" variant="h6">
+            IRKUTSK NATIONAL RESEARCH TECHNICAL UNIVERSITY
+          </Typography>
+          <Typography align="left" variant="body1">
+            Master of Mechanical and Electrical Engineering
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
       </Grid>
     </Paper>
   );
