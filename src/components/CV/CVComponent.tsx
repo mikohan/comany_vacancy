@@ -139,6 +139,27 @@ export default function CVComponent({ language }: IProps) {
         <Grid item xs={12} className={classes.myDivider}>
           <Divider />
         </Grid>
+        <Grid item xs={4}>
+          <Typography variant="h6">DataBases</Typography>
+        </Grid>
+        <Grid item xs={8}>
+          {resume.dbSkills.map((line: string[]) => (
+            <Typography align="left" variant="body1">
+              {line.map((skill: string) => (
+                <Chip
+                  className={classes.myChip}
+                  label={skill}
+                  clickable
+                  deleteIcon={<DoneIcon />}
+                  variant="outlined"
+                />
+              ))}
+            </Typography>
+          ))}
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
       </Grid>
     </Paper>
   );
