@@ -85,6 +85,15 @@ function AboutPageTest() {
               <Typography className={classes.betweenRowFont} variant="h4">
                 {CVHeader}
               </Typography>
+              <Link
+                to="/Vostrikov_Vladimir_Resume.pdf"
+                target="_blank"
+                download
+              >
+                <Button className={classes.mainButtons} variant="outlined">
+                  {CVDownload}
+                </Button>
+              </Link>
             </Box>
           </Grid>
           <Grid item container xs={12} spacing={0}>
