@@ -64,7 +64,14 @@ export const resume = {
     ],
     ['Git', 'GitHub'],
   ],
-  marketingSkills: [],
+  marketingSkills: [
+    [
+      'Online promotion automation',
+      'Automated Sales Funnel',
+      'Audience analytics',
+    ],
+    ['AdWords advanced level', 'Google Analytics', 'SEO', 'SMM', 'SERP'],
+  ],
   otherSkills: [],
   ide: [],
 };
