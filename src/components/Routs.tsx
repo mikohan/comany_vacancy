@@ -14,6 +14,7 @@ import Post from './blog/Post';
 import HomePage from './HomePage';
 import PortfolioPage from './PortfolioPage';
 import CertPage from './CertificatePage';
+import ContactsPage from './ContactsPage';
 
 function Routes() {
   return (
@@ -30,6 +31,7 @@ function Routes() {
         <Route exact path="/blog/:id" component={Post} />
         <Route exact path="/testpage" component={HomePage} />
         <Route exact path="/portfolio" component={PortfolioPage} />
+        <Route exact path="/contacts" component={ContactsPage} />
         <Route exact path="/" component={HomePageSecond} />
         <Route component={Page_404} />
       </Switch>

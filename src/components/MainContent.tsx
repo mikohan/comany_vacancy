@@ -35,7 +35,7 @@ import Select from '@material-ui/core/Select';
 // End of select imports
 
 import { useStyles } from '../styles/MainContextStyles';
-import { FormControlLabel, Switch, Box } from '@material-ui/core';
+import { Hidden, FormControlLabel, Switch, Box } from '@material-ui/core';
 
 import Routes from './Routs';
 import { ThemeContext } from '../context/ThemeContext';
@@ -130,6 +130,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
     blog,
     portfolio,
     frontend,
+    contacts,
   } = translateHeader[language];
   // Theme switcher label
   const themeColor: string = isDarkMode ? darkTheme : lightTheme;
@@ -178,26 +179,36 @@ export default function PersistentDrawerLeft(): JSX.Element {
                   {linux}
                 </Link>
               </MenuItem>
-              {showMarketing && (
-                <MenuItem className={classes.menuItemLink}>
-                  <Link className={classes.menuItemLink} to="/marketing">
-                    {marketing}
-                  </Link>
-                </MenuItem>
-              )}
+              <Hidden smDown>
+                {showMarketing && (
+                  <MenuItem className={classes.menuItemLink}>
+                    <Link className={classes.menuItemLink} to="/marketing">
+                      {marketing}
+                    </Link>
+                  </MenuItem>
+                )}
+              </Hidden>
               <MenuItem className={classes.menuItemLink}>
                 <Link className={classes.menuItemLink} to="/portfolio">
                   {portfolio}
                 </Link>
               </MenuItem>
+              <Hidden smDown>
+                <MenuItem className={classes.menuItemLink}>
+                  <Link className={classes.menuItemLink} to="/personality">
+                    {personality}
+                  </Link>
+                </MenuItem>
+
+                <MenuItem className={classes.menuItemLink}>
+                  <Link className={classes.menuItemLink} to="/certificates">
+                    {certificates}
+                  </Link>
+                </MenuItem>
+              </Hidden>
               <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/personality">
-                  {personality}
-                </Link>
-              </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/certificates">
-                  {certificates}
+                <Link className={classes.menuItemLink} to="/contacts">
+                  {contacts}
                 </Link>
               </MenuItem>
               {showBlog && (
