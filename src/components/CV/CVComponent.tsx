@@ -270,9 +270,6 @@ export default function CVComponent({ language }: IProps) {
             Education
           </Typography>
         </Grid>
-        <Grid item xs={12} className={classes.myDivider}>
-          <Divider />
-        </Grid>
         <Grid item xs={4}></Grid>
         <Grid item xs={8}>
           <Typography align="left" variant="h6">
@@ -280,6 +277,26 @@ export default function CVComponent({ language }: IProps) {
           </Typography>
           <Typography align="left" variant="body1">
             Master of Mechanical and Electrical Engineering
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.myDivider}>
+          <Divider />
+        </Grid>
+        <Grid item xs={12}>
+          <Typography align="left" variant="h4">
+            Work Experience
+          </Typography>
+        </Grid>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={8}>
+          <Typography align="left" variant="h6">
+            ANGARA LTD
+          </Typography>
+          <Typography className={classes.fontWght} align="left" variant="h6">
+            Master of Mechanical and Electrical Engineering
+          </Typography>
+          <Typography className={classes.fontWght} align="left" variant="body1">
+            MAY 2007 - PRESENT, MOSCOW, RUSSIA
           </Typography>
         </Grid>
         <Grid item xs={12} className={classes.myDivider}>
