@@ -86,7 +86,7 @@ export default function Contacts() {
               <List component="nav" aria-label="main mailbox folders">
                 <a
                   className={classes.aLink}
-                  href="https://www.facebook.com/vladimir.vs.39/"
+                  href="https://www.linkedin.com/in/vladimir-vostrikov-7944b040/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -112,7 +112,7 @@ export default function Contacts() {
                 </a>
                 <a
                   className={classes.aLink}
-                  href="https://www.facebook.com/vladimir.vs.39/"
+                  href="https://github.com/mikohan"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
