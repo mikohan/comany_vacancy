@@ -37,7 +37,7 @@ function ContactsPage() {
         <Grid container spacing={5}>
           <Grid container item>
             <Grid item xs={12}>
-              <Contacts />
+              <Contacts language={language} />
             </Grid>
           </Grid>
         </Grid>

@@ -104,7 +104,7 @@ function AboutPageTest() {
           </Grid>
         </Hidden>
         <Grid item xs={12}>
-          <Contacts />
+          <Contacts language={language} />
         </Grid>
       </Grid>
     </motion.div>

@@ -11,6 +11,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { translateHeader } from '../translate/header';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -34,8 +35,13 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function Contacts() {
+interface IProps {
+  language: string;
+}
+
+export default function Contacts({ language }: IProps) {
   const classes = useStyles();
+  const { contactsText } = translateHeader[language];
 
   return (
     <Container maxWidth="lg">
@@ -43,9 +49,7 @@ export default function Contacts() {
         <Box className={classes.contactBox}>
           <Grid container item xs={12}>
             <Grid className={classes.contactComp} item xs={12}>
-              <Typography variant="h4">
-                Feel free to contact me any time
-              </Typography>
+              <Typography variant="h4">{contactsText}</Typography>
             </Grid>
             <Grid
               item
