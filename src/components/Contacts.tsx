@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme: Theme) =>
     contactComp: {
       paddingTop: theme.spacing(5),
     },
+    contactBox: {
+      width: '800px'
+      margin: '0 auto',
+    },
   })
 );
 
@@ -27,7 +31,7 @@ export default function Contacts() {
   return (
     <Container maxWidth="lg">
       <Paper className={classes.contactComp}>
-        <Box align="center">
+        <Box className={classes.contactBox}>
           <Typography variant="h4">Contact Me</Typography>
           <List component="nav" aria-label="main mailbox folders">
             <ListItem button>
