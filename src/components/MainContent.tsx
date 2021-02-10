@@ -23,8 +23,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import DevicesOtherOutlined from '@material-ui/icons/DevicesOtherOutlined';
 import DnsOutlined from '@material-ui/icons/DnsOutlined';
 
-// import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 // Select imports
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
