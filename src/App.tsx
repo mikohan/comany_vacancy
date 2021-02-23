@@ -7,6 +7,10 @@ import './App.css';
 import PersistentDrawerLeft from './components/MainContent';
 
 import DarkThemeProvider from './context/ThemeContext';
+import { Person } from 'schema-dts';
+import { JsonLd } from 'react-schemaorg';
+import { Helmet } from 'react-helmet';
+import { helmetJsonLdProp } from 'react-schemaorg';
 
 const history = createBrowserHistory();
 
