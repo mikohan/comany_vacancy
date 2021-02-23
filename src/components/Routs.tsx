@@ -29,7 +29,6 @@ function Routes() {
         <Route exact path="/hobbies" component={HobbiesPage} />
         <Route exact path="/blog" component={Posts} />
         <Route exact path="/blog/:id" component={Post} />
-        <Route exact path="/testpage" component={HomePage} />
         <Route exact path="/portfolio" component={PortfolioPage} />
         <Route exact path="/contacts" component={ContactsPage} />
         <Route exact path="/" component={HomePageSecond} />
