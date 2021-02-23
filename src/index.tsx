@@ -12,6 +12,11 @@ import thunk from 'redux-thunk';
 import rootReducer from './store/reducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+import { Person } from 'schema-dts';
+import { JsonLd } from 'react-schemaorg';
+import { Helmet } from 'react-helmet';
+import { helmetJsonLdProp } from 'react-schemaorg';
+
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))

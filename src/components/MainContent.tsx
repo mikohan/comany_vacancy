@@ -42,10 +42,6 @@ import { showBlog, showMarketing } from '../config';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import CardMembershipIcon from '@material-ui/icons/CardMembership';
 import ImportContactsIcon from '@material-ui/icons/ImportContacts';
-import { Person } from 'schema-dts';
-import { JsonLd } from 'react-schemaorg';
-import { Helmet } from 'react-helmet';
-import { helmetJsonLdProp } from 'react-schemaorg';
 
 export default function PersistentDrawerLeft(): JSX.Element {
   const context = useContext(ThemeContext);
@@ -140,38 +136,6 @@ export default function PersistentDrawerLeft(): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.root}>
-        <Helmet
-          script={[
-            helmetJsonLdProp<Person>({
-              '@context': 'https://schema.org',
-              '@type': 'Person',
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: 'Colorado Springs',
-                addressRegion: 'CO',
-                postalCode: '80840',
-                streetAddress: '100 Main Street',
-              },
-              email: 'angara99@gmail.com',
-              image: require('../assets/me1.jpg'),
-              jobTitle: 'Full Stack Developer',
-              name: 'Vladimir Vostrikov',
-              birthPlace: 'Russia',
-              birthDate: '1971-04-17',
-              height: '75 inches',
-              gender: 'male',
-              nationality: 'Russian',
-              telephone: '+7(916) 215-1508',
-              url: 'https://vladimirvostrikov.com',
-              sameAs: [
-                'https://www.facebook.com/vladimir.vs.39/',
-                'https://www.linkedin.com/in/vladimir-vostrikov-7944b040/',
-                'https://www.instagram.com/vladimir_vs99/',
-              ],
-            }),
-          ]}
-        />
-        ;
         <CssBaseline />
         <AppBar
           color="inherit"
