@@ -104,10 +104,10 @@ function AboutPageTest() {
               <CVComponent language={language} />
             </Container>
           </Grid>
+          <Grid item xs={12}>
+            <Contacts language={language} />
+          </Grid>
         </Hidden>
-        <Grid item xs={12}>
-          <Contacts language={language} />
-        </Grid>
       </Grid>
     </motion.div>
   );
