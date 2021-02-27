@@ -76,9 +76,11 @@ function AboutPageTest() {
             </Typography>
           </Box>
         </Grid>
-        <Grid item container xs={12} spacing={0}>
-          <HomePageSecondRow secondRowText={secondRowText} />
-        </Grid>
+        <Hidden mdDown>
+          <Grid item container xs={12} spacing={0}>
+            <HomePageSecondRow secondRowText={secondRowText} />
+          </Grid>
+        </Hidden>
         <Hidden mdDown>
           <Grid item xs={12}>
             <Divider />
