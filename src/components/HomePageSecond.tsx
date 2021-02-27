@@ -69,15 +69,13 @@ function AboutPageTest() {
             </Box>
           </Box>
         </Grid>
-        <Hidden mdDown>
-          <Grid item xs={12}>
-            <Box id="video" className={classes.betweenRow}>
-              <Typography className={classes.betweenRowFont} variant="h4">
-                {betweenRow}
-              </Typography>
-            </Box>
-          </Grid>
-        </Hidden>
+        <Grid item xs={12}>
+          <Box id="video" className={classes.betweenRow}>
+            <Typography className={classes.betweenRowFont} variant="h4">
+              {betweenRow}
+            </Typography>
+          </Box>
+        </Grid>
         <Grid item container xs={12} spacing={0}>
           <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
