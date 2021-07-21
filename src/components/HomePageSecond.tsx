@@ -46,11 +46,19 @@ function AboutPageTest() {
         <Grid item xs={12}>
           <Box className={classes.wrapper}>
             <Box className={classes.mainHeader}>
-              <Typography variant="h4">{myName}</Typography>
-              <Typography style={{ marginBottom: '30px' }} variant="h3">
+              <Typography className={classes.myName} variant="h4">
+                {myName}
+              </Typography>
+              <Typography
+                className={classes.name}
+                style={{ marginBottom: '30px' }}
+                variant="h3"
+              >
                 {name}
               </Typography>
-              <Typography variant="h4">{mainHeading}</Typography>
+              <Typography className={classes.myName} variant="h4">
+                {mainHeading}
+              </Typography>
               <HashLink to="#video">
                 <Button className={classes.mainButtons} variant="outlined">
                   {learnMore}...

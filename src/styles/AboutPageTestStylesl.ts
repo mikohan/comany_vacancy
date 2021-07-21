@@ -36,6 +36,18 @@ export const useStyles = makeStyles((theme) => {
       // top: '350px',
       // right: 100,
     },
+    myName: {
+      fontSize: '2.4m',
+      [theme.breakpoints.up('xl')]: {
+        fontSize: '3rem',
+      },
+    },
+    name: {
+      fontSize: '4',
+      [theme.breakpoints.up('xl')]: {
+        fontSize: '5rem',
+      },
+    },
     betweenRow: {
       paddingTop: theme.spacing(5),
       paddingBottom: theme.spacing(5),
