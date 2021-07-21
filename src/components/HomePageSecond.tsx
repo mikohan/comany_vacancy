@@ -79,23 +79,6 @@ function AboutPageTest() {
         </Grid>
         <Hidden mdDown>
           <Grid item xs={12}>
-            <Divider />
-            <Box id="video" className={classes.betweenRow}>
-              <Typography className={classes.betweenRowFont} variant="h4">
-                {CVHeader}
-              </Typography>
-              <Link
-                to="/Vostrikov_Vladimir_Resume.pdf"
-                target="_blank"
-                download
-              >
-                <Button className={classes.mainButtons} variant="outlined">
-                  {CVDownload}
-                </Button>
-              </Link>
-            </Box>
-          </Grid>
-          <Grid item xs={12}>
             <Contacts language={language} />
           </Grid>
         </Hidden>

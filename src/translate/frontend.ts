@@ -37,26 +37,38 @@ export const frontend: IItem = {
             </p>`,
   },
   russian: {
-    pageHeader: 'Опыт Фронт Енд разработки',
+    pageHeader: 'Вакансия Менеджер по Продажам',
     header: 'Несколько Front End проектов',
     text: `
     <p>
-    Я всегда был более ориентированным на бэкэнд разработки, но мне очень нравилась 
-    идея Single Page Applications.
-    Поскольку я тоже маркетолог, я скептически относился к SPA, потому что поисковые 
-    системы не распознавали это.
-    Это очень большой недостаток, который мешал мне их использовать.
-    </p>
-    <p>
-    Затем, когда я глубоко изучил интерфейс, я обнаружил технологию рендеринга на стороне сервера.
-    Это изменило мой взгляд на вещи.
-    Я начал изучать Javascript и тайпскрипт, Vue, NuxtJs, React и NextJs.
-    Я прошел около 15 курсов по Udemy и глубоко погрузился в разработку фронтенда.
-    Я открываю для себя множество передовых технологий.
-    Одно из них - микросервисы. На мой взгляд, это ближайшее будущее веб-разработки. Сейчас изучаю эту технологию.
-    </p>
-    <p>
-    Некоторые из моих фронтенд-проектов вы можете увидеть на этой странице.
+    <h1>HTML Ipsum Presents</h1>
+
+        <p><strong>Pellentesque habitant morbi tristique</strong> senectus
+        et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+          <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien
+        ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>,
+        ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui.  in turpis pulvinar facilisis. Ut felis.</p>
+
+        <h2>Header Level 2</h2>
+
+        <ol>
+           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+           <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+
+        <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
+          Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa.
+          Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus,
+        at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+        <h3>Header Level 3</h3>
+
+        <ul>
+           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+           <li>Aliquam tincidunt mauris eu risus.</li>
+        </ul>
     </p>`,
   },
   czech: {
