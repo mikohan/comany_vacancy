@@ -12,6 +12,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { translateHeader } from '../translate/header';
+import { contacts } from '../config';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -61,17 +62,17 @@ export default function Contacts({ language }: IProps) {
             >
               <Box>
                 <List component="nav" aria-label="main mailbox folders">
-                  <a className={classes.aLink} href="tel:79162151508">
+                  <a className={classes.aLink} href={`tel:${contacts.phone}`}>
                     <ListItem button>
                       <ListItemIcon>
                         <PhoneIcon />
                       </ListItemIcon>
-                      <ListItemText primary="+7.916.215.1508" />
+                      <ListItemText primary={contacts.phone} />
                     </ListItem>
                   </a>
                   <a
                     className={classes.aLink}
-                    href="whatsapp://79162151508"
+                    href={`whatsapp://${contacts.phone}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -79,12 +80,12 @@ export default function Contacts({ language }: IProps) {
                       <ListItemIcon>
                         <WhatsAppIcon />
                       </ListItemIcon>
-                      <ListItemText primary="+7.916.215.1508" />
+                      <ListItemText primary={contacts.phone} />
                     </ListItem>
                   </a>
                   <a
                     className={classes.aLink}
-                    href="mailto:angara99@gmail.com"
+                    href={`mailto:${contacts.email}`}
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -92,59 +93,7 @@ export default function Contacts({ language }: IProps) {
                       <ListItemIcon>
                         <AlternateEmailIcon />
                       </ListItemIcon>
-                      <ListItemText primary="angara99@gmail.com" />
-                    </ListItem>
-                  </a>
-                </List>
-              </Box>
-            </Grid>
-            <Grid
-              container
-              item
-              xs={12}
-              sm={6}
-              alignItems="center"
-              justify="center"
-            >
-              <Box>
-                <List component="nav" aria-label="main mailbox folders">
-                  <a
-                    className={classes.aLink}
-                    href="https://www.linkedin.com/in/vladimir-vostrikov-7944b040/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ListItem button>
-                      <ListItemIcon>
-                        <LinkedInIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="LinkedIn" />
-                    </ListItem>
-                  </a>
-                  <a
-                    className={classes.aLink}
-                    href="https://www.facebook.com/vladimir.vs.39/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ListItem button>
-                      <ListItemIcon>
-                        <FacebookIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Facebook" />
-                    </ListItem>
-                  </a>
-                  <a
-                    className={classes.aLink}
-                    href="https://github.com/mikohan"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ListItem button>
-                      <ListItemIcon>
-                        <GitHubIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="GitHub" />
+                      <ListItemText primary={contacts.email} />
                     </ListItem>
                   </a>
                 </List>

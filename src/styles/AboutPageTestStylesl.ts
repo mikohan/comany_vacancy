@@ -25,9 +25,11 @@ export const useStyles = makeStyles((theme) => {
         ? `url(${meImageDark}) no-repeat center center`
         : `url(${meImageLight}) no-repeat center center`,
       backgroundSize: 'cover',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
     mainHeader: {
-      paddingTop: theme.spacing(40),
       // height: '50%',
       // width: '40%',
       // position: 'absolute',

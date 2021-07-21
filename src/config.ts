@@ -15,3 +15,9 @@ export const showBlog: boolean = false;
 export const showMarketing: boolean = true;
 
 export const defaultLang = 'russian';
+
+export const contacts = {
+  phone: '+7(9116) 2151508',
+  email: 'agara99@gmail.com',
+  website: 'angara77.com',
+};
