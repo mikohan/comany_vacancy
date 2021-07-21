@@ -6,11 +6,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import { Box, Paper, Typography, Container, Grid } from '@material-ui/core';
+import { Box, Paper, Typography, Grid } from '@material-ui/core';
 import PhoneIcon from '@material-ui/icons/Phone';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import { translateHeader } from '../translate/header';
 import { contacts } from '../config';
 
@@ -22,7 +19,9 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: theme.palette.background.paper,
     },
     contactComp: {
-      paddingTop: theme.spacing(5),
+      marginTop: theme.spacing(10),
+      marginLeft: -50,
+      marginRight: -50,
       paddingBottom: theme.spacing(5),
       paddingLeft: theme.spacing(5),
     },
@@ -45,63 +44,61 @@ export default function Contacts({ language }: IProps) {
   const { contactsText } = translateHeader[language];
 
   return (
-    <Container maxWidth="lg">
-      <Paper className={classes.contactComp}>
-        <Box className={classes.contactBox}>
-          <Grid container item xs={12}>
-            <Grid className={classes.contactComp} item xs={12}>
-              <Typography variant="h4">{contactsText}</Typography>
-            </Grid>
-            <Grid
-              item
-              container
-              xs={12}
-              sm={6}
-              alignItems="center"
-              justify="center"
-            >
-              <Box>
-                <List component="nav" aria-label="main mailbox folders">
-                  <a className={classes.aLink} href={`tel:${contacts.phone}`}>
-                    <ListItem button>
-                      <ListItemIcon>
-                        <PhoneIcon />
-                      </ListItemIcon>
-                      <ListItemText primary={contacts.phone} />
-                    </ListItem>
-                  </a>
-                  <a
-                    className={classes.aLink}
-                    href={`whatsapp://${contacts.phone}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ListItem button>
-                      <ListItemIcon>
-                        <WhatsAppIcon />
-                      </ListItemIcon>
-                      <ListItemText primary={contacts.phone} />
-                    </ListItem>
-                  </a>
-                  <a
-                    className={classes.aLink}
-                    href={`mailto:${contacts.email}`}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <ListItem button>
-                      <ListItemIcon>
-                        <AlternateEmailIcon />
-                      </ListItemIcon>
-                      <ListItemText primary={contacts.email} />
-                    </ListItem>
-                  </a>
-                </List>
-              </Box>
-            </Grid>
+    <Paper className={classes.contactComp} elevation={0}>
+      <Box className={classes.contactBox}>
+        <Grid container item xs={12}>
+          <Grid className={classes.contactComp} item xs={12}>
+            <Typography variant="h4">{contactsText}</Typography>
           </Grid>
-        </Box>
-      </Paper>
-    </Container>
+          <Grid
+            item
+            container
+            xs={12}
+            sm={6}
+            alignItems="center"
+            justify="center"
+          >
+            <Box>
+              <List component="nav" aria-label="main mailbox folders">
+                <a className={classes.aLink} href={`tel:${contacts.phone}`}>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <PhoneIcon />
+                    </ListItemIcon>
+                    <ListItemText primary={contacts.phone} />
+                  </ListItem>
+                </a>
+                <a
+                  className={classes.aLink}
+                  href={`whatsapp://${contacts.phone}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem button>
+                    <ListItemIcon>
+                      <WhatsAppIcon />
+                    </ListItemIcon>
+                    <ListItemText primary={contacts.phone} />
+                  </ListItem>
+                </a>
+                <a
+                  className={classes.aLink}
+                  href={`mailto:${contacts.email}`}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <ListItem button>
+                    <ListItemIcon>
+                      <AlternateEmailIcon />
+                    </ListItemIcon>
+                    <ListItemText primary={contacts.email} />
+                  </ListItem>
+                </a>
+              </List>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+    </Paper>
   );
 }

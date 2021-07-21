@@ -74,5 +74,17 @@ export const useStyles = makeStyles((theme) => {
     fontWght: {
       fontWeight: 300,
     },
+    listHeader: {
+      marginBottom: theme.spacing(5),
+    },
+    list: {
+      marginLeft: -50,
+      marginRight: -50,
+      padding: theme.spacing(5),
+    },
+    link: {
+      color: 'inherit',
+      textDecoration: 'none',
+    },
   };
 });

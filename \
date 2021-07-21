@@ -1,12 +1,10 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
-import { durationPage, marketolog, salesManager } from '../config';
+import { durationPage } from '../config';
 import { Link } from 'react-router-dom';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/Inbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
 
 import { useStyles } from '../styles/AboutPageTestStylesl';
 import {
@@ -70,47 +68,6 @@ function AboutPageTest() {
           </Box>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classes.list} elevation={0}>
-            <Typography className={classes.listHeader} variant="h4">
-              Вакансии отркрытые в компании
-            </Typography>
-            <Grid container justify="center">
-              <List>
-                {marketolog && (
-                  <Link className={classes.link} to="/fullstack">
-                    <ListItem button>
-                      <ListItemIcon>
-                        <DraftsIcon />
-                      </ListItemIcon>
-                      <ListItemText
-                        primary={
-                          <Typography variant="h6">Маркетолог</Typography>
-                        }
-                      />
-                    </ListItem>
-                  </Link>
-                )}
-                {salesManager && (
-                  <Link className={classes.link} to="/fullstack">
-                    <ListItem button>
-                      <ListItemIcon>
-                        <DraftsIcon />
-                      </ListItemIcon>
-                      <ListItemText
-                        primary={
-                          <Typography variant="h6">
-                            Менеджер по продажам
-                          </Typography>
-                        }
-                      />
-                    </ListItem>
-                  </Link>
-                )}
-              </List>
-            </Grid>
-          </Paper>
-        </Grid>
-        <Grid item xs={12}>
           <Box id="video" className={classes.betweenRow}>
             <Typography className={classes.betweenRowFont} variant="h4">
               {betweenRow}
@@ -119,6 +76,17 @@ function AboutPageTest() {
         </Grid>
         <Grid item xs={12}>
           <HomePageSecondRow secondRowText={secondRowText} />
+        </Grid>
+        <Grid item xs={12}>
+          <Paper className={classes.list}>
+            <List>
+              <ListItem button>
+                <ListItemIcon></ListItemIcon>
+                <ListItemText primary="Маркетолог" />
+                <ListItemText primary="Менеджер по продажам" />
+              </ListItem>
+            </List>
+          </Paper>
         </Grid>
         <Hidden mdDown>
           <Grid item xs={12}>

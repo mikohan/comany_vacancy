@@ -21,3 +21,6 @@ export const contacts = {
   email: 'agara99@gmail.com',
   website: 'angara77.com',
 };
+
+export const salesManager = true;
+export const marketolog = true;

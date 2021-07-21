@@ -30,7 +30,7 @@ import Select from '@material-ui/core/Select';
 // End of select imports
 
 import { useStyles } from '../styles/MainContextStyles';
-import { Hidden, FormControlLabel, Switch, Box } from '@material-ui/core';
+import { FormControlLabel, Switch, Box } from '@material-ui/core';
 
 import Routes from './Routs';
 import { ThemeContext } from '../context/ThemeContext';
@@ -38,10 +38,8 @@ import { ThemeContext } from '../context/ThemeContext';
 import { translateHeader } from '../translate/header';
 import { isDrawerOpen } from '../config';
 import HomeOutlined from '@material-ui/icons/HomeOutlined';
-import { showBlog, showMarketing } from '../config';
-import ContactMailIcon from '@material-ui/icons/ContactMail';
-import CardMembershipIcon from '@material-ui/icons/CardMembership';
-import ImportContactsIcon from '@material-ui/icons/ImportContacts';
+import { showBlog, marketolog } from '../config';
+import { salesManager } from '../config';
 
 export default function PersistentDrawerLeft(): JSX.Element {
   const context = useContext(ThemeContext);
@@ -162,53 +160,20 @@ export default function PersistentDrawerLeft(): JSX.Element {
               </Link>
             </MenuItem>
             <Box className={classes.menuItems}>
-              <MenuItem>
-                <Link className={classes.menuItemLink} to="/fullstack">
-                  {fullstack}
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link className={classes.menuItemLink} to="/frontend">
-                  {frontend}
-                </Link>
-              </MenuItem>
-              {/* <MenuItem className={classes.menuItemLink}> */}
-              {/*   <Link className={classes.menuItemLink} to="/linux"> */}
-              {/*     {linux} */}
-              {/*   </Link> */}
-              {/* </MenuItem> */}
-              {/* <Hidden smDown> */}
-              {/*   {showMarketing && ( */}
-              {/*     <MenuItem className={classes.menuItemLink}> */}
-              {/*       <Link className={classes.menuItemLink} to="/marketing"> */}
-              {/*         {marketing} */}
-              {/*       </Link> */}
-              {/*     </MenuItem> */}
-              {/*   )} */}
-              {/* </Hidden> */}
-              {/* <MenuItem className={classes.menuItemLink}> */}
-              {/*   <Link className={classes.menuItemLink} to="/portfolio"> */}
-              {/*     {portfolio} */}
-              {/*   </Link> */}
-              {/* </MenuItem> */}
-              {/* <Hidden smDown> */}
-              {/*   <MenuItem className={classes.menuItemLink}> */}
-              {/*     <Link className={classes.menuItemLink} to="/personality"> */}
-              {/*       {personality} */}
-              {/*     </Link> */}
-              {/*   </MenuItem> */}
-
-              {/*   <MenuItem className={classes.menuItemLink}> */}
-              {/*     <Link className={classes.menuItemLink} to="/certificates"> */}
-              {/*       {certificates} */}
-              {/*     </Link> */}
-              {/*   </MenuItem> */}
-              {/* </Hidden> */}
-              {/* <MenuItem className={classes.menuItemLink}> */}
-              {/*   <Link className={classes.menuItemLink} to="/contacts"> */}
-              {/*     {contacts} */}
-              {/*   </Link> */}
-              {/* </MenuItem> */}
+              {marketolog && (
+                <MenuItem>
+                  <Link className={classes.menuItemLink} to="/fullstack">
+                    {fullstack}
+                  </Link>
+                </MenuItem>
+              )}
+              {salesManager && (
+                <MenuItem>
+                  <Link className={classes.menuItemLink} to="/frontend">
+                    {frontend}
+                  </Link>
+                </MenuItem>
+              )}
               {showBlog && (
                 <MenuItem className={classes.menuItemLink}>
                   <Link className={classes.menuItemLink} to="/blog">
@@ -289,75 +254,27 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={logoHome} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/fullstack">
-              <ListItem button>
-                <ListItemIcon>
-                  <DnsOutlined />
-                </ListItemIcon>
-                <ListItemText primary={fullstack} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/frontend">
-              <ListItem button>
-                <ListItemIcon>
-                  <DevicesOtherOutlined />
-                </ListItemIcon>
-                <ListItemText primary={frontend} />
-              </ListItem>
-            </Link>
-            {/* <Link className={classes.drawerLink} to="/linux"> */}
-            {/*   <ListItem button> */}
-            {/*     <ListItemIcon> */}
-            {/*       <DevicesOtherOutlined /> */}
-            {/*     </ListItemIcon> */}
-            {/*     <ListItemText primary={linux} /> */}
-            {/*   </ListItem> */}
-            {/* </Link> */}
-            {/* {showMarketing && ( */}
-            {/*   <Link className={classes.drawerLink} to="/marketing"> */}
-            {/*     <ListItem button> */}
-            {/*       <ListItemIcon> */}
-            {/*         <InsertChartOutlined /> */}
-            {/*       </ListItemIcon> */}
-            {/*       <ListItemText primary={marketing} /> */}
-            {/*     </ListItem> */}
-            {/*   </Link> */}
-            {/* )} */}
-            {/* <Link className={classes.drawerLink} to="/portfolio"> */}
-            {/*   <ListItem button> */}
-            {/*     <ListItemIcon> */}
-            {/*       <ImportContactsIcon /> */}
-            {/*     </ListItemIcon> */}
-            {/*     <ListItemText primary={portfolio} /> */}
-            {/*   </ListItem> */}
-            {/* </Link> */}
-            {/* </List> */}
-            {/* <Divider /> */}
-            {/* <List> */}
-            {/* <Link className={classes.drawerLink} to="/personality"> */}
-            {/*   <ListItem button> */}
-            {/*     <ListItemIcon> */}
-            {/*       <SentimentSatisfied /> */}
-            {/*     </ListItemIcon> */}
-            {/*     <ListItemText primary={personality} /> */}
-            {/*   </ListItem> */}
-            {/* </Link> */}
-            {/* <Link className={classes.drawerLink} to="/certificates"> */}
-            {/*   <ListItem button> */}
-            {/*     <ListItemIcon> */}
-            {/*       <CardMembershipIcon /> */}
-            {/*     </ListItemIcon> */}
-            {/*     <ListItemText primary={certificates} /> */}
-            {/*   </ListItem> */}
-            {/* </Link> */}
-            {/* <Link className={classes.drawerLink} to="/contacts"> */}
-            {/*   <ListItem button> */}
-            {/*     <ListItemIcon> */}
-            {/*       <ContactMailIcon /> */}
-            {/*     </ListItemIcon> */}
-            {/*     <ListItemText primary={contacts} /> */}
-            {/*   </ListItem> */}
-            {/* </Link> */}
+            {marketolog && (
+              <Link className={classes.drawerLink} to="/fullstack">
+                <ListItem button>
+                  <ListItemIcon>
+                    <DnsOutlined />
+                  </ListItemIcon>
+                  <ListItemText primary={fullstack} />
+                </ListItem>
+              </Link>
+            )}
+            {salesManager && (
+              <Link className={classes.drawerLink} to="/frontend">
+                <ListItem button>
+                  <ListItemIcon>
+                    <DevicesOtherOutlined />
+                  </ListItemIcon>
+                  <ListItemText primary={frontend} />
+                </ListItem>
+              </Link>
+            )}
+
             {showBlog && (
               <Link className={classes.drawerLink} to="/blog">
                 <ListItem button>
