@@ -6,12 +6,11 @@ interface TransText {
 
 export const translateText: TransText = {
   english: {
-    CVHeader: 'My Resume',
+    CVHeader: 'Vacancy Company',
     CVDownload: 'Download CV',
-    myName: 'My name is',
-    name: 'Vladimir Vostrikov',
-    mainHeading:
-      "I'm Full Stack developer with huge knowledge of Online Marketing, and Experience in ecommerce business.",
+    myName: 'Vacansy Company',
+    name: 'Angara Ltd',
+    mainHeading: 'Online Auto parts retailer',
     learnMore: 'Learn more',
     secondRowText: `
     <p>
@@ -47,7 +46,7 @@ export const translateText: TransText = {
       Am absolutely positive about that.
     </p>
     `,
-    betweenRow: 'Let me introduce myself in this very short video.',
+    betweenRow: 'Very short video about our company in Russian',
     blog_latestNews: 'Latest News',
     blog_search: 'Search',
     blog_noSearchResults: 'No Search Results',
@@ -343,7 +342,7 @@ export const translateText: TransText = {
     },
   },
   russian: {
-    myName: 'Люди компании',
+    myName: 'Вакансии компании',
     name: 'Ангара',
     CVHeader: 'Моё резюме',
     CVDownload: 'Скачать резюме',
