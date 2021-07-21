@@ -343,12 +343,11 @@ export const translateText: TransText = {
     },
   },
   russian: {
-    myName: 'Меня зовут',
-    name: 'Владимир Востриков',
+    myName: 'Люди компании',
+    name: 'Ангара',
     CVHeader: 'Моё резюме',
     CVDownload: 'Скачать резюме',
-    mainHeading:
-      'Я разработчик Full Stack с огромными знаниями в области интернет-маркетинга и опытом работы в сфере электронной коммерции.',
+    mainHeading: 'Онлайн ретейлер автозапчастей и автокомпонентов',
     learnMore: 'Узнать больше',
     secondRowText: `
     <p>
@@ -382,7 +381,7 @@ export const translateText: TransText = {
     Я абсолютно уверен в этом.
     </p>
     `,
-    betweenRow: 'Позвольте представится, меня зовут Владимир.',
+    betweenRow: 'Очень короткое видео о нашей компании',
     blog_latestNews: 'Последние посты',
     blog_search: 'Поиск',
     blog_noSearchResults: 'Поиск не дал результатов',

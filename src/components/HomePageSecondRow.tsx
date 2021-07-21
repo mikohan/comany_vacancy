@@ -12,7 +12,7 @@ interface IProps {
 
 function HomePageSecondRow({ secondRowText }: IProps) {
   const classes = useStyles();
-  const vidUrl = 'https://youtu.be/Yb0WsqB32IE';
+  const vidUrl = 'https://youtu.be/OppnbrfRTZs';
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -20,25 +20,17 @@ function HomePageSecondRow({ secondRowText }: IProps) {
       initial={{ opacity: 0 }}
       transition={{ duration: durationPage }}
     >
-      <Grid container item spacing={2} direction="row" justify="center">
-        <Grid item xs={12} lg={8}>
+      <Grid container>
+        <Grid item xs={12} className={classes.shortVideo}>
           <Box className="player-wrapper">
             <ReactPlayer
               className="react-player"
               url={vidUrl}
-              light={require('../assets/mePersonalCover2.png')}
               controls
               width="100%"
               height="100%"
             />
           </Box>
-        </Grid>
-        <Grid item xs={12} lg={4}>
-          <Typography
-            className={classes.videoSideText}
-            variant="body1"
-            dangerouslySetInnerHTML={{ __html: secondRowText as string }}
-          ></Typography>
         </Grid>
       </Grid>
     </motion.div>

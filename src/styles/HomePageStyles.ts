@@ -3,9 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = makeStyles((theme) => {
   return {
     reactPlayerDiv: {
-      widht: '100%',
+      width: '100%',
       display: 'flex',
       justifyContent: 'center',
+    },
+    shortVideo: {
+      width: '100%',
+      paddingLeft: theme.spacing(10),
+      paddingRight: theme.spacing(10),
     },
     videoItem: {
       [theme.breakpoints.up('xs')]: {

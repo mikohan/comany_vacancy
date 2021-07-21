@@ -172,43 +172,43 @@ export default function PersistentDrawerLeft(): JSX.Element {
                   {frontend}
                 </Link>
               </MenuItem>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/linux">
-                  {linux}
-                </Link>
-              </MenuItem>
-              <Hidden smDown>
-                {showMarketing && (
-                  <MenuItem className={classes.menuItemLink}>
-                    <Link className={classes.menuItemLink} to="/marketing">
-                      {marketing}
-                    </Link>
-                  </MenuItem>
-                )}
-              </Hidden>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/portfolio">
-                  {portfolio}
-                </Link>
-              </MenuItem>
-              <Hidden smDown>
-                <MenuItem className={classes.menuItemLink}>
-                  <Link className={classes.menuItemLink} to="/personality">
-                    {personality}
-                  </Link>
-                </MenuItem>
+              {/* <MenuItem className={classes.menuItemLink}> */}
+              {/*   <Link className={classes.menuItemLink} to="/linux"> */}
+              {/*     {linux} */}
+              {/*   </Link> */}
+              {/* </MenuItem> */}
+              {/* <Hidden smDown> */}
+              {/*   {showMarketing && ( */}
+              {/*     <MenuItem className={classes.menuItemLink}> */}
+              {/*       <Link className={classes.menuItemLink} to="/marketing"> */}
+              {/*         {marketing} */}
+              {/*       </Link> */}
+              {/*     </MenuItem> */}
+              {/*   )} */}
+              {/* </Hidden> */}
+              {/* <MenuItem className={classes.menuItemLink}> */}
+              {/*   <Link className={classes.menuItemLink} to="/portfolio"> */}
+              {/*     {portfolio} */}
+              {/*   </Link> */}
+              {/* </MenuItem> */}
+              {/* <Hidden smDown> */}
+              {/*   <MenuItem className={classes.menuItemLink}> */}
+              {/*     <Link className={classes.menuItemLink} to="/personality"> */}
+              {/*       {personality} */}
+              {/*     </Link> */}
+              {/*   </MenuItem> */}
 
-                <MenuItem className={classes.menuItemLink}>
-                  <Link className={classes.menuItemLink} to="/certificates">
-                    {certificates}
-                  </Link>
-                </MenuItem>
-              </Hidden>
-              <MenuItem className={classes.menuItemLink}>
-                <Link className={classes.menuItemLink} to="/contacts">
-                  {contacts}
-                </Link>
-              </MenuItem>
+              {/*   <MenuItem className={classes.menuItemLink}> */}
+              {/*     <Link className={classes.menuItemLink} to="/certificates"> */}
+              {/*       {certificates} */}
+              {/*     </Link> */}
+              {/*   </MenuItem> */}
+              {/* </Hidden> */}
+              {/* <MenuItem className={classes.menuItemLink}> */}
+              {/*   <Link className={classes.menuItemLink} to="/contacts"> */}
+              {/*     {contacts} */}
+              {/*   </Link> */}
+              {/* </MenuItem> */}
               {showBlog && (
                 <MenuItem className={classes.menuItemLink}>
                   <Link className={classes.menuItemLink} to="/blog">
@@ -305,59 +305,59 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <ListItemText primary={frontend} />
               </ListItem>
             </Link>
-            <Link className={classes.drawerLink} to="/linux">
-              <ListItem button>
-                <ListItemIcon>
-                  <DevicesOtherOutlined />
-                </ListItemIcon>
-                <ListItemText primary={linux} />
-              </ListItem>
-            </Link>
-            {showMarketing && (
-              <Link className={classes.drawerLink} to="/marketing">
-                <ListItem button>
-                  <ListItemIcon>
-                    <InsertChartOutlined />
-                  </ListItemIcon>
-                  <ListItemText primary={marketing} />
-                </ListItem>
-              </Link>
-            )}
-            <Link className={classes.drawerLink} to="/portfolio">
-              <ListItem button>
-                <ListItemIcon>
-                  <ImportContactsIcon />
-                </ListItemIcon>
-                <ListItemText primary={portfolio} />
-              </ListItem>
-            </Link>
-          </List>
-          <Divider />
-          <List>
-            <Link className={classes.drawerLink} to="/personality">
-              <ListItem button>
-                <ListItemIcon>
-                  <SentimentSatisfied />
-                </ListItemIcon>
-                <ListItemText primary={personality} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/certificates">
-              <ListItem button>
-                <ListItemIcon>
-                  <CardMembershipIcon />
-                </ListItemIcon>
-                <ListItemText primary={certificates} />
-              </ListItem>
-            </Link>
-            <Link className={classes.drawerLink} to="/contacts">
-              <ListItem button>
-                <ListItemIcon>
-                  <ContactMailIcon />
-                </ListItemIcon>
-                <ListItemText primary={contacts} />
-              </ListItem>
-            </Link>
+            {/* <Link className={classes.drawerLink} to="/linux"> */}
+            {/*   <ListItem button> */}
+            {/*     <ListItemIcon> */}
+            {/*       <DevicesOtherOutlined /> */}
+            {/*     </ListItemIcon> */}
+            {/*     <ListItemText primary={linux} /> */}
+            {/*   </ListItem> */}
+            {/* </Link> */}
+            {/* {showMarketing && ( */}
+            {/*   <Link className={classes.drawerLink} to="/marketing"> */}
+            {/*     <ListItem button> */}
+            {/*       <ListItemIcon> */}
+            {/*         <InsertChartOutlined /> */}
+            {/*       </ListItemIcon> */}
+            {/*       <ListItemText primary={marketing} /> */}
+            {/*     </ListItem> */}
+            {/*   </Link> */}
+            {/* )} */}
+            {/* <Link className={classes.drawerLink} to="/portfolio"> */}
+            {/*   <ListItem button> */}
+            {/*     <ListItemIcon> */}
+            {/*       <ImportContactsIcon /> */}
+            {/*     </ListItemIcon> */}
+            {/*     <ListItemText primary={portfolio} /> */}
+            {/*   </ListItem> */}
+            {/* </Link> */}
+            {/* </List> */}
+            {/* <Divider /> */}
+            {/* <List> */}
+            {/* <Link className={classes.drawerLink} to="/personality"> */}
+            {/*   <ListItem button> */}
+            {/*     <ListItemIcon> */}
+            {/*       <SentimentSatisfied /> */}
+            {/*     </ListItemIcon> */}
+            {/*     <ListItemText primary={personality} /> */}
+            {/*   </ListItem> */}
+            {/* </Link> */}
+            {/* <Link className={classes.drawerLink} to="/certificates"> */}
+            {/*   <ListItem button> */}
+            {/*     <ListItemIcon> */}
+            {/*       <CardMembershipIcon /> */}
+            {/*     </ListItemIcon> */}
+            {/*     <ListItemText primary={certificates} /> */}
+            {/*   </ListItem> */}
+            {/* </Link> */}
+            {/* <Link className={classes.drawerLink} to="/contacts"> */}
+            {/*   <ListItem button> */}
+            {/*     <ListItemIcon> */}
+            {/*       <ContactMailIcon /> */}
+            {/*     </ListItemIcon> */}
+            {/*     <ListItemText primary={contacts} /> */}
+            {/*   </ListItem> */}
+            {/* </Link> */}
             {showBlog && (
               <Link className={classes.drawerLink} to="/blog">
                 <ListItem button>

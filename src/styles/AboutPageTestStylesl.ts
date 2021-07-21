@@ -27,12 +27,12 @@ export const useStyles = makeStyles((theme) => {
       backgroundSize: 'cover',
     },
     mainHeader: {
-      height: '50%',
-      width: '40%',
-
-      position: 'absolute',
-      top: '350px',
-      right: 100,
+      paddingTop: theme.spacing(40),
+      // height: '50%',
+      // width: '40%',
+      // position: 'absolute',
+      // top: '350px',
+      // right: 100,
     },
     betweenRow: {
       paddingTop: theme.spacing(5),

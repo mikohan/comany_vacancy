@@ -56,16 +56,6 @@ function AboutPageTest() {
                   {learnMore}...
                 </Button>
               </HashLink>
-
-              <Link
-                to="/Vostrikov_Vladimir_Resume.pdf"
-                target="_blank"
-                download
-              >
-                <Button className={classes.mainButtons} variant="outlined">
-                  {CVDownload}
-                </Button>
-              </Link>
             </Box>
           </Box>
         </Grid>
@@ -76,7 +66,7 @@ function AboutPageTest() {
             </Typography>
           </Box>
         </Grid>
-        <Grid item container xs={12} spacing={0}>
+        <Grid item xs={12}>
           <HomePageSecondRow secondRowText={secondRowText} />
         </Grid>
         <Hidden mdDown>
