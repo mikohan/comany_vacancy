@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
 import useToggleState from '../hooks/useToggleState';
 import { defaultDarkTheme } from '../config';
+import { defaultLang } from '../config';
 
 interface ThemeContextInterface {
   isDarkMode: boolean;
@@ -14,7 +15,7 @@ export const ThemeContext = createContext({} as ThemeContextInterface);
 function DarkThemeProvider(props: any) {
   const [isDarkMode, toggleTheme] = useToggleState(defaultDarkTheme);
 
-  const [language, setLanguage] = useState('english');
+  const [language, setLanguage] = useState(defaultLang);
   const changeLanguage = (e: React.ChangeEvent<HTMLInputElement>): void =>
     setLanguage(e.target.value);
 

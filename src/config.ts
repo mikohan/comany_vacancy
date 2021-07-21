@@ -13,3 +13,5 @@ export const blogUrl: string = 'http://localhost:8000/blog/posts';
 export const showBlog: boolean = false;
 
 export const showMarketing: boolean = true;
+
+export const defaultLang = 'russian';
