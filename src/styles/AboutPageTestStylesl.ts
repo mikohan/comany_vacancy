@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 //import meImageDark from '../assets/me_black3.jpg';
 import meImageDark from '../assets/ol_dark_1.jpg';
-import meImageLight from '../assets/MeSiteWhiteScaled2.jpg';
+import meImageLight from '../assets/ol_dark_2.jpg';
 import { useContext } from 'react';
 
 import { ThemeContext } from '../context/ThemeContext';
@@ -39,12 +39,14 @@ export const useStyles = makeStyles((theme) => {
     },
     myName: {
       fontSize: '2.4m',
+      color: '#fff',
       [theme.breakpoints.up('xl')]: {
         fontSize: '3rem',
       },
     },
     name: {
       fontSize: '4',
+      color: '#fff',
       [theme.breakpoints.up('xl')]: {
         fontSize: '5rem',
       },
