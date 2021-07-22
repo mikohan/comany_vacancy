@@ -61,6 +61,8 @@ export const useStyles = makeStyles((theme) => {
     mainButtons: {
       marginTop: theme.spacing(5),
       marginRight: theme.spacing(1),
+      color: '#fff',
+      borderColor: '#fff',
     },
     myDivider: {
       paddingTop: theme.spacing(3),
