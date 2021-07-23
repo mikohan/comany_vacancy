@@ -27,7 +27,7 @@ function FullStack() {
               <VideoPageComponent
                 text={text}
                 header={pageHeader}
-                vidUrl="https://youtu.be/83_P5OBewLw"
+                vidUrl="https://youtu.be/ujbHxJ55IfM"
               />
             </Grid>
           </Grid>
