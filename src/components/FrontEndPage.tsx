@@ -26,7 +26,7 @@ function SalesManager() {
             <VideoPageComponent
               text={text}
               header={pageHeader}
-              vidUrl="https://youtu.be/z_i1kPX6y9A"
+              vidUrl="https://youtu.be/OppnbrfRTZs"
             />
           </Grid>
         </Grid>
