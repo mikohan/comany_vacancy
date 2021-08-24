@@ -11,16 +11,17 @@ import Page_404 from './Page_404';
 import HomePageSecond from './HomePageSecond';
 import Posts from './blog/Posts';
 import Post from './blog/Post';
-import HomePage from './HomePage';
 import PortfolioPage from './PortfolioPage';
 import CertPage from './CertificatePage';
 import ContactsPage from './ContactsPage';
+import CategoryManager from './CategoryManager';
 
 function Routes() {
   return (
     <div>
       <Switch>
         <Route exact path="/frontend" component={FrontEndPage} />
+        <Route exact path="/categoryManager" component={CategoryManager} />
         <Route exact path="/certificates" component={CertPage} />
         <Route exact path="/fullstack" component={FullStackPage} />
         <Route exact path="/linux" component={LinuxPage} />

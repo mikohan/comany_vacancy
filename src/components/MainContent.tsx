@@ -12,8 +12,6 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import InsertChartOutlined from '@material-ui/icons/InsertChartOutlined';
-import SentimentSatisfied from '@material-ui/icons/SentimentSatisfiedOutlined';
 import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
 
 import ListItem from '@material-ui/core/ListItem';
@@ -36,7 +34,7 @@ import Routes from './Routs';
 import { ThemeContext } from '../context/ThemeContext';
 
 import { translateHeader } from '../translate/header';
-import { isDrawerOpen } from '../config';
+import { isDrawerOpen, categoryManager } from '../config';
 import HomeOutlined from '@material-ui/icons/HomeOutlined';
 import { showBlog, marketolog } from '../config';
 import { salesManager } from '../config';
@@ -119,6 +117,7 @@ export default function PersistentDrawerLeft(): JSX.Element {
     darkTheme,
     lightTheme,
     fullstack,
+    categoryManager,
     linux,
     marketing,
     personality,
@@ -171,6 +170,13 @@ export default function PersistentDrawerLeft(): JSX.Element {
                 <MenuItem>
                   <Link className={classes.menuItemLink} to="/frontend">
                     {frontend}
+                  </Link>
+                </MenuItem>
+              )}
+              {categoryManager && (
+                <MenuItem>
+                  <Link className={classes.menuItemLink} to="/categoryManager">
+                    {categoryManager}
                   </Link>
                 </MenuItem>
               )}
@@ -271,6 +277,16 @@ export default function PersistentDrawerLeft(): JSX.Element {
                     <DevicesOtherOutlined />
                   </ListItemIcon>
                   <ListItemText primary={frontend} />
+                </ListItem>
+              </Link>
+            )}
+            {categoryManager && (
+              <Link className={classes.drawerLink} to="/categoryManager">
+                <ListItem button>
+                  <ListItemIcon>
+                    <DevicesOtherOutlined />
+                  </ListItemIcon>
+                  <ListItemText primary={categoryManager} />
                 </ListItem>
               </Link>
             )}

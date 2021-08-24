@@ -1,6 +1,11 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
-import { durationPage, marketolog, salesManager } from '../config';
+import {
+  durationPage,
+  marketolog,
+  salesManager,
+  categoryManager,
+} from '../config';
 import { Link } from 'react-router-dom';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -99,6 +104,22 @@ function AboutPageTest() {
                         primary={
                           <Typography variant="h6">
                             Менеджер по продажам
+                          </Typography>
+                        }
+                      />
+                    </ListItem>
+                  </Link>
+                )}
+                {categoryManager && (
+                  <Link className={classes.link} to="/categoryManager">
+                    <ListItem button>
+                      <ListItemIcon>
+                        <DraftsIcon />
+                      </ListItemIcon>
+                      <ListItemText
+                        primary={
+                          <Typography variant="h6">
+                            Категорийный менеджер
                           </Typography>
                         }
                       />

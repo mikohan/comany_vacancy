@@ -24,3 +24,4 @@ export const contacts = {
 
 export const salesManager = true;
 export const marketolog = true;
+export const categoryManager = true;
