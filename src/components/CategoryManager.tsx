@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { durationPage } from '../config';
-import { frontend } from '../translate/frontend';
+import { categoryManager } from '../translate/categoryManager';
 import { Grid, Container } from '@material-ui/core';
 import '../tmp.scss';
 import { ThemeContext } from '../context/ThemeContext';
@@ -12,7 +12,7 @@ function SalesManager() {
   const classes = useStyles();
   const context = useContext(ThemeContext);
   let { language } = context;
-  const { pageHeader, text } = frontend[language];
+  const { pageHeader, text } = categoryManager[language];
   return (
     <motion.div
       exit={{ opacity: 0 }}
